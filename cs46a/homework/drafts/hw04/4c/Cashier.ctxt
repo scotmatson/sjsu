@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Cashier()
+comment0.text=\n\ Default\ constructor\ creates\ an\ alias\ for\ the\ cashier\n\ when\ no\ account\ is\ present\ is\ given.\n
+comment1.params=name
+comment1.target=Cashier(java.lang.String)
+comment1.text=\n\ Constructs\ a\ new\ object\ given\ the\ user's\n\ name\ as\ an\ argument.\n\ @param\ name\ is\ the\ name\ of\ the\ cashier\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ Gets\ the\ name\ of\ the\ cashier.\n\ @return\ the\ name\ of\ the\ cashier\n
+comment3.params=owed\ paid
+comment3.target=void\ setCurrentTransaction(double,\ double)
+comment3.text=\n\ Given\ the\ amount\ received\ from\ the\ customer,\n\ the\ amount\ paid\ and\ the\ balance\ remaining\ is\ updated.\n\ @param\ owed\ the\ amount\ still\ owed\n\ @param\ paid\ the\ amount\ still\ paid\n
+comment4.params=
+comment4.target=Change\ getChange()
+comment4.text=\n\ Takes\ the\ amount\ paid\ by\ the\ customer\ in\ excess\ of\ the\n\ balanace\ and\ returns\ the\ change\ in\ the\ largest\n\ bills/coins\ possible.\n\ @return\ the\ customers\ change\n
+numComments=5

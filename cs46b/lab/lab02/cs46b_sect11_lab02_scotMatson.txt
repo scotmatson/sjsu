@@ -1,0 +1,237 @@
+; Course: CS46B
+; Section: 11
+; Author: Scot Matson (009602502)
+; Date: 02 / 06 / 2015
+; Lab Assn: 02
+
+(A)
+  1. Nothing happens when I attempt to remove an entry. Looking through the source code I can see that
+     an unimplemented method named removeEntry() exists in the AddressBookDemo Class as well as an
+     unimplemented method named remove() in the ArrayListAddressBook Class.
+
+  2. Done.
+     private static void removeEntry(InOut in, AddressBook book)
+     {
+       String name = in.nextLine("Enter name: ");
+       String key = in.nextLine("Enter key: ");
+       String value = book.get(name, key);
+       if (value == null)
+           in.message("No entry");
+       else
+           in.message(value + " has been removed");
+     }
+
+  3. Despite receiving the appropriate prompts from the application nothing happens to our file.
+     As referenced in question one, we still have an unimplemented method named
+     remove() in the ArrayListAddressBook Class.
+
+(B)
+  1. Done.
+
+(C)
+  1. ls : displays the files and directories of the current directory as rows across the width of the
+          terminal window.
+     ls [-a] : displays the files and directories as a long list and includes hidden files.
+
+  2. /home/scot
+
+  3. I do not have a desktop directory in my Linux distribution.
+     When I type tab if there are multiple outcomes I will receive a list of possible files/directories to choose from.
+     As the scope becomes more specific autocompletion will occur.
+
+  4. /home/scot/Documents/SJSU/spring/2015/cs46b/lab
+     My visible space [working directory] is moved to a new location specified by the given path.
+
+  5. The up/down arrows move through my command line history allowing me to quickly recall previously given commands.
+
+  6. I don't have a bin directory as I am not using Eclipse. IntelliJ alternatively uses a /out/production directory
+     which contains the .class files for my various modules.
+
+(D)
+  1. Since my file explorer defaults to my home directory I have placed deptdir.txt at /home/scot
+     for convenient access.
+
+  2. '/home/scot/deptdir.txt' -> './deptdir.txt'
+
+  3. Once again my current directory is displayed. I can see that a copy of deptdir.txt is now present
+     in this directory as well.
+
+  4. cp deptdir.txt deptdir.original.txt
+
+(E)
+  1. javac 1.8.0_31
+
+  2. The AddressBookDemo main() has been launched.
+
+  3. [up arrow] + [enter]
+
+(F)
+  1. home/scot/.emacs
+
+  2. wrote home/scot/.emacs
+
+  3. Well... You asked for it.
+     #
+     # ~/.bashrc
+     #
+
+     # If not running interactively, don't do anything
+     [[ $- != *i* ]] && return
+
+     # Shortcut to run unit tests while inside a Laravel project
+     alias phpunit=vendor/bin/phpunit
+
+     alias laravel=~/.composer/vendor/bin/laravel
+     alias ls='ls --color=auto'
+     PS1='[\u@\h \W]\$ '
+
+     # Git Plugins
+     # Enable tab completion
+     source ~/.git-completion.bash
+
+     # colors!
+     green="\[\033[0;32m\]"
+     blue="\[\033[0;34m\]"
+     purple="\[\033[0;35m\]"
+     reset="\[\033[0m\]"
+
+     # Change command prompt
+     source ~/.git-prompt.sh
+     export GIT_PS1_SHOWDIRTYSTATE=1
+     # '\u' adds the name of the current user to the prompt
+     # '\$(__git_ps1)' adds git-related stuff
+     # '\W' adds the name of the current directory
+     export PS1="$purple\u$green\$(__git_ps1)$blue \W $ $reset"
+
+  4. scot ~ #
+
+  5. scot ~ #
+     ... no change, this was already my command prompt.
+
+(G)
+  1. The first conditional statement in the main() method checks the number arguments given.
+     As long as this argument is greater than 0 the console will be used to display the application.
+
+  2. The program once again opens in GUI mode because the condition mentioned in the previous problem returned
+     false. No arguments were given so the console was not used.
+
+  3. The program opens up in the terminal displaying the prompts as lines of text within the command line window
+     rather than as a nicely organized GUI.
+
+(H)
+  1. 2
+     Diaz
+     Phone
+     5
+
+  2. The commands are automatically given in rapid succession without having to have any
+     additional human intervention.
+
+(I)
+  1. The phone number of Diaz is returned this time since Diaz now has an entry in
+     deptdir.txt
+
+  2. 1: Add/Change Entry
+     2: Look Up Entry
+     3: Remove Entry
+     4: Save Directory
+     5: Exit
+     Enter Command: Enter name: Enter key: Value: (408) 924-5060
+     1: Add/Change Entry
+     2: Look Up Entry
+     3: Remove Entry
+     4: Save Directory
+     5: Exit
+     Enter Command:
+
+     I can see that output.txt has been created and populated with data by using ls to check my /home/scot directory
+     and then using cat to peak inside the file.
+
+  3. That's exactly what I did before! Just look at #2 for the ouput.
+
+  4. Since expected.txt is simply a copied version of output.txt the contents will be exactly identical. I used
+     the diff command to check for any differences between the two.
+
+  5. Ironic, I continue to be one step ahead! As stated in the previous question, I used diff to check for any 'differences'
+     which may exist between the two files. No output indicates that the files are completely identical.
+
+  6. After changing the automated commands in the input.txt file and outputting the results to output.txt. We can
+     see that by performing a diff command using output.txt and expected.txt as arguments that the two files are now
+     different. This is because we added 4 to input.txt which gave us additional results which previously did
+     not exist in the expected.txt file.
+
+  7. ls   : Lists the files and directories in the current working directory.
+     pwd  : prints the path to the current working directory.
+     cp   : Makes a copy of an existing files contents and places it within a new file
+     cat  : Concatenates the contents of a file and displays it on the terminal window.
+     diff : Compares the contents of two different files for any differences which may exist. If identical no output
+            is given.
+
+(J)
+  1. The code actually displays properly. The tabs/spaces do not appear to be creating any formatting problems.
+
+  2. Highlighting the lowercase c, we can see the unicode value is 65.
+
+  3. The first occurrence of 20 is at the 'import java' statement
+     The first occurrence of 09 is at the ... I don't actually see any, albeit it is a very large collection
+     of unicode. I may have IntelliJ set to convert tabs as I typically set my indentation to two spaces.
+
+  4. We already set the tabs mode in emacs, (setq indent-tabs-mode nil)
+
+  5. A carriage return is the [enter] key. It shifts the cursor to the next line and to the left. So \n\r.
+     At the end of every line is 0D0A
+
+  6. At the end of every line in this file we find 0D0A as well!
+
+  7. I receive a syntax error near unexpected token 'do\r'
+
+  8. The 0D0A was removed.
+
+  9. The bash script returns Found [filename].txt for all text files in the working directory.
+     This script now works because the line endings were removed from the original script. These were
+     obviously causing complications.
+
+  10. We could probably run the dos2unix application on ExhibitB.txt to clean this file up as well.
+
+  11. U+00E9
+
+  12. Per Wikipedia:
+      é
+      00E9
+      233
+
+  13. ExhibitD.txt looks correct on my computer.
+
+  14. Character encoding has to be set. UTF-8 is an international standard and widely used in the states.
+      One may modify character encoding to support other types if desired.
+
+  15. Bahrain
+
+  16. I expect the program to print "match".
+
+  17. The program prints out "no match".
+
+  18. ...BA
+
+  19. [ï » ¿ B A] are the first five characters. Only the fourth and fifth characters are being displayed.
+
+  20. Big Endian feels more natural as it starts small and increments to the
+      largest memory address, or "left to right".
+
+  21. FEFF indicates Big Endian whereas FFFE indicates Little Endian
+
+  22. Byte Order Marking is not used in UTF commonly because by not using it, we allow for backwards
+      compatibility with such software that expects ASCII characters. Additionally by not using Byte Order Marking
+      it encourages making UTF-8 the default character encoding.
+
+  23. Because not all Unicode-aware programs perform an analysis which would allow them to detect UTF-8 encoding
+      and in fact rely upon the Byte Order Mark.
+
+  24. The output is "no match: ". Is it supposed to match?
+
+  25. I guess BOM recognition and proper handling? The Bug Report states that it is resolved. It would be
+      nice to get a little more layman's background on this but it is interesting to read about none-the-less.
+
+
+
+

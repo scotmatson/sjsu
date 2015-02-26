@@ -1,0 +1,4 @@
+001234567 	Alice 	A
+002345678 	Bob 	B
+003141592 	Carl 	A
+007766554 	Dorothy 	C

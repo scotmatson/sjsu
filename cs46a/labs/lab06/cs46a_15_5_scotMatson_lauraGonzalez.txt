@@ -1,0 +1,26 @@
+Section 15
+
+Part A
+  1) Done.
+  2) Done.
+  3) Done.
+  4) Done.
+  5) Done.
+  6) Done
+
+Part B
+  1) Done.
+  2) Done.
+  3) makeRoom(8, 6, 7.5, 0);
+  4) Done.
+  5) public void findWindow() {
+       while (carol.rightHasWall()) {
+         if (carol.frontHasWallorWindow()) {
+            carol.turnLeft();
+            if (!carol.rightHasWall())
+              break;
+         }
+         carol.moveForward();
+      }
+     }
+  6) Done.

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=theName\ theGrades
+comment0.target=ScoreManager(java.lang.String,\ int[])
+comment0.text=\n\ Constructs\ a\ ScoreManager\ for\ the\ given\ assessment\ \n\ with\ the\ given\ array\n\ @param\ theName\ the\ name\ of\ this\ assessment\n\ @param\ theGrades\ the\ grades\ for\ this\ ScoreManager\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\n\ Gets\ the\ name\ of\ this\ assessment\n\ @return\ the\ name\n
+comment2.params=target
+comment2.target=int\ countTarget(int)
+comment2.text=\n\ The\ number\ of\ times\ a\ particular\ score\ occurs\n\ @param\ target\ The\ score\ being\ evaluated\n\ @return\ scoreCounter\ Number\ of\ times\ a\ score\ occurs\n
+comment3.params=
+comment3.target=int\ mode()
+comment3.text=\n\ The\ mode\ (the\ value\ that\ occurs\ most\ often)\n\ @return\ mode\ The\ value\ with\ the\ highest\ frequency\n
+comment4.params=
+comment4.target=int[]\ letterCounts()
+comment4.text=\n\ An\ array\ containing\ the\ number\ of\ A's\ B's,\ C's,\ D's,\ F's\n\ @return\ grade\ Letter\ grade\ A\ ->\ F\n
+numComments=5

@@ -1,0 +1,52 @@
+Section 15, Lab 08
+
+A.
+  1) Done.
+  2) Done.
+  3) public int countVowels() {
+      int i;
+      int counter = 0;
+      for (i = 0; i < text.length(); ++i) {
+         String letter = text.substring(i, i + 1); // the ith letter
+         if (isVowel(letter)) {
+             ++counter;
+         }
+
+      }
+      return counter;
+   }
+  4) Done.
+  5) Done.
+  6)  public int countVowelGroups() {
+      int i;
+      int vowelGroup = 0;
+      boolean isGroup = false;
+      for (i = 0; i < text.length(); i++) {
+        String letter = text.substring(i, i + 1);
+        if(isVowel(letter)) {
+            isGroup = true;
+            while (isGroup && i < text.length()) {
+                letter = text.substring(i, i + 1);
+                i++;
+                if (!isVowel(letter)) {
+                    isGroup = false;
+                }
+            }
+            i--;
+            vowelGroup++;
+        }
+      }
+      return vowelGroup;
+   }
+
+B.
+  1) Done.
+  2) Done.
+  3) Done.
+  4) Done.
+  5) Unable to complete :(
+
+C.
+  1)
+  2)
+  3)

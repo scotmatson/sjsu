@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=theX
+comment0.target=Building(double)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Building\n\ @param\ x\ the\ height\ of\ the\ building\n
+comment1.params=
+comment1.target=double\ surfaceArea()
+comment1.text=\n\ Gets\ the\ volume\ of\ the\ building\n\ surfac\ area\ \=\ 16x^2\ +\ 5??x^2\n\ @return\ the\ volume\ of\ he\ bulding\n
+numComments=2

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6183">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop6185" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop6187" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5245"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#3ad1c2;stop-opacity:1;"
+         offset="0"
+         id="stop5247" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5245"
+       id="linearGradient5265"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0817338,0,0,1.0817339,-45.985369,-13.738236)"
+       x1="158.10446"
+       y1="101.30694"
+       x2="635.89946"
+       y2="101.30694" />
+    <filter
+       x="-0.25"
+       width="1.5"
+       y="-0.5"
+       height="2"
+       inkscape:menu-tooltip="Colorizable filling with flow inside like transparency"
+       inkscape:menu="Textures"
+       inkscape:label="Shaken liquid"
+       color-interpolation-filters="sRGB"
+       id="filter5519">
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="4"
+         id="feGaussianBlur5521" />
+      <feTurbulence
+         baseFrequency="0.05"
+         numOctaves="2"
+         type="fractalNoise"
+         result="result7"
+         seed="0"
+         id="feTurbulence5523" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 2 -0.75 "
+         result="result5"
+         id="feColorMatrix5525" />
+      <feComposite
+         in="result8"
+         operator="out"
+         result="result6"
+         in2="result7"
+         id="feComposite5527" />
+      <feDisplacementMap
+         result="result4"
+         scale="120"
+         yChannelSelector="A"
+         xChannelSelector="A"
+         in2="result6"
+         in="result5"
+         id="feDisplacementMap5529" />
+      <feComposite
+         in="result8"
+         operator="arithmetic"
+         result="result2"
+         in2="result4"
+         k1="1"
+         k3="0.5"
+         id="feComposite5531" />
+      <feComposite
+         in2="result2"
+         operator="in"
+         in="SourceGraphic"
+         result="fbSourceGraphic"
+         id="feComposite5533" />
+    </filter>
+    <filter
+       inkscape:label="Glow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Glow of object's own color at the edges"
+       color-interpolation-filters="sRGB"
+       id="filter6015">
+      <feGaussianBlur
+         stdDeviation="5"
+         result="result91"
+         id="feGaussianBlur6017" />
+      <feComposite
+         in="SourceGraphic"
+         operator="over"
+         in2="result91"
+         id="feComposite6019" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6183"
+       id="linearGradient6189"
+       x1="124.60916"
+       y1="95.848902"
+       x2="642.32093"
+       y2="95.848902"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:menu-tooltip="Draws a black outline around"
+       inkscape:menu="ABCs"
+       inkscape:label="Black outline"
+       color-interpolation-filters="sRGB"
+       id="filter6431">
+      <feGaussianBlur
+         stdDeviation="2"
+         in="SourceAlpha"
+         result="result0"
+         id="feGaussianBlur6433" />
+      <feComposite
+         result="result3"
+         operator="arithmetic"
+         in2="result0"
+         in="SourceGraphic"
+         k2="1"
+         k3="10"
+         id="feComposite6435" />
+      <feComposite
+         k2="1"
+         operator="in"
+         in="result3"
+         result="result4"
+         in2="result3"
+         id="feComposite6437" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="295.12872"
+     inkscape:cy="884.95084"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1364"
+     inkscape:window-height="741"
+     inkscape:window-x="0"
+     inkscape:window-y="-1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:43.58573914000000116px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:111.00000143000001174%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9;fill-opacity:1;stroke:#1eccd2;stroke-width:0.79867492;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter6431);font-family:Frosty;-inkscape-font-specification:Frosty"
+       x="304.50064"
+       y="139.14728"
+       id="text2985"
+       sodipodi:linespacing="111%"
+       transform="matrix(1.0539257,0,0,0.93775831,0,2.131767)"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="305.04547"
+         y="139.14728"
+         style="font-size:43.58573914000000116px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:111.00000143000001174%;letter-spacing:1.08964348000000011px;word-spacing:1.08964348000000011px;writing-mode:lr-tb;text-anchor:middle;fill:#f9f9f9;fill-opacity:1;stroke:#1eccd2;stroke-width:0.79867492;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;font-family:Frosty;-inkscape-font-specification:Frosty"
+         dx="0">Christmas in the Park</tspan><tspan
+         sodipodi:role="line"
+         x="305.04547"
+         y="187.52745"
+         id="tspan2989"
+         style="font-size:43.58573914000000116px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:111.00000143000001174%;letter-spacing:1.08964348000000011px;word-spacing:1.08964348000000011px;writing-mode:lr-tb;text-anchor:middle;fill:#f9f9f9;fill-opacity:1;stroke:#1eccd2;stroke-width:0.79867492;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;font-family:Frosty;-inkscape-font-specification:Frosty">Facebook</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2991"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion2993"><rect
+           id="rect2995"
+           width="95.714287"
+           height="42.857143"
+           x="131.42857"
+           y="68.076469" /></flowRegion><flowPara
+         id="flowPara2997"></flowPara></flowRoot>  </g>
+</svg>

@@ -1,0 +1,22 @@
+Group 1
+Team: SP+C
+Game: Roboman
+Stability: 10
+Complete: 8
+Fun: 10
+
+Group 2 (Me)
+Team: Friendly Collaboration... or something like that.
+Game: Rebirth
+Stability: 9
+Complete: 10
+Fun: 10
+
+Group 3
+Team: The Fat Grins
+Game: Heady Hunter
+Stability: 10
+Complete: 10
+Fun : 10
+
+

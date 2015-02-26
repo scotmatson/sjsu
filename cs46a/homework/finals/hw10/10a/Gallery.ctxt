@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Gallery()
+comment0.text=\n\ \ \ \ \ \ \ \ Constructs\ an\ empty\ gallery.\n
+comment1.params=filename
+comment1.target=void\ add(java.lang.String)
+comment1.text=\n\ \ \ \ \ \ \ \ Adds\ a\ picture\ to\ the\ gallery.\n\ \ \ \ \ \ \ \ @param\ filename\ the\ name\ of\ the\ picture\ file\n
+comment2.params=
+comment2.target=void\ draw()
+comment2.text=\n\ \ \ \ \ \ \ \ Arranges\ the\ pictures\ next\ to\ each\ other\ and\ draws\ them.\n
+comment3.params=index
+comment3.target=int\ getArea(int)
+comment3.text=\n\ \ \ \ \ \ \ \ Gets\ the\ area\ of\ the\ Picture\ at\ the\ given\ index\ in\ the\ Gallery\n\ \ \ \ \ \ \ \ @param\ index\ the\ index\ of\ the\ Picture\ whose\ area\ is\ wanted\n\ \ \ \ \ \ \ \ @return\ the\ area\ of\ the\ picture\ at\ that\ index\n
+comment4.params=
+comment4.target=int\ sum()
+comment4.text=\n\ Get\ the\ sum\ of\ the\ areas\ of\ all\ the\ pictures\n\ @return\ sumOfAreas\ The\ sum\ of\ all\ picture\ areas\n
+comment5.params=
+comment5.target=void\ minFirst()
+comment5.text=\n\ Put\ the\ Picture\ with\ the\ smallest\ area\ first.\n
+numComments=6

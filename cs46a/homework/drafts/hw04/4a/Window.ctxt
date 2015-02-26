@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=theBase\ theHeight
+comment0.target=Window(double,\ double)
+comment0.text=\n\ Constructs\ a\ Window\ with\ the\ given\ dimensions\ in\ feet\n\ @param\ theBase\ of\ the\ window\ in\ feet\n\ @param\ theHeight\ of\ the\ window\ in\ feet\n
+comment1.params=
+comment1.target=double\ getBase()
+comment1.text=\ \n\ Gets\ the\ base\ of\ the\ triangular\ shape\ of\ the\ window\n\ @return\ the\ base\ of\ the\ triangular\ shape\n
+comment2.params=
+comment2.target=double\ getHeight()
+comment2.text=\ \n\ Gets\ the\ height\ of\ the\ triangular\ shape\ of\ the\ window\n\ @return\ the\ height\ of\ the\ triangular\ shape\n
+comment3.params=
+comment3.target=double\ getCostOfGlaze()
+comment3.text=\n\ gets\ the\ cost\ of\ the\ glaze\ used\ on\ this\ window\n\ @return\ the\ cost\ of\ the\ glaze\n
+comment4.params=
+comment4.target=double\ getCostOfGlass()
+comment4.text=\n\ Gets\ the\ cost\ of\ the\ glass\ used\ in\ this\ window\n\ @return\ the\ cost\ of\ the\ glass\n
+comment5.params=
+comment5.target=double\ getTotalCost()
+comment5.text=\n\ the\ base\ cost\ +\ the\ cost\ of\ the\ glaze\ +\ the\ cost\ of\ the\ glass\n\ @return\ the\ total\ window\ cost\n
+numComments=6

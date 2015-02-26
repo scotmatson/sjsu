@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Version" content="0.3"/>
+<meta name="Submission" content="14100914446883359368545377705"/>
+<meta name="Problem" content="14100718105k09idaja5j26rbdkvnkzxui4"/>
+<meta name="Level" content="1"/>
+<meta name="Time" content="2014-10-09T21:44:21Z"/>
+<meta name="ID" content="Adjective"/>
+<meta name="User" content="14093019298324364331384976860"/>
+<style type="text/css">
+.header {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header">Running AdjectiveTester</p>
+<pre class="output">most null
+<span class="fail">Expected: most anxious</span>
+best
+<span class="pass">Expected: best</span>
+earliest
+<span class="pass">Expected: earliest</span>
+worst
+<span class="pass">Expected: worst</span>
+nullest
+<span class="fail">Expected: smallest</span>
+small
+<span class="pass">Expected: small</span>
+</pre>
+<p class="header">Student files</p>
+<p class="caption">Adjective.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+<span class="linenumber"> 44</span>
+<span class="linenumber"> 45</span>
+<span class="linenumber"> 46</span>
+<span class="linenumber"> 47</span>
+<span class="linenumber"> 48</span>
+<span class="linenumber"> 49</span>
+<span class="linenumber"> 50</span>
+<span class="linenumber"> 51</span>
+<span class="linenumber"> 52</span>
+<span class="linenumber"> 53</span>
+<span class="linenumber"> 54</span>
+<span class="linenumber"> 55</span>
+<span class="linenumber"> 56</span>
+<span class="linenumber"> 57</span>
+</pre></td><td><pre>
+/**
+ * Describes an adjective in the English language
+ */
+public class Adjective
+{
+    private String adjective;
+
+    /**
+     * Constructor for objects of class Adjective
+     * @param the adjective
+     */
+    public Adjective(String word)
+    {
+        adjective = word;
+    }
+
+    /**
+     * set a new word for this Adjective
+     * @param newWord the new adjective to set
+     */
+    public void setAdjective(String newWord)
+    {
+        adjective = newWord;
+    }
+    
+    /**
+     * gets the word for this Adjective
+     * @return the adjective
+     */
+    public String getAdjective()
+    {
+        return adjective;
+    }
+    /**
+     * Gets the superlative form of this Adjective
+     * @return the superlative form
+     */
+    public String superlative()
+    {
+        String superAdj = null;
+        String theAdj = adjective.toLowerCase();
+        int adjLength = theAdj.length();
+        
+        if (theAdj.compareTo("good") == 0) { superAdj = "best"; }
+         else if (theAdj.compareTo("bad") == 0) { superAdj = "worst"; }
+         else if (theAdj.charAt(adjLength - 1) == 'y') {
+            superAdj = theAdj.substring(0, adjLength - 1) + "iest";
+        }
+         else if (adjLength &lt;= 5) { superAdj = superAdj + "est"; }
+         else if (adjLength &gt; 5) { superAdj = "most " + superAdj; }
+        
+        
+        return superAdj;
+    }
+    
+}
+</pre></td></tr></table>
+<p class="header">Other files</p>
+<p class="caption">AdjectiveTester.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+</pre></td><td><pre>
+public class AdjectiveTester
+{
+   public static void main(String[] args)
+   {
+       Adjective word = new Adjective("anxious");
+       System.out.println(word.superlative());
+       System.out.println("Expected: most anxious");
+       
+       word.setAdjective("good");
+       System.out.println(word.superlative());
+       System.out.println("Expected: best");
+       
+       word.setAdjective("early");
+       System.out.println(word.superlative());
+       System.out.println("Expected: earliest");
+       
+       word.setAdjective("bad");
+       System.out.println(word.superlative());
+       System.out.println("Expected: worst");
+       
+       word.setAdjective("small");
+       System.out.println(word.superlative());
+       System.out.println("Expected: smallest");
+       
+       System.out.println(word.getAdjective());
+       System.out.println("Expected: small");
+   }
+
+
+}
+</pre></td></tr></table>
+<p class="header">Score</p>
+<p class="score">4/6</p>
+<p class="download"><a href="Adjective.signed.zip">Download</a></p>
+<div class="footnotes"><div class="footnote">2014-10-09T21:44:21Z</div>
+</div>
+</body></html>

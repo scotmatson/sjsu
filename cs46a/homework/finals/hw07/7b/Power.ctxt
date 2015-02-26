@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=theBase
+comment0.target=Power(int)
+comment1.params=n
+comment1.target=int\ getLargestPower(int)
+comment1.text=\n\ Gets\ the\ largest\ number\ that\ is\ a\ power\ of\ the\ base\ and\ also\ less\ than\ n\n\ @param\ n\ \ base^x\ is\ largest\ less\ than\ n\n\ @return\ largest\ number\ that\ is\ a\ power\ of\ the\ base\ and\ also\ \n\ less\ than\ n\ or\ else\ return\ -1\ if\ the\ largest\ number\ does\ not\ exist\n
+numComments=2

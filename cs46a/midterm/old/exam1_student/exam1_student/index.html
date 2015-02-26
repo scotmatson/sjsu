@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CS 46A Exam 1 Spring 2013</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.problemHeader {
+	background-color:#CFF;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1 align="center">EXAM 1</h1>
+<h2 align="center">CS 46A Fall 2014</h2>
+<h2>Exam Rules </h2>
+<ul>
+  <li>The exam is over at 2:40</li>
+  <li>Spend the last 5 minutes uploading your code.</li>
+  <li>You may not leave the room until the exam is over.</li>
+  <li>Develop your solutions using the Bluej starter projects located in the <strong>code</strong> folder. </li>
+  <li>You may use your textbook and material on your computer</li>
+  <li>You may NOT communicate with anyone during the exam.</li>
+  <li>You may NOT use the work of anyone else without attribution.</li>
+  <li class="style1">You may NOT open any  web sites except Canvas to upload your files or Codecheck</li>
+  <li>The proctor will randomly inspect laptops. If your laptop is inspected,      you need take the hands off the keyboard immediately.</li>
+  <li>At the same time, upload all the signed.zip files and the 5_trace.rtf into Canvas</li>
+  <li> If you can not upload to Canvas, put your signed.zip and .rtf files on your USB and turn that in. Put your files in a folder named lastName_firstName. If you want the USB back, put your name on the drive itself</li>
+</ul>
+<p class="problemHeader" >1. </p>
+<p> Draw a square with side of 100 at (20,10). Use the predefined color, blue. Fill the ellipse that is bounded by the square. Use a custom color to fill the ellipse where the red value is 0, green value is 200, and blue value is 200. Draw the diagonals of the square in black. You do not need to use constants.</p>
+<p>Draw the square first, then the ellipse, then the diagonal starting at the upper left-hand corner. Finally draw the other diagonal stating at the upper right-hand corner. Be sure to use this order.</p>
+<p>Your drawing should look like this</p>
+<p><img src="images/exam1_1_drawing.png" width="128" height="142" alt="drawing" /></p>
+<p><a href="http://cs19.cs.sjsu.edu:8080/codecheck/files/141007171675ivcte7q8x1za487hfmmy0mq">Codecheck link:</a></p>
+
+<p class="problemHeader">2. </p>
+<p>You are provided with a BankAccount class. The bank is running a promotional and will give anyone who opens an account $100. A person can open an account with no money and have a starting balance of $100;</p>
+<p>The problem is that the constructor and methods are not doing their job correctly. The class is also missing some Javadoc. The balance should never be negative, but the methods do not check values of the parameters. You are to add some of the necessary checks and add missing Javadoc. We will assume the user never tries to withdraw more money than is in the account.</p>
+<p>Do these things:</p>
+<ul>
+  <li>Modify the constructor so that if the construction parameter is negative, the  balance is set to $100. Use the constant provided.</li>
+  <li>Modify deposit method so that the balance is only updated if the deposit amount is greater than 0. Otherwise do not change the balance.</li>
+  <li>Modify withdraw method so that the balance is only updated if the withdraw amount is greater than 0. Otherwise do not change the balance.</li>
+  <li>Add Javadoc for the deposit method</li>
+  <li>Add Javadoc for the getBalance method.</li>
+</ul>
+<p><a href="http://cs19.cs.sjsu.edu:8080/codecheck/files/14100720453937rikd1cfda5hlomiu7hngf">Codecheck link</a></p>
+<p class="problemHeader">3.     </p>
+<p>Ask the user to enter two doubles and divide the smaller by the larger.</p>
+<p>Use these exact prompts:</p>
+<ul>
+  <li>System.out.print(&quot;Enter a double: &quot;);</li>
+  <li>System.out.print(&quot;Enter another double: &quot;);</li>
+</ul>
+<p>Now print the quotient of the smaller divided by the larger.</p>
+<p>You can assume that the larger number is never 0.</p>
+<p>Codecheck link: <a href="http://go.code-check.org/codecheck/files/14092619238c5s9v8k65b2zs5o2enhscqw">http://go.code-check.org/codecheck/files/14092619238c5s9v8k65b2zs5o2enhscqw</a></p>
+
+<p class="problemHeader">4. </p>
+<p>A drinking glass has a  a shape composed of 2 cylinders one on top of the other. The base cylinder has a height of h and a radius of 3 times the height. The top cylinder is 10 times the height of the base and the radius is 1/2 the radius of the base cylinder. Both cylinders are hollow. Create a class that models this shape. </p>
+<p>Constructor:</p>
+<ul>
+  <li>public DrinkingGlass(double height): constructs a object with the given height. You will write the constructor (remember you will also need instance variables. But do not use unnecessary instance variables)</li>
+</ul>
+<p>Methods</p>
+<ul>
+  <li>public void setHeight(double value ): sets a new height for this drinking glass. ( you need to finish this method)</li>
+  <li>public double getVolume(): finds the area of the drinking glass consisting of the two cylinders. You need to write this method. Use Math.PI</li>
+</ul>
+<p><img src="images/exam1_4_drawing small.png" width="205" height="330" alt="drawing" /></p>
+<p><a href="http://cs19.cs.sjsu.edu:8080/codecheck/files/14100718056l6vs7dvfrpsrtq9mc7w5yxc4">Codecheck Link: </a></p>
+
+<p class="problemHeader">5. </p>
+<p>The program below has a faulty implementation of the method printChange. </p>
+<p> Trace the following method call. Record results in the given  file (<span class="style1">5_trace.rtf located in the code folder)</span></p>
+<p> <code>ChangeGiver change = new ChangeGiver();<br />
+change.printChange(40);</code></p>
+<p> Fill in the columns in the table in 5_trace.rtf. Do not make your own  file. I will only grade 5_trace.rtf. I have entered the first value for you.</p>
+<p> Show how each value is set and changed. Enter the new values in a new row for each statement so I can see the exact order of changes.</p>
+<p> Since the method is not correct, you should not expect it to work right. In your trace, <strong>show what happens, not what should happen</strong>.</p>
+<pre>public class ChangeGiver
+{
+       final int QUARTER_VALUE = 25;
+       final int DIME_VALUE = 10;
+       final int NICKEL_VALUE = 5;
+
+
+       /**
+        * Prints the smallest number of quarters, dimes and nickels 
+        * needed to give the specified amount of change
+        * @param changeToGive the amount of change to give
+        */
+       public void printChange(int changeToGive)
+       {
+           int quartersToGive = changeToGive / QUARTER_VALUE; //line 1
+           int remainder = changeToGive % quartersToGive;     //line 2
+           int dimesToGive = changeToGive / DIME_VALUE;       //line 3
+           remainder = changeToGive - dimesToGive;            //line 4
+           int nickelsToGive = changeToGive / NICKEL_VALUE;   //line 5
+           System.out.println("Quarters: " + quartersToGive);
+           System.out.println("Dimes: " + dimesToGive);
+           System.out.println("Nickels: " + nickelsToGive);
+       }
+}
+</pre>
+<p class="problemHeader">6. </p>
+<p>Complete the method superlative() in the Adjective Class. Adjective has a constructor (provided for you) that takes an English adjective as a String . Methods to get and set the adjective are also provided. Adjectives have a comparative and superlative form. You will complete the method to return the superlative form of the adjective. Follow the rules in the order below to find the superlative of an adjective (This is not strictly correct but we will pretend it is. Just follow the rules)</p>
+<ul>
+  <li>If the adjective is one of the irregular adjectives, return the superlative form from the table below</li>
+  <li>If the adjective ends in a y, drop the &quot;y&quot; and add &quot;iest&quot;</li>
+  <li> If the adjective has 5 of less letters, add &quot;est&quot; to form the superlative. (hard - hardest. old - oldest)</li>
+  <li>If the adjective has more than 5 letters, the superlative is formed by adding &quot;most&quot; in front of the adjective (anxious - most anxious)</li>
+</ul>
+<p>Here is a table of irregular adjectives</p>
+<table width="25%" border="2" cellspacing="1" cellpadding="1">
+  <tr>
+    <th scope="col">adjective </th>
+    <th scope="col">superlative</th>
+  </tr>
+  <tr>
+    <td>good</td>
+    <td>best</td>
+  </tr>
+  <tr>
+    <td>bad</td>
+    <td>worst</td>
+  </tr>
+  
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>Use if / else if / else. Do not use if / if / if</p>
+<p><a href="http://cs19.cs.sjsu.edu:8080/codecheck/files/14100718105k09idaja5j26rbdkvnkzxui4">Codecheck link: </a></p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=dollars\ quarters\ dimes\ nickels
+comment0.target=Change(int,\ int,\ int,\ int)
+comment0.text=\n\ Constructs\ a\ Change\ object\ with\ the\ given\ values\n\ @param\ dollars\ the\ number\ of\ dollars\ to\ give\ as\ change\n\ @param\ quarters\ the\ number\ of\ quarters\ to\ give\ as\ change\n\ @param\ dimes\ the\ number\ of\ dimes\ to\ give\ as\ change\n\ @param\ nickels\ the\ number\ of\ nickels\ to\ give\ as\ change\n
+comment1.params=
+comment1.target=int\ getDollars()
+comment1.text=\n\ Gets\ the\ number\ of\ dollars\ in\ this\ Change\ object\n\ @return\ the\ number\ of\ dollars\ in\ this\ Change\ object\n
+comment2.params=
+comment2.target=int\ getQuarters()
+comment2.text=\n\ Gets\ the\ number\ of\ quarters\ in\ this\ Change\ object\n\ @return\ the\ number\ of\ quarters\ in\ this\ Change\ object\n
+comment3.params=
+comment3.target=int\ getDimes()
+comment3.text=\n\ Gets\ the\ number\ of\ dimes\ in\ this\ Change\ object\n\ @return\ the\ number\ of\ dimes\ in\ this\ Change\ object\n
+comment4.params=
+comment4.target=int\ getNickels()
+comment4.text=\n\ Gets\ the\ number\ of\ nickels\ in\ this\ Change\ object\n\ @return\ the\ number\ of\ nickles\ in\ this\ Change\ object\n
+numComments=5

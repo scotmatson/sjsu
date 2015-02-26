@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=str
+comment0.target=TextUtil(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ TextUtil\n\ @param\ str\ the\ text\ for\ this\ object\n
+comment1.params=
+comment1.target=int\ getCount()
+comment1.text=\n\ Returns\ the\ number\ of\ characters\ in\ this\ text\n\ @return\ charCount\ the\ number\ of\ characters\n
+comment2.params=
+comment2.target=int\ upperCaseCount()
+comment2.text=\n\ Gets\ the\ number\ of\ uppercase\ letters\ in\ the\ text\n\ @return\ ucCount\ the\ number\ of\ uppercase\ letters\n
+comment3.params=
+comment3.target=java.lang.String\ getEverySecondLetter()
+comment3.text=\n\ Gets\ a\ string\ that\ contains\ every\ other\ character,\ starting\ with\ the\ character\ at\ index\ 0\n\ @return\ eoLetter\ a\ string\ consisting\ of\ every\ other\ letter\n
+numComments=4

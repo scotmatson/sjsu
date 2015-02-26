@@ -1,0 +1,104 @@
+import java.util.Arrays;
+/**
+ * Models the grades for a class on a particular assessment (assignment, quiz, exam)..
+ * 
+ * @author (Scot Matson) 
+ * @version (20141030)
+ */
+public class ScoreManager {
+    public static final int NUMBER_OF_GRADES = 5;
+    public static final int INDEX_A = 4;
+    public static final int INDEX_B = 3;
+    public static final int INDEX_C = 2;
+    public static final int INDEX_D = 1;
+    public static final int INDEX_F = 0;
+
+    private String name;
+    private int grades[];
+
+    /**
+     * Constructs a ScoreManager for the given assessment 
+     * with the given array
+     * @param theName the name of this assessment
+     * @param theGrades the grades for this ScoreManager
+     */
+    public ScoreManager(String theName, int[] theGrades) {
+        name = theName;
+        grades = theGrades;
+    }
+
+    /**
+     * Gets the name of this assessment
+     * @return name The students name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * The number of times a particular score occurs
+     * @param target The score being evaluated
+     * @return scoreCounter Number of times a score occurs
+     */
+    public int countTarget(int target) {   
+        int scoreCounter = 0;
+
+        if (grades.length > 0) {
+            for (int i = 0; i < grades.length; ++i) {
+                if (grades[i] == target) {
+                    ++scoreCounter;
+                }
+            }
+        }
+        return scoreCounter;
+    }
+
+    /**
+     * The mode (the value that occurs most often)
+     * @return mode The value with the highest frequency
+     */
+    public int mode() {
+        int mode = 0;
+        int modeFreq = 0;
+
+        //Outside loop used as test case.
+        for (int i = 0; i < grades.length; ++i) {
+            //Counter needs to be reset for each new cycle
+            int newCount = 0;
+            //Compare the outside loop against the inside loop
+            for (int j = 0; j < grades.length; ++j) {
+                //A match increments the count by 1
+                if (grades[i] == grades[j]) {
+                    ++newCount;
+                }
+            }
+            //Finally, if our count beats our old record, we've found a new mode
+            if (modeFreq < newCount) {
+                mode = grades[i];
+                modeFreq = newCount;
+            }
+        }
+        return mode;
+    }
+
+    /**
+     * An array containing the number of A's B's, C's, D's, F's
+     * @return grade Letter grade A -> F
+     */
+    public int[] letterCounts()
+    {
+        //Declaring our Array and defaulting each element to 0
+        int letterGrades[] = new int[NUMBER_OF_GRADES];
+        Arrays.fill(letterGrades, 0);
+        //Testing scores and incrementing where matches occur
+        for (int i = 0; i < grades.length; ++i) {
+                 if (grades[i] >= 90) { letterGrades[INDEX_A]++; }
+            else if (grades[i] >= 80) { letterGrades[INDEX_B]++; }
+            else if (grades[i] >= 70) { letterGrades[INDEX_C]++; }
+            else if (grades[i] >= 60) { letterGrades[INDEX_D]++; }
+            else                      { letterGrades[INDEX_F]++; }
+        }
+
+        return letterGrades;
+    }
+}

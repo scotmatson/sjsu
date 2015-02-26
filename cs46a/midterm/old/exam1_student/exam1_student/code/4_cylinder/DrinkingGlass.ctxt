@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=theHeight
+comment0.target=DrinkingGlass(double)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Drinking\n\ @param\ theHeight\ the\ height\ of\ the\ base\n
+comment1.params=newHeight
+comment1.target=void\ setHeight(double)
+comment1.text=\n\ Sets\ the\ height\ of\ the\ base\ cylinder\ of\ this\ object\n\ @param\ newHeight\ the\ new\ height\ of\ this\ DrinkingGlass\n
+comment2.params=
+comment2.target=double\ getVolume()
+comment2.text=\n\ Uses\ the\ formula\ PI\ *\ r^2\ *\ height\ to\ find\ the\ volume\ of\ a\ cylinder\n\ using\ the\ user\ set\ height\n\ @return\ cylinderArea\ returns\ the\ calculated\ volume\ of\ a\ glass\n
+numComments=3

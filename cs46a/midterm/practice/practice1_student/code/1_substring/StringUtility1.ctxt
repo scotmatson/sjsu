@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=word
+comment0.target=java.lang.String\ middleLetter(java.lang.String)
+comment0.text=\n\ Gets\ th\ middle\ letter\ of\ the\ string\ if\ the\ lngth\ is\ odd\ or\ the\ character\n\ after\ the\ midpoint\ if\ the\ length\ is\ even\n\ @param\ word\ the\ String\ to\ process\n\ @return\ a\ String\ containing\ the\ middle\ character\n
+numComments=1

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=theNumber
+comment0.target=MyNumber(int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ MyNumber\n\ @param\ theNumber\ the\ value\ for\ this\ object\n
+comment1.params=
+comment1.target=int\ getOddSum()
+comment1.text=\n\ gets\ the\ sum\ of\ all\ the\ odd\ positive\ numbers\ less\ than\ or\ equal\ to\ number\n\ @return\ oddSum\ the\ sum\ of\ all\ odd\ natural\ numbers\n
+comment2.params=
+comment2.target=int\ largestPowerOfTwo()
+comment2.text=\n\ Gets\ the\ largest\ power\ of\ 2\ that\ is\ less\ than\ the\ number\n\ @return\ largestPower\ the\ largest\ power\ of\ two\ less\ than\ number\n
+comment3.params=value
+comment3.target=void\ setNumber(int)
+comment3.text=\n\ Sets\ a\ new\ value\ for\ this\ Number\n\ @param\ value\ the\ new\ value\ of\ the\ Number\n
+numComments=4

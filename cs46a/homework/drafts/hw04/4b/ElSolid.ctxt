@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=side
+comment0.target=ElSolid(double)
+comment0.text=\n\ A\ constructor\ that\ takes\ the\ side\ of\ the\ cube\ as\n\ a\ double\ parameter.\n\ @param\ side\ of\ the\ cube\n
+comment1.params=
+comment1.target=double\ getSide()
+comment1.text=\n\ Returns\ the\ side\ of\ the\ object.\n\ @return\ the\ side\n
+comment2.params=
+comment2.target=double\ volume()
+comment2.text=\n\ Returns\ the\ volume\ of\ this\ el-solid\n\ @return\ the\ volume\n
+comment3.params=delta
+comment3.target=void\ grow(double)
+comment3.text=\n\ Changes\ the\ value\ of\ x\ by\ a\ given\ delta.\n\ @param\ delta\ increases\ the\ value\ of\ all\ sides\n
+numComments=4

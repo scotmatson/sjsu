@@ -1,0 +1,26 @@
+Section 15
+
+A.
+  1) Done.
+  2) Done. It passed.
+  3) Done.
+  4) .toLowerCase().equals()
+  5) The contains method. It is much more succinct.
+
+B.
+  1) public boolean fill(int row, int column) {return !(row == 0 && column == 0);}
+  2) public boolean fill(int row, int column) {return (row == 0 && column == 0);}
+  3) public boolean fill(int row, int column) { return !(row % 2 == 0);}
+  4) public boolean fill(int row, int column) { return !(row == 1 && column % 2);}
+  5) public boolean fill(int row, int column) { return !(row == 0 && column == 0);}
+  6) public boolean fill(int row, int column) { return (row + column % 2 == 0);}
+  7) public boolean fill(int row, int column) { return (column % 2 == 0 || row % 2 == 0);}
+  8) public boolean fill(int row, int column) { return (row > && column < 7);}
+  9) public boolean fill(int row, int column) { return (row > && column < 7) && (column > && row < 7);}
+  10) public boolean fill(int row, int column) { return ();}
+
+C.
+  1) Done.
+  2) Done.
+  3) Done.
+  4) Done. She escapes.

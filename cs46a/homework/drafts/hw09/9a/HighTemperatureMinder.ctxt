@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=temperatures
+comment0.target=HighTemperatureMinder(int[])
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ HighTemperatureMinder\n\ @param\ temperatures\ the\ array\ of\ temperatures\n
+comment1.params=
+comment1.target=double\ average()
+comment1.text=\n\ Returns\ the\ average\ of\ the\ temperatures\ in\ the\ array\n\ @return\ average\ The\ average\ of\ all\ tempatures\n
+comment2.params=
+comment2.target=int\ biggestChange()
+comment2.text=\n\ Calculates\ the\ biggest\ difference\ between\ two\ consecutive\ days\n\ @return\ biggestChange\ The\ greatest\ temperature\ difference\n
+comment3.params=otherMinder
+comment3.target=boolean\ theSame(HighTemperatureMinder)
+comment3.text=\n\ Returns\ true\ if\ this\ HighTemperatureMinder\ contains\ the\ same\ values\ in\ \n\ the\ same\ order\ as\ otherMinder\n\ @param\ otherMinder\ Another\ instance\ of\ a\ Temperature\ Minder\ class\n\ @return\ theSame\ Returns\ true\ if\ the\ values\ share\ equality\ and\ order\n
+numComments=4

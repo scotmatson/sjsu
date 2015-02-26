@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StudentManager()
+comment0.text=\n\ Constructs\ an\ empty\ StudentManager.\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ String\ representation\ of\ the\ StudentManager\n\ \n\ @return\ strStud\ StudentManager\ as\ String.\n
+comment2.params=s
+comment2.target=void\ add(Student)
+comment2.text=\n\ Adds\ a\ student\ to\ this\ StudentManager.\n\ \n\ @param\ s\ The\ student\ to\ add..\n
+comment3.params=name
+comment3.target=Student\ findStudent(java.lang.String)
+comment3.text=\n\ Get\ the\ first\ instance\ of\ the\ student\ with\ the\ given\ name\ or\ return\ null\ if\ student\n\ does\ not\ exist\n\ \n\ @param\ name\ The\ name\ of\ the\ student\ to\ find.\n\ @return\ studentProfile\ Information\ associated\ with\ a\ single\ student\n
+comment4.params=
+comment4.target=double\ classAverage()
+comment4.text=\n\ Gets\ the\ class\ average,\ otherwise\ returns\ null\n\ \n\ @return\ classAverage\ The\ average\ class\ score\n
+numComments=5

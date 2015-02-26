@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=x\ y\ width
+comment0.target=DiscoFloor(int,\ int,\ int)
+comment0.text=\n\ Creates\ a\ DiscoFloor\ \n\ @param\ x\ the\ x\ coordinate\ of\ the\ upper\ left-hand\ \n\ corner\ of\ the\ floor\n\ @param\ y\ the\ y\ coordinate\ of\ the\ upper\ left-hand\ \n\ corner\ of\ the\ floor\n\ @param\ width\ the\ width\ and\ height\ of\ each\ tile\n
+comment1.params=
+comment1.target=void\ draw()
+comment1.text=\n\ Draws\ this\ disco\ floor.\n
+comment2.params=
+comment2.target=Color\ randomColor()
+comment2.text=\n\ Randomly\ returns\ a\ Color\ object\ either\ ed,\ green,\ blue,\ yellow,\ magenta,\ and\ cyan.\n\ @return\ color\ Returns\ a\ random\ color\ value.\n
+numComments=3

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Train()
+comment0.text=\n\ Default\ constructor\ positioning\ the\ train\ at\ the\n\ start\ of\ the\ track\ headings\ towards\ the\ end.\n
+comment1.params=numberOfStops
+comment1.target=void\ move(int)
+comment1.text=\n\ Moves\ the\ train\ to\ a\ position\ in\ the\ current\ direction\n\ @param\ numberOfStops\ moves\ the\ train\ nth\ number\ of\ stops\n
+comment2.params=
+comment2.target=void\ turn()
+comment2.text=\n\ Faces\ the\ train\ in\ the\ opposite\ direction\n
+comment3.params=
+comment3.target=int\ distanceToStart()
+comment3.text=\n\ Returns\ the\ distance\ to\ the\ start\ of\ the\ track\ from\ the\ current\ position\n\ @return\ distance\ from\ the\ start\ of\ the\ track\n
+comment4.params=
+comment4.target=int\ distanceToEnd()
+comment4.text=\n\ Returns\ the\ distance\ to\ the\ end\ of\ the\ track\ from\ the\ current\ position\n\ @return\ distance\ to\ the\ end\ of\ the\ track\n
+numComments=5

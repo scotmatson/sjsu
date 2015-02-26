@@ -1,0 +1,265 @@
+; Course: CS46B
+; Section: 11
+; Author: Scot Matson (009602502)
+; Date: 01 / 30 / 2015
+; Lab Assn: 01
+
+ A. 1) Done.
+    2) Done.
+    3) Done.
+    4) Done.
+
+ B. 1) Error:(10, 8) java: ArrayListAddressBook is not abstract and does not
+       override abstract method remove(java.lang.String,java.lang.String) in AddressBook
+
+    2) The remove() method is not overridden
+    3) A drop-down list appears which gives options for auto-generating code.
+       Selecting remove has auto-populated my src file with the missing remove method.
+    4) The abstract class error is no longer present.
+
+ C. 1) Missing methods, constructor has no arguments.
+    2) Item.java
+    3) Done. Getters/Setters are automatically populated into my code for the new
+       instance variables.
+    4)Done.
+
+ D. 1) Error:(24, 23) java: constructor Item in class Item cannot be applied to given types;
+       required: no arguments
+       found: java.lang.String,java.lang.String,java.lang.String
+       reason: actual and formal argument lists differ in length
+
+    2) public Item(String, String, String);
+
+    3) public Item (String name, String key, String value)
+       {
+          this.name = name;
+          this.key = key;
+          this.value = value;
+       }
+
+ E. 1) My IDE does not give me the option to run an Java application which does not
+       have a defined main method.
+    2) Done.
+       A variable name is suggested using the same Data Type
+    3) It is suggested that I use the JFFileChooser constructor.
+    4) Again, suggestive text shows me available options which are compatible with my program
+       based upon the current code I have written.
+    5) Yes.
+    6) AddressBook book = new ArrayListAddressBook();
+    7) Done.
+
+ F. 1) I receive this message, Process finished with exit code 0
+    2) book.get("Horstmann", "Phone");
+    3) book.get("Hosrtmann", "Email");
+    4) The program is looking up the name of the instructor, finding the key and
+       then returning the releated value
+
+ G. 1) Cannnot resolve symbol 'Collections'
+    2) Not suitable method found for min
+    3) Error:(1, 8) java: Item is not abstract and does not override
+       abstract method compareTo(java.lang.Object) in java.lang.Comparable
+    4) The Item class
+    5)
+    6)
+    7)    @Override
+          public int compareTo(Object o) {
+              Item other = (Item) o;
+              if(name.compareTo(other.name) != 0) {
+                  return name.compareTo(other.name);
+              }
+              else if (key.compareTo(other.key) == 0) {
+                  return value.compareTo(other.value);
+              }
+
+              return 0;
+          }
+    8) The method has not yet been declared so an error is being thrown.
+    9) Item@42110406
+
+ H. 1) It looks like it is printing out a memory address for Item
+    2) Item
+    3)    @Override
+          public String toString() {
+              return "*** Item*** \nName: " + name + "\nKey:" + key + "\nValue: " + value;
+          }
+    4)(408) 924-5085
+      Cay.Horstmann@sjsu.edu
+      *** Item***
+      Name: Chun
+      Key:Phone
+      Value: (408) 924-5137
+
+    5)    /**
+           * Iterate through a list of items and if found return true.
+           *
+           * @param anItem
+           * @return True if the item exists
+           */
+    6) false
+       Expected: true
+       false
+       Expected: false
+
+    7) Items: Dino Food Meat
+              Fred Wife Wilma
+       anItem:Dino Food Meat
+       1st: Returns false (Should return False)
+       2st: Returns false (Should return True)
+    8) Because it is comparing the memory address rather than the value
+    9) An equals method needs to be implemented in the Item class
+    10) @Override
+        public boolean equals(Object obj) {
+           Item other = (Item) obj;
+           if (name.equals(other.name)) {
+               if (key.equals(other.key)) {
+                   if (value.equals(other.value)) {
+                       return true;
+                   }
+               }
+           }
+           return false;
+       }
+    11)true
+       Expected: true
+       false
+       Expected: false
+
+ I. 1) Done. Incompatible type error. Needs to be cast to type Item
+    2) Done.
+    3) Done.
+    4)    /**
+           Returns the smallest element in the array larger than a given value.
+           @param values an array of non-null Comparable values
+           @param after a value that may or may not be present in the array
+           @return the smallest value in the array larger than value, or null if there isn't one
+           */
+          public static Comparable smallestAfter(Comparable[] values, Comparable after) {
+              Comparable smallestInRange = largest(values);
+              if (after.compareTo(smallestInRange) == 0) {
+                  return null;
+              } else {
+                  for (int i = 0; i < values.length; ++i) {
+                      if (values[i].compareTo(after) > 0 && values[i].compareTo(smallestInRange) < 0) {
+                          smallestInRange = values[i];
+                      }
+                  }
+              }
+              return smallestInRange;
+          }
+
+          /**
+           * Returns the largest element in the Array.
+           * Helper method for smallestAfter()
+           * @param values an array of non-null Comparable values
+           * @return the largest value in values
+           */
+          public static Comparable largest(Comparable[] values)
+          {
+              Comparable largestSoFar = values[0];
+              for (int i = 1; i < values.length; ++i)
+                  if(values[i].compareTo(largestSoFar) > 0)
+                      largestSoFar = values[i];
+              return largestSoFar;
+          }
+    5)6
+      Expected: 6
+
+ J. 1) By storing the value of book.getFirst and giving it as an argument to book.getNext()
+    2) By storing the result of #1 and giving it as an argument once again.
+       System.out.println(book.getNext(currentContact));
+    3) Since the get next method already prints in sorted order we simply have to iterate through
+       all the items in the list using the previous item as the argument for getNext.
+    5) while (book.getNext(contact) != null) {
+         System.out.println(book.getNext(contact));
+         contact = book.getNext(contact);
+       }
+
+    5) *** Item***
+       Name: Horstmann
+       Key:Phone
+       Value: (408) 924-5085
+       *** Item***
+       Name: Khuri
+       Key:Phone
+       Value: (408) 924-5176
+       *** Item***
+       Name: Kim
+       Key:Phone
+       Value: (408) 924-5122
+       *** Item***
+       Name: Lin
+       Key:Phone
+       Value: (408) 924-5121
+       *** Item***
+       Name: Meldal
+       Key:Phone
+       Value: (408) 924-4151
+       *** Item***
+       Name: Moh
+       Key:Phone
+       Value: (408) 924-5088
+       *** Item***
+       Name: O'Brien
+       Key:Email
+       Value: kathleen.a.obrien@sjsu.edu
+       *** Item***
+       Name: Pearce
+       Key:Phone
+       Value: (408) 924-5065
+       *** Item***
+       Name: Pollett
+       Key:Phone
+       Value: (408) 924-5145
+       *** Item***
+       Name: Smith
+       Key:Phone
+       Value: (408) 924-5153
+       *** Item***
+       Name: Stamp
+       Key:Phone
+       Value: (408) 924-5094
+       *** Item***
+       Name: Taylor
+       Key:Phone
+       Value: (408) 924-5124
+       *** Item***
+       Name: Teoh
+       Key:Phone
+       Value: (408) 924-7227
+       *** Item***
+       Name: Tseng
+       Key:Phone
+       Value: (408) 924-7255
+
+    7) Done.
+    8) Done.
+    9)    public void printSorted(Comparable[] values)
+          {
+              Comparable currIndex = smallest(values);
+              while (smallestAfter(values, currIndex) != null) {
+                  System.out.println(smallestAfter(, currIndex));
+                  currIndex = smallestAfter(values, currIndex);
+              }
+          }
+
+    10)        Integer[] values = {2, 6, 5, 4, 1, 7};
+               Util.printSorted(values);
+               System.out.println("Expecting: 1, 2, 4, 5, 6, 7");
+
+    11) 1
+        2
+        4
+        5
+        6
+        7
+        Expecting: 1, 2, 4, 5, 6, 7
+
+    12)Mary
+       a
+       had
+       lamb
+       little
+       Expecting: Mary a had lamb little
+
+     13) It made code much more reusable and maintainable
+

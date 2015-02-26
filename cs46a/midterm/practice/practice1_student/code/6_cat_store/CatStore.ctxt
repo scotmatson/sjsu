@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=cats\ expecting
+comment0.target=CatStore(int,\ int)
+comment0.text=\n\ Create\ a\ cat\ store\ starting\ off\ with\ a\ certain\ number\ of\ cats,\ with\ some\ of\ them\ expecting\ \n\ @param\ cats\ -\ the\ number\ of\ cats\n\ @param\ expecting\ -\ the\ number\ of\ cats\ that\ are\ expecting\ (pregnant)\n
+comment1.params=litterSize
+comment1.target=void\ haveKittens(int)
+comment1.text=\n\ One\ of\ your\ cats\ has\ kittens\n\ @param\ litterSize\ -\ the\ number\ of\ kittens\ that\ have\ been\ born.\n
+comment2.params=
+comment2.target=void\ anotherExpecting()
+comment2.text=\n\ One\ of\ your\ cats\ becomes\ pregnant\n\ \n
+comment3.params=expecting
+comment3.target=void\ sellCat(boolean)
+comment3.text=\n\ You\ sell\ a\ cat.\ \ The\ parameter\ tells\ you\ whether\ or\ not\ the\ cat\ you\ sold\ was\ expecting\n\ @param\ expecting\ -\ a\ boolean\ that\ says\ whether\ or\ not\ the\ cat\ was\ expecting.\n
+comment4.params=
+comment4.target=int\ getNumKittens()
+comment4.text=\n\ This\ method\ returns\ the\ total\ number\ of\ kittens\ that\ have\ been\ born\ since\ you\ started\ your\ cat\ store.\n\ @return\ integer\ -\ the\ total\ number\ of\ kittens\n
+comment5.params=
+comment5.target=int\ getNumLitters()
+comment5.text=\n\ This\ method\ returns\ the\ number\ of\ times\ a\ cat\ has\ given\ birth\ in\ your\ cat\ store\ (the\ total\ number\ of\ litters)\n\ @return\ integer\ -\ the\ total\ number\ of\ litters\ of\ kittens\n
+comment6.params=
+comment6.target=int\ getNumCats()
+comment6.text=\ \n\ This\ method\ returns\ the\ total\ number\ of\ cats\ in\ the\ cat\ store\n\ @return\ integer\ -\ the\ total\ number\ of\ cats\ \n
+comment7.params=
+comment7.target=int\ getNumExpecting()
+comment7.text=\n\ This\ method\ returns\ the\ total\ number\ of\ cats\ in\ the\ store\ that\ are\ currently\ pregnant\ (expecting)\n\ @return\ integer\ -\ the\ number\ of\ cats\ that\ are\ expecting.\n
+numComments=8

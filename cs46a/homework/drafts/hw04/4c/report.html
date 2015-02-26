@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="Version" content="0.3"/>
+<meta name="Submission" content="14091619597199118415408365275"/>
+<meta name="Problem" content="14091417008hc1kv1wekz9otniznnqkz5yy"/>
+<meta name="Level" content="1"/>
+<meta name="Time" content="2014-09-17T02:59:37Z"/>
+<meta name="ID" content="Cashier"/>
+<meta name="User" content="14091619125256623579895196995"/>
+<style type="text/css">
+.header {font-weight: bold;}
+.pass {color: green;}
+.fail {color: red;}
+table.file td {padding-right: 1em; background: #FFF; }
+.linenumber {color: gray;}
+.footnote {font-size: 0.7em;}
+table {font-size: 0.9em;}
+td, th { background: #EEE; margin: 0.5em; padding: 0.25em;}
+table.output td {vertical-align: top;}
+div.footnotes { border-top: 1px solid gray; padding-top: 0.5em; }
+</style>
+<title>Report</title>
+</head>
+<body>
+<p class="header">Running CashierTester</p>
+<pre class="output">null
+<span class="pass">Expected: null</span>
+</pre>
+<p class="header">CheckStyle</p>
+<p class="caption">Cashier.java:</p>
+<pre class="output">Ok</pre>
+<span class="pass">pass</span><p class="header">Student files</p>
+<p class="caption">Cashier.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+<span class="linenumber"> 44</span>
+<span class="linenumber"> 45</span>
+<span class="linenumber"> 46</span>
+<span class="linenumber"> 47</span>
+<span class="linenumber"> 48</span>
+<span class="linenumber"> 49</span>
+<span class="linenumber"> 50</span>
+<span class="linenumber"> 51</span>
+<span class="linenumber"> 52</span>
+<span class="linenumber"> 53</span>
+<span class="linenumber"> 54</span>
+<span class="linenumber"> 55</span>
+<span class="linenumber"> 56</span>
+</pre></td><td><pre>/**
+ * Models a cashier in a store making a transaction
+ * and giving change
+ */
+public class Cashier
+{
+    private String name;
+    private double owed;
+    private double paid;
+    
+    /**
+     * Default constructor creates an alias for the cashier
+     * when no account is present is given.
+     */
+    public Cashier() {
+        this.name = "Thomas McAllister";
+    }
+    
+    /**
+     * Constructs a new object given the user's
+     * name as an argument.
+     * @param name is the name of the cashier
+     */
+    public Cashier(String name) {
+        this.name = name;
+    }
+    
+    /**
+     * Gets the name of the cashier.
+     * @return the name of the cashier
+     */
+    public String getName() {
+        return name;
+    }
+    
+    /**
+     * Given the amount received from the customer,
+     * the amount paid and the balance remaining is updated.
+     * @param owed the amount still owed
+     * @param paid the amount still paid
+     */
+    public void setCurrentTransaction(double owed, double paid) {
+        
+    }
+    
+    /**
+     * Takes the amount paid by the customer in excess of the
+     * balanace and returns the change in the largest
+     * bills/coins possible.
+     * @return the customers change
+     */
+    public Change getChange() {
+        Change change = new Change(0, 0, 0, 0);
+        return null;
+    }
+}
+</pre></td></tr></table>
+<p class="header">Other files</p>
+<p class="caption">CashierTester.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+</pre></td><td><pre>
+/**
+ * Tester for Cashier object
+ */
+public class CashierTester
+{
+   public static void main(String[] args)
+   {
+       Cashier sam = new Cashier("Sam");
+       sam.setCurrentTransaction(4.35, 10.0);
+       Change change = sam.getChange();
+       System.out.println(change);
+       System.out.println("Expected: null" );
+   }
+}
+</pre></td></tr></table>
+<p class="caption">Change.java:</p>
+<table class="file"><tr><td><pre><span class="linenumber">  1</span>
+<span class="linenumber">  2</span>
+<span class="linenumber">  3</span>
+<span class="linenumber">  4</span>
+<span class="linenumber">  5</span>
+<span class="linenumber">  6</span>
+<span class="linenumber">  7</span>
+<span class="linenumber">  8</span>
+<span class="linenumber">  9</span>
+<span class="linenumber"> 10</span>
+<span class="linenumber"> 11</span>
+<span class="linenumber"> 12</span>
+<span class="linenumber"> 13</span>
+<span class="linenumber"> 14</span>
+<span class="linenumber"> 15</span>
+<span class="linenumber"> 16</span>
+<span class="linenumber"> 17</span>
+<span class="linenumber"> 18</span>
+<span class="linenumber"> 19</span>
+<span class="linenumber"> 20</span>
+<span class="linenumber"> 21</span>
+<span class="linenumber"> 22</span>
+<span class="linenumber"> 23</span>
+<span class="linenumber"> 24</span>
+<span class="linenumber"> 25</span>
+<span class="linenumber"> 26</span>
+<span class="linenumber"> 27</span>
+<span class="linenumber"> 28</span>
+<span class="linenumber"> 29</span>
+<span class="linenumber"> 30</span>
+<span class="linenumber"> 31</span>
+<span class="linenumber"> 32</span>
+<span class="linenumber"> 33</span>
+<span class="linenumber"> 34</span>
+<span class="linenumber"> 35</span>
+<span class="linenumber"> 36</span>
+<span class="linenumber"> 37</span>
+<span class="linenumber"> 38</span>
+<span class="linenumber"> 39</span>
+<span class="linenumber"> 40</span>
+<span class="linenumber"> 41</span>
+<span class="linenumber"> 42</span>
+<span class="linenumber"> 43</span>
+<span class="linenumber"> 44</span>
+<span class="linenumber"> 45</span>
+<span class="linenumber"> 46</span>
+<span class="linenumber"> 47</span>
+<span class="linenumber"> 48</span>
+<span class="linenumber"> 49</span>
+<span class="linenumber"> 50</span>
+<span class="linenumber"> 51</span>
+<span class="linenumber"> 52</span>
+<span class="linenumber"> 53</span>
+<span class="linenumber"> 54</span>
+<span class="linenumber"> 55</span>
+<span class="linenumber"> 56</span>
+<span class="linenumber"> 57</span>
+<span class="linenumber"> 58</span>
+<span class="linenumber"> 59</span>
+<span class="linenumber"> 60</span>
+<span class="linenumber"> 61</span>
+<span class="linenumber"> 62</span>
+</pre></td><td><pre>
+/**
+ * An object representng the bills and coins to give as change
+ */
+public class Change
+{
+    private int dollars;
+    private int quarters;
+    private int dimes;
+    private int nickels;
+    
+    /**
+     * Constructs a Change object with the given values
+     * @param dollars the number of dollars to give as change
+     * @param quarters the number of quarters to give as change
+     * @param dimes the number of dimes to give as change
+     * @param nickels the number of nickels to give as change
+     */
+    public Change(int dollars, int quarters, int dimes, int nickels)
+    {
+        this.dollars = dollars;
+        this.quarters = quarters;
+        this.dimes = dimes;
+        this.nickels = nickels;
+    }
+    
+    /**
+     * Gets the number of dollars in this Change object
+     * @return the number of dollars in this Change object
+     */
+    public int getDollars()
+    {
+        return dollars;
+    }
+    
+    /**
+     * Gets the number of quarters in this Change object
+     * @return the number of quarters in this Change object
+     */
+    public int getQuarters()
+    {
+        return quarters;
+    }
+    
+    /**
+     * Gets the number of dimes in this Change object
+     * @return the number of dimes in this Change object
+     */
+    public int getDimes()
+    {
+        return dimes;
+    }
+    
+    /**
+     * Gets the number of nickels in this Change object
+     * @return the number of nickles in this Change object
+     */
+    public int getNickels()
+    {
+        return nickels;
+    }
+}
+</pre></td></tr></table>
+<p class="header">Score</p>
+<p class="score">2/2</p>
+<p class="download"><a href="Cashier.signed.zip">Download</a></p>
+<div class="footnotes"><div class="footnote">2014-09-17T02:59:37Z</div>
+</div>
+</body></html>

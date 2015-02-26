@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=width\ depth\ windowX\ windowY
+comment0.target=void\ makeRoom(int,\ int,\ double,\ double)
+comment0.text=\n\ This\ method\ sets\ up\ the\ room.\ Don't\ look\ inside.\n\ @param\ width\ the\ width\ of\ the\ room\n\ @param\ depth\ the\ depth\ of\ the\ room\n\ @param\ windowX\ the\ x-coordinate\ of\ the\ window's\ center\n\ @param\ windowY\ the\ y-coordinate\ of\ the\ window's\ center\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=Lab6()
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=void\ goToWall()
+comment5.params=
+comment5.target=void\ findWindow()
+numComments=6

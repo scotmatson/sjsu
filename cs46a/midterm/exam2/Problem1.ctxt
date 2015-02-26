@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=list
+comment0.target=double\ find(Student[])
+comment0.text=\n\ Finds\ the\ highest\ grade\n
+comment1.params=list
+comment1.target=int\ count(Student[])
+comment1.text=\n\ Get\ the\ number\ of\ Students\ with\ C's\n
+numComments=2

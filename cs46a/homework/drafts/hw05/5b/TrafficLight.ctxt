@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=theX\ theY
+comment0.target=TrafficLight(int,\ int)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ TrafficLight\n
+comment1.params=
+comment1.target=void\ draw()
+comment1.text=\n\ Creates\ the\ drawing\ of\ the\ traffic\ light\n
+comment2.params=
+comment2.target=java.lang.String\ getLight()
+comment2.text=\n\ Retrieves\ the\ state\ of\ the\ current\ light\n\ @return\ light\ color\ holding\ active\ state\n
+comment3.params=
+comment3.target=void\ changeLight()
+comment3.text=\n\ Modifies\ the\ state\ of\ the\ light\n
+numComments=4

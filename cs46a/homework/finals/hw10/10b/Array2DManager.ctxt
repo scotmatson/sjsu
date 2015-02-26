@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=theRows\ theColumns
+comment0.target=Array2DManager(int,\ int)
+comment0.text=\n\ Constructor\ for\ Array2DManager\ class\n\ @param\ theRows\ The\ number\ of\ rows\ in\ an\ Array\n\ @param\ theColumns\ The\ number\ of\ columns\ in\ an\ Array\n
+comment1.params=
+comment1.target=int\ sum()
+comment1.text=\n\ Gets\ the\ sum\ of\ all\ the\ integers\ in\ the\ array\ for\ this\ Array2DManager\n\ @return\ sumOfInts\ The\ sum\ of\ all\ integers\ in\ the\ Array\n
+comment2.params=array
+comment2.target=int\ sum(int[])
+comment2.text=\n\ Gets\ the\ sum\ of\ the\ given\ 2d\ array\n\ @param\ array\ An\ array\ of\ integer\ values\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ A\ string\ representation\ of\ a\ 'm',\ 'x',\ 'n'\ array\ with\ 'm'\ rows\ each\ of\ \n\ which\ contains\ the\ 'n'\ numbers\ in\ the\ columns\ of\ that\ row,\ separated\ by\ commas.\n\ @return\ \n
+numComments=4

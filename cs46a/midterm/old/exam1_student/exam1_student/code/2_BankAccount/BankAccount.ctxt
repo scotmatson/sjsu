@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=initialBalance
+comment0.target=BankAccount(double)
+comment0.text=\n\ Constructs\ a\ BankAccount\ object\ given\ an\ opening\ balance\n\ @param\ initialBalance\ the\ opening\ balance\ of\ the\ account\n
+comment1.params=
+comment1.target=double\ getBalance()
+comment1.text=\n\ The\ current\ customer\ account\ balance\n\ @return\ balance\ the\ current\ account\ balance\n
+comment2.params=amount
+comment2.target=void\ deposit(double)
+comment2.text=\n\ Adds\ amount\ to\ the\ balance\ if\ amount\ is\ greater\ than\ 0\n\ @param\ amount\ amount\ deposited\ by\ customer\n
+comment3.params=amount
+comment3.target=void\ withdraw(double)
+comment3.text=\n\ Withdraws\ money\ from\ the\ account\n\ @param\ amount\ the\ amount\ to\ withdraw\n\n
+numComments=4

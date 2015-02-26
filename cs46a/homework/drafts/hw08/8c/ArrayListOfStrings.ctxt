@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayListOfStrings()
+comment0.text=\n\ Constructor\ method\ that\ instantiates\ a\ new\ ArrayList\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=text
+comment2.target=void\ add(java.lang.String)
+comment2.text=\n\ Adds\ this\ string\ to\ the\ array\ list\ of\ strings\n\ @param\ text\ The\ string\ to\ be\ added.\n
+comment3.params=
+comment3.target=void\ firstToUpperCase()
+comment3.text=\n\ Replaces\ every\ element\ in\ the\ list\ with\ a\ version\n\ of\ the\ String\ in\ which\ the\ first\ character\ is\ uppercase.\n
+comment4.params=index1\ index2
+comment4.target=void\ swap(int,\ int)
+comment4.text=\n\ Swaps\ the\ element\ at\ index1\ with\ the\ element\ at\ index2.\n\ @param\ index1\ Element\ to\ be\ swapped.\n\ @param\ index2\ Element\ to\ be\ swapped.\n
+comment5.params=
+comment5.target=java.util.ArrayList\ endsWithE()
+comment5.text=\n\ Returns\ a\ new\ array\ list\ containing\ only\ those\ Strings\ that\ in\ end\ lowercase\ e.\n\ @return\ endsWithE\ A\ list\ of\ strings\ that\ end\ with\ the\ letter\ 'e'.\n
+numComments=6

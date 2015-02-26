@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Staff()
+comment0.text=\n\ Creates\ an\ empty\ Staff\ containing\ no\ Employee\n
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment1.text=\n\ Transforms\ the\ employees\ ArrayList\ into\ a\ String\n\ @return\ empStr\ The\ employees\ ArrayList\ as\ a\ comma\ delimited\ String\ wrapped\ in\ brackets\n
+comment2.params=e
+comment2.target=void\ add(Employee)
+comment2.text=\n\ Adds\ the\ Employee\ to\ this\ Staff\n\ @param\ e\ The\ employee\ to\ add\n
+comment3.params=
+comment3.target=java.lang.String\ getHighestPaid()
+comment3.text=\n\ Returns\ the\ name\ of\ the\ employee\ with\ the\ highest\ average\ salary\n\ @return\ highestPaid\ The\ highest\ paid\ employee\n
+comment4.params=target
+comment4.target=int\ countOver(double)
+comment4.text=\n\ Returns\ the\ number\ of\ Employees\ whose\ average\ weekly\n\ salary\ to\ date\ is\ over\ target\n\ @param\ target\ The\ target\ weekly\ salary\n\ @return\ overTarget\ The\ number\ of\ employees\ over\ the\ target\n
+numComments=5

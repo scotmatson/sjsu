@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=view\ season\ occupants
+comment0.target=Room(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\n\ Initializes\ a\ hotel\ reservation\n\ @param\ view\ the\ desired\ view\ from\ the\ window\n\ @param\ season\ the\ season\ in\ which\ the\ reservation\ is\ being\ made\n\ @param\ occupants\ the\ number\ of\ occupants\ staying\ at\ in\ the\ room\n
+comment1.params=
+comment1.target=double\ getCost()
+comment1.text=\n\ Calculates\ the\ total\ cost\ of\ the\ room\ based\ upon\ the\ reservations\ made\n\ @return\ cost\ the\ total\ cost\ of\ the\ room\n
+comment2.params=occupants
+comment2.target=void\ setOccupants(int)
+comment2.text=\n\ Sets\ the\ number\ of\ occupants\ which\ will\ be\ staying\ in\ the\ room\n\ @param\ occupants\ the\ number\ of\ guests\ occupying\ the\ room\n
+comment3.params=
+comment3.target=java.lang.String\ getSeason()
+comment3.text=\n\ Returns\ winter/summer\ based\ upon\ the\ season\ that\ was\ requested\ by\ the\ customer\n\ @return\ season\ the\ season\ that\ the\ reservation\ is\ made\n
+numComments=4

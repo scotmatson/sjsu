@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Train()
+comment0.text=\n\ Conststucts\ a\ Train\ positioned\ at\ the\ start\ and\ facing\ the\ \n\ end\ for\ the\ track\n
+comment1.params=
+comment1.target=void\ addFuel()
+comment1.text=\n\ 'Fills'\ the\ train\ with\ 4\ 'power\ units'\ of\ fuel\ to\ a\ max\ of\ 8\n
+comment2.params=
+comment2.target=int\ getPowerUnits()
+comment2.text=\n\ @return\ currentFuel\ -\ the\ number\ of\ 'power\ units'\ remaining\n
+comment3.params=numberOfStops
+comment3.target=void\ move(int)
+comment3.text=\n\ Moves\ the\ train\ the\ specified\ number\ of\ stops\ in\ the\ current\ direction\n\ @param\ numberOfStops\ the\ number\ of\ stops\ to\ move\n
+comment4.params=
+comment4.target=void\ turn()
+comment4.text=\n\ Changes\ the\ direction\ of\ the\ train\n
+comment5.params=
+comment5.target=int\ distanceToStart()
+comment5.text=\n\ Gets\ the\ distance\ to\ (or\ from)\ the\ start\ of\ the\ track\ in\ miles\n\ @return\ the\ distance\ to\ (or\ from)\ the\ start\ of\ the\ track\ in\ miles\n
+comment6.params=
+comment6.target=int\ distanceToEnd()
+comment6.text=\n\ Gets\ the\ distance\ to\ (or\ from)\ the\ end\ of\ the\ track\ in\ miles\n\ @return\ the\ distance\ to\ (or\ from)\ the\ end\ of\ the\ track\ in\ miles\n
+numComments=7

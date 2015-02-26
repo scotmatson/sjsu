@@ -1,0 +1,37 @@
+Section 15
+  A.
+    1. Done
+    2. 50
+    3. Horizontal-(0,0)(2,0) = 2, Vertical-(0,0)(0,2) = 2, 45deg-(0,0)(2,2) = 2.83...
+        because Pythagorean theorem has been proven this to be true.
+
+  B.
+    1. SF-(37.7833° N, 122.4167° W), SJ-(37.3333° N, 121.9000° W)
+       SF-(0.6594429873 N, 2.136574474 W), SJ-(0.6515890056 N, 2.127556358 W)
+    2. Done
+    3. 42.05 miles
+    4. 2565.52 miles
+
+  C.
+    1. Done
+    2. designer
+    3. 2-letters = flipped first & last, 1-letter = out of bounds exception, 0-letters = out of bounds exception
+    4. "Java programming is easy and enjoyable" => "eavj grogramminp is yase and enjoyable"
+    5. Done
+    6. "Java programming is easy and enjoyable" => "Jvaa porgramming is easay and ejnoyable"
+    7. Done
+    8. Done
+    9. Done
+    10. Done
+
+  D.
+    1.
+    2.
+    3.
+    4.
+    5.
+    6.
+    7.
+    8.
+    9.
+    10.

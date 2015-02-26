@@ -1,0 +1,84 @@
+Section 15, Lab 10
+
+A.
+  1)  Done.
+  2)  java.lang.StringIndexOutOfBoundsException: String index out of range: 4
+      at java.lang.String.charAt(String.java:646)
+      at WordAnalyzer.firstRepeatedCharacter(WordAnalyzer.java:26)
+      at WordAnalyzerTester.test(WordAnalyzerTester.java:14)
+      at WordAnalyzerTester.main(WordAnalyzerTester.java:7)
+  3)  if (ch == word.charAt(i + 1))
+  4)  StringIndexOutOfBoundsException, NullPointerException?
+  5)  The conditional statement is comparing our current index with the next index.
+      With the current structure this forces the program to test an index which
+      does not exist, thus, throwing an error.
+
+      To fix it we need to prevent our index from reaching the last character in
+      the String. To do this we can simply set our condition to .length()-1.
+
+B.
+  1)  4 repeated characters.
+        Expected: 4
+      0 repeated characters.
+        Expected: 0
+      3 repeated characters.
+        Expected: 4
+  2)  4 repeated characters.
+        Expected: 4
+      0 repeated characters.
+        Expected: 0
+      The third set of output values do not print because of the breakpoint. The
+      program is in a suspended state for debugging.
+  3)  Selecting 'Step Into' has forced the program to jump into the function being
+      called.
+  4)  Selecting 'Step' executes the next statement in the program.
+  5)  Step Into should be used on the current line of code because the error most
+      likely exists the function that is being called on this line.
+  6)  c = 0, i = 1
+      c = 0, i = 2
+      c = 1, i = 2
+      c = 1, i = 3
+      c = 1, i = 4
+      c = 1, i = 5
+      c = 1, i = 6
+      c = 2, i = 6
+      c = 2, i = 7
+      c = 2, i = 8
+      c = 2, i = 9
+      c = 2, i = 10
+      c = 3, i = 10
+      c = 3
+  7)  String s = "aabbcdaaaabb" is the word instance variable. We obviously have
+      4 cases where characters repeat, but we are only returning 3 instead
+      of 4.
+  8)  The program finished executing.
+  9)  This algorithm does not work in a case such as this where a character group
+      is present at element 0. It is attempting to look ahead for repeated values
+      and look behind to test the start of a group. At index 0 this creates a problem
+      since no elements preceed index 0 to test against. When we increment forward we
+      no longer meet our conditions and miss a count.
+  10) You cannot start the loop at 0 because it will result in an IndexOutOfBoundsException
+  11)  public int countRepeatedCharacters()
+       {
+         int c = 0;
+         for (int i = 0; i < word.length() - 1; i++)
+         {
+           if (word.charAt(i) == word.charAt(i+1)) // Found reptition
+           {
+             if (i == 0) { ++c; }
+             else if (word.charAt(i - 1) != word.charAt(i))
+             {
+               ++c;
+             }
+           }
+          }
+
+         return c;
+       }
+
+C.
+  1)
+  2)
+  3)
+  4)
+  5)

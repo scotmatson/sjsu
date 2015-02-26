@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/homework.iml" filepath="$PROJECT_DIR$/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw01draft/hw01draft.iml" filepath="$PROJECT_DIR$/hw01draft/hw01draft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw01final/hw01final.iml" filepath="$PROJECT_DIR$/hw01final/hw01final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw02draft/hw02draft.iml" filepath="$PROJECT_DIR$/hw02draft/hw02draft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw02final/hw02final.iml" filepath="$PROJECT_DIR$/hw02final/hw02final.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,67 @@
+#First example from K & R
+	-9
+#Compute 5!
+	120
+#Here come binomial(14, 9) and binomial(14, 5)
+	1
+	6
+	21
+	56
+	126
+	252
+	462
+	792
+	1287
+	2002
+	1
+	10
+	55
+	220
+	715
+	2002
+#Find sqrt(17) the hard way
+	4.125
+	4.123106060606061
+	4.123105625617684
+	17.00000000000019
+#Now sqrt(17) the easy way
+	17
+	4.123105625617661
+#Here is a way to get Pi
+	3.141592653589793
+#sin(pi/2) = 1 and back again
+	1.570796326794866
+	1
+	1.570796326794897
+#cos(pi/2) = 0
+	1.570796326794866
+	3.048134321468666e-14
+#tan(pi/4) = 1
+	0.7853981633974331
+	0.9999999999999695
+#some values for 3-4-5 triangles
+	0.75
+	0.6435011087932844
+	0.6
+	0.7499999999999998
+#Here is e
+	2.718281828459045
+#and log 2
+	0.6931471805599453
+#Take 3 to the 5 power and 5 to the 3 power
+	243
+	125
+#three ways to get sqrt(5)
+	2.23606797749979
+	2.23606797749979
+	2.23606797749979
+#test multiple storage locations
+	55
+	34
+	21
+	13
+	8
+	5
+	3
+	2
+	1

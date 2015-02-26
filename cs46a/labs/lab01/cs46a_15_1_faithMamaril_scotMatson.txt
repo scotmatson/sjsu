@@ -1,0 +1,37 @@
+Section 15
+  Part A:
+    01. Enter the commands [alt] + [f2] to call a 'run program' alert box, enter
+        the text 'bluej' and press [enter].
+    02. Done.
+    03. Done.
+    04. Done.
+    05. Done.
+    06. Done.
+    07. Replaced 'world' with 'Faith Mamaril'.
+    08. An 'Unclosed String Literal' error is received.
+    09. A semi-colon was left off the end of a statement and the error ';'
+        expected was received.
+    10. Received an 'Unclosed String Literal' error. This was fixed by adding
+        a matching '"' to the end of the last System.out.println() statement.
+    11. Received an 'illegal start of expression' error, added three sets of
+        '"', one set in each System.out.println() statement. Additionally added
+        a ';' at the end
+        of the third System.out.println() statement.
+    12. Done.
+
+  Part B:
+    01. After downloading the .zip file from the given hyperlink, the file was
+        extracted using 7zip.
+    02. The directory contents of the zip file was viewed to ensure the
+        existance of the expected files.
+    03. Received message, 'Compiling...' => 'Compiling... .Done'.
+    04. The image of a robot appeared in an external window.
+    05. Another image of a robot appeared, this time within the same frame and
+        just right of the existing robot.
+    06. Right clicked the 'red blob' and invoked the moveForward() method again.
+    07. a - The robot moveRight() method appears to have been called three times
+            followed by a new method call which makes the robot say 'Hello Coder'.
+        b - carol.moveFoward() appears to be making the robot move foward while
+            carol.say() is making the robot speak.
+    08. In the carol.say() method call the string argument was changed from
+        'Hello, Coder' to 'Hello, Faith'.

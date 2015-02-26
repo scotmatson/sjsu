@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Flower()
+comment0.text=\n\ Constructor\ setting\ the\ default\ location\ of\ the\ flower\n\ given\ no\ arguments.\n
+comment1.params=x\ y
+comment1.target=Flower(int,\ int)
+comment1.text=\n\ Constructor,\ given\ an\ x\ and\ y\ coordinate\ sets\ the\ default\n\ location\ of\ the\ flower.\n
+comment2.params=
+comment2.target=void\ draw()
+comment2.text=\n\ Draws\ a\ flower\ to\ the\ canvas\ using\ the\ x\ and\ y\ values\n\ as\ its\ starting\ location\ in\ the\ upper\ left\ corner.\n
+numComments=3

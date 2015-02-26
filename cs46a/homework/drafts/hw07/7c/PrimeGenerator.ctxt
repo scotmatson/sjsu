@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=limit
+comment0.target=PrimeGenerator(int)
+comment0.text=\n\ Creates\ a\ PrimeGenerator\ which\ can\ get\ primes\ up\ to\ the\ limit\n\ @param\ limit\ the\ number\ that\ all\ the\ primes\ must\ be\ less\ than\n
+comment1.params=
+comment1.target=int\ nextPrime()
+comment1.text=\n\ Returns\ the\ next\ prime\ in\ the\ sequence\ starting\ with\ 2\ \n\ up\ to\ the\ last\ prime\ less\ than\ limit.\n\ If\ there\ are\ no\ more\ primes,\ the\ method\ returns\ -1.\n\ @return\ prime\ The\ next\ prime\ number\ in\ the\ sequence.\n
+comment2.params=n
+comment2.target=boolean\ isPrime(int)
+comment2.text=\n\ Returns\ true\ if\ n\ is\ prime\ otherwise\ returns\ false.\n\ @param\ n\ User\ input\ to\ be\ evaluated\ as\ prime.\n\ @return\ isPrime\ true\ if\ number\ input\ is\ prime.\n
+comment3.params=newLimit
+comment3.target=void\ setLimit(int)
+comment3.text=\n\ Sets\ a\ new\ limit\ for\ this\ PrimeGenerator\n\ @param\ newLimit\ Number\ to\ set\ as\ limit.\n
+numComments=4

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=word
+comment0.target=Adjective(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Adjective\n\ @param\ the\ adjective\n
+comment1.params=newWord
+comment1.target=void\ setAdjective(java.lang.String)
+comment1.text=\n\ set\ a\ new\ word\ for\ this\ Adjective\n\ @param\ newWord\ the\ new\ adjective\ to\ set\n
+comment2.params=
+comment2.target=java.lang.String\ getAdjective()
+comment2.text=\n\ gets\ the\ word\ for\ this\ Adjective\n\ @return\ the\ adjective\n
+comment3.params=
+comment3.target=java.lang.String\ superlative()
+comment3.text=\n\ Gets\ the\ superlative\ form\ of\ this\ Adjective\n\ @return\ the\ superlative\ form\n
+numComments=4

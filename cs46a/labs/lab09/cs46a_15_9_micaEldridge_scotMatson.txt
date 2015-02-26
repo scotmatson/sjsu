@@ -1,0 +1,44 @@
+Section 15, Lab 9
+
+A.
+  #1 a, b, c, & e.
+  #2 done.
+  #3 Iterate through each letter of our word.
+     If the letter is a vowel append it to our String.
+  #4 Done.
+  #5 Done.
+
+B.
+  #1 Done. We iterated through the String twice.
+  #2 Iterate through the word again.
+     If the letter is not a vowel append it to our String.
+  #3 Make two Strings, one to capture the vowel and one to capture the non-vowel.
+     After the loop ends append the non-vowel String to the end of the vowel String.
+
+C.
+  #1 The vowels.
+     The non-vowels.
+     result += getNonVowels()
+  #2 The get getNonVowels method.
+  #3 getNonVowels()
+  #4 Looping through the string, if the letter at the current index is not a vowel
+     it will be appended to a storage string. Upon completion of the loop the storage
+     string will be returned.
+  #5 Done.
+
+D.
+  #1 Done.
+  #2 At the beginning.
+     To a temp String memory location.
+     And the end of the String.
+  #3 if letter is a vowel
+     append it to our string instead of counting it
+     when we've found a nonVowel we will print the current vowel group
+  #4 newVowelGroup = nextVowelGroup
+     if newVowelGroup > largestVowelGroupSoFar
+     largestVowelGroupSoFar= newVowelGroup
+  #5 newVowelGroup = nextVowelGroup
+     if newVowelGroup > largestVowelGroupSoFar
+     largestVowelGroupSoFar= newVowelGroup
+  #6 The first group is reported as the largest since we are not
+     test for >=

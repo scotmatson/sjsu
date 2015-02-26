@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=theType\ initialPrice
+comment0.target=PreciousMetal(java.lang.String,\ double)
+comment0.text=\n\ Constructs\ a\ Precious\ metal\ of\ the\ given\ tyoe\ and\ curent\ price\n\ @param\ theType\ the\ type\ of\ this\ PreciousMetal\n\ @param\ initalPrice\ the\ inital\ price\ of\ this\ PreciousMetal\n
+comment1.params=
+comment1.target=double\ getPrice()
+comment1.text=\n\ Gets\ the\ current\ price\ of\ this\ PreciousMetal\n\ @return\ current\ price\ of\ this\ PreciousMetal\n
+comment2.params=
+comment2.target=java.lang.String\ getType()
+comment2.text=\n\ Gets\ the\ type\ of\ this\ PreciousMetal\n\ @return\ the\ type\ of\ this\ PreciousMetal\n
+comment3.params=amount
+comment3.target=void\ increasePrice(double)
+comment3.text=\n\ Increases\ the\ price\ by\ the\ specified\ amount\n\ @param\ amount\ the\ amount\ to\ raise\ the\ price\ by\n
+comment4.params=amount
+comment4.target=void\ decreasePrice(double)
+comment4.text=\n\ Decrease\ the\ price\ by\ the\ specified\ amount\n\ @param\ amount\ the\ amount\ to\ decrease\ the\ price\ by\n
+numComments=5

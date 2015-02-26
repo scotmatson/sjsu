@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=name
+comment0.target=Employee(java.lang.String)
+comment0.text=\n\ Constructs\ a\ Employee\ object\ with\ a\ name\ and\ no\ salaries\n\ @param\ name\ the\ employee's\ name\n
+comment1.params=salary
+comment1.target=void\ add(double)
+comment1.text=\n\ Adds\ a\ salary\ for\ this\ employee\n\ @param\ salary\ the\ new\ salary\ to\ add\n
+comment2.params=
+comment2.target=double\ averageSalary()
+comment2.text=\n\ Gets\ the\ average\ of\ this\ employee's\ salaries\n\ @return\ the\ average\ salary\ for\ this\ employee\n
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment3.text=\n\ Gets\ the\ name\ of\ this\ Employee\n\ @return\ the\ name\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

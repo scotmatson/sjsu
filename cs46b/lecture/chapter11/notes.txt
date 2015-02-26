@@ -1,0 +1,6 @@
+Console input is limited to experts :P
+GUI interfaces are developed for ease of operation for enterprise and commercial implementation of software
+
+Throwing an exception is passing the responsibility of an error to another class.
+Catching an exception is handling the exception in the class in which the exception initially occurred.
+
