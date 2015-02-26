@@ -1,4 +1,4 @@
-package partB;
+import partB.BankAccount;
 
 /**
  An account that earns interest at a fixed rate.
@@ -28,23 +28,24 @@ public class SavingsAccount extends BankAccount
 
     public static void main(String[] args)
     {
-        // Will print output1 because it uses polymorphism to create a SavingsAccount object
-        //  of type BankAccount
         BankAccount ba = new SavingsAccount(2.5);
-        // Will print output2 bc it is not of type BankAccount
         SavingsAccount sa = new SavingsAccount(3.0);
 
-        testMethod()
-        // This will not work. While these two objects share a relationship,
-        //  they are not of the same type.
+
+        // This line of code which has been commented will not work because while we have created a SavingsAccount
+        //   object, we have used a BankAccount class. The BankAccount class does not know of methods which exist
+        //   in the SavingsAccount class so to use them we would have to use a cast and turn our SavingsAccount object
+        //   into a SavingsAccount Type. This is an example of PolyMorphism.
         //ba.testMethod(sa);
     }
 
-    public void testMethod(BankAccount a) {
+    public void testMethod(BankAccount a)
+    {
         System.out.println("Output 1");
     }
 
-    public void testMethod(SavingsAccount a) {
+    public void testMethod(SavingsAccount a)
+    {
         System.out.println("Output 2");
     }
 }
