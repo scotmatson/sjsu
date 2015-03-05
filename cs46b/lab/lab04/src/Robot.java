@@ -1,4 +1,8 @@
-
+/**
+ *   Robot classes designed to escape a maze
+ *     provided by the MazeSolver Class and
+ *     leave a trail of the route taken.
+ */
 import java.util.ArrayList;
 
 public class Robot
@@ -28,7 +32,9 @@ public class Robot
 
     public void escape()
     {
+        // If an exit exists at the current location then the robot should escape the maze...
         if (atExit()) { System.out.println("Escaped."); }
+        // Otherwise we need to find the exit.
         else if (canMove()) { move(); }
         else {
             turnLeft();
