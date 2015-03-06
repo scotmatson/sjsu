@@ -19,6 +19,7 @@ public class Robot
     public static final int SOUTH = 2;
     public static final int WEST = 3;
     private static final int DIRECTIONS = 4;
+    private static int moveCount = 0;
 
     public Robot(Maze aMaze, int startingRow, int startingColumn)
     {
@@ -33,18 +34,21 @@ public class Robot
     public void escape()
     {
         // If an exit exists at the current location then the robot should escape the maze...
-        if (atExit()) { System.out.println("Escaped."); }
-        // Otherwise we need to find the exit.
-        else if (canMove()) { move(); }
-        else {
-            turnLeft();
-            move();
+        if (atExit()) {
+            System.out.println("Escaped.");
+            System.exit(1);
         }
-        turnRight();
-        move();
-        turnLeft();
 
-        //escape();
+        // Otherwise we need to find the exit.
+        if(canGoRight()) {
+            moveRight();
+        }
+        else if (canMove()) { move(); }
+
+        else { turnLeft();}
+
+        ++moveCount;
+        escape();
     }
 
     public boolean escape2()
@@ -88,20 +92,9 @@ public class Robot
         return maze.isValid(newRow, newColumn);
     }
 
-    public boolean atExit()
-    {
-        return maze.isExit(row, column);
-    }
-
-    public String getPosition()
-    {
-        return "(" + row + "," + column + ")";
-    }
-
-    public ArrayList<String> getVisited()
-    {
-        return visited;
-    }
+    public boolean atExit() { return maze.isExit(row, column); }
+    public String getPosition() { return "(" + row + "," + column + ")"; }
+    public ArrayList<String> getVisited() { return visited; }
 
     private static int nextRow(int aRow, int aDirection)
     {
@@ -127,8 +120,19 @@ public class Robot
         return result;
     }
 
-    public void setDebug(boolean debug)
-    {
-        this.debug = debug;
+    public void setDebug(boolean debug) { this.debug = debug; }
+
+    public boolean canGoRight() {
+        boolean pathRight = false;
+        turnRight();
+        if (canMove()) { pathRight = true; }
+        turnLeft();
+
+        return pathRight;
+    }
+
+    public void moveRight () {
+        turnRight();
+        move();
     }
 }
