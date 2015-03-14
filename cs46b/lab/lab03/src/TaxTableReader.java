@@ -10,7 +10,7 @@ public class TaxTableReader
     private ArrayList<TaxData> data;
 
     public TaxTableReader() {
-        data = new ArrayList<>();
+        data = new ArrayList<TaxData>();
     }
 
     public void read(String location)
@@ -44,7 +44,7 @@ public class TaxTableReader
 
     private ArrayList<String> extractTableCells(String row)
     {
-        ArrayList<String> result = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<String>();
         int pos = 0;
         boolean done = false;
         while (!done)

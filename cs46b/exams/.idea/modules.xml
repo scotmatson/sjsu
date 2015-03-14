@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IOExam/IOExam.iml" filepath="$PROJECT_DIR$/IOExam/IOExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecursionQuiz/RecursionQuiz.iml" filepath="$PROJECT_DIR$/RecursionQuiz/RecursionQuiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/exams.iml" filepath="$PROJECT_DIR$/exams.iml" />
       <module fileurl="file://$PROJECT_DIR$/midterm01/midterm01.iml" filepath="$PROJECT_DIR$/midterm01/midterm01.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice01/practice01.iml" filepath="$PROJECT_DIR$/practice01/practice01.iml" />

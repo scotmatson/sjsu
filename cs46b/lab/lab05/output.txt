@@ -1,0 +1,17 @@
+1: Add/Change Entry
+2: Look Up Entry
+3: Remove Entry
+4: Save Directory
+5: Exit
+Enter Command: Enter name: Enter key: Value: (408) 924-5060
+1: Add/Change Entry
+2: Look Up Entry
+3: Remove Entry
+4: Save Directory
+5: Exit
+Enter Command: 1: Add/Change Entry
+2: Look Up Entry
+3: Remove Entry
+4: Save Directory
+5: Exit
+Enter Command: 

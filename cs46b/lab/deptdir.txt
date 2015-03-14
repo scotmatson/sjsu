@@ -85,3 +85,8 @@ Phone
 Tseng
 Email
 Chris.Tseng@sjsu.edu
+Tester
+Phone
+(123) 123-1234
+Email
+test@testcase.com
