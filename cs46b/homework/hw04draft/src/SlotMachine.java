@@ -19,7 +19,9 @@ public class SlotMachine
      */
     public SlotMachine(int newWheels, String... newSymbols)
     {
-        // YOUR CODE HERE
+        this.wheels = newWheels;
+        this.symbols = newSymbols;
+        outcomes = new ArrayList<>();
     }
 
     /**
@@ -35,7 +37,9 @@ public class SlotMachine
      */
     public void printOutcomes()
     {
-        // YOUR CODE HERE
+        for (int i = 0; i < outcomes.size(); ++i) {
+            System.out.println(i+1 + ": " + outcomes.get(i));
+        }
     }
 
     /**
@@ -47,7 +51,7 @@ public class SlotMachine
      */
     public int getNumberOfOutcomes()
     {
-        // YOUR CODE HERE
+        return (int) Math.pow(symbols.length, wheels);
     }
 
 }

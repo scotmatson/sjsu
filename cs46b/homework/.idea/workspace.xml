@@ -2,74 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b72cb3-321b-4293-b5d8-8e171f74ecdb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/AddressBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/AddressBookDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/AddressBookTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/ArrayListAddressBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/ConsoleInOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04draft/src/Demo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/ExhibitB.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/ExhibitC.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/ExhibitD.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/ExhibitE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/InOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/Item.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/Test/src/prime/PrimeTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/src/Recursion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/RecursionQuiz.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab04/src/partD/RecursiveFib.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04draft/src/SlotMachine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/Test/Test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/src/Tester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04draft/src/Tester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/src/Triangle_Numbers_01.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/src/Triangle_Numbers_02.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/src/WindowInOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/expected.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04draft/hw04draft.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/input.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/lab05.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/recursion.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab05/test1.out.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/AddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/AddressBookDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/ArrayListAddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/ContainsTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/Item.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/UtilTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab01/cs46b_lab11_scotMatson.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/AddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/AddressBookDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/ArrayListAddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/ConsoleInOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/InOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/Item.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab02/WindowInOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab03/CPIConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab03/CPIConverter_Tester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab03/TaxData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab03/TaxTableReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab04/Maze.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab04/MazeSolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../lab/out/production/lab04/Robot.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../lab/lab04/src/Maze.java" afterPath="$PROJECT_DIR$/../lab/lab04/src/partAandB/Maze.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../lab/lab04/src/MazeSolver.java" afterPath="$PROJECT_DIR$/../lab/lab04/src/partAandB/MazeSolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../lab/lab04/src/Robot.java" afterPath="$PROJECT_DIR$/../lab/lab04/src/partAandB/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/out/production/IOExam/Book.class" afterPath="$PROJECT_DIR$/../exams/out/production/IOExam/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/out/production/lab06/partC/FewestBabyNamesNeeded.class" afterPath="$PROJECT_DIR$/../lab/out/production/lab06/partC/FewestBabyNamesNeeded.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/lab03/src/TaxTableReader.java" afterPath="$PROJECT_DIR$/../lab/lab03/src/TaxTableReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/deptdir.txt" afterPath="$PROJECT_DIR$/../lab/deptdir.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/modules.xml" afterPath="$PROJECT_DIR$/../exams/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04final/src/SlotMachine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04final/src/Tester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04final/src/Tester2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hw04final/hw04final.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw04draft/src/Demo.java" afterPath="$PROJECT_DIR$/hw04draft/src/Demo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw04draft/src/SlotMachine.java" afterPath="$PROJECT_DIR$/hw04draft/src/SlotMachine.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/modules.xml" afterPath="$PROJECT_DIR$/../lab/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lecture/.idea/modules.xml" afterPath="$PROJECT_DIR$/../lecture/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../exams/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lecture/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lecture/.idea/workspace.xml" />
     </list>
     <ignored path="homework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,47 +35,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw03final/src/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2844">
-              <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Demo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw04draft/src/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hw04draft/src/Tester.java">
+        <entry file="file://$PROJECT_DIR$/hw04final/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SlotMachine.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hw04draft/src/SlotMachine.java">
+        <entry file="file://$PROJECT_DIR$/hw04final/src/SlotMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5264" vertical-offset="0" max-vertical-offset="1062">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53411764" vertical-offset="1069" max-vertical-offset="1908">
+              <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1180#1181#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#1935#1936#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tester2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hw04final/src/Tester2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="846">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,9 +92,12 @@
         <option value="$PROJECT_DIR$/hw03final/src/Tester2.java" />
         <option value="$PROJECT_DIR$/hw03final/src/Product.java" />
         <option value="$PROJECT_DIR$/hw03final/src/Order.java" />
-        <option value="$PROJECT_DIR$/hw04draft/src/Demo.java" />
         <option value="$PROJECT_DIR$/hw04draft/src/Tester.java" />
+        <option value="$PROJECT_DIR$/hw04draft/src/Demo.java" />
         <option value="$PROJECT_DIR$/hw04draft/src/SlotMachine.java" />
+        <option value="$PROJECT_DIR$/hw04final/src/Tester2.java" />
+        <option value="$PROJECT_DIR$/hw04final/src/Tester.java" />
+        <option value="$PROJECT_DIR$/hw04final/src/SlotMachine.java" />
       </list>
     </option>
   </component>
@@ -206,48 +140,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hw04draft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hw04draft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -275,7 +167,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../lecture" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Tester (1)">
+  <component name="RunManager" selected="Application.Demo">
     <configuration default="false" name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tester" />
       <option name="VM_PARAMETERS" value="" />
@@ -309,6 +201,38 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="hw02final" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tester (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw04draft" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Demo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="hw04draft" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -373,14 +297,18 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Tester" />
       <item index="1" class="java.lang.String" itemvalue="Application.Tester (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Tester (2)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Demo" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.Tester (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Tester" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.Demo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Tester (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tester (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Tester" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -400,31 +328,31 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1367" height="768" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20483749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22699386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22392638" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30461538" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20483749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22699386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11196319" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -457,30 +385,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2844">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw03final/src/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2844">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw03final/src/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2844">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -792,34 +698,66 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2844">
           <caret line="117" column="65" selection-start-line="117" selection-start-column="65" selection-end-line="117" selection-end-column="65" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw04draft/src/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hw04draft/src/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hw04draft/src/SlotMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5264" vertical-offset="0" max-vertical-offset="1062">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5082353" vertical-offset="108" max-vertical-offset="1134">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw04draft/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55058825" vertical-offset="0" max-vertical-offset="504">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw04draft/src/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59294116" vertical-offset="0" max-vertical-offset="425">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw04final/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw04final/src/Tester2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hw04final/src/SlotMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53411764" vertical-offset="1069" max-vertical-offset="1908">
+          <caret line="72" column="31" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1935#1936#0" expanded="true" />
           </folding>
         </state>
       </provider>
