@@ -20,6 +20,8 @@ public class SlotMachine
     {
         this.wheels = newWheels;
         this.symbols = newSymbols;
+        outcomes = new ArrayList<>();
+        calculateAllOutcomes();
     }
 
     /**
@@ -61,21 +63,27 @@ public class SlotMachine
      */
     public void calculateAllOutcomes()
     {
-        calculateAllOutcomes(wheels, symbols.length-1, getNumberOfOutcomes());
+        outcomes = new ArrayList<>();
+        for (int i = 0; i < symbols.length; ++i) {
+            String startingSymbol = symbols[i];
+            calculateAllOutcomes(wheels - 1, startingSymbol);
+        }
     }
 
-    private void calculateAllOutcomes(int numWheels, int numSymbols, int outcomesLeft) {
+    private void calculateAllOutcomes(int currentWheel, String outcomeString) {
+        // Base case.
+        if (currentWheel < 1) {
+            // At this juncture we should have a complete set,
+            //   add it to the ArrayList and return.
+            outcomes.add(outcomeString);
 
-        // Base case
-
-
-        // Work
-        // Add to the ArrayList
-
-        // Recursion
-
-
-
+        } else {
+            // Iterating through each symbol and recursively building our string.
+            for (int i = 0; i < symbols.length; ++i) {
+                String stringBuilder = outcomeString + " " + symbols[i];
+                calculateAllOutcomes(currentWheel - 1, stringBuilder);
+            }
+        }
     }
 
     /**
@@ -95,6 +103,29 @@ public class SlotMachine
      */
     public void calculateOutcomesWithoutRepeats()
     {
-        // YOUR CODE HERE
+        outcomes = new ArrayList<>();
+        for (int i = 0; i < symbols.length; ++i) {
+            String startingSymbol = symbols[i];
+            calculateOutcomesWithoutRepeats(wheels - 1, startingSymbol, startingSymbol);
+        }
+    }
+
+    private void calculateOutcomesWithoutRepeats(int currentWheel, String outcomeString, String previousSym) {
+        // Base case.
+        if (currentWheel < 1) {
+            // At this juncture we should have a complete set,
+            //   add it to the ArrayList and return.
+            outcomes.add(outcomeString);
+
+        } else {
+            // Iterating through each symbol and recursively building our string.
+            for (int i = 0; i < symbols.length; ++i) {
+                // We need check the current symbol against the previous symbol to prevent
+                //   repetition.
+                if (symbols[i].equals(previousSym)) { continue; }
+                String stringBuilder = outcomeString + " " + symbols[i];
+                calculateOutcomesWithoutRepeats(currentWheel - 1, stringBuilder, symbols[i]);
+            }
+        }
     }
 }
