@@ -2,68 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61f616e3-dd77-4705-b06b-1f1a82098ef9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/AddressBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/AddressBookDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/AddressBookTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/ArrayListAddressBook.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/ConsoleInOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/ExhibitB.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/ExhibitC.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/ExhibitD.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/ExhibitE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/InOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/Item.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/src/prime/PrimeTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/src/Recursion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/RecursionQuiz.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab04/src/partD/RecursiveFib.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Test/Test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../exams/RecursionQuiz/src/Tester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/src/Triangle_Numbers_01.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/src/Triangle_Numbers_02.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/src/WindowInOut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/expected.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/input.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/lab05.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lecture/recursion/recursion.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab05/test1.out.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/AddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/AddressBookDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/ArrayListAddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/ContainsTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/Item.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/UtilTester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab01/cs46b_lab11_scotMatson.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/AddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/AddressBookDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/ArrayListAddressBook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/ConsoleInOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/InOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/Item.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab02/WindowInOut.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab03/CPIConverter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab03/CPIConverter_Tester.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab03/TaxData.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab03/TaxTableReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab04/Maze.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab04/MazeSolver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/lab04/Robot.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab04/src/Maze.java" afterPath="$PROJECT_DIR$/lab04/src/partAandB/Maze.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab04/src/MazeSolver.java" afterPath="$PROJECT_DIR$/lab04/src/partAandB/MazeSolver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lab04/src/Robot.java" afterPath="$PROJECT_DIR$/lab04/src/partAandB/Robot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/out/production/IOExam/Book.class" afterPath="$PROJECT_DIR$/../exams/out/production/IOExam/Book.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab06/partC/FewestBabyNamesNeeded.class" afterPath="$PROJECT_DIR$/out/production/lab06/partC/FewestBabyNamesNeeded.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab03/src/TaxTableReader.java" afterPath="$PROJECT_DIR$/lab03/src/TaxTableReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deptdir.txt" afterPath="$PROJECT_DIR$/deptdir.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/modules.xml" afterPath="$PROJECT_DIR$/../exams/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab08/lab08.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/hw05final/src/Sorter.java" afterPath="$PROJECT_DIR$/../homework/hw05final/src/Sorter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/hw05final/src/Tester.java" afterPath="$PROJECT_DIR$/../homework/hw05final/src/Tester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lecture/.idea/modules.xml" afterPath="$PROJECT_DIR$/../lecture/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../exams/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../homework/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lecture/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lecture/.idea/workspace.xml" />
     </list>
     <ignored path="lab.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,11 +34,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WindowInOut.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lab05/src/WindowInOut.java">
+      <file leaf-file-name="ListIterator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab08/src/ListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2016" vertical-offset="0" max-vertical-offset="625">
-              <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab08/src/LinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1715" max-vertical-offset="3258">
+              <caret line="118" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,13 +82,14 @@
         <option value="$PROJECT_DIR$/lab04/src/partD/RecursiveFib.java" />
         <option value="$PROJECT_DIR$/Test/src/prime/PrimeTester.java" />
         <option value="$PROJECT_DIR$/lab03/src/TaxTableReader.java" />
-        <option value="$PROJECT_DIR$/lab05/src/WindowInOut.java" />
         <option value="$PROJECT_DIR$/lab05/src/AddressBook.java" />
         <option value="$PROJECT_DIR$/lab05/src/AddressBookDemo.java" />
         <option value="$PROJECT_DIR$/lab05/src/Tests/AddressBookDemoTest.java" />
         <option value="$PROJECT_DIR$/deptdir.txt" />
         <option value="$PROJECT_DIR$/lab05/src/ArrayListAddressBook.java" />
         <option value="$PROJECT_DIR$/lab05/src/AddressBookTest.java" />
+        <option value="$PROJECT_DIR$/lab05/src/WindowInOut.java" />
+        <option value="$PROJECT_DIR$/lab08/src/LinkedList.java" />
       </list>
     </option>
   </component>
@@ -141,6 +97,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="86" />
+    <option name="y" value="55" />
     <option name="width" value="1367" />
     <option name="height" value="768" />
   </component>
@@ -160,7 +118,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -171,7 +129,62 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab08" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab08" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -487,12 +500,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1367" height="768" extended-state="0" />
+    <frame x="86" y="55" width="1367" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30615383" sideWeight="0.49962208" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20408164" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16024187" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49962208" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32307693" sideWeight="0.50037795" order="9" side_tool="true" content_ui="tabs" />
@@ -550,20 +563,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab01/src/AddressBookDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="576">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab01/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1003" max-vertical-offset="1404">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab01/src/AddressBook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="637" max-vertical-offset="1242">
@@ -845,13 +844,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deptdir.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8988764" vertical-offset="1318" max-vertical-offset="1746">
           <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab05/src/AddressBookTest.java">
@@ -872,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2987013" vertical-offset="1055" max-vertical-offset="1440">
           <caret line="65" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,8 +904,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab05/src/WindowInOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2016" vertical-offset="0" max-vertical-offset="625">
-          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2304" vertical-offset="0" max-vertical-offset="625">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab08/src/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1715" max-vertical-offset="3258">
+          <caret line="118" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab08/src/ListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
