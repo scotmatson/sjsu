@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b72cb3-321b-4293-b5d8-8e171f74ecdb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab08/lab08.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw05final/src/Sorter.java" afterPath="$PROJECT_DIR$/hw05final/src/Sorter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hw05final/src/Tester.java" afterPath="$PROJECT_DIR$/hw05final/src/Tester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/modules.xml" afterPath="$PROJECT_DIR$/../lab/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../exams/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" />
     </list>
     <ignored path="homework.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +63,11 @@
       <file leaf-file-name="Sorter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hw05final/src/Sorter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28892455" vertical-offset="1692" max-vertical-offset="3150">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5120385" vertical-offset="2525" max-vertical-offset="3150">
+              <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
+              <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+              <caret line="159" column="68" selection-start-line="159" selection-start-column="68" selection-end-line="159" selection-end-column="68" />
+              <caret line="160" column="72" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -145,7 +142,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -166,6 +162,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -775,8 +772,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hw05final/src/Sorter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28892455" vertical-offset="1692" max-vertical-offset="3150">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5120385" vertical-offset="2525" max-vertical-offset="3150">
+          <caret line="157" column="27" selection-start-line="157" selection-start-column="27" selection-end-line="157" selection-end-column="27" />
+          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+          <caret line="159" column="68" selection-start-line="159" selection-start-column="68" selection-end-line="159" selection-end-column="68" />
+          <caret line="160" column="72" selection-start-line="160" selection-start-column="72" selection-end-line="160" selection-end-column="72" />
           <folding />
         </state>
       </provider>
