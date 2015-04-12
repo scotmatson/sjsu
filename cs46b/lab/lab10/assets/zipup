@@ -1,0 +1,10 @@
+#!/bin/bash
+# Zip up homework source, HTML, images
+if [ -z $1 ]
+ then
+  echo "Usage: zipup nameOfFile"
+  exit
+fi
+
+jar -cvf $1.zip *.java *.html *.png
+#javadoc *.java

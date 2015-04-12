@@ -1,0 +1,316 @@
+# Author: Scot Matson
+# Lab Partners: Manas Abhyankar, Rick Li
+
+##########
+# Part A #
+##########
+
+1)  adding: Median1.java(in = 821) (out = 361)(deflated 56%)
+    adding: Median2.java(in = 1155) (out = 413)(deflated 64%)
+    adding: Remove1.java(in = 1496) (out = 1496)(deflated 65%)
+
+2)  The bash shell script attempted to perform a zip operation on any present
+    files with the extension of .html, .java, and .png, none were present so a message
+    was given stating such. The final line of output says a manifest was added but I'm
+    not sure what this is or where it is.
+
+3)  #! /bin/bash
+    # Zip up homework source, HTML, images
+    jar -cvf homeworkzip *.java *.html *.png
+    javadoc *.javaadded manifest
+
+    # Output
+    adding: Tester.java(in = 328) (out= 221)(deflated 32%)
+    Loading source file Tester.java...
+    Constructing Javadoc information...
+    Standard Doclet version 1.8.0_40
+    Building tree for all the packages and classes...
+    Generating ./Tester.html...
+    Generating ./package-frame.html...
+    Generating ./package-summary.html...
+    Generating ./package-tree.html...
+    Generating ./constant-values.html...
+    Building index for all the packages and classes...
+    Generating ./overview-tree.html...
+    Generating ./index-all.html...
+    Generating ./deprecated-list.html...
+    Building index for all classes...
+    Generating ./allclasses-frame.html...
+    Generating ./allclasses-noframe.html...
+    Generating ./index.html...
+    Generating ./help-doc.html...
+
+##########
+# Part B #
+##########
+
+1)  ./zipup hw1_1728.zip
+
+2)  Running ./zipup without an argument will output a file with no name [.zip].
+    Because the . denotes a hidden file we can only see that a file in fact has been
+    created by typing ls -la.
+
+3)  The output is now "Usage: zipup nameOfFile
+
+4)  fi is the ending statement to the conditional if
+
+##########
+# Part C #
+##########
+
+1)  unzip hw1_1728.zip BankAccountTest
+    javac BankAccountTest.java
+    java BankAccountTest > hw1.1728.txt
+
+2)  #!/bin/bash
+    # grade
+    # unzips, compiles, runs, and captures the output
+    if [ -z $1 $2 ]
+     then
+        echo "Usage: ./grade [input] [output]"
+        exit
+    fi
+
+    unzip $1
+    javac $2.java
+    java $2 > $2.txt
+
+3)  1500.0
+
+4)  #!/bin/bash
+    # grade
+    # unzips, compiles, runs, and captures the output
+    if [ -z $1 $2 ]
+     then
+      echo "Usage: ./grade [input] [output]"
+      exit
+    fi
+
+    unzip $1
+    javac $2.java
+    cat $2.java > $2.txt
+    java $2 >> $2.txt
+
+5)  An echo statement preceding the line with java $2 >> $2.txt would
+    create a heading to delimit the content, i.g., echo "=== Program Run ===" >> $2.txt
+
+6)  unzip $1
+    javac $2.java
+    cat $2.java > $2.txt
+    echo "=== Program Run ===" >> $2.txt
+    echo "=== Errors ===" >> $2.txt
+    javac $2.java 2>> $2.txt
+    echo "=== Output ===" >> $2.txt
+    java $2 >> $2.txt
+
+7)  /**
+    A class to test the BankAccount class.
+    */
+    public class BankAccountTest
+    {
+       /**
+          Tests the methods of the BankAccount class.
+          @param args not used
+       */
+       public static void main(String[] args)
+       {
+          BankAccount harrysChecking = new BankAccount();
+          harrysChecking.deposit(2000);
+          harrysChecking.withdraw(500);
+          System.out.println(harrysChecking.getBalance())
+       }
+    }
+    === Program Run ===
+    === Errors ===
+    BankAccountTest.java:15: error: ';' expected
+          System.out.println(harrysChecking.getBalance())
+                                                         ^
+    1 error
+    === Output ===
+
+**********
+* Part D *
+**********
+
+1) This wasn't very well explained in the lab. Not sure if this was the right place to put the code.
+   Instructions should be less ambiguous.
+
+    #!/bin/bash
+    # grade
+    # unzips, compiles, runs, and captures the output
+    if [ -z $1 $2 ]
+     then
+      echo "Usage: ./grade [input] [output]"
+      exit
+    fi
+
+    unzip $1
+    javac $2.java
+
+    for f in input.*.txt ; do (java $2 < $f >> $1.txt); done
+
+    cat $2.java >> $1.txt
+    echo "=== Program Run ===" >> $1.txt
+    echo "=== Errors ===" >> $1.txt
+    javac $2.java 2>> $2.txt
+    echo "=== Output ===" >> $2.txt
+    java $2 >> $2.txt
+
+2)  This was covered in another section already, is something supposed to
+    be different this time???
+    ./zipup interest [ouputfile]
+
+3)  Not sure what inputs are expected, the program appears to run as normal
+    spits out additional .txt files
+
+4)  The interest.zip file is empty
+
+5)  I don't know what gradehelper is
+
+**********
+* Part E *
+**********
+
+1)  Jealous
+    I don't know
+
+2)  [a-zA-Z0-9
+
+3)  The output is every word that fits the pattern 'ea[a-z]ou'
+
+4)  egrep '[qQ][^u]' words.txt
+
+5)  egrep '(^oo)[a-z]|[a-z](oo$)' words.txt
+
+6)  egrep '[abc]{5,}' words.txt
+    Boccaccio
+    Boccaccio's
+    Copacabana
+    Copacabana's
+    Maccabeus
+    Maccabeus's
+    baccalaureate
+    baccalaureate's
+    baccalaureates
+    cabbage
+    cabbage's
+    cabbages
+    scabbard
+    scabbard's
+    scabbards
+
+7)  egrep 'oo.+oo' words.txt
+
+8)  It appears to print the matches while maintaining
+    the formatting of the code
+
+9)  Using the -o modifier the results are now placed
+    as one word per line
+
+**********
+* Part F *
+**********
+
+1)  54  143 1144
+    Possibly the number of lines and the number of words and number of characters.
+    Running the second example, looks like I was right.
+
+2)  egrep 'oo.+oo' words.txt > temp.txt
+    wc < temp.txt
+
+3)  egrep 'oo.+oo' words.txt | wc
+    25 25 251
+
+4)  egrep 'oo.+oo' words.txt | wc | egrep -o '^[ ]*[0-9]*'
+
+5)  egrep prints lines matching a pattern
+
+6)  egrep 'oo.+oo' words.txt | wc -w
+
+**********
+* Part G *
+**********
+
+1)  Median: 0.5004562285790453
+
+2)  real    0m0.302s
+    user    0m0.373s
+    sys     0m0.020s
+
+3)  Median: 0.4949894731083988
+
+    real    0m0.298s
+    user    0.0.363s
+    sys     0m0.013s
+
+    Median: 0.5026036456696797
+
+    real    0m0.767s
+    user    0m0.827s
+    sys     0m0.013s
+
+    Median: 0.4994367412502551
+
+    real    0m0.1580s
+    user    0m1.650s
+    sys     0m0.010s
+
+4)  All three outputs are printed again, piping 'grep real' had no effect.
+    The only difference this time was no output from the actual program was ran.
+    It seems grep was consumed on the output of the java application and then the
+    time function ran.
+
+5)  for f in 10000 20000 30000 ; do ( (time java Median1 $f) 2>&1 ) ; done | grep real
+
+6)  10000
+    15000
+    20000
+    25000
+    30000
+    35000
+    40000
+    45000
+    50000
+    55000
+    60000
+    65000
+    70000
+    75000
+    80000
+    85000
+    90000
+    95000
+    100000
+
+7)  seq [first][increment][last]
+    The seq command runs a sequence similar to that
+    of a for loop
+
+8)  This step is slightly ambiguous, is the command supposed to be injected in our previous
+    statements like so,
+    for f in `seq 10000 5000 100000` ; do ((time java Median1 $f) 2>&1) ; done | grep real
+    real	0m0.298s
+    real	0m0.582s
+    real	0m0.761s
+    real	0m1.098s
+    real	0m1.532s
+    real	0m2.117s
+    real	0m2.741s
+    real	0m3.329s
+    real	0m4.127s
+    real	0m4.921s
+    real	0m5.929s
+    real	0m6.841s
+    real	0m7.972s
+    real	0m9.084s
+    real	0m10.320s
+    real	0m11.720s
+    real	0m12.974s
+    real	0m15.500s
+    real	0m16.983s
+
+**********
+* Part H *
+**********
+
+1)  

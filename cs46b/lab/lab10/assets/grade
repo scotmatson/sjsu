@@ -1,0 +1,20 @@
+#!/bin/bash
+# grade
+# unzips, compiles, runs, and captures the output
+if [ -z $1 $2 ]
+ then
+  echo "Usage: ./grade [input] [output]"
+  exit
+fi
+
+unzip $1 
+javac $2.java
+
+for f in input.*.txt ; do (java $2 < $f >> $1.txt); done
+
+cat $2.java >> $1.txt
+echo "=== Program Run ===" >> $1.txt
+echo "=== Errors ===" >> $1.txt
+javac $2.java 2>> $2.txt
+echo "=== Output ===" >> $2.txt
+java $2 >> $2.txt
