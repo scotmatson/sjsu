@@ -313,4 +313,26 @@
 * Part H *
 **********
 
-1)  
+1)  3414
+
+2)  I still get 3414, as I would expect since we ran a similar command
+    to assess the number of compressed files.
+
+3)  It outputs a ton of phone numbers
+
+4)  -h  suppress the file name prefix on output
+    -o  show only the part of a line matching PATTERN
+    -r  recursive
+
+5)  It looks like it first looks for a leading digit like you would expect in an
+    area code followed by 3 sequential digits to represent an area code. Next we see
+    a reference to a parenthesis or a dash as a delimiter. This sequence of integers continues
+    as a series of 3 and also 4, which are also dash delimited.
+
+6)  First run a regex sequence to capture all of the telephone numbers and output them
+    to a temp file for further manipulation.
+
+7)  I'm not going to put emacs on my computer, sorry. I don't know these commands yet in vim
+    but if I have time will look them up.
+
+8)  ...
