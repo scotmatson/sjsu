@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
@@ -16,7 +17,7 @@ public class Album
     private LinkedList<Track> tracks;
 
     /**
-     * Constructor. Complete the constructor. 
+     * Constructor. Complete the constructor.
      * Initialize the LinkedList.
      *
      * @param artist the album artist
@@ -26,8 +27,7 @@ public class Album
     {
         this.artist = artist;
         this.name = name;
-
-        // YOUR CODE HERE (construct the LinkedList)
+        tracks = new LinkedList<>();
     }
 
     // accessors and mutators
@@ -68,7 +68,26 @@ public class Album
      */
     public static Album fromFile(String filename)
     {
-        // YOUR CODE HERE
+        try (Scanner in = new Scanner(new File(filename))) {
+
+            Album album = new Album(in.nextLine(), in.nextLine());
+
+            while (in.hasNextLine()) {
+                album.addTrack(new Track(album.getArtist(), in.nextLine()));
+            }
+
+            return album;
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("An error has occurred while attempting to read your file," +
+                    "it may be missing or corrupt.");
+        }
+        catch (NullPointerException e) {
+            System.out.println("Unknown entry, data not found.");
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     /**
@@ -78,7 +97,7 @@ public class Album
      */
     public void addTrack(Track t)
     {
-        // YOUR CODE HERE
+        tracks.addLast(t);
     }
 
     /**
@@ -90,7 +109,7 @@ public class Album
      */
     public void addTrackAt(int index, Track t)
     {
-        // YOUR CODE HERE
+        tracks.add(index, t);
     }
 
     /**
@@ -100,7 +119,7 @@ public class Album
      */
     public void removeTrackAt(int index)
     {
-        // YOUR CODE HERE
+        tracks.remove(index);
     }
 
     /**
@@ -111,7 +130,7 @@ public class Album
      */
     public Track getTrackAt(int index)
     {
-        // YOUR CODE HERE
+        return tracks.get(index);
     }
 
     /**
@@ -126,6 +145,11 @@ public class Album
      */
     public void printTrackList()
     {
-        // YOUR CODE HERE
+        int trackNumber = 1;
+        ListIterator<Track> listIterator = tracks.listIterator();
+        while (listIterator.hasNext()) {
+            System.out.printf("%d. %s\n", trackNumber, listIterator.next().getName());
+            ++trackNumber;
+        }
     }
 }
