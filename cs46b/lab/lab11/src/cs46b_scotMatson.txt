@@ -1,0 +1,27 @@
+#   Author:     Scot Matson
+#   Course:     CS46B
+#   Section:    11
+
+*************
+* Problem 1 *
+*************
+
+A) O(n)
+B) O(n^2) if the list is unsorted
+C) Change the Data Structure to an ArrayList
+D) O(1)
+
+*************
+* Problem 2 *
+*************
+-Completed
+
+*************
+* Problem 3 *
+*************
+-Completed
+
+*************
+* Problem 4 *
+*************
+-Completed

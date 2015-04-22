@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67da2599-a756-4ab8-b863-f7af7b5094bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../homework/hw06final/src/Album.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../homework/hw06final/src/AlbumDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../homework/hw06final/src/AlbumDemo2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/SortingAndSearchingQuiz.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../homework/hw06final/src/Tester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Track.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../homework/hw06final/src/Track.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/.idea/modules.xml" afterPath="$PROJECT_DIR$/../homework/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../homework/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/LinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/ListIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem02/Roster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem02/RosterTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/ShuffleTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/SortedLinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/SortedLinkedListTester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/TestComparator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/cs46b_scotMatson.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/lab11/src/problem01/Student.java" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem01/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/lab11/src/problem01/StudentTester.java" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem01/StudentTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/misc.xml" afterPath="$PROJECT_DIR$/../lab/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" />
     </list>
     <ignored path="exams.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,9 +44,11 @@
       <file leaf-file-name="Album.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33103448" vertical-offset="1188" max-vertical-offset="1782">
-              <caret line="74" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.118644066" vertical-offset="1161" max-vertical-offset="1746">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+              <folding>
+                <element signature="e#2058#2059#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +56,8 @@
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="630">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <caret line="12" column="31" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -377,9 +380,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29141104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14417177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26283988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13293052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -417,6 +420,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2058#2059#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="630">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RecursionQuiz/src/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="756">
@@ -649,13 +670,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TheMoreYouIgnoreMe.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="288">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IOExam/src/Book.java">
@@ -700,14 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="630">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Track.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
@@ -716,11 +729,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <caret line="12" column="31" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33103448" vertical-offset="1188" max-vertical-offset="1782">
-          <caret line="74" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.118644066" vertical-offset="1161" max-vertical-offset="1746">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="e#2058#2059#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

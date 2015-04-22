@@ -12,7 +12,7 @@ public class Album
         this.artist = artist;
         this.name = name;
 
-        tracks = new ArrayList<Track>();
+        tracks = new ArrayList<>();
     }
 
     public String getArtist(){ return artist; }
@@ -67,12 +67,10 @@ public class Album
      */
     public Track findTrack(String name)
     {
-
         return binarySearchTrack(tracks, 0, tracks.size()-1, name);
     }
 
     private static Track binarySearchTrack(ArrayList<Track> t, int low, int high, String trackName) {
-        // Partial code borrowed from Cai Horstmann's Big Java
         if (low <= high) {
             int mid = (low + high) / 2;
 

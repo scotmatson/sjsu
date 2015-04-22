@@ -1,9 +1,11 @@
+package problem01;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class Student {
     private String name;
-    private List scores = new LinkedList<>();
+    private List<Integer> scores = new LinkedList();
 
     public Student(String name)
     {
