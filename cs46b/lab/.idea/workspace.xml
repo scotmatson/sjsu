@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61f616e3-dd77-4705-b06b-1f1a82098ef9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem04/LinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem04/ListIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem02/Roster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem02/RosterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem04/ShuffleTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem03/SortedLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem03/SortedLinkedListTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/problem03/TestComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab11/src/cs46b_scotMatson.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/SortingAndSearchingQuiz/src/Album.java" afterPath="$PROJECT_DIR$/../exams/SortingAndSearchingQuiz/src/Album.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab11/src/problem01/Student.java" afterPath="$PROJECT_DIR$/lab11/src/problem01/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab11/src/problem01/StudentTester.java" afterPath="$PROJECT_DIR$/lab11/src/problem01/StudentTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../exams/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../exams/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../homework/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="61f616e3-dd77-4705-b06b-1f1a82098ef9" name="Default" comment="" />
     <ignored path="lab.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
