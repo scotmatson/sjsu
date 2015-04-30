@@ -33,13 +33,13 @@ public class ToDoList
      */
     public void addLast(Task newTask)
     {
-        Task theLink = first;
+        Task link = first;
 
-        while (theLink.next != null) {
-            theLink = theLink.next;
+        while (link.next != null) {
+            link = link.next;
         }
 
-        theLink.next = newTask;
+        link.next = newTask;
     }
 
     /**
@@ -50,16 +50,16 @@ public class ToDoList
      */
     public void setComplete(String name)
     {
-        Task theLink = first;
+        Task link = first;
 
-        while(theLink.next != null) {
+        while(link.next != null) {
 
-            if (theLink.getName().equals(name)) {
-                theLink.setComplete(true);
+            if (link.getName().equals(name)) {
+                link.setComplete(true);
                 break;
             }
             else {
-                theLink = theLink.next;
+                link = link.next;
             }
         }
     }
@@ -73,18 +73,15 @@ public class ToDoList
      */
     public Task get(int i)
     {
-        // You cannot return null from this method because the
-        //  List class will throw a NullPointerException which we cannot
-        //  handle without being able to access the Test class
-        Task theLink = first;
-        int pos = 0;
-        
-        while (pos != i && theLink.next != null) {
-            theLink = theLink.next;
-            ++i;
+        Task link = first;
+        if (i > 0) {
+            for (int j = 0; j < i; j++) {
+                link = link.next;
+                if (link == null) break;
+            }
         }
 
-        return theLink;
+        return link;
     }
 
     /**
@@ -99,21 +96,21 @@ public class ToDoList
      */
     public void print()
     {
-        Task theLink = first;
+        Task link = first;
         int i = 0;
 
-        while (theLink.next != null) {
-            if (!theLink.getComplete()) {
+        while (link.next != null) {
+            if (!link.getComplete()) {
                 ++i;
-                System.out.println(i + ". " + theLink.getName());
+                System.out.println(i + ". " + link.getName());
             }
-            theLink = theLink.next;
+            link = link.next;
         }
         // The final case is not checked since we broke out of the loop early
         //  Not sure of a more elegant way to accomplish this.
-        if (!theLink.getComplete()) {
+        if (!link.getComplete()) {
             ++i;
-            System.out.println(i + ". " + theLink.getName());
+            System.out.println(i + ". " + link.getName());
         }
     }
 }

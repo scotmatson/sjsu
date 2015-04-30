@@ -17,12 +17,9 @@ public class Tester
 
         System.out.println("Actual: " + list.get(1).getName());
         System.out.println("Expected: Buy Groceries");
-        try {
-            System.out.println("Actual: " + list.get(2));
-        }
-        catch (NullPointerException e) {
-             System.out.println("Expected: null");
-        }
+        System.out.println("Actual: " + list.get(2));
+        System.out.println("Expected: null");
+
         list.addFirst(d);
 
         System.out.println("Actual: " + list.get(0).getName());

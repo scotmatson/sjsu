@@ -1,26 +1,22 @@
 #   Author:     Scot Matson
 #   Course:     CS46B
 #   Section:    11
+#   Lab:        12
 
 *************
-* Problem 1 *
+* Problem A *
 *************
 
-A)
-B)
-C)
-D)
+*************
+* Problem B *
+*************
+
 
 *************
-* Problem 2 *
+* Problem C *
 *************
--Completed
+
 
 *************
-* Problem 3 *
-*************
--Completed
-
-*************
-* Problem 4 *
+* Problem D *
 *************
