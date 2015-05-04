@@ -30,7 +30,7 @@ public class Tester2
 
         hs.remove(p[7]);
         hs.remove(p[5]);
-        // Fail
+
         System.out.println("Failing test");
         System.out.println("Actual: " + hs.containsBool(p[9]));
         System.out.println("Expected: true");
@@ -64,6 +64,7 @@ public class Tester2
 
         // Fail
         int newPosition = hs.contains(w1);
+
         System.out.println("Actual: " + (startPosition == newPosition));
         System.out.println("Expected: false");
     }

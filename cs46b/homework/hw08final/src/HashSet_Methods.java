@@ -66,14 +66,13 @@ public class HashSet_Methods
         // Set node to current hash index
         Node current = Data[hashCode];
 
-        // Check for existing nodes
-        if (current != null) {
-            // Traverse the list
-            while (current.Next != null) {
-                // Check each element for equality and return the index if a match is found
-                if (current.Data.equals(SearchData)) return hashCode;
-                current = current.Next;
+        // Traverse the list
+        while (current != null) {
+            // Check each element for equality and return the index if a match is found
+            if (current.Data.equals(SearchData)) {
+                return hashCode;
             }
+            current = current.Next;
         }
         return -1;
     }
@@ -91,21 +90,19 @@ public class HashSet_Methods
         int hashCode = HashSet_Methods.hashIndex(RemoveData, Data);
         // Set node to current hash index
         Node current = Data[hashCode];
+        Node previous = null;
 
         // Check the first position
-        if (current.Data.equals(RemoveData))
-            Data[hashCode] = null;
-        else {
-            // Check subsequent links
-            while (current.Next != null) {
-                // Check equality of the next value
-                if (current.Next.Data.equals(RemoveData)) {
-                    // Break the link and exit the loop if a match is found
-                    current = current.Next;
-                    break;
-                }
-                current = current.Next;
+
+        // Check subsequent links
+        while (current != null) {
+            if (current.Data.equals(RemoveData)) {
+                if (previous == null) { Data[hashCode] = current.Next; }
+                else { previous.Next = current.Next; }
+                return;
             }
+            previous = current;
+            current = current.Next;
         }
     }
 	
@@ -123,12 +120,10 @@ public class HashSet_Methods
 
         for (Node current : Data) {
             if (current != null) {
-                while (current.Next != null) {
+                while (current != null) {
                     ++items;
                     current = current.Next;
                 }
-                // Last item isn't counted when exiting loop
-                ++items;
             }
         }
         return items / Data.length;
@@ -143,24 +138,16 @@ public class HashSet_Methods
 	 */
 	public static Node[] resize(Node[] Data)
 	{
-        Node[] largerNode = new Node[Data.length * 2];
-
-        // Outer loop
+        Node[] largeNode = new Node[Data.length * 2];
         for (int i = 0; i < Data.length; ++i) {
 
             Node current = Data[i];
-
-            // Inner loop {
-            if (current != null) {
-                while (current.Next != null) {
-                    HashSet_Methods.add(current.Data, largerNode);
-                    current = current.Next;
-                }
-                // Final element isn't added in the loop so again we brute force it.
-                HashSet_Methods.add(current.Data, largerNode);
+            while (current != null) {
+                HashSet_Methods.add(current.Data, largeNode);
+                current = current.Next;
             }
         }
-        return largerNode;
+        return largeNode;
     }
 
     /**
@@ -177,7 +164,7 @@ public class HashSet_Methods
         // Retrieve the HashCode
         int hashCode = data.hashCode();
         // Ensure HashCode is a positive integer
-        if (hashCode < 0) hashCode *= -1;
+        if (hashCode < 0) hashCode = -hashCode;
         // Mod the HashCode for Array assignment
         return hashCode % node.length;
     }

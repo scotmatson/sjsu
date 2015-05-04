@@ -16,13 +16,12 @@ public class Potion
 
     @Override
     public int hashCode() {
-        final int prime = 3;
+        final int prime = 9181;
         int result = 1;
 
         result *= (prime * (int) getSize());
         result *= (prime * getType());
 
-//        hashCodeTester(result);
         return result;
     }
 

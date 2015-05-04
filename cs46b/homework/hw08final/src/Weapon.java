@@ -20,7 +20,7 @@ public class Weapon
 
     @Override
     public int hashCode() {
-        final int prime = 7;
+        final int prime = 9181;
         int result = 1;
 
         result *= (getDamage() * prime);
