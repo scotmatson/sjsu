@@ -28,6 +28,6 @@ public class AlbumNode
 	@Override
 	public String toString()
 	{
-		return this.artist + " - " + this.name;
+		return this.getArtist() + " - " + this.getName();
 	}
 }

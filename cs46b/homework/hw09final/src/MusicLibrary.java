@@ -48,7 +48,7 @@ public class MusicLibrary
 	 */
 	public AlbumNode getAlbum(String albumName)
 	{
-		// YOUR CODE HERE
+		return null;
 	}
 	
 	/**
@@ -59,7 +59,7 @@ public class MusicLibrary
 	 */
 	public int count()
 	{
-		// YOUR CODE HERE
+		return -1;
 	}
 	
 	/**

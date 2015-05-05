@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67da2599-a756-4ab8-b863-f7af7b5094bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/LinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/ListIterator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem02/Roster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem02/RosterTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem04/ShuffleTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/SortedLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/SortedLinkedListTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem03/TestComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../lab/lab11/src/cs46b_scotMatson.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" afterPath="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/lab11/src/problem01/Student.java" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem01/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/lab11/src/problem01/StudentTester.java" afterPath="$PROJECT_DIR$/../lab/lab11/src/problem01/StudentTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/misc.xml" afterPath="$PROJECT_DIR$/../lab/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../lab/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../lab/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Package.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PriorityQueueAsLinkedList/PriorityQueueAsLinkedList.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/ShippingQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/hw09final/src/AlbumNode.java" afterPath="$PROJECT_DIR$/../homework/hw09final/src/AlbumNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/hw09final/src/MusicLibrary.java" afterPath="$PROJECT_DIR$/../homework/hw09final/src/MusicLibrary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../homework/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../homework/.idea/workspace.xml" />
     </list>
     <ignored path="exams.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,24 +37,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Album.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
+      <file leaf-file-name="Package.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Package.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.118644066" vertical-offset="1161" max-vertical-offset="1746">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding>
-                <element signature="e#2058#2059#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="702">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Tester.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
+        <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <caret line="12" column="31" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1440">
+              <caret line="15" column="32" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tester2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="990">
+              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShippingQueue.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/ShippingQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2224" vertical-offset="2075" max-vertical-offset="2790">
+              <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
+              <folding>
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#2796#2797#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2905#2906#0" expanded="true" />
+                <element signature="e#2969#2970#0" expanded="true" />
+                <element signature="e#3345#3346#0" expanded="true" />
+                <element signature="e#3381#3382#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +109,10 @@
         <option value="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Track.java" />
         <option value="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java" />
         <option value="$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java" />
+        <option value="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Package.java" />
+        <option value="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester.java" />
+        <option value="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester2.java" />
+        <option value="$PROJECT_DIR$/PriorityQueueAsLinkedList/src/ShippingQueue.java" />
       </list>
     </option>
   </component>
@@ -141,38 +168,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SortingAndSearchingQuiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SortingAndSearchingQuiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -197,29 +192,14 @@
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tester (3)">
-    <configuration default="false" name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tester" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="midterm01" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Tester (4)">
     <configuration default="false" name="Tester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tester" />
       <option name="VM_PARAMETERS" />
@@ -277,6 +257,50 @@
       <module name="SortingAndSearchingQuiz" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tester (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PriorityQueueAsLinkedList" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tester2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester2" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PriorityQueueAsLinkedList" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -339,18 +363,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.Tester" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Tester (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Tester (2)" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Tester (3)" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.Tester (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Tester (2)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Tester (3)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Tester (4)" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Tester2" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Tester (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Tester (2)" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Tester (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Tester" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Tester (4)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Tester2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tester (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Tester (2)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Tester (1)" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -368,32 +394,52 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-1" width="1368" height="770" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-1" width="1368" height="770" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668713" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923076" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14417177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7131902" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13293052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22205438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5398773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -415,17 +461,43 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester2.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1746">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2058#2059#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="630">
+          <caret line="12" column="31" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#2058#2059#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -670,13 +742,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TheMoreYouIgnoreMe.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="288">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/IOExam/src/Book.java">
@@ -729,20 +801,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2016" vertical-offset="1098" max-vertical-offset="1746">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="e#2058#2059#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Tester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+        <state vertical-scroll-proportion="0.3376" vertical-offset="5" max-vertical-offset="630">
           <caret line="12" column="31" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SortingAndSearchingQuiz/src/Album.java">
+    <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Package.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118644066" vertical-offset="1161" max-vertical-offset="1746">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="702">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="365" max-vertical-offset="990">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1440">
+          <caret line="15" column="32" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/src/ShippingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2224" vertical-offset="2075" max-vertical-offset="2790">
+          <caret line="123" column="59" selection-start-line="123" selection-start-column="59" selection-end-line="123" selection-end-column="59" />
           <folding>
-            <element signature="e#2058#2059#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#2796#2797#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2969#2970#0" expanded="true" />
+            <element signature="e#3345#3346#0" expanded="true" />
+            <element signature="e#3381#3382#0" expanded="true" />
           </folding>
         </state>
       </provider>
