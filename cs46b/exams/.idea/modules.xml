@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HashTablesQuiz/HashTablesQuiz.iml" filepath="$PROJECT_DIR$/HashTablesQuiz/HashTablesQuiz.iml" />
       <module fileurl="file://$PROJECT_DIR$/IOExam/IOExam.iml" filepath="$PROJECT_DIR$/IOExam/IOExam.iml" />
       <module fileurl="file://$PROJECT_DIR$/PriorityQueueAsLinkedList/PriorityQueueAsLinkedList.iml" filepath="$PROJECT_DIR$/PriorityQueueAsLinkedList/PriorityQueueAsLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/RecursionQuiz/RecursionQuiz.iml" filepath="$PROJECT_DIR$/RecursionQuiz/RecursionQuiz.iml" />
