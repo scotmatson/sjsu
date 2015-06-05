@@ -3,7 +3,7 @@
 
  Test class for the NameFinder.java class.
 
- Solves CS 147 Homework Assignment #01
+ Solves CS147 Homework Assignment #01
 
  @author Scot Matson
  @version 1.00 2015/6/5
@@ -20,6 +20,8 @@ public class NameFinderDemo
     {
        // URL to full text of War and Peace
        URL url = new URL("http://www.cs.sjsu.edu/~mak/CS146/assignments/1/WarAndPeace.txt");
+
+
     }
 
 }
