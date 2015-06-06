@@ -47,9 +47,9 @@ public class NameFinderDemo
 
       pw.write(" LINE  POSITION  NAME\n");
       Scanner stdin = new Scanner(br);
+      stdin.useDelimiter("[.?,']");
 
       int lineNumber = 0;
-
       while (stdin.hasNextLine()) {
          String line = stdin.nextLine();
          ++lineNumber;
@@ -59,7 +59,7 @@ public class NameFinderDemo
          {
             pw.format("%5d  %8d  %s\n", lineNumber, (1 + line.indexOf(names[0])), names[0]);
          }
-         if (lastWord.equals("Makar") && stdin.hasNext("Alexeevich1"))
+         if (lastWord.equals("Makar") && stdin.hasNext("Alexeevich"))
          {
             pw.format("%5d  %8d  %s\n", lineNumber, (line.indexOf("Makar")), names[0]);
          }
@@ -83,6 +83,21 @@ public class NameFinderDemo
          {
             pw.format("%5d  %8d  %s\n", lineNumber, (line.indexOf("Boris")), names[2]);
          }
+
+
+         // Comma
+         if (lineNumber == 23910) System.out.println(lineNumber + " " + line);
+         if (lineNumber == 23911) System.out.println(lineNumber + " " + line + "\n");
+
+         // Apostropohe
+         if (lineNumber == 46593) System.out.println(lineNumber + " " + line);
+         if (lineNumber == 46594) System.out.println(lineNumber + " " + line + "\n");
+
+         // Comma
+         if (lineNumber == 48331) System.out.println(lineNumber + " " + line);
+         if (lineNumber == 48332) System.out.println(lineNumber + " " + line + "\n");
+
+
       }
 
       // Performance testing end time.
