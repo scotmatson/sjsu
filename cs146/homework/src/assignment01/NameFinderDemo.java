@@ -14,14 +14,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
 
 public class NameFinderDemo
 {
-   public static void main (String[] args) throws MalformedURLException,
-   IOException
+   public static void main (String[] args) throws IOException
    {
       // Performance testing start time.
       double startTime = System.currentTimeMillis();
@@ -30,74 +28,67 @@ public class NameFinderDemo
       URL warAndPeace = new URL("http://www.cs.sjsu.edu/~mak/CS146/assignments/1/WarAndPeace.txt");
 
       // Names we are interested in finding.
-      String[] names = new String[3];
-      names[0] = "Makar Alexeevich";
-      names[1] = "Joseph Bazdeev";
-      names[2] = "Boris Drubetskoy";
+      Person[] people = {
+         new Person("Makar", "Alexeevich"),
+         new Person("Joseph", "Bazdeev"),
+         new Person("Boris", "Drubetskoy")
+      };
 
-
-      // Reading data
+      // Reading data from URL
       BufferedReader br = new BufferedReader(new InputStreamReader(warAndPeace.openStream()));
-
-      // Preparing to parse data.
-      Scanner in = new Scanner(br);
 
       // Setting up to output data.
       PrintWriter pw = new PrintWriter("output.txt", "UTF-8");
 
+      // Building header.
       pw.write(" LINE  POSITION  NAME\n");
+
+      // Preparing to parse.
       Scanner stdin = new Scanner(br);
-      stdin.useDelimiter("[.?,']");
+      stdin.useDelimiter("[\\s,.!?';]");
 
       int lineNumber = 0;
       while (stdin.hasNextLine()) {
          String line = stdin.nextLine();
+
          ++lineNumber;
-         String lastWord = line.substring(line.lastIndexOf(" ")+1);
+         String lastWord = line.substring(line.lastIndexOf(" ") + 1);
+
          // MAKAR
-         if (line.contains(names[0]))
+         if (line.contains(people[0].getFullName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (1 + line.indexOf(names[0])), names[0]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[0].getFullName())), people[0].getFullName());
          }
-         if (lastWord.equals("Makar") && stdin.hasNext("Alexeevich"))
+         if (lastWord.equals(people[0].getFirstName()) && stdin.hasNext(people[0].getLastName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (line.indexOf("Makar")), names[0]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[0].getFirstName())), people[0].getFullName());
          }
 
          // JOSEPH
-         if (line.contains(names[1]))
+         if (line.contains(people[1].getFullName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (1 + line.indexOf(names[1])), names[1]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[1].getFullName())), people[1].getFullName());
          }
-         if (lastWord.equals("Joseph") && stdin.hasNext("Bazdeev"))
+         if (lastWord.equals(people[1].getFirstName()) && stdin.hasNext(people[1].getLastName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (line.indexOf("Joseph")), names[1]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[1].getFirstName())), people[1].getFullName());
          }
 
          // BORIS
-         if (line.contains(names[2]))
+         if (line.contains(people[2].getFullName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (1 + line.indexOf(names[2])), names[2]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[2].getFullName())), people[2].getFullName());
          }
-         if (lastWord.equals("Boris") && stdin.hasNext("Drubetskoy"))
+         if (lastWord.equals(people[2].getFirstName()) && stdin.hasNext(people[2].getLastName()))
          {
-            pw.format("%5d  %8d  %s\n", lineNumber, (line.indexOf("Boris")), names[2]);
+            pw.format("%5d  %8d  %s\n", lineNumber,
+               (1 + line.indexOf(people[2].getFirstName())), people[2].getFullName());
          }
-
-
-         // Comma
-         if (lineNumber == 23910) System.out.println(lineNumber + " " + line);
-         if (lineNumber == 23911) System.out.println(lineNumber + " " + line + "\n");
-
-         // Apostropohe
-         if (lineNumber == 46593) System.out.println(lineNumber + " " + line);
-         if (lineNumber == 46594) System.out.println(lineNumber + " " + line + "\n");
-
-         // Comma
-         if (lineNumber == 48331) System.out.println(lineNumber + " " + line);
-         if (lineNumber == 48332) System.out.println(lineNumber + " " + line + "\n");
-
-
       }
 
       // Performance testing end time.
