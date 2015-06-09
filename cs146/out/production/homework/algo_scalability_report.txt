@@ -1,0 +1,49 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Test class for the NameNode.java class.
+
+ Solves CS147 Homework Assignment #01
+
+ @author Scot Matson
+ @version 1.00 2015/6/5
+ */
+
+ I'm not sure if what I've developed is considered an algorithm as it feels very
+ remedial to me. It follows basic Java practices of utilizing objects and File I/O
+ but beyond that does not necessarily `efficiently` parse through the data. It
+ does not attempt to utilize data structures or Sorting; it simply reads and writes.
+
+ The reason I chose not to use a data structure was not my initial plan. I had simply
+ focused my efforts on incremental development to first set up an object to store the
+ names of the people I would searching for and a way to retrieve these names which
+ I had accomplished with a few minor snafu's.
+
+ Firstly when beginning to read the file I chose to work remotely rather than locally
+ as it gave me an opportunity to practicing scraping information from the internet. This
+ process turned out to be quite simple and the Java Tutorials provide excellent examples
+ from which I was able to borrow. Next I had to think about how I would read they data
+ I had gathered. After doing some reading I decided to attempt a combination of using
+ the BufferedReader for reading efficiency and then passing my data into a Scanner for
+ parsing. Stack Overflow gave me the idea to perform this task but I'm not quite
+ sold on the pairing of the two classes having any real performance gains.
+
+ Writing to a file required little thought as this was something that I am familiar
+ with, but I still like to check my usual resources to ensure I have not left anything out
+ as I do not do this every day.
+
+ The real trouble began when I received my first output file. The data set was not only
+ missing multiple instances of names in expected locations but I was also running into
+ off-by-one errors and having difficulties pulling the Strings which traversed across
+ more than one line at a time. After spending a few hours on resolving these issues I
+ managed to fix the off-by-one errors by simply adding a 1 to the incorrect column index,
+ and managed pull in a few additional records using regex through the useDelimeter() method.
+
+ Finally to resolve the issue with a String traversing multiple lines I reached out to Stack
+ Overflow once again and this time initiated a discussion with the community. While I did not
+ get any feedback that led to my used solution, speaking with other developers helped let my mind
+ reach out and think through this from different angles. I commented out my working code and isolated
+ one of the lines that was giving me troubles and broke the problem down into its finite parts. First
+ grabbing the last word in the line, second, checking the value of the first word of the next line.
+
+ While my output is correct, I find my program to be highly inefficient.
