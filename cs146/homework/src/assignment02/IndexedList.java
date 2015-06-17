@@ -16,10 +16,10 @@ import java.util.*;
 
 public class IndexedList implements List<Integer>
 {
-   Node head;          // Sentient node before the first item.
-   Node tail;          // Sentient node after the last node.
-   List<Integer> k;    // Pointer to the kth node.
-   int nodeCount;      // Number of elements in the list.
+   Node head;       // Sentient node before the first item.
+   Node tail;       // Sentient node after the last node.
+   List<Node> k;    // Pointer to the kth node.
+   int nodeCount;   // Number of elements in the list.
 
    /**
     Constructor Method. Initilizes new instance of an IndexedList
@@ -124,12 +124,19 @@ public class IndexedList implements List<Integer>
 
       // Add a new Node
       // If no node currently exists
-      if (head.next == null)
+      if (nodeCount == 0)
       {
-
+         k.add(currentNode); // Reference to the first node... probably don't really need this.
+         ++nodeCount;
+         return true;
+      }
+      else
+      {
+         // We already have nodes present.
       }
       // Increment our counter
       // set our kth pointer for every nth nodes
+      System.out.println(head.next.data);
       return false;
    }
 
@@ -346,5 +353,12 @@ public class IndexedList implements List<Integer>
          next = null;
          this.data = dataValue;
       }
+
+      public Node getPrev() { return prev; }
+      public void setPrev(Node prev) { this.prev = prev; }
+      public Node getNext() { return next; }
+      public void setNext(Node next) { this.next = next; }
+      public Integer getData() { return data; }
+      public void setData(Integer data) { this.data = data; }
    }
 }
