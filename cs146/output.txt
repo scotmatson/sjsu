@@ -32,5 +32,4 @@
 48435         1  Makar Alexeevich
 48468        68  Makar Alexeevich
 
-Total Run Time: 1109.0 millisecond(s)
-Average Performance Time: 1448.29 millisecond(s)
+Total Run Time: 1274.0 millisecond(s)

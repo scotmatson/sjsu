@@ -1,7 +1,7 @@
 /**
  COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
 
- Test class for the NameNode.java class.
+ Code Review and Performance Report
 
  Solves CS147 Homework Assignment #01
 
@@ -46,4 +46,19 @@
  one of the lines that was giving me troubles and broke the problem down into its finite parts. First
  grabbing the last word in the line, second, checking the value of the first word of the next line.
 
- While my output is correct, I find my program to be highly inefficient.
+ While my output is correct, I find my program to be highly inefficient. I think
+ that by performing all of the reading and writing operations simultaneously that
+ I am forcing the processor and RAM to have to work harder to manage data and pass
+ around values. I noticed that the order I am searching the names happens to be the
+ order in which the names present which is why I decided to not store the names
+ in a data structure as I would not have to be sorting any of the values.
+
+ One convenient change which occurred today was an overall improvement in my performance
+ times. Previously I was averaging times from 3500-6000 milliseconds on our old 6Mb/sec
+ ISP plan but today we have upgraded to 30Mb/sec and I have noted substantial
+ improvements in my program, down to ~1500 milliseconds.
+
+ Given the latest results, I feel that I would have significant improvement if
+ I read all of the data from a local file and separated the read and write operations.
+ This has given me a great deal of insight into how even what may seem like an
+ insignificant change to my code could greatly improve the run times.
