@@ -1,6 +1,5 @@
 package assignment02;
 
-import java.util.List;
 import java.util.Random;
 
 /**
@@ -12,7 +11,7 @@ public class IndexedListTester
    {
       System.out.printf("*** IndexedList Tester ***\n\n");
 
-      List<Integer> id = new IndexedList<>();
+      IndexedList<Integer> id = new IndexedList<>();
 
       System.out.printf("Was 13 successfully added? %s\n", id.add(13) ? "true" : "False");
       System.out.printf("Was 42 successfully added? %s\n", id.add(42) ? "true" : "False");
@@ -23,11 +22,14 @@ public class IndexedListTester
       id.clear();
       System.out.println("*** Testing 100 Random Values ***");
       Random rand = new Random();
-      for (int i = 0; i < 100; ++i)
+      for (int i = 0; i < 20; ++i)
       {
-         id.get(rand.nextInt(1000));
+         id.add(rand.nextInt(100));
       }
-      //id.printList();
-      //id.printAccessList();
+
+      id.printNodeGraph();
+      for (int i = 0; i < 10; ++i) {
+         System.out.println("Value at position: " + i + " : " + id.get(i));
+      }
    }
 }

@@ -83,12 +83,46 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public Integer get(int index)
    {
+      Node currentNode;
+      int startPosition;
+      int accessIndex;
+      int step;
 
+      // INCREMENTING
+      if (index % accessInterval < 5) {
+         startPosition = (index - (index % accessInterval));
+         accessIndex = startPosition / accessInterval;
+         step = index - startPosition;
+         currentNode = al.get(accessIndex);
+         System.out.println("Starting from: " + accessIndex);
+         while (currentNode.hasNext() && step > 0)
+         {
+            currentNode = currentNode.next;
+            --step;
+         }
+      }
+      // DECREMENTING
+      else {
+         startPosition = ((index / accessInterval) + 1) * accessInterval;
+         accessIndex = startPosition / accessInterval;
+         step = startPosition - index;
+         currentNode = al.get(accessIndex);
+         System.out.println("Starting from: " + accessIndex);
+         while (currentNode.hasPrevious() && step > 0)
+         {
+            currentNode = currentNode.previous;
+            --step;
+         }
 
+      }
 
+      //System.out.println("index: " + index);
+      //System.out.println("start: " + startPosition);
+      //System.out.println("access: " + accessIndex);
+      //System.out.println("step: " + step);
+      //System.out.println();
 
-
-      return null;
+      return currentNode.data;
    }
 
    @Override
@@ -111,34 +145,33 @@ public class IndexedList<Integer> implements List<Integer>
       if (listSize % accessInterval == 0)
          al.add(tail);
    }
-   public int getAccessIndex(int index)
-   {
-      return (index % accessInterval < 5) ?
-          (index - (index % accessInterval)) :
-         ((index / accessInterval) + 1) * accessInterval;
 
-   }
-
-   public void printList()
+   public void printNodeGraph()
    {
+      ArrayList<String> output = new ArrayList<>();
+
       Node currentNode = head;
-      System.out.printf("Values of IndexedList... \n");
       while (currentNode.hasNext())
       {
-         System.out.printf("%d ", currentNode.data);
+         output.add(String.valueOf(currentNode.data));
          currentNode = currentNode.next;
-      }
-      System.out.printf("%d\n\n", currentNode.data);
-   }
 
-   public void printAccessList()
-   {
-      System.out.println("Values of AccessList");
+      }
+      output.add(String.valueOf(currentNode.data));
+
+      System.out.println("*** Generate Node Graph ***");
       for (int i = 0; i < al.size(); ++i)
       {
-         System.out.printf("[%d] %d", i, al.get(i).data);
+         if ((i / accessInterval) == 0)
+         {
+            output.set(accessInterval * i, output.get(accessInterval*i) + " [" + al.get(i).data + "]");
+         }
       }
-      System.out.println("\n");
+
+      for (int i = 0; i < output.size(); ++i)
+      {
+         System.out.println(output.get(i));
+      }
    }
 
    private class Node
