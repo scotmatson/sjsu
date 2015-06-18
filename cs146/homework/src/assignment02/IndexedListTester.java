@@ -28,8 +28,11 @@ public class IndexedListTester
       }
 
       id.printNodeGraph();
-      for (int i = 0; i < 10; ++i) {
-         System.out.println("Value at position: " + i + " : " + id.get(i));
+      for (int i = 0; i < 20; ++i) {
+         id.set(i, 1000);
       }
+
+
+      id.printNodeGraph();
    }
 }

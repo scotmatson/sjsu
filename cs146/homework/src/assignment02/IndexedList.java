@@ -83,6 +83,17 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public Integer get(int index)
    {
+      Node currentNode = getNode(index);
+      return currentNode.data;
+   }
+
+   /**
+    Helper method. Given an index will return a node at that location.
+    @param index
+    @return
+    */
+   public Node getNode(int index)
+   {
       Node currentNode;
       int startPosition;
       int accessIndex;
@@ -94,7 +105,6 @@ public class IndexedList<Integer> implements List<Integer>
          accessIndex = startPosition / accessInterval;
          step = index - startPosition;
          currentNode = al.get(accessIndex);
-         System.out.println("Starting from: " + accessIndex);
          while (currentNode.hasNext() && step > 0)
          {
             currentNode = currentNode.next;
@@ -104,31 +114,33 @@ public class IndexedList<Integer> implements List<Integer>
       // DECREMENTING
       else {
          startPosition = ((index / accessInterval) + 1) * accessInterval;
-         accessIndex = startPosition / accessInterval;
-         step = startPosition - index;
-         currentNode = al.get(accessIndex);
-         System.out.println("Starting from: " + accessIndex);
+         System.out.println("Start Posistion: " + startPosition);
+         if (startPosition == al.size() * accessInterval) {
+            currentNode = tail;
+            step = startPosition - index - 1;
+         }
+         else
+         {
+            accessIndex = (startPosition / accessInterval);
+            step = startPosition - index;
+            currentNode = al.get(accessIndex);
+         }
          while (currentNode.hasPrevious() && step > 0)
          {
             currentNode = currentNode.previous;
             --step;
          }
-
       }
-
-      //System.out.println("index: " + index);
-      //System.out.println("start: " + startPosition);
-      //System.out.println("access: " + accessIndex);
-      //System.out.println("step: " + step);
-      //System.out.println();
-
-      return currentNode.data;
+      return currentNode;
    }
 
    @Override
-   public Integer set(int index, Integer element)
+   public Integer set(int index, Integer integer)
    {
-      return null;
+      Node currentNode = getNode(index);
+      Integer previousValue = currentNode.data;
+      currentNode.data = integer;
+      return previousValue;
    }
 
    @Override
