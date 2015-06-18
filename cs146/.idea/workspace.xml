@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ffa729c-e877-4e4e-bf3a-09b601149556" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment02/IndexedList.java" afterPath="$PROJECT_DIR$/homework/src/assignment02/IndexedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java" afterPath="$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java" />
     </list>
     <ignored path="cs146.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,30 +25,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IndexedList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexedList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6055777">
+              <caret line="169" column="62" selection-start-line="169" selection-start-column="62" selection-end-line="169" selection-end-column="62" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#519#520#0" expanded="true" />
                 <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#3261#3262#0" expanded="true" />
-                <element signature="e#3285#3286#0" expanded="true" />
-                <element signature="e#4441#4442#0" expanded="true" />
-                <element signature="e#4486#4487#0" expanded="true" />
-                <element signature="e#4529#4530#0" expanded="true" />
-                <element signature="e#4578#4579#0" expanded="true" />
+                <element signature="e#3699#3700#0" expanded="true" />
+                <element signature="e#3723#3724#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexedListTester.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexedListTester.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89641434">
+            <state vertical-scroll-proportion="0.0">
               <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
@@ -97,8 +92,8 @@
         <option value="$PROJECT_DIR$/homework/src/assignment02/Node.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment02/IndexedList2Tester.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment02/IndexedList2.java" />
-        <option value="$PROJECT_DIR$/homework/src/assignment02/IndexedList.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java" />
+        <option value="$PROJECT_DIR$/homework/src/assignment02/IndexedList.java" />
       </list>
     </option>
   </component>
@@ -463,12 +458,8 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -489,12 +480,8 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -515,12 +502,8 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -541,12 +524,8 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,29 +694,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedList.java">
+    <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="44" selection-start-line="119" selection-start-column="44" selection-end-line="119" selection-end-column="44" />
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6055777">
+          <caret line="169" column="62" selection-start-line="169" selection-start-column="62" selection-end-line="169" selection-end-column="62" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3285#3286#0" expanded="true" />
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4529#4530#0" expanded="true" />
-            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#3699#3700#0" expanded="true" />
+            <element signature="e#3723#3724#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedListTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89641434">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

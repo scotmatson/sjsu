@@ -70,6 +70,9 @@ public class IndexedList<Integer> implements List<Integer>
 
    }
 
+   /**
+    Returns all instances variables to intialized state.
+    */
    @Override
    public void clear()
    {
@@ -80,6 +83,13 @@ public class IndexedList<Integer> implements List<Integer>
       accessInterval = 10;
    }
 
+   /**
+    Given an index, the stored integer value from the node at that location
+      is returned.
+
+    @param index
+    @return an integer from a specified location
+    */
    @Override
    public Integer get(int index)
    {
@@ -88,7 +98,7 @@ public class IndexedList<Integer> implements List<Integer>
    }
 
    /**
-    Helper method. Given an index will return a node at that location.
+    Helper method. Given an index, will return a node at that location.
     @param index
     @return
     */
@@ -114,7 +124,8 @@ public class IndexedList<Integer> implements List<Integer>
       // DECREMENTING
       else {
          startPosition = ((index / accessInterval) + 1) * accessInterval;
-         System.out.println("Start Posistion: " + startPosition);
+         // Condition to adjust for off-by-one error when the startPosition is the size
+         //   of the ArrayList
          if (startPosition == al.size() * accessInterval) {
             currentNode = tail;
             step = startPosition - index - 1;
@@ -134,6 +145,12 @@ public class IndexedList<Integer> implements List<Integer>
       return currentNode;
    }
 
+   /**
+    Sets a new integer value at the node at the given index.
+    @param index
+    @param integer
+    @return the old value
+    */
    @Override
    public Integer set(int index, Integer integer)
    {
@@ -150,7 +167,7 @@ public class IndexedList<Integer> implements List<Integer>
    }
 
    /**
-    Generates indices throughout the LinkedList at the kth value
+    Generates indices throughout the LinkedList at the kth value.
     */
    public void createIndexInterval()
    {
@@ -161,8 +178,8 @@ public class IndexedList<Integer> implements List<Integer>
    public void printNodeGraph()
    {
       ArrayList<String> output = new ArrayList<>();
-
       Node currentNode = head;
+
       while (currentNode.hasNext())
       {
          output.add(String.valueOf(currentNode.data));
@@ -173,17 +190,12 @@ public class IndexedList<Integer> implements List<Integer>
 
       System.out.println("*** Generate Node Graph ***");
       for (int i = 0; i < al.size(); ++i)
-      {
          if ((i / accessInterval) == 0)
-         {
             output.set(accessInterval * i, output.get(accessInterval*i) + " [" + al.get(i).data + "]");
-         }
-      }
 
       for (int i = 0; i < output.size(); ++i)
-      {
          System.out.println(output.get(i));
-      }
+
    }
 
    private class Node
@@ -199,19 +211,9 @@ public class IndexedList<Integer> implements List<Integer>
          data = value;
       }
 
-      public boolean hasNext()
-      {
-         return (this.next != null);
-      }
-      public boolean hasPrevious()
-      {
-         return (this.previous != null);
-      }
+      public boolean hasNext() { return (this.next != null); }
+      public boolean hasPrevious() { return (this.previous != null); }
    }
-
-
-
-
 
    /**
     Unimplented methods of the List interface.
