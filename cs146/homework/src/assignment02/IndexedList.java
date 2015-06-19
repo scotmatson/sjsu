@@ -101,15 +101,15 @@ public class IndexedList<Integer> implements List<Integer>
       }
       else
       {
-         System.out.println("Index " + index + ": " + getNode(index).data);
-
          Node currentNode = getNode(index);
 
+         // Edge case index 0
          if (!currentNode.hasPrevious())
          {
             newNode.next = currentNode;
             head = currentNode.previous = newNode;
          }
+         // Edge case index length - 1
          else if (!currentNode.hasNext())
          {
             newNode.previous = currentNode;
@@ -120,15 +120,10 @@ public class IndexedList<Integer> implements List<Integer>
             newNode.previous = currentNode.previous;
             currentNode.previous.next = newNode;
             newNode.next = currentNode;
+            refactorIndexInterval(index);
          }
-
-
-
-
-
-
       }
-      //createIndexInterval();
+      createIndexInterval();
 
       ++listSize;
    }
@@ -234,7 +229,26 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public Integer remove(int index)
    {
-      return null;
+      Node currentNode = getNode(index);
+
+      // Edge case index 0
+      if (!currentNode.hasPrevious())
+      {
+         currentNode.next.previous = null;
+         head = currentNode.next;
+      }
+      // Edge case index length - 1
+      else if (!currentNode.hasNext())
+      {
+         currentNode.previous.next = null;
+         tail = currentNode.previous;
+      }
+      else
+      {
+         currentNode.previous.next = currentNode.next;
+         currentNode.next.previous = currentNode.previous;
+      }
+      return currentNode.data;
    }
 
    /**
@@ -246,10 +260,13 @@ public class IndexedList<Integer> implements List<Integer>
          al.add(tail);
    }
 
-   public void shiftIndexIntervals()
+
+   public void refactorIndexInterval(int index)
    {
       // TODO: Create logic to follow insertion/deletion of nodes
       // Cases: Edge, Shared, Pre, Post
+      // May need two separate methods since
+      // insert is ahead by one and remove is behind by one
    }
 
    public void printNodeGraph()

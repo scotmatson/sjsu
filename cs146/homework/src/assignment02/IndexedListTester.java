@@ -40,8 +40,8 @@ public class IndexedListTester
       //System.out.println("Node 1: " + id.get(1));
       //System.out.println("Node 2: " + id.get(2));
 
+      id.remove(11);
 
-      id.add(12, 1000);
       id.printNodeGraph();
    }
 }
