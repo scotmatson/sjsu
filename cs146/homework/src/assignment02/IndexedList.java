@@ -101,10 +101,35 @@ public class IndexedList<Integer> implements List<Integer>
       }
       else
       {
-         System.out.println("Index: " + index);
-         System.out.println("Node 0: " + getNode(1).data);
+         System.out.println("Index " + index + ": " + getNode(index).data);
+
+         Node currentNode = getNode(index);
+
+         if (!currentNode.hasPrevious())
+         {
+            newNode.next = currentNode;
+            head = currentNode.previous = newNode;
+         }
+         else if (!currentNode.hasNext())
+         {
+            newNode.previous = currentNode;
+            tail = currentNode.next = newNode;
+         }
+         else
+         {
+            newNode.previous = currentNode.previous;
+            currentNode.previous.next = newNode;
+            newNode.next = currentNode;
+         }
+
+
+
+
+
+
       }
-      createIndexInterval();
+      //createIndexInterval();
+
       ++listSize;
    }
 
