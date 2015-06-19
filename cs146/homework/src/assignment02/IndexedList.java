@@ -22,25 +22,44 @@ public class IndexedList<Integer> implements List<Integer>
    int listSize;
    int accessInterval;
 
+   /**
+    Constructor method for a new IndexedList. Initializes instance variables
+      by calling the IndexedList.clear() method.
+    */
    public IndexedList()
    {
       clear();
    }
 
+   /**
+    Returns the number of elements in the IndexedList.
+    @return the number of elements as an int value.
+    */
    @Override
-   public int size() { return listSize; }
-   @Override
-   public boolean isEmpty() { return (listSize == 0); }
+   public int size()
+   {
+      return listSize;
+   }
 
    /**
-    Initializes the head and tail nodes of the IndexedList
+    Initializes the head and tail nodes of the IndexedList.
     @param newNode
     */
-   public void addFirst(Node newNode)
+   private void initializeList(Node newNode)
    {
       head = tail = newNode;
    }
 
+   /**
+    Helper method. Appends a node to the end of the IndexedList.
+    @param newNode
+    */
+   private void pushNode(Node newNode)
+   {
+      newNode.previous = tail;
+      tail.next = newNode;
+      tail = tail.next;
+   }
 
    /**
     Appends an Integer to the end of the IndexedList.
@@ -53,13 +72,11 @@ public class IndexedList<Integer> implements List<Integer>
       Node newNode = new Node(integer);
       if (head == null)
       {
-         addFirst(newNode);
+         initializeList(newNode);
       }
       else
       {
-         newNode.previous = tail;
-         tail.next = newNode;
-         tail = tail.next;
+         pushNode(newNode);
       }
       createIndexInterval();
       ++listSize;
@@ -76,12 +93,16 @@ public class IndexedList<Integer> implements List<Integer>
       Node newNode = new Node(integer);
       if (head == null)
       {
-         addFirst(newNode);
+         initializeList(newNode);
+      }
+      else if (index == listSize)
+      {
+         pushNode(newNode);
       }
       else
       {
          System.out.println("Index: " + index);
-         //System.out.println("Node 0: " + getNode(1).data);
+         System.out.println("Node 0: " + getNode(1).data);
       }
       createIndexInterval();
       ++listSize;
@@ -100,6 +121,11 @@ public class IndexedList<Integer> implements List<Integer>
       accessInterval = 10;
    }
 
+   public void setAccessInterval(int k)
+   {
+      accessInterval = k;
+   }
+
    /**
     Given an index, the stored integer value from the node at that location
       is returned.
@@ -110,9 +136,6 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public Integer get(int index)
    {
-      if (index < 0 || index > listSize)
-         throw new IndexOutOfBoundsException("Index out of bounds.");
-
       Node currentNode = getNode(index);
       return currentNode.data;
    }
@@ -124,7 +147,7 @@ public class IndexedList<Integer> implements List<Integer>
     */
    public Node getNode(int index)
    {
-      if (index < 0 || index > listSize)
+      if (index < 0 || index >= listSize)
          throw new IndexOutOfBoundsException("Index out of bounds.");
 
       Node currentNode;
@@ -196,6 +219,12 @@ public class IndexedList<Integer> implements List<Integer>
    {
       if (listSize % accessInterval == 0)
          al.add(tail);
+   }
+
+   public void shiftIndexIntervals()
+   {
+      // TODO: Create logic to follow insertion/deletion of nodes
+      // Cases: Edge, Shared, Pre, Post
    }
 
    public void printNodeGraph()
@@ -271,4 +300,6 @@ public class IndexedList<Integer> implements List<Integer>
    public List<Integer> subList(int fromIndex, int toIndex) { return null; }
    @Override
    public boolean remove(Object o) { return false; }
+   @Override
+   public boolean isEmpty() { return false; }
 }
