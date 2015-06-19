@@ -32,13 +32,28 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public boolean isEmpty() { return (listSize == 0); }
 
+   /**
+    Initializes the head and tail nodes of the IndexedList
+    @param newNode
+    */
+   public void addFirst(Node newNode)
+   {
+      head = tail = newNode;
+   }
+
+
+   /**
+    Appends an Integer to the end of the IndexedList.
+    @param integer
+    @return
+    */
    @Override
    public boolean add(Integer integer)
    {
       Node newNode = new Node(integer);
       if (head == null)
       {
-         head = tail = newNode;
+         addFirst(newNode);
       }
       else
       {
@@ -61,13 +76,15 @@ public class IndexedList<Integer> implements List<Integer>
       Node newNode = new Node(integer);
       if (head == null)
       {
-         head = tail = newNode;
+         addFirst(newNode);
       }
       else
       {
-
+         System.out.println("Index: " + index);
+         //System.out.println("Node 0: " + getNode(1).data);
       }
-
+      createIndexInterval();
+      ++listSize;
    }
 
    /**
@@ -93,6 +110,9 @@ public class IndexedList<Integer> implements List<Integer>
    @Override
    public Integer get(int index)
    {
+      if (index < 0 || index > listSize)
+         throw new IndexOutOfBoundsException("Index out of bounds.");
+
       Node currentNode = getNode(index);
       return currentNode.data;
    }
@@ -104,6 +124,9 @@ public class IndexedList<Integer> implements List<Integer>
     */
    public Node getNode(int index)
    {
+      if (index < 0 || index > listSize)
+         throw new IndexOutOfBoundsException("Index out of bounds.");
+
       Node currentNode;
       int startPosition;
       int accessIndex;
