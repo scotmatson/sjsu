@@ -125,7 +125,7 @@ public class IndexedList<Integer> implements List<Integer>
             newNode.next = currentNode;
          }
       }
-      refactorIndexInterval(index, newNode);
+      insertionShift(index, newNode);
       createIndexInterval();
       ++listSize;
    }
@@ -256,7 +256,7 @@ public class IndexedList<Integer> implements List<Integer>
          currentNode.previous.next = currentNode.next;
          currentNode.next.previous = currentNode.previous;
       }
-      // Needs ArrayList repositioning
+      deletionShift(index, currentNode.next);
       return currentNode.data;
    }
 
@@ -270,7 +270,7 @@ public class IndexedList<Integer> implements List<Integer>
    }
 
 
-   public void refactorIndexInterval(int index, Node newNode)
+   public void insertionShift(int index, Node newNode)
    {
       int listPointer = ((index - (index % accessInterval)) / accessInterval);
 
@@ -282,6 +282,21 @@ public class IndexedList<Integer> implements List<Integer>
       for (int i = listPointer+1; i < al.size(); ++i)
          al.set(i, al.get(i).previous);
 
+   }
+
+   public void deletionShift(int index, Node nextNode)
+   {
+      int listPointer = ((index - (index % accessInterval)) / accessInterval);
+      System.out.println("Index: " + index);
+      System.out.println("List Pointer: " + listPointer);
+
+      // Handles the case when two pointers conflict.
+      if (index % accessInterval == 0 && index < listSize)
+         al.set(listPointer, nextNode);
+
+      // Shifts all pointers that follow the index.
+      for (int i = listPointer+1; i < al.size(); ++i)
+         al.set(i, al.get(i).next);
    }
 
    public void printNodeGraph()
@@ -304,6 +319,9 @@ public class IndexedList<Integer> implements List<Integer>
          ++nodeCounter;
       }
       output += "[" + nodeCounter + "] --> " + currentNode.data;
+      if ((nodeCounter % accessInterval) == 0) {
+         output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
+      }
       System.out.printf("%s\n\n", output);
    }
 
