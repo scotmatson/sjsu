@@ -62,6 +62,17 @@ public class IndexedList<Integer> implements List<Integer>
    }
 
    /**
+    Pushes a new node onto the beginning of the IndexedList
+    @param newNode
+    */
+   private void shiftNode(Node newNode)
+   {
+      Node currentNode = getNode(0);
+      newNode.next = currentNode;
+      head = currentNode.previous = newNode;
+   }
+
+   /**
     Appends an Integer to the end of the IndexedList.
     @param integer
     @return
@@ -102,29 +113,20 @@ public class IndexedList<Integer> implements List<Integer>
       else
       {
          Node currentNode = getNode(index);
-
          // Edge case index 0
          if (!currentNode.hasPrevious())
          {
-            newNode.next = currentNode;
-            head = currentNode.previous = newNode;
-         }
-         // Edge case index length - 1
-         else if (!currentNode.hasNext())
-         {
-            newNode.previous = currentNode;
-            tail = currentNode.next = newNode;
+            shiftNode(newNode);
          }
          else
          {
-            newNode.previous = currentNode.previous;
-            currentNode.previous.next = newNode;
+            Node previous = newNode.previous = currentNode.previous;
+            previous.next = currentNode.previous = newNode;
             newNode.next = currentNode;
-            refactorIndexInterval(index);
          }
       }
+      refactorIndexInterval(index, newNode);
       createIndexInterval();
-
       ++listSize;
    }
 
@@ -141,6 +143,10 @@ public class IndexedList<Integer> implements List<Integer>
       accessInterval = 10;
    }
 
+   /**
+    Sets the kth interval in which we will reference the IndexedList
+    @param k
+    */
    public void setAccessInterval(int k)
    {
       accessInterval = k;
@@ -261,35 +267,51 @@ public class IndexedList<Integer> implements List<Integer>
    }
 
 
-   public void refactorIndexInterval(int index)
+   public void refactorIndexInterval(int index, Node newNode)
    {
       // TODO: Create logic to follow insertion/deletion of nodes
       // Cases: Edge, Shared, Pre, Post
       // May need two separate methods since
       // insert is ahead by one and remove is behind by one
+
+      int listPointer = ((index - (index % accessInterval)) / accessInterval);
+      //System.out.println("ListPointer: " + listPointer);
+      //System.out.println("get(1).data: " + al.get(listPointer + 1).data);
+      //System.out.println("get(1).data: " + al.get(listPointer + 1).previous.data);
+
+      // Use when the al points to the new node
+      //System.out.println("listPointer: " + listPointer);
+      //System.out.println("Index: " + index);
+      // Special case when we add a new node to the 0 index. We cannot % 0.
+         //al.set(listPointer, newNode);
+
+      // Shifts the position of all node pointers which follow a newly inserted node.
+      for (int i = listPointer+1; i < al.size(); ++i)
+         al.set(i, al.get(i).previous);
+
    }
 
    public void printNodeGraph()
    {
-      ArrayList<String> output = new ArrayList<>();
-      Node currentNode = head;
+      System.out.println("*** Generating Node Table ***");
 
+      Node currentNode = head;
+      int arrayPointer = 0;
+      int nodeCounter = 0;
+      String output = "";
       while (currentNode.hasNext())
       {
-         output.add(String.valueOf(currentNode.data));
+         output += "[" + nodeCounter + "] --> " + currentNode.data;
+         if ((nodeCounter % accessInterval) == 0) {
+            output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
+            ++arrayPointer;
+         }
+         output += "\n";
          currentNode = currentNode.next;
-
+         ++nodeCounter;
       }
-      output.add(String.valueOf(currentNode.data));
-
-      System.out.println("*** Generate Node Graph ***");
-      for (int i = 0; i < al.size(); ++i)
-         if ((i / accessInterval) == 0)
-            output.set(accessInterval * i, output.get(accessInterval*i) + " [" + al.get(i).data + "]");
-
-      for (int i = 0; i < output.size(); ++i)
-         System.out.println(output.get(i));
-
+      output += "[" + nodeCounter + "] --> " + currentNode.data;
+      System.out.printf("%s\n\n", output);
    }
 
    private class Node

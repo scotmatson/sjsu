@@ -11,13 +11,23 @@ public class IndexedListTester
    {
       IndexedList<Integer> id = new IndexedList<>();
       Random rand = new Random();
-
       id.setAccessInterval(4);
-      for (int i = 0; i < 12; ++i)
-      {
-         id.add(rand.nextInt(100));
-      }
-      id.printNodeGraph();
+
+      id.add(24);
+      id.add(30);
+      id.add(9);
+      id.add(57);
+      id.add(95);
+      id.add(96);
+      id.add(32);
+      id.add(15);
+      //id.printNodeGraph();
+
+      //for (int i = 0; i < 50; ++i)
+      //{
+      //   id.add(rand.nextInt(100));
+      //}
+      //id.printNodeGraph();
 
       // Testing IndexedNode.set() method
       //for (int i = 0; i < 20; ++i)
@@ -26,21 +36,22 @@ public class IndexedListTester
       //}
       //id.printNodeGraph();
 
-      // Testing out of bounds exception of IndexedList.add(index, element) method
-      //id.add(10, 2);
+      //for (int i = 0; i < 3; ++i)
+      //{
+      //   int plug = rand.nextInt(id.size());
+      //   System.out.println("Place: " + plug);
+      //
+      //   id.add(7,Integer.MAX_VALUE);
+      //}
 
-      // Testing initialization of IndexedList.add(index, element) method
-      //id.clear();
-      //id.add(0, 5);
-      //id.add(1, 6);
-      //id.add(0, 0);
-      //id.add(1, 1);
-      //System.out.println("Size of List: " + id.size());
-      //System.out.println("Node 0: " + id.get(0));
-      //System.out.println("Node 1: " + id.get(1));
-      //System.out.println("Node 2: " + id.get(2));
+      id.add(0, Integer.MAX_VALUE);
 
-      id.remove(11);
+
+      //id.add(0, 123123123);
+      //id.add(1, 123123123);
+      //id.add(2, 123123123);
+      //id.add(3, 123123123);
+
 
       id.printNodeGraph();
    }
