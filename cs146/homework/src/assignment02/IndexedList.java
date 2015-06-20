@@ -239,8 +239,12 @@ public class IndexedList<Integer> implements List<Integer>
    {
       Node currentNode = getNode(index);
 
+      if (listSize == 1) {
+         clear();
+         return null;
+      }
       // Edge case index 0
-      if (!currentNode.hasPrevious())
+      else if (!currentNode.hasPrevious())
       {
          currentNode.next.previous = null;
          head = currentNode.next;
@@ -287,11 +291,33 @@ public class IndexedList<Integer> implements List<Integer>
 
    public void deletionShift(int index, Node nextNode)
    {
+      //System.out.println("Index: " + index);
+      //System.out.println("Node: " + nextNode.data);
       int listPointer = ((index - (index % accessInterval)) / accessInterval);
 
       // Handles the case when two pointers conflict.
       if (index % accessInterval == 0 && index < listSize)
          al.set(listPointer, nextNode);
+
+      //System.out.println("List Size: " + listSize);
+      //System.out.println("AccessInterval: " + accessInterval);
+      //System.out.println("listSize % AccessInterval: " + listSize % accessInterval);
+      //System.out.println("al.size(): " + al.size());
+      //System.out.println("al.get(a.size()): ");
+      //System.out.println();
+
+      // Special case: last node was an access pointer
+      if ((listSize-1) % accessInterval == 0) {
+         al.remove(al.size()-1);
+      }
+
+      //System.out.println("List Size: " + listSize);
+      //System.out.println("AccessInterval: " + accessInterval);
+      //System.out.println("listSize % AccessInterval: " + listSize % accessInterval);
+      //System.out.println("al.size(): " + al.size());
+      //System.out.println("al.get(a.size()): ");
+      //System.out.println();
+
 
       // Shifts all pointers that follow the index.
       for (int i = listPointer+1; i < al.size(); ++i)
@@ -301,25 +327,32 @@ public class IndexedList<Integer> implements List<Integer>
    public void printNodeGraph()
    {
       System.out.println("*** Generating Node Table ***");
+      String output = "";
 
       Node currentNode = head;
-      int arrayPointer = 0;
-      int nodeCounter = 0;
-      String output = "";
-      while (currentNode.hasNext())
+      if (currentNode == null)
+         output += "The List is empty.";
+      else
       {
-         output += "[" + nodeCounter + "] --> " + currentNode.data;
-         if ((nodeCounter % accessInterval) == 0) {
-            output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
-            ++arrayPointer;
+         int arrayPointer = 0;
+         int nodeCounter = 0;
+         while (currentNode.hasNext())
+         {
+            output += "[" + nodeCounter + "] --> " + currentNode.data;
+            if ((nodeCounter % accessInterval) == 0)
+            {
+               output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
+               ++arrayPointer;
+            }
+            output += "\n";
+            currentNode = currentNode.next;
+            ++nodeCounter;
          }
-         output += "\n";
-         currentNode = currentNode.next;
-         ++nodeCounter;
-      }
-      output += "[" + nodeCounter + "] --> " + currentNode.data;
-      if ((nodeCounter % accessInterval) == 0) {
-         output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
+         output += "[" + nodeCounter + "] --> " + currentNode.data;
+         if ((nodeCounter % accessInterval) == 0)
+         {
+            output += " | " + al.get(arrayPointer).data + " <-- [" + arrayPointer + "]";
+         }
       }
       System.out.printf("%s\n\n", output);
    }

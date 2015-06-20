@@ -1,0 +1,7 @@
+Testing Method: remove(int index, Integer integer)
+         N   ArrayList               LinkedList              IndexedList
+        10   remove():        0 ms   remove():        0 ms   remove():        0 ms
+       100   remove():        0 ms   remove():        0 ms   remove():        0 ms
+      1000   remove():        0 ms   remove():        1 ms   remove():        3 ms
+     10000   remove():        4 ms   remove():       24 ms   remove():       16 ms
+    100000   remove():      361 ms   remove():     2463 ms   remove():      684 ms

@@ -23,13 +23,49 @@ public class IndexedListTester
       PrintWriter pw = new PrintWriter("list_performance_results.txt", "UTF-8");
       List<Integer> al = new ArrayList<>();
       List<Integer> ll = new LinkedList<>();
-      List<Integer> id = new IndexedList<>();
+      IndexedList<Integer> id = new IndexedList<>();
 
       //appendingWriter(pw, al, ll, id);
       //insertionWriter(pw, al, ll, id);
       //setWriter(pw, al, ll, id);
       //getWriter(pw, al, ll, id);
-      //removeWriter(pw, al, ll, id);
+      removeWriter(pw, al, ll, id);
+
+      //id.clear();
+      //Random rand = new Random();
+      //for (int i = 0; i < 51; ++i) {
+      //   id.add(rand.nextInt(100));
+      //}
+      //id.printNodeGraph();
+
+      //id.remove(0);
+      //id.printNodeGraph();
+      //id.remove(2);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.remove(0);
+      //id.printNodeGraph();
+      //id.remove(0);
+
+      //System.out.println("Starting size : " + id.size());
+      //for (int i = 0; i < 50; ++i)
+      //{
+      //   id.remove(0);
+      //}
+      //
+      //id.remove(0);
+      //id.printNodeGraph();
+
+      //System.out.println();
+      //System.out.println("Leftovers...");
+      //for (int i = 0; i < id.size(); ++i) {
+      //   System.out.println("["+i+"]"+" "+id.get(i));
+      //}
 
       pw.close();
    }
@@ -138,12 +174,12 @@ public class IndexedListTester
    {
       list.clear();
       Random rand = new Random();
-      for (int i = 0; i < 10; ++i) {
+      for (int i = 0; i < n; ++i) {
          list.add(rand.nextInt(100));
       }
 
       double start = System.currentTimeMillis();
-      for (int i = 0; i < 10; ++i)
+      for (int i = 0; i < list.size(); ++i)
       {
          list.remove(rand.nextInt(list.size()));
       }
@@ -152,8 +188,8 @@ public class IndexedListTester
 
    public static void removeWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
    {
-      pw.format("Testing Method: set(int index, Integer integer)\n");
-      pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
+      pw.format("Testing Method: remove(int index, Integer integer)\n");
+      pw.format("%10s %11s %24s %24s\n", "N", "ArrayList", "LinkedList", "IndexedList");
       for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   remove(): %8.0f ms   remove(): %8.0f ms   remove(): %8.0f ms\n", n, removeTest(n, al), removeTest(n, ll), removeTest(n, id));
