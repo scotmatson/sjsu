@@ -26,13 +26,15 @@ public class IndexedListTester
       List<Integer> id = new IndexedList<>();
 
       //appendingWriter(pw, al, ll, id);
-      insertionWriter(pw, al, ll, id);
+      //insertionWriter(pw, al, ll, id);
+      setWriter(pw, al, ll, id);
 
       pw.close();
    }
 
    public static double appendingTest(int n, List list)
    {
+      list.clear();
       Random rand = new Random();
       double start = System.currentTimeMillis();
 
@@ -40,7 +42,7 @@ public class IndexedListTester
       {
          list.add(rand.nextInt());
       }
-      return System.currentTimeMillis() - start;
+      return (System.currentTimeMillis() - start);
    }
 
    public static void appendingWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
@@ -50,23 +52,21 @@ public class IndexedListTester
       for (int n = 10; n <= 1000000; n*=10 )
       {
          pw.format("%10d   add(): %8.0f ms   add(): %8.0f ms   add(): %8.0f ms\n", n, appendingTest(n, al), appendingTest(n, ll), appendingTest(n, id));
-         al.clear();
-         ll.clear();
-         id.clear();
       }
    }
 
    public static double insertionTest(int n, List list)
    {
+      list.clear();
       Random rand = new Random();
       double start = System.currentTimeMillis();
 
       for (int i = 0; i < n; ++i)
       {
          list.add(0);
-         list.add(rand.nextInt(list.size()), rand.nextInt(1000));
+         list.add(rand.nextInt(list.size()), rand.nextInt(100));
       }
-      return System.currentTimeMillis() - start;
+      return (System.currentTimeMillis() - start);
    }
 
    public static void insertionWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
@@ -76,9 +76,33 @@ public class IndexedListTester
       for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   add(): %8.0f ms   add(): %8.0f ms   add(): %8.0f ms\n", n, insertionTest(n, al), insertionTest(n, ll), insertionTest(n, id));
-         al.clear();
-         ll.clear();
-         id.clear();
+      }
+   }
+
+   public static double setTest(int n, List list)
+   {
+      list.clear();
+      Random rand = new Random();
+      for (int i = 0; i < n; ++i) {
+         list.add(rand.nextInt());
+      }
+
+      double start = System.currentTimeMillis();
+
+      for (int i = 0; i < list.size(); ++i)
+      {
+         list.set(rand.nextInt(list.size()), rand.nextInt(100));
+      }
+      return (System.currentTimeMillis() - start);
+   }
+
+   public static void setWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
+   {
+      pw.format("Testing Method: set(int index, Integer integer)\n");
+      pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
+      for (int n = 10; n <= 100000; n*=10 )
+      {
+         pw.format("%10d   set(): %8.0f ms   set(): %8.0f ms   set(): %8.0f ms\n", n, setTest(n, al), setTest(n, ll), setTest(n, id));
       }
    }
 }

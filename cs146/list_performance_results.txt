@@ -1,7 +1,7 @@
-Testing Method: add(int index, Integer integer)
+Testing Method: set(int index, Integer integer)
          N   ArrayList            LinkedList           IndexedList
-        10   add():        0 ms   add():        0 ms   add():        0 ms
-       100   add():        1 ms   add():        0 ms   add():        1 ms
-      1000   add():        1 ms   add():        4 ms   add():        5 ms
-     10000   add():       11 ms   add():      124 ms   add():       13 ms
-    100000   add():     1184 ms   add():    42113 ms   add():     2344 ms
+        10   set():        0 ms   set():        0 ms   set():        0 ms
+       100   set():        0 ms   set():        1 ms   set():        0 ms
+      1000   set():        0 ms   set():        3 ms   set():        2 ms
+     10000   set():        4 ms   set():       68 ms   set():        5 ms
+    100000   set():       14 ms   set():     7384 ms   set():       33 ms
