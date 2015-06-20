@@ -257,6 +257,7 @@ public class IndexedList<Integer> implements List<Integer>
          currentNode.next.previous = currentNode.previous;
       }
       deletionShift(index, currentNode.next);
+      --listSize;
       return currentNode.data;
    }
 
@@ -287,8 +288,6 @@ public class IndexedList<Integer> implements List<Integer>
    public void deletionShift(int index, Node nextNode)
    {
       int listPointer = ((index - (index % accessInterval)) / accessInterval);
-      System.out.println("Index: " + index);
-      System.out.println("List Pointer: " + listPointer);
 
       // Handles the case when two pointers conflict.
       if (index % accessInterval == 0 && index < listSize)

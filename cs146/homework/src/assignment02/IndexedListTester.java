@@ -16,7 +16,7 @@ public class IndexedListTester
    // To print out to a file
    // formatting
    // test various n and k values
-   // test GET, SET, ADD, REMOVE
+   // test GET, REMOVE
 
    public static void main(String[] args) throws IOException
    {
@@ -27,7 +27,9 @@ public class IndexedListTester
 
       //appendingWriter(pw, al, ll, id);
       //insertionWriter(pw, al, ll, id);
-      setWriter(pw, al, ll, id);
+      //setWriter(pw, al, ll, id);
+      //getWriter(pw, al, ll, id);
+      //removeWriter(pw, al, ll, id);
 
       pw.close();
    }
@@ -84,7 +86,7 @@ public class IndexedListTester
       list.clear();
       Random rand = new Random();
       for (int i = 0; i < n; ++i) {
-         list.add(rand.nextInt());
+         list.add(rand.nextInt(100));
       }
 
       double start = System.currentTimeMillis();
@@ -103,6 +105,58 @@ public class IndexedListTester
       for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   set(): %8.0f ms   set(): %8.0f ms   set(): %8.0f ms\n", n, setTest(n, al), setTest(n, ll), setTest(n, id));
+      }
+   }
+
+   public static double getTest(int n, List list)
+   {
+      list.clear();
+      Random rand = new Random();
+      for (int i = 0; i < n; ++i) {
+         list.add(rand.nextInt(100));
+      }
+
+      double start = System.currentTimeMillis();
+      for (int i = 0; i < n; ++i)
+      {
+         list.get(rand.nextInt(list.size()));
+      }
+      return (System.currentTimeMillis() - start);
+   }
+
+   public static void getWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
+   {
+      pw.format("Testing Method: set(int index, Integer integer)\n");
+      pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
+      for (int n = 10; n <= 100000; n*=10 )
+      {
+         pw.format("%10d   get(): %8.0f ms   get(): %8.0f ms   get(): %8.0f ms\n", n, getTest(n, al), getTest(n, ll), getTest(n, id));
+      }
+   }
+
+   public static double removeTest(int n, List list)
+   {
+      list.clear();
+      Random rand = new Random();
+      for (int i = 0; i < 10; ++i) {
+         list.add(rand.nextInt(100));
+      }
+
+      double start = System.currentTimeMillis();
+      for (int i = 0; i < 10; ++i)
+      {
+         list.remove(rand.nextInt(list.size()));
+      }
+      return (System.currentTimeMillis() - start);
+   }
+
+   public static void removeWriter(PrintWriter pw, List<Integer> al, List<Integer> ll, List<Integer> id)
+   {
+      pw.format("Testing Method: set(int index, Integer integer)\n");
+      pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
+      for (int n = 10; n <= 100000; n*=10 )
+      {
+         pw.format("%10d   remove(): %8.0f ms   remove(): %8.0f ms   remove(): %8.0f ms\n", n, removeTest(n, al), removeTest(n, ll), removeTest(n, id));
       }
    }
 }
