@@ -230,6 +230,8 @@ public class IndexedList<Integer> implements List<Integer>
       Integer previousValue = currentNode.data;
       currentNode.data = integer;
       return previousValue;
+
+      // Be sure to fix the ArrayList in this method
    }
 
    @Override
@@ -254,6 +256,7 @@ public class IndexedList<Integer> implements List<Integer>
          currentNode.previous.next = currentNode.next;
          currentNode.next.previous = currentNode.previous;
       }
+      // Needs ArrayList repositioning
       return currentNode.data;
    }
 
@@ -269,23 +272,13 @@ public class IndexedList<Integer> implements List<Integer>
 
    public void refactorIndexInterval(int index, Node newNode)
    {
-      // TODO: Create logic to follow insertion/deletion of nodes
-      // Cases: Edge, Shared, Pre, Post
-      // May need two separate methods since
-      // insert is ahead by one and remove is behind by one
-
       int listPointer = ((index - (index % accessInterval)) / accessInterval);
-      //System.out.println("ListPointer: " + listPointer);
-      //System.out.println("get(1).data: " + al.get(listPointer + 1).data);
-      //System.out.println("get(1).data: " + al.get(listPointer + 1).previous.data);
 
-      // Use when the al points to the new node
-      //System.out.println("listPointer: " + listPointer);
-      //System.out.println("Index: " + index);
-      // Special case when we add a new node to the 0 index. We cannot % 0.
-         //al.set(listPointer, newNode);
+      // Handles the case when two pointers conflict.
+      if (index % accessInterval == 0 && index < listSize)
+         al.set(listPointer, newNode);
 
-      // Shifts the position of all node pointers which follow a newly inserted node.
+      // Shifts all pointers that follow the index.
       for (int i = listPointer+1; i < al.size(); ++i)
          al.set(i, al.get(i).previous);
 
