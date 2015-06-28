@@ -39,14 +39,13 @@ public class IndexedListTester
 
    public static void kWriter(PrintWriter pw, List id)
    {
-      int n = 1000000;
+      int n = 100000;
       pw.format("IndexedList k performance test at N = %d\n", n);
       for (int k = 5; k < n; k *= 2)
       {
          ((IndexedList) id).setAccessInterval(k);
          pw.format("K: %6d  add(): %4.0f ms  add(): %4.0f ms  set(): %4.0f ms  get(): %4.0f ms  remove(): %4.0f\n", k, appendingTest(n, id), insertionTest(n, id), setTest(n, id), getTest(n, id), removeTest(n, id));
       }
-      System.out.println();
    }
 
    public static double appendingTest(int n, List list)
@@ -70,7 +69,6 @@ public class IndexedListTester
       {
          pw.format("%10d   add(): %8.0f ms   add(): %8.0f ms   add(): %8.0f ms\n", n, appendingTest(n, al), appendingTest(n, ll), appendingTest(n, id));
       }
-      System.out.println();
    }
 
    public static double insertionTest(int n, List list)
@@ -91,11 +89,10 @@ public class IndexedListTester
    {
       pw.format("Testing Method: add(int index, Integer integer); K = 10\n");
       pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
-      for (int n = 10; n <= 1000000; n*=10 )
+      for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   add(): %8.0f ms   add(): %8.0f ms   add(): %8.0f ms\n", n, insertionTest(n, al), insertionTest(n, ll), insertionTest(n, id));
       }
-      System.out.println();
    }
 
    public static double setTest(int n, List list)
@@ -119,11 +116,10 @@ public class IndexedListTester
    {
       pw.format("Testing Method: set(int index, Integer integer); K = 10\n");
       pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
-      for (int n = 10; n <= 1000000; n*=10 )
+      for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   set(): %8.0f ms   set(): %8.0f ms   set(): %8.0f ms\n", n, setTest(n, al), setTest(n, ll), setTest(n, id));
       }
-      System.out.println();
    }
 
    public static double getTest(int n, List list)
@@ -146,11 +142,10 @@ public class IndexedListTester
    {
       pw.format("Testing Method: get(int index, Integer integer); K = 10\n");
       pw.format("%10s %11s %21s %21s\n", "N", "ArrayList", "LinkedList", "IndexedList");
-      for (int n = 10; n <= 1000000; n*=10 )
+      for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   get(): %8.0f ms   get(): %8.0f ms   get(): %8.0f ms\n", n, getTest(n, al), getTest(n, ll), getTest(n, id));
       }
-      System.out.println();
    }
 
    public static double removeTest(int n, List list)
@@ -173,10 +168,9 @@ public class IndexedListTester
    {
       pw.format("Testing Method: remove(int index, Integer integer); K = 10\n");
       pw.format("%10s %11s %24s %24s\n", "N", "ArrayList", "LinkedList", "IndexedList");
-      for (int n = 10; n <= 1000000; n*=10 )
+      for (int n = 10; n <= 100000; n*=10 )
       {
          pw.format("%10d   remove(): %8.0f ms   remove(): %8.0f ms   remove(): %8.0f ms\n", n, removeTest(n, al), removeTest(n, ll), removeTest(n, id));
       }
-      System.out.println();
    }
 }

@@ -1,0 +1,61 @@
+Testing Method: add(Integer integer)
+         N   ArrayList            LinkedList           IndexedList
+        10   add():        0 ms   add():        0 ms   add():        0 ms
+       100   add():        1 ms   add():        0 ms   add():        0 ms
+      1000   add():        1 ms   add():        1 ms   add():        1 ms
+     10000   add():        2 ms   add():        1 ms   add():        1 ms
+    100000   add():        6 ms   add():        4 ms   add():        5 ms
+   1000000   add():       48 ms   add():       69 ms   add():     1149 ms
+
+Testing Method: add(int index, Integer integer)
+         N   ArrayList            LinkedList           IndexedList
+        10   add():        0 ms   add():        0 ms   add():        0 ms
+       100   add():        0 ms   add():        1 ms   add():        0 ms
+      1000   add():        2 ms   add():        2 ms   add():        6 ms
+     10000   add():       14 ms   add():      118 ms   add():       31 ms
+    100000   add():      983 ms   add():    31067 ms   add():     2219 ms
+
+Testing Method: set(int index, Integer integer)
+         N   ArrayList            LinkedList           IndexedList
+        10   set():        0 ms   set():        0 ms   set():        0 ms
+       100   set():        0 ms   set():        0 ms   set():        0 ms
+      1000   set():        1 ms   set():        1 ms   set():        0 ms
+     10000   set():        2 ms   set():       38 ms   set():        3 ms
+    100000   set():        7 ms   set():     3559 ms   set():        9 ms
+
+Testing Method: get(int index, Integer integer)
+         N   ArrayList            LinkedList           IndexedList
+        10   get():        0 ms   get():        0 ms   get():        0 ms
+       100   get():        0 ms   get():        0 ms   get():        0 ms
+      1000   get():        0 ms   get():        0 ms   get():        0 ms
+     10000   get():        1 ms   get():       36 ms   get():        2 ms
+    100000   get():        2 ms   get():     3594 ms   get():       10 ms
+
+Testing Method: remove(int index, Integer integer)
+         N   ArrayList               LinkedList              IndexedList
+        10   remove():        0 ms   remove():        0 ms   remove():        0 ms
+       100   remove():        1 ms   remove():        0 ms   remove():        0 ms
+      1000   remove():        0 ms   remove():        0 ms   remove():        1 ms
+     10000   remove():        8 ms   remove():       32 ms   remove():       18 ms
+    100000   remove():      303 ms   remove():     2244 ms   remove():      488 ms
+
+IndexedList k performance test at N = 100000
+K:      5  add():    3 ms  add(): 2206 ms  set():    9 ms  get():    9 ms  remove():  429
+K:     10  add():   19 ms  add(): 2212 ms  set():   12 ms  get():    9 ms  remove():  493
+K:     20  add():    2 ms  add(): 2227 ms  set():   14 ms  get():    7 ms  remove():  444
+K:     40  add():    2 ms  add(): 2176 ms  set():    9 ms  get():    7 ms  remove():  483
+K:     80  add():    2 ms  add(): 2240 ms  set():    9 ms  get():    7 ms  remove():  454
+K:    160  add():    2 ms  add(): 2165 ms  set():    9 ms  get():    7 ms  remove():  544
+K:    320  add():    2 ms  add(): 2229 ms  set():    9 ms  get():    8 ms  remove():  452
+K:    640  add():    2 ms  add(): 2211 ms  set():    9 ms  get():    7 ms  remove():  524
+K:   1280  add():    2 ms  add(): 2245 ms  set():    9 ms  get():    7 ms  remove():  627
+K:   2560  add():    2 ms  add(): 2944 ms  set():   12 ms  get():    7 ms  remove():  511
+K:   5120  add():    2 ms  add(): 2261 ms  set():    9 ms  get():    7 ms  remove():  484
+K:  10240  add():   14 ms  add(): 2279 ms  set():    9 ms  get():    7 ms  remove():  473
+K:  20480  add():    2 ms  add(): 2775 ms  set():    9 ms  get():    6 ms  remove():  519
+K:  40960  add():    2 ms  add(): 2299 ms  set():    9 ms  get():    7 ms  remove():  515
+K:  81920  add():    3 ms  add(): 2239 ms  set():   10 ms  get():    7 ms  remove():  475
+
+Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+   CPU(s): 4
+      Mem: 8053008

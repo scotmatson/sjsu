@@ -1,0 +1,107 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Code Review and Performance Report
+
+ Solves CS147 Homework Assignment #02
+
+ @author Scot Matson
+ */
+
+
+Understanding the assignment requirements was easy enough; essentially creating a Linked List
+and using an ArrayList to create pointers at k intervals throughout the LinkedList
+to improve access to deep nodes. I wanted to use as much of my own code to accomplish this task
+which meant creating my own Linked List to get started. My first mistake was attempting to
+introduce an ArrayList into my LinkedList from the beginning. This was worsened by
+incorporating a ListIterator. It isn't that this is a bad idea, in fact it may be
+more optimized than my final implementation. The problems I ran into during the early
+stages of development came about due to my own lack of understanding of how to couple the
+two lists together and also how to use the ListIterator.
+
+I spent quite a bit of time attempting to develop the aforementioned approach but ultimately
+found that I just needed to scrap everything and start anew. I decided that incremental
+development was the way to go. I drew out diagrams and set goals that were small in scale.
+I focused first on developing a doubly-linked list from scratch and setting up a testing
+environment. This included creating a print method that would clearly show everything that
+was going on to ensure my code worked. I decided to avoid using a ListIterator because
+I simply wanted to be able to check if sibling nodes existed and found it to be much
+simpler to simply make the Node class have a built-in method to perform this operation.
+
+After setting up my testing environment I worked on initializing my LinkedList. This was
+performed by the basic add(Node newNode) method. Appending a new node is a simple process
+and would give me a foundation to build upon. Once I was satisfied with the state of my
+add() method I spent more time developing my print method so I may traverse the entire
+breadth of the LinkedList in the default order and as well in a reversed order. This assured me
+that data was being stored properly and allowed me to move forward.
+
+Since being able to access a specific index was one of the cornerstones of this assignment I
+moved to injecting the ArrayList into my LinkedList at this time. Doing so was fairly simple as
+it was just a simple modulus operation which checked cyclical intervals and set pointers at
+every given k interval. With that logic in place the real work began. I had to spend a
+considerable amount of time mapping out my approach to accessing LinkedList nodes through the
+ArrayList. I knew the best approach would to be able to access the closest pointer and then
+either ascend or descend the LinkedList. I approached my solution by evaluating the position
+of the given index and choosing to either 'round-down' to the lowest pointer or 'round-up' to
+the highest pointer. This evaluation was actually performed using the indices of the LinkedList
+so I needed to translate that value into the ArrayList pointer by performing a series of
+operations. Honestly, a formula was discovered through trial and error; I had a general idea
+of how to approach this but needed to test a few variations to get the desired results. I have not
+changed the getNode() method since completing it but still have concerns over its stability.
+
+Now having the capability to quickly and efficiently access any index in the LinkedList (or rather,
+now an IndexedList) I first applied the functionality of the getNode() method to the get() method as
+I knew that operation would be integral to all other remaining operations. Since setting a new value
+with the set() method was fairly unobtrusive I quickly implemented that method next. I say unobtrusive
+because it did not really present any real conflicts in the coupling of the ArrayList and LinkedList.
+Unfortunately this can not be said for the remove() and add(Index index, Integer integer) method.
+
+I performed preliminary tests for both the remove() and add() [ Really an insertion() method ] method
+to better understand the functionality I would be implementing. It wasn't the aspects of the
+LinkedList that would be difficult as I have no problem understanding that conceptually nor
+implementing it. The difficult aspect of implementing these two methods would be as one would guess,
+related to shifting the position of the ArrayList pointers. It was clear by examining my output
+that the insertion() and removal() methods were having an opposite effect. insertion() would
+push pointers further along while remove() would pull pointers back. The edge cases would be
+how to manage the behavior when these two methods were performed at the 0th index, length-1 index,
+and in the event that we would be setting a new node to the same location as a pointer.
+
+I first focused on the general cases where all pointers following the index would need to be
+shifted by one index. Using a simple for loop, accessing the existing index and reassigning it
+seemed to have the effect I was looking for and presented no challenge. For handling the edge cases
+I leveraged a previous calculation that I to set pointers in the append method that used the modulus
+operation to check modK=0. Attaching this process to a simple conditional statement to ensure that
+this operation was only invoked when conflicts occurred seemed to do the trick. Feeling fairly confident
+of my work I began building out the printing operations for transposing my results to a text file.
+Unfortunately this is when the real bugs began to emerge.
+
+I first found that my printing method used for testing was severely flawed and this arose many
+concerns as I was depending on it working properly during every stage of development. I
+commented out all of the old logic and and rewrote it with improved notation. It has since been
+performing as expected and did not seem to have any ill effects to other aspects of my development
+cycle. The next issue I was running into was that the insertion() method I made was attempting to
+be overly simple while using an excessive number of conditional statements. This required an entire
+rewrite as well. I took this time to look for way to break out new helper methods to help protect
+finished code blocks that I assumed to be functioning properly. Lastly I ran into a NPE being thrown
+from the remove operation when re-indexing my pointers, this surprisingly enough ended up being
+due to the absence of a decremental operation for tracking the current size of the LinkedList.
+
+It was at about this time the program began outputting its results to a text file without
+throwing any exceptions but something was still wrong. While running tests against an ArrayList,
+LinkedList, and IndexedList appeared to function as expected I noticed that my k values
+had no variance in performance upon modification. In efforts to uncover why this might be
+I have noted in numerous test cases involving values of k that null pointer exceptions are being
+thrown. This unfortunately is happening with large values of k and n combined and is occurring
+inconsistently. I am currently working still to find a root cause but as the program has grown in
+complexity I am afraid not enough time may be available to dive deep enough to understand what is
+happening. An interesting aspect of this is that I have been able to successfully run many successful
+test cases with values of N ranging from 100k - 1 million and values of k ranging from 5 - 80k without
+any errors.
+
+Ultimately this hybrid  Data Structure doesn't necessarily offer optimal performance over an
+ArrayList or LinkedList but rather affords a balanced functionality of the add(), remove(),
+get(), and set() methods. For large values of N the IndexedList gains similar performance of
+the ArrayList when accessing and setting and similarly, it shows comparable performance for
+inserting and removing values when compared to a LinkedList. Given the short cuts that
+this new data structure is afforded by the use of pointer it would seem that it is capable
+of achieving O(n) performance when using optimal values of k.
