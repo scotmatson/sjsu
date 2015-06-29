@@ -9,15 +9,13 @@ import java.util.Scanner;
  */
 public class TreeTester
 {
-
-
    private static void createNewBST()
    {
       Scanner in = new Scanner(System.in);
       int option;
       BinarySearchTree<Integer> bst = new BinarySearchTree<>();
       Random rand = new Random();
-      for (int i = 0; i < 10; ++i)
+      for (int i = 0; i < 30; ++i)
       {
          bst.insert(rand.nextInt(90) + 10);
       }

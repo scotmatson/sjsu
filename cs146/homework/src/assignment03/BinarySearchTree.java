@@ -6,12 +6,10 @@ package assignment03;
 public class BinarySearchTree<AnyType>
 {
    BinaryNode root;
-   int height;
 
    BinarySearchTree ()
    {
       root = null;
-      height = -1;
    }
 
    public BinaryNode getRoot()
@@ -35,19 +33,30 @@ public class BinarySearchTree<AnyType>
     @param node the node to evaluate
     @return the height of a given node
     */
-   public int height(BinaryNode<AnyType> node)
+   private int height(BinaryNode<AnyType> node)
    {
-      return (node == null) ? -1 : 1 + Math.max(height(node.getLeft()), height(node.getRight()));
+      return (node == null)
+         ? -1 : 1 + Math.max(height(node.getLeft()), height(node.getRight()));
    }
 
+   /**
+    Inserts new Integer data into a BinaryNode and places the node within
+      the BinarySearchTree.
 
+    @param newData Integer value to insert.
+    */
    public void insert(Integer newData)
    {
       root = insert(newData, root);
-      //System.out.println("Root height: " + root.getHeight());
-      //height = root.getHeight();
    }
 
+   /**
+    Recursive helper method. Inserts a new BinaryNode into the BinarySearchTree.
+
+    @param newData Integer value to insert.
+    @param node root node.
+    @return nodes to return.
+    */
    private BinaryNode<AnyType> insert(Integer newData, BinaryNode<AnyType> node)
    {
       if (node == null)
@@ -67,7 +76,18 @@ public class BinarySearchTree<AnyType>
          }
       }
 
-      //node.setHeight(Math.max(height(node.getLeft()), height(node.getRight())) + 1);
       return node;
    } // END recursive insert()
+
+   public void remove(Integer oldData)
+   {
+      root = remove(oldData, root);
+   }
+
+   public BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
+   {
+      return node;
+   }
+
+
 }

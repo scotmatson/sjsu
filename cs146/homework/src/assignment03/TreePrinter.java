@@ -260,10 +260,12 @@ public class TreePrinter
             BinaryNode<Integer> node = levelNodes[i];
 
             // Queue the left child nodes of each non-null parent node.
-            nextLevel[2 * i] = ((node != null) && (node.getLeft() != null)) ? node.getLeft() : null;
+            nextLevel[2*i] = (node != null) && (node.getLeft() != null)
+               ? node.getLeft() : null;
 
             // Queue the right child nodes of each non-null parent node.
-            nextLevel[2 * i + 1] = ((node != null) && (node.getRight() != null)) ? node.getRight() : null;
+            nextLevel[2*i+1] = (node != null) && (node.getRight() != null)
+               ? node.getRight() : null;
         }
 
         return nextLevel;
