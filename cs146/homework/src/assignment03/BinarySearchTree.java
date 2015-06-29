@@ -35,8 +35,14 @@ public class BinarySearchTree<AnyType>
     */
    private int height(BinaryNode<AnyType> node)
    {
-      return (node == null)
-         ? -1 : 1 + Math.max(height(node.getLeft()), height(node.getRight()));
+      if (node == null)
+      {
+         return -1;
+      }
+      else
+      {
+         return 1 + Math.max(height(node.getLeft()), height(node.getRight()));
+      }
    }
 
    /**
@@ -66,6 +72,7 @@ public class BinarySearchTree<AnyType>
       else
       {
          int compareResults = newData.compareTo(node.getData());
+
          if (compareResults < 0)
          {
             node.setLeft(insert(newData, node.getLeft()));
@@ -79,6 +86,35 @@ public class BinarySearchTree<AnyType>
       return node;
    } // END recursive insert()
 
+   public boolean contains(Integer possibleData)
+   {
+      return contains(possibleData, root);
+   }
+
+   public boolean contains(Integer possibleData, BinaryNode<AnyType> node)
+   {
+      // No match found.
+      if (node == null)
+      {
+         return false;
+      }
+      else
+      {
+         int compareResult = possibleData.compareTo(node.getData());
+         if (compareResult < 0)
+         {
+            return contains(possibleData, node.getLeft());
+         }
+         else if (compareResult > 0)
+         {
+            return contains(possibleData, node.getRight());
+         }
+
+         // Match found.
+         return true;
+      }
+   }
+
    public void remove(Integer oldData)
    {
       root = remove(oldData, root);
@@ -86,6 +122,7 @@ public class BinarySearchTree<AnyType>
 
    public BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
    {
+      System.out.println("Pretending to remove some stuff...");
       return node;
    }
 

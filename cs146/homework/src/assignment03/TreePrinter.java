@@ -50,38 +50,50 @@ public class TreePrinter
         BinaryNode<Integer> thisLevelNodes[] =
            (BinaryNode<Integer>[]) new BinaryNode[1];
 
-        int offset = POWERS_OF_2[(height+1)]-1;
+        try
+        {
+           // Throws ArrayIndexOutOfBoundsException when (height > 8)
+           int offset = POWERS_OF_2[(height + 1)] - 1;
 
-        thisLevelNodes[0] = tree.getRoot();
+           thisLevelNodes[0] = tree.getRoot();
 
-        // Loop to print each level of nodes.
-        for (int level = 0; level <= height; level++) {
-            if (level > MAX_LEVELS) {
-                System.out.println("*** Too many levels to print. ***");
-                break;
-            }
+           // Loop to print each level of nodes.
+           for (int level = 0; level <= height; level++)
+           {
+              if (level > MAX_LEVELS)
+              {
+                 System.out.println("*** Too many levels to print. ***");
+                 break;
+              }
 
-            // Print node data.
-            printData(level, offset, thisLevelNodes);
+              // Print node data.
+              printData(level, offset, thisLevelNodes);
 
-            if (level != height) {
+              if (level != height)
+              {
 
-                // Print outgoing pointers /\ from each parent node.
-                printOutgoingPointers(level, offset, thisLevelNodes);
+                 // Print outgoing pointers /\ from each parent node.
+                 printOutgoingPointers(level, offset, thisLevelNodes);
 
-                offset = POWERS_OF_2[height - level] - 1;
+                 offset = POWERS_OF_2[height - level] - 1;
 
-                // Print connecting dashes ----
-                if (level < height-1) {
+                 // Print connecting dashes ----
+                 if (level < height - 1)
+                 {
                     printConnectingDashes(level, offset, thisLevelNodes);
-                }
+                 }
 
-                // Print incoming pointers / and \ to each child node.
-                printIncomingPointers(level, offset, thisLevelNodes);
+                 // Print incoming pointers / and \ to each child node.
+                 printIncomingPointers(level, offset, thisLevelNodes);
 
-                // Prepare the next level of nodes.
-                thisLevelNodes = nextLevel(level, thisLevelNodes);
-            }
+                 // Prepare the next level of nodes.
+                 thisLevelNodes = nextLevel(level, thisLevelNodes);
+              }
+           }
+        }
+        catch (ArrayIndexOutOfBoundsException e)
+        {
+           System.out.println("!!! The height of the tree is too great. Try inserting fewer values !!!");
         }
     }
 
