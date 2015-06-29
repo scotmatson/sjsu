@@ -3,11 +3,11 @@ package assignment03;
 /**
  Created by scot on 6/28/15.
  */
-public class BinaryNode<Integer> implements Comparable<Integer>
+public class BinaryNode<AnyType>
 {
    private Integer data;
-   private BinaryNode<Integer> leftChild;
-   private BinaryNode<Integer> rightChild;
+   private BinaryNode<AnyType> leftChild;
+   private BinaryNode<AnyType> rightChild;
    private int height;
 
    BinaryNode(Integer data)
@@ -15,7 +15,7 @@ public class BinaryNode<Integer> implements Comparable<Integer>
       this(data, null, null);
    }
 
-   BinaryNode(Integer data, BinaryNode<Integer> lt, BinaryNode<Integer> rt)
+   BinaryNode(Integer data, BinaryNode<AnyType> lt, BinaryNode<AnyType> rt)
    {
       this.data = data;
       this.leftChild = lt;
@@ -27,7 +27,7 @@ public class BinaryNode<Integer> implements Comparable<Integer>
       return this.data;
    }
 
-   public BinaryNode<Integer> getLeft()
+   public BinaryNode<AnyType> getLeft()
    {
       return leftChild;
    }
@@ -36,7 +36,7 @@ public class BinaryNode<Integer> implements Comparable<Integer>
       this.leftChild = newNode;
    }
 
-   public BinaryNode<Integer> getRight()
+   public BinaryNode<AnyType> getRight()
    {
       return rightChild;
    }
@@ -45,9 +45,13 @@ public class BinaryNode<Integer> implements Comparable<Integer>
       this.rightChild = newNode;
    }
 
-   @Override
-   public int compareTo(Integer o)
+   public int getHeight()
    {
-      return -1;
+      return height;
+   }
+
+   public void setHeight(int height)
+   {
+      this.height = height;
    }
 }

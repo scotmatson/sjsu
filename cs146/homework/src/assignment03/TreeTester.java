@@ -1,5 +1,7 @@
 package assignment03;
+
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -14,15 +16,21 @@ public class TreeTester
       Scanner in = new Scanner(System.in);
       int option;
       BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+      Random rand = new Random();
+      for (int i = 0; i < 10; ++i)
+      {
+         bst.insert(rand.nextInt(90) + 10);
+      }
 
       System.out.println("Binary Search Tree has been created.");
       System.out.println("What would you like to do next?\n");
       do {
          System.out.println("Please choose an option from the menu below.");
          System.out.println("1. Repopulate BST with new data.");
-         System.out.println("2. Print the BST.");
-         System.out.println("3. Exit the program.");
+         System.out.println("2. Delete the root node.");
+         System.out.println("3. Print the BST.");
          System.out.println("4. Return to the previous menu.");
+         System.out.println("5. Exit the program.");
          try
          {
             System.out.print(">> ");
@@ -35,15 +43,19 @@ public class TreeTester
                   createNewBST();
                   break;
                case 2:
-                  System.out.println("Printing BST.");
-                  TreePrinter treePrinter = new TreePrinter(bst);
+                  System.out.println("Deleting root node.");
                   break;
                case 3:
-                  System.out.println("Goodbye.");
-                  System.exit(0);
+                  System.out.println("Printing BST.");
+                  TreePrinter treePrinter = new TreePrinter(bst);
+                  treePrinter.print("Binary Search Tree");
                   break;
                case 4:
                   return;
+               case 5:
+                  System.out.println("Goodbye.");
+                  System.exit(0);
+                  break;
                default:
                   System.out.println("I do not recognize your selection.");
                   break;

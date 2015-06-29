@@ -3,14 +3,15 @@ package assignment03;
 /**
  Created by scot on 6/28/15.
  */
-public class BinarySearchTree<Integer>
+public class BinarySearchTree<AnyType>
 {
    BinaryNode root;
    int height;
 
    BinarySearchTree ()
    {
-
+      root = null;
+      height = -1;
    }
 
    public BinaryNode getRoot()
@@ -25,16 +26,29 @@ public class BinarySearchTree<Integer>
 
    public int height()
    {
-      return height;
+      return height(root);
+   }
+
+   /**
+    Returns the height of a given node or -1 if null.
+
+    @param node the node to evaluate
+    @return the height of a given node
+    */
+   public int height(BinaryNode<AnyType> node)
+   {
+      return (node == null) ? -1 : 1 + Math.max(height(node.getLeft()), height(node.getRight()));
    }
 
 
    public void insert(Integer newData)
    {
-      root = insert(root, newData);
+      root = insert(newData, root);
+      //System.out.println("Root height: " + root.getHeight());
+      //height = root.getHeight();
    }
 
-   private BinaryNode<Integer> insert(BinaryNode node, Integer newData)
+   private BinaryNode<AnyType> insert(Integer newData, BinaryNode<AnyType> node)
    {
       if (node == null)
       {
@@ -42,17 +56,18 @@ public class BinarySearchTree<Integer>
       }
       else
       {
-         int compareResults = node.hcompareTo(newData);
+         int compareResults = newData.compareTo(node.getData());
          if (compareResults < 0)
          {
-            node.setLeft(insert(node.getLeft(), newData));
+            node.setLeft(insert(newData, node.getLeft()));
          }
          else if (compareResults > 0)
          {
-            node.setRight(insert(node.getRight(), newData));
+            node.setRight(insert(newData, node.getRight()));
          }
       }
 
+      //node.setHeight(Math.max(height(node.getLeft()), height(node.getRight())) + 1);
       return node;
    } // END recursive insert()
 }
