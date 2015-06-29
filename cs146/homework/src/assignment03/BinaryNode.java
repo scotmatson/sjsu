@@ -8,7 +8,6 @@ public class BinaryNode<AnyType>
    private Integer data;
    private BinaryNode<AnyType> leftChild;
    private BinaryNode<AnyType> rightChild;
-   private int height;
 
    BinaryNode(Integer data)
    {
@@ -22,36 +21,13 @@ public class BinaryNode<AnyType>
       this.rightChild = rt;
    }
 
-   public Integer getData()
-   {
-      return this.data;
-   }
-
-   public BinaryNode<AnyType> getLeft()
-   {
-      return leftChild;
-   }
-   public void setLeft(BinaryNode newNode)
-   {
-      this.leftChild = newNode;
-   }
-
-   public BinaryNode<AnyType> getRight()
-   {
-      return rightChild;
-   }
-   public void setRight(BinaryNode newNode)
-   {
-      this.rightChild = newNode;
-   }
-
-   public int getHeight()
-   {
-      return height;
-   }
-
-   public void setHeight(int height)
-   {
-      this.height = height;
-   }
+   /**
+      Getters and Setters
+    */
+   public Integer getData() { return this.data; }
+   public void setData(Integer data) { this.data = data; }
+   public BinaryNode<AnyType> getLeft() { return leftChild; }
+   public void setLeft(BinaryNode newNode) { this.leftChild = newNode; }
+   public BinaryNode<AnyType> getRight() { return rightChild; }
+   public void setRight(BinaryNode newNode) { this.rightChild = newNode; }
 }

@@ -17,11 +17,6 @@ public class BinarySearchTree<AnyType>
       return root;
    }
 
-   public boolean isEmpty()
-   {
-      return root == null;
-   }
-
    public int height()
    {
       return height(root);
@@ -86,12 +81,27 @@ public class BinarySearchTree<AnyType>
       return node;
    } // END recursive insert()
 
+   /**
+    Finds a given Integer value if one exists. Returns true if the value
+    is found.
+
+    @param possibleData the Integer value to find.
+    @return true if the value exists, otherwise false.
+    */
    public boolean contains(Integer possibleData)
    {
       return contains(possibleData, root);
    }
 
-   public boolean contains(Integer possibleData, BinaryNode<AnyType> node)
+   /**
+    Recursive helper method to find a given Integer value if one exists.
+    Returns true if the value is found.
+
+    @param possibleData the Integer value to find.
+    @param node the current Node to evaluate.
+    @return true is the value exists, otherwise false.
+    */
+   private boolean contains(Integer possibleData, BinaryNode<AnyType> node)
    {
       // No match found.
       if (node == null)
@@ -120,10 +130,53 @@ public class BinarySearchTree<AnyType>
       root = remove(oldData, root);
    }
 
-   public BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
+   private BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
    {
-      System.out.println("Pretending to remove some stuff...");
+      // Node does not exist, do nothing.
+      if (node == null)
+      {
+         return node;
+      }
+
+      // Otherwise locate and remove the node.
+      int compareResult = oldData.compareTo(node.getData());
+
+      if (compareResult < 0)
+      {
+         node.setLeft(remove(oldData, node.getLeft()));
+      }
+      else if (compareResult > 0)
+      {
+         node.setRight(remove(oldData, node.getRight()));
+      }
+      // In the event that two children exist...
+      else if (node.getLeft() != null && node.getRight() != null)
+      {
+         node.setData(findMin(node.getRight()).getData());
+         node.setRight(remove(node.getData(), node.getRight()));
+      }
+      else
+      {
+         node = (node.getLeft() != null) ? node.getLeft() : node.getRight();
+      }
+
       return node;
+   }
+
+   private BinaryNode<AnyType> findMin(BinaryNode<AnyType> node)
+   {
+      // Handles the initial case that the argument may be null.
+      if (node == null)
+      {
+         return null;
+      }
+      // Returns the leftmost node which represents the smallest value.
+      else if (node.getLeft() == null)
+      {
+         return node;
+      }
+
+      return findMin(node.getLeft());
    }
 
 

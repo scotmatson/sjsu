@@ -73,7 +73,15 @@ public class TreeTester
                   }
                   break;
                case 3:
-                  System.out.println("Deleting root node.");
+                  System.out.println("Removing the root node.");
+                  try
+                  {
+                     bst.remove(bst.getRoot().getData());
+                  }
+                  catch (NullPointerException e)
+                  {
+                     System.out.println("The tree is empty.");
+                  }
                   break;
                case 4:
                   System.out.println("\nPrinting BST.");
