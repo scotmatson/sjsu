@@ -3,31 +3,51 @@ package assignment03;
 /**
  Created by scot on 6/28/15.
  */
-public class BinaryNode <T>
+public class BinaryNode<Integer> implements Comparable<Integer>
 {
-   T data;
-   BinaryNode<T> left;
-   BinaryNode<T> right;
+   private Integer data;
+   private BinaryNode<Integer> leftChild;
+   private BinaryNode<Integer> rightChild;
+   private int height;
 
-   BinaryNode(T data)
+   BinaryNode(Integer data)
+   {
+      this(data, null, null);
+   }
+
+   BinaryNode(Integer data, BinaryNode<Integer> lt, BinaryNode<Integer> rt)
    {
       this.data = data;
-      left = null;
-      right = null;
+      this.leftChild = lt;
+      this.rightChild = rt;
    }
 
-   public T getData()
+   public Integer getData()
    {
-      return data;
+      return this.data;
    }
 
-   public BinaryNode<T> getLeft()
+   public BinaryNode<Integer> getLeft()
    {
-      return left;
+      return leftChild;
+   }
+   public void setLeft(BinaryNode newNode)
+   {
+      this.leftChild = newNode;
    }
 
-   public BinaryNode<T> getRight()
+   public BinaryNode<Integer> getRight()
    {
-      return right;
+      return rightChild;
+   }
+   public void setRight(BinaryNode newNode)
+   {
+      this.rightChild = newNode;
+   }
+
+   @Override
+   public int compareTo(Integer o)
+   {
+      return -1;
    }
 }
