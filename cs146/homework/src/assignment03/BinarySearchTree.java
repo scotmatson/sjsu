@@ -17,6 +17,11 @@ public class BinarySearchTree<AnyType>
       return root;
    }
 
+   public boolean isEmpty()
+   {
+      return (root == null);
+   }
+
    public int height()
    {
       return height(root);

@@ -22,7 +22,7 @@ public class BinaryNode<AnyType>
    }
 
    /**
-      Getters and Setters
+    Getters and Setters
     */
    public Integer getData() { return this.data; }
    public void setData(Integer data) { this.data = data; }
