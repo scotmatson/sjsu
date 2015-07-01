@@ -240,7 +240,8 @@ public class TreeTester
          System.out.println("Please choose an option from the menu below.");
          System.out.println("1. Create a new Binary Search Tree (BST).");
          System.out.println("2. Create a new Adelson-Velskii & Landis Tree (AVL).");
-         System.out.println("3. Exit the program.");
+         System.out.println("3. Run performance test.");
+         System.out.println("4. Exit the program.");
          try
          {
             System.out.print(">> ");
@@ -257,6 +258,14 @@ public class TreeTester
                   createNewAVL();
                   break;
                case 3:
+                  TreePerformanceTest tpt = new TreePerformanceTest("treePerformanceTest.txt");
+                  tpt.insertionTest();
+                  tpt.containsTest();
+                  tpt.closePrintWriter();
+                  System.out.println("\nPerformance test completed.");
+                  System.out.println("Review results in file: treePerformanceTest.txt\n");
+                  break;
+               case 4:
                   quit = true;
                   System.out.println("Goodbye.");
                   System.exit(0);

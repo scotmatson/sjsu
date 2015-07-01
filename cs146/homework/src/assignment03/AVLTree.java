@@ -195,7 +195,7 @@ public class AVLTree<AnyType> extends BinarySearchTree<AnyType>
     */
    private BinaryNode<AnyType> rotateWithLeftChild(BinaryNode<AnyType> k2)
    {
-      System.out.println("Single right rotation.");
+      //System.out.println("Single right rotation.");
       BinaryNode<AnyType> k1 = k2.getLeft();
       k2.setLeft(k1.getRight());
       k1.setRight(k2);
@@ -213,7 +213,7 @@ public class AVLTree<AnyType> extends BinarySearchTree<AnyType>
     */
    private BinaryNode<AnyType> rotateWithRightChild(BinaryNode<AnyType> k1)
    {
-      System.out.println("Single left rotation.");
+      //System.out.println("Single left rotation.");
       BinaryNode<AnyType> k2 = k1.getRight();
       k1.setRight(k2.getLeft());
       k2.setLeft(k1);
@@ -231,7 +231,7 @@ public class AVLTree<AnyType> extends BinarySearchTree<AnyType>
     */
    private BinaryNode<AnyType> doubleWithLeftChild(BinaryNode<AnyType> k3)
    {
-      System.out.println("Double left-right rotation.");
+      //System.out.println("Double left-right rotation.");
       k3.setLeft(rotateWithRightChild(k3.getLeft()));
       return rotateWithLeftChild(k3);
    }
@@ -245,7 +245,7 @@ public class AVLTree<AnyType> extends BinarySearchTree<AnyType>
     */
    private BinaryNode<AnyType> doubleWithRightChild(BinaryNode<AnyType> k1)
    {
-      System.out.println("Double right-left rotation.");
+      //System.out.println("Double right-left rotation.");
       k1.setRight(rotateWithLeftChild(k1.getRight()));
       return rotateWithRightChild(k1);
    }

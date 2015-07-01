@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ffa729c-e877-4e4e-bf3a-09b601149556" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homework/src/assignment03/AVLNode.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment03/AVLTree.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment03/AVLTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment03/BinaryNode.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment03/BinaryNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment03/BinarySearchTree.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment03/BinarySearchTree.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment03/TreeTester.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment03/TreeTester.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment03/AVLTree.java" afterPath="$PROJECT_DIR$/homework/src/assignment03/AVLTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment03/BinaryNode.java" afterPath="$PROJECT_DIR$/homework/src/assignment03/BinaryNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment03/BinarySearchTree.java" afterPath="$PROJECT_DIR$/homework/src/assignment03/BinarySearchTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java" afterPath="$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment03/TreeTester.java" afterPath="$PROJECT_DIR$/homework/src/assignment03/TreeTester.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -49,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/homework/src/assignment03/TreeTester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+              <caret line="262" column="37" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -58,11 +51,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TreePerformanceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TreePerformanceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20588236">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#700#701#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/homework/src/assignment03/BinarySearchTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="treePerformanceTest.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/treePerformanceTest.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -123,6 +142,7 @@
         <option value="$PROJECT_DIR$/homework/src/assignment03/AVLTree.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment03/TreeTester.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java" />
+        <option value="$PROJECT_DIR$/treePerformanceTest.txt" />
       </list>
     </option>
   </component>
@@ -131,7 +151,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="18" />
-    <option name="width" value="683" />
+    <option name="width" value="1366" />
     <option name="height" value="750" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -475,7 +495,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="18" width="683" height="750" extended-state="0" />
+    <frame x="0" y="18" width="1366" height="750" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -485,14 +505,14 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.69863015" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34898278" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37833595" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18257576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3196347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18636364" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7473364" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19874804" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -539,21 +559,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment02/IndexedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="357" column="0" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -812,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8291139">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/assignment01/assn01_report.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4921875">
@@ -906,47 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/AVLTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="218" column="4" selection-start-line="218" selection-start-column="4" selection-end-line="218" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3598#3599#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/BinaryNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/assignment03/TreePrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -955,10 +917,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83054006">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/assignment03/TreeTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="172" column="23" selection-start-line="172" selection-start-column="23" selection-end-line="172" selection-end-column="23" />
+          <caret line="262" column="37" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -966,10 +936,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/AVLTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46272492">
+          <caret line="68" column="47" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3360825">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/assignment03/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/assignment03/TreePerformanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20588236">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treePerformanceTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="48" />
           <folding />
         </state>
       </provider>

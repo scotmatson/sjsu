@@ -1,0 +1,15 @@
+         *** Insertion Performance Test ***
+
+         N       bst.insert()       avl.insert()
+        10                  1                  0
+       100                  2                  2
+      1000                  2                  8
+     10000                 16                 31
+    100000                 76                 44
+   1000000                712               1257
+
+
+          *** Contains Performance Test ***
+
+         N     bst.contains()     avl.contains()
+   1000000                716                636
