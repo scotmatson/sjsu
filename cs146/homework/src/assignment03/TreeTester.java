@@ -116,21 +116,6 @@ public class TreeTester
       Scanner in = new Scanner(System.in);
       int option;
       AVLTree<Integer> avl = new AVLTree<>();
-      Random rand = new Random();
-      int n;
-      for (int i = 0; i < 10; ++i)
-      {
-         n = rand.nextInt(90) + 10;
-         // If this value already exists in the tree, cycle back and try again.
-         if (avl.contains(n))
-         {
-            //System.out.println("Duplicate found.");
-            --i;
-            continue;
-         }
-
-         avl.insert(n);
-      }
 
       System.out.println("Adelson-Velksii and Landis Tree has been created.");
       System.out.println("What would you like to do next?\n");
@@ -138,11 +123,12 @@ public class TreeTester
       {
          System.out.println("\nPlease choose an option from the menu below.");
          System.out.println("1. Repopulate AVL with new data.");
-         System.out.println("2. Find an existing data value.");
-         System.out.println("3. Delete the root node.");
-         System.out.println("4. Print the AVL.");
-         System.out.println("5. Return to the previous menu.");
-         System.out.println("6. Exit the program.");
+         System.out.println("2. Insert random value from [10, 99] into the tree.");
+         System.out.println("3. Find an existing data value.");
+         System.out.println("4. Delete the root node.");
+         System.out.println("5. Print the AVL.");
+         System.out.println("6. Return to the previous menu.");
+         System.out.println("7. Exit the program.");
          try
          {
             System.out.print(">> ");
@@ -151,10 +137,22 @@ public class TreeTester
             switch (option)
             {
                case 1:
-                  System.out.println("Repopulating AVL.");
+                  System.out.println("Initializing the AVL.");
                   createNewAVL();
                   break;
                case 2:
+                  int n;
+                  Random rand = new Random();
+                  do
+                  {
+                     n = rand.nextInt(90) + 10;
+                     System.out.println("This is where I'm stuck!!!");
+                  } while (avl.contains(n));
+                  System.out.println("About to insert... ");
+                  avl.insert(n);
+                  System.out.println("Inserted value: " + n);
+                  break;
+               case 3:
                   System.out.print("Enter the Integer value you would like to find >> ");
                   boolean found;
                   try
@@ -173,7 +171,7 @@ public class TreeTester
                      System.out.println("That is not a valid input.");
                   }
                   break;
-               case 3:
+               case 4:
                   System.out.println("Removing the root node.");
                   try
                   {
@@ -183,7 +181,7 @@ public class TreeTester
                      System.out.println("The tree is empty.");
                   }
                   break;
-               case 4:
+               case 5:
                   System.out.println("\nPrinting AVL.");
                   TreePrinter treePrinter = new TreePrinter(avl);
                   treePrinter.print("Adelson-Velskii and Landis Tree");
@@ -192,9 +190,9 @@ public class TreeTester
                      System.out.println("The tree is empty.");
                   }
                   break;
-               case 5:
-                  return;
                case 6:
+                  return;
+               case 7:
                   System.out.println("Goodbye.");
                   System.exit(0);
                   break;

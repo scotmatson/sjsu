@@ -63,7 +63,7 @@ public class BinarySearchTree<AnyType>
     @param node root node.
     @return nodes to return.
     */
-   private BinaryNode<AnyType> insert(Integer newData, BinaryNode<AnyType> node)
+   protected BinaryNode<AnyType> insert(Integer newData, BinaryNode<AnyType> node)
    {
       if (node == null)
       {
@@ -135,7 +135,7 @@ public class BinarySearchTree<AnyType>
       root = remove(oldData, root);
    }
 
-   private BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
+   protected BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
    {
       // Node does not exist, do nothing.
       if (node == null)
