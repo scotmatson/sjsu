@@ -1,17 +1,30 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+ Test class for BinarySearchTree.java, AVLTree.java,
+ and BinaryNode.java.
+
+ Solves CS147 Homework Assignment #03
+
+ @author Scot Matson
+ @version 1.00 2015/06/30
+ */
+
 package assignment03;
 
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- Created by scot on 6/28/15.
- */
 public class TreeTester
 {
+   /**
+    Generates a new Binary Search Tree and an associated sub-menu to
+      interact with it.
+    */
    private static void createNewBST()
    {
       Scanner in = new Scanner(System.in);
+      boolean useBSTMenu = true;
       int option;
       BinarySearchTree<Integer> bst = new BinarySearchTree<>();
       Random rand = new Random();
@@ -22,7 +35,6 @@ public class TreeTester
          // If this value already exists in the tree, cycle back and try again.
          if (bst.contains(n))
          {
-            //System.out.println("Duplicate found.");
             --i;
             continue;
          }
@@ -93,7 +105,8 @@ public class TreeTester
                   }
                   break;
                case 5:
-                  return;
+                  useBSTMenu = false;
+                  break;
                case 6:
                   System.out.println("Goodbye.");
                   System.exit(0);
@@ -108,12 +121,16 @@ public class TreeTester
             in.nextLine(); // Purge Scanner input.
             System.out.println("That is not a valid input.");
          }
-      } while (true);
+      } while (useBSTMenu);
    }
 
+   /**
+    Sub-menu used to create and interact with an Adelson-Velskii and Landis Tree
+    */
    private static void createNewAVL()
    {
       Scanner in = new Scanner(System.in);
+      boolean useAVLMenu = true;
       int option;
       AVLTree<Integer> avl = new AVLTree<>();
 
@@ -122,7 +139,7 @@ public class TreeTester
       do
       {
          System.out.println("\nPlease choose an option from the menu below.");
-         System.out.println("1. Repopulate AVL with new data.");
+         System.out.println("1. Reinitialize AVL tree.");
          System.out.println("2. Insert random value from [10, 99] into the tree.");
          System.out.println("3. Find an existing data value.");
          System.out.println("4. Delete the root node.");
@@ -146,11 +163,10 @@ public class TreeTester
                   do
                   {
                      n = rand.nextInt(90) + 10;
-                     System.out.println("This is where I'm stuck!!!");
                   } while (avl.contains(n));
-                  System.out.println("About to insert... ");
                   avl.insert(n);
                   System.out.println("Inserted value: " + n);
+                  avl.checkBalance();
                   break;
                case 3:
                   System.out.print("Enter the Integer value you would like to find >> ");
@@ -176,6 +192,7 @@ public class TreeTester
                   try
                   {
                      avl.remove(avl.getRoot().getData());
+                     avl.checkBalance();
                   } catch (NullPointerException e)
                   {
                      System.out.println("The tree is empty.");
@@ -191,7 +208,8 @@ public class TreeTester
                   }
                   break;
                case 6:
-                  return;
+                  useAVLMenu = false;
+                  break;
                case 7:
                   System.out.println("Goodbye.");
                   System.exit(0);
@@ -205,9 +223,13 @@ public class TreeTester
             in.nextLine(); // Purge Scanner input.
             System.out.println("That is not a valid input.");
          }
-      } while (true);
+      } while (useAVLMenu);
    }
 
+   /**
+    The main method, Entry point for the application.
+    @param args the file to run.
+    */
    public static void main(String[] args)
    {
       Scanner in = new Scanner(System.in);

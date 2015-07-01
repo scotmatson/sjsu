@@ -1,27 +1,55 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Creates a Binary Search Tree.
+
+ Solves CS147 Homework Assignment #03
+
+ @author Scot Matson
+ Code partially adapted from:
+ Data Structures and Algorithms, 3rd Edition by Mark Allen Weiss
+ @version 1.00 2015/06/30
+ */
+
 package assignment03;
 
-/**
- Created by scot on 6/28/15.
- */
 public class BinarySearchTree<AnyType>
 {
    BinaryNode root;
 
+   /**
+    Constructor method.
+    */
    BinarySearchTree ()
    {
       root = null;
    }
 
+   /**
+    Returns the root node.
+
+    @return The root node.
+    */
    public BinaryNode getRoot()
    {
       return root;
    }
 
+   /**
+    Returns true if the tree is empty.
+
+    @return A boolean value.
+    */
    public boolean isEmpty()
    {
       return (root == null);
    }
 
+   /**
+    The height of the tree.
+
+    @return The height.
+    */
    public int height()
    {
       return height(root);
@@ -130,11 +158,24 @@ public class BinarySearchTree<AnyType>
       }
    }
 
+   /**
+    Given a data value, the associated node is removed from the tree if
+      the value exists.
+
+    @param oldData The data to remove.
+    */
    public void remove(Integer oldData)
    {
       root = remove(oldData, root);
    }
 
+   /**
+    Recursively traverses the tree attempting to remove a given node.
+
+    @param oldData The data to remove.
+    @param node The node to search from.
+    @return The updated node structure.
+    */
    protected BinaryNode<AnyType> remove(Integer oldData, BinaryNode<AnyType> node)
    {
       // Node does not exist, do nothing.
@@ -168,6 +209,12 @@ public class BinarySearchTree<AnyType>
       return node;
    }
 
+   /**
+    Finds the minimum value in the tree.
+
+    @param node The node to search from.
+    @return The minimum value.
+    */
    private BinaryNode<AnyType> findMin(BinaryNode<AnyType> node)
    {
       // Handles the initial case that the argument may be null.

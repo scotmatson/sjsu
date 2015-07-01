@@ -1,8 +1,16 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Class to generate nodes for use with a tree type data structure.
+   Used specifically with a BST or AVL tree data structure.
+
+ Solves CS147 Homework Assignment #03
+
+ @author Scot Matson
+ @version 1.00 2015/06/30
+ */
 package assignment03;
 
-/**
- Created by scot on 6/28/15.
- */
 public class BinaryNode<AnyType>
 {
    private Integer data;
