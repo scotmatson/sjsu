@@ -13,7 +13,7 @@ public class TreePerformanceTest
    private AVLTree avl;
    private PrintWriter pw;
    private Random rand = new Random();
-   private final int RANGE = 9999999; // Values generated from 0 to (n - 1)
+   private final int RANGE = 1000000; // Values generated from 0 to (n - 1)
    private final int CYCLES = 10000000;
    private long startBST, endBST, startAVL, endAVL;
 
