@@ -261,6 +261,7 @@ public class TreeTester
                   TreePerformanceTest tpt = new TreePerformanceTest("treePerformanceTest.txt");
                   tpt.insertionTest();
                   tpt.containsTest();
+                  tpt.ratioPerformanceTest();
                   tpt.closePrintWriter();
                   System.out.println("\nPerformance test completed.");
                   System.out.println("Review results in file: treePerformanceTest.txt\n");

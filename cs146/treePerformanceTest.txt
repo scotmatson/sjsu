@@ -1,15 +1,319 @@
          *** Insertion Performance Test ***
 
          N       bst.insert()       avl.insert()
-        10                  1                  0
-       100                  2                  2
-      1000                  2                  8
-     10000                 16                 31
-    100000                 76                 44
-   1000000                712               1257
+        10                  1                  1
+       100                  1                  5
+      1000                  5                 10
+     10000                 14                 19
+    100000                 79                 52
+   1000000                766               1304
+  10000000              13195              13977
 
 
           *** Contains Performance Test ***
 
          N     bst.contains()     avl.contains()
-   1000000                716                636
+  10000000              11309               9590
+
+
+             *** Ratio Performance Test ***
+================================================
+         N       bst.insert()       avl.insert()
+   9330031              12321              10787
+               bst.contains()     avl.contains()
+   3105084               3299               5007
+
+================================================
+         N       bst.insert()       avl.insert()
+   8701928               9589              11925
+               bst.contains()     avl.contains()
+   3548160               3702               3353
+
+================================================
+         N       bst.insert()       avl.insert()
+   9498468              10921              13585
+               bst.contains()     avl.contains()
+    836845                870                760
+
+================================================
+         N       bst.insert()       avl.insert()
+   1374889               1399               1370
+               bst.contains()     avl.contains()
+   8084637               7111               5039
+
+================================================
+         N       bst.insert()       avl.insert()
+   5969519               6080               6807
+               bst.contains()     avl.contains()
+   7344894               7526               5822
+
+================================================
+         N       bst.insert()       avl.insert()
+   9694883              11516              12051
+               bst.contains()     avl.contains()
+   2635752               3042               2363
+
+================================================
+         N       bst.insert()       avl.insert()
+   8771461              12349              10821
+               bst.contains()     avl.contains()
+   7585146               7531               6577
+
+================================================
+         N       bst.insert()       avl.insert()
+   9414462              11161              13318
+               bst.contains()     avl.contains()
+   5755704               6080               5036
+
+================================================
+         N       bst.insert()       avl.insert()
+   1696150               1629               1794
+               bst.contains()     avl.contains()
+   1370704               1313               1313
+
+================================================
+         N       bst.insert()       avl.insert()
+   3665225               3457               4368
+               bst.contains()     avl.contains()
+   2092090               1816               1648
+
+================================================
+         N       bst.insert()       avl.insert()
+   3358258               4004               4027
+               bst.contains()     avl.contains()
+   9300023               9980               6545
+
+================================================
+         N       bst.insert()       avl.insert()
+   5528963               7253               7774
+               bst.contains()     avl.contains()
+   7860313               7365               6149
+
+================================================
+         N       bst.insert()       avl.insert()
+   6129323               7675               7963
+               bst.contains()     avl.contains()
+   1832458               1787               1465
+
+================================================
+         N       bst.insert()       avl.insert()
+   6839913               9153               7863
+               bst.contains()     avl.contains()
+   5986050               6247               4892
+
+================================================
+         N       bst.insert()       avl.insert()
+    928117                760               1041
+               bst.contains()     avl.contains()
+   1196667                804                705
+
+================================================
+         N       bst.insert()       avl.insert()
+   8215219               9718               9943
+               bst.contains()     avl.contains()
+   9932102              13145               8287
+
+================================================
+         N       bst.insert()       avl.insert()
+   4812639               5817               6566
+               bst.contains()     avl.contains()
+   8232098               7960               6398
+
+================================================
+         N       bst.insert()       avl.insert()
+   6923769               8330              10318
+               bst.contains()     avl.contains()
+   6782817               7143               5591
+
+================================================
+         N       bst.insert()       avl.insert()
+   8736462               9632              10843
+               bst.contains()     avl.contains()
+   1826125               1827               1535
+
+================================================
+         N       bst.insert()       avl.insert()
+   5231951               5732               7677
+               bst.contains()     avl.contains()
+   7970359               7790               6629
+
+================================================
+         N       bst.insert()       avl.insert()
+   9871240              11154              12595
+               bst.contains()     avl.contains()
+   5671335               6153               4837
+
+================================================
+         N       bst.insert()       avl.insert()
+   5256181               5838               7912
+               bst.contains()     avl.contains()
+   5636286               5472               4698
+
+================================================
+         N       bst.insert()       avl.insert()
+   4582639               5491               5571
+               bst.contains()     avl.contains()
+   4305454               4328               3338
+
+================================================
+         N       bst.insert()       avl.insert()
+   3445189               4270               4127
+               bst.contains()     avl.contains()
+   1697739               1467               1794
+
+================================================
+         N       bst.insert()       avl.insert()
+   6717640               7395              10684
+               bst.contains()     avl.contains()
+   2812447               2669               2241
+
+================================================
+         N       bst.insert()       avl.insert()
+   3233004               3296               3927
+               bst.contains()     avl.contains()
+   7734515               7146               5422
+
+================================================
+         N       bst.insert()       avl.insert()
+    153779                 61                 74
+               bst.contains()     avl.contains()
+    986741                553                343
+
+================================================
+         N       bst.insert()       avl.insert()
+   6131799               7693               8118
+               bst.contains()     avl.contains()
+   1758816               1730               1368
+
+================================================
+         N       bst.insert()       avl.insert()
+   5274438               5866               7890
+               bst.contains()     avl.contains()
+   5375623               5243               4523
+
+================================================
+         N       bst.insert()       avl.insert()
+   1582324               1490               1636
+               bst.contains()     avl.contains()
+   8486749               8052               5143
+
+================================================
+         N       bst.insert()       avl.insert()
+   5208734               5251               6021
+               bst.contains()     avl.contains()
+   6916371               6580               5432
+
+================================================
+         N       bst.insert()       avl.insert()
+   5967562               6108               6814
+               bst.contains()     avl.contains()
+   5890538               7920               4636
+
+================================================
+         N       bst.insert()       avl.insert()
+   3339238               3287               4149
+               bst.contains()     avl.contains()
+   1458963               1627               1002
+
+================================================
+         N       bst.insert()       avl.insert()
+   8555435              10297              10253
+               bst.contains()     avl.contains()
+    723453                749                661
+
+================================================
+         N       bst.insert()       avl.insert()
+   6099998               9529               8216
+               bst.contains()     avl.contains()
+   5136461               4963               4027
+
+================================================
+         N       bst.insert()       avl.insert()
+   7584594               8422               9682
+               bst.contains()     avl.contains()
+    192730                187                162
+
+================================================
+         N       bst.insert()       avl.insert()
+   1061499                932               1146
+               bst.contains()     avl.contains()
+   9627123               7605               6116
+
+================================================
+         N       bst.insert()       avl.insert()
+   6398251               7688               8128
+               bst.contains()     avl.contains()
+    857707                831                700
+
+================================================
+         N       bst.insert()       avl.insert()
+   5619726               6289               6692
+               bst.contains()     avl.contains()
+   5078851               4952               4500
+
+================================================
+         N       bst.insert()       avl.insert()
+   6990244               8282              10248
+               bst.contains()     avl.contains()
+    499581                509                474
+
+================================================
+         N       bst.insert()       avl.insert()
+   4301026               4470               5424
+               bst.contains()     avl.contains()
+   4950841               4602               3722
+
+================================================
+         N       bst.insert()       avl.insert()
+   5486502               5801               6338
+               bst.contains()     avl.contains()
+   8229906               9693               6347
+
+================================================
+         N       bst.insert()       avl.insert()
+   7055071               8060               9037
+               bst.contains()     avl.contains()
+   3248780               2919               2650
+
+================================================
+         N       bst.insert()       avl.insert()
+   9183696              10051              13223
+               bst.contains()     avl.contains()
+   7139675               7279               6091
+
+================================================
+         N       bst.insert()       avl.insert()
+   5871798               6023               6620
+               bst.contains()     avl.contains()
+   7811979               7773               6102
+
+================================================
+         N       bst.insert()       avl.insert()
+    967393                838                880
+               bst.contains()     avl.contains()
+   3426982               2587               2922
+
+================================================
+         N       bst.insert()       avl.insert()
+   7021877               7196              11393
+               bst.contains()     avl.contains()
+   6382719               6107               5187
+
+================================================
+         N       bst.insert()       avl.insert()
+   6083896               7791               8026
+               bst.contains()     avl.contains()
+   2863713               2832               2295
+
+================================================
+         N       bst.insert()       avl.insert()
+   3511366               3848               4400
+               bst.contains()     avl.contains()
+   3040442               3121               2138
+
+================================================
+         N       bst.insert()       avl.insert()
+   6648925               9068               7762
+               bst.contains()     avl.contains()
+   5904189               6238               4801
+

@@ -9,11 +9,18 @@ import java.util.Random;
  */
 public class TreePerformanceTest
 {
-   BinarySearchTree bst;
-   AVLTree avl;
-   PrintWriter pw;
-   Random rand = new Random();
+   private BinarySearchTree bst;
+   private AVLTree avl;
+   private PrintWriter pw;
+   private Random rand = new Random();
+   private final int RANGE = 9999999; // Values generated from 0 to (n - 1)
+   private final int CYCLES = 10000000;
+   private long startBST, endBST, startAVL, endAVL;
 
+   /**
+    Constructor method.
+    @param outputFile The name of the output file.
+    */
    TreePerformanceTest (String outputFile)
    {
       bst = new BinarySearchTree();
@@ -26,7 +33,6 @@ public class TreePerformanceTest
       {
          System.out.println("Unable to generate output file. Test aborted.");
       }
-
    }
 
    /**
@@ -44,7 +50,7 @@ public class TreePerformanceTest
    {
       pw.format("%43s\n\n", "*** Insertion Performance Test ***");
       pw.format("%10s    %15s    %15s\n", "N", "bst.insert()", "avl.insert()");
-      for (int i = 10; i <= 1000000; i *= 10)
+      for (int i = 10; i <= CYCLES; i *= 10)
       {
          insertionTest(i);
       }
@@ -58,50 +64,78 @@ public class TreePerformanceTest
    {
       // BST TEST
       bst = new BinarySearchTree();
-      long startBST = System.currentTimeMillis();
+      startBST = System.currentTimeMillis();
       for (int i = 0; i < n; ++i)
       {
-         bst.insert(rand.nextInt(9999999));
+         bst.insert(rand.nextInt(RANGE));
       }
-      long endBST = System.currentTimeMillis() - startBST;
+      endBST = System.currentTimeMillis() - startBST;
 
       // AVL TEST
       avl = new AVLTree();
-      long startAVL = System.currentTimeMillis();
+      startAVL = System.currentTimeMillis();
       for (int i = 0; i < n; ++i)
       {
-         avl.insert(rand.nextInt(9999999));
+         avl.insert(rand.nextInt(RANGE));
       }
-      long endAVL = System.currentTimeMillis() - startAVL;
+      endAVL = System.currentTimeMillis() - startAVL;
 
       pw.format("%10d    %15d    %15d\n", n, endBST, endAVL);
    }
 
    /**
-    Performance test for the contains method for the BST and AVL Tree. Runs
-      1 million random values through a tree with ~1 million nodes.
+    Performance test for the contains method for the BST and AVL tree.
     */
    public void containsTest()
    {
       pw.format("\n\n%43s\n\n", "*** Contains Performance Test ***");
       pw.format("%10s    %15s    %15s\n", "N", "bst.contains()", "avl.contains()");
+      containsTest(CYCLES);
+   }
 
+   /**
+    Performance test for the contains method for the BST and AVL tree.
+    */
+   public void containsTest(int n)
+   {
       // BST TEST
-      long startBST = System.currentTimeMillis();
-      for (int i = 1; i <= 1000000; ++i)
+      startBST = System.currentTimeMillis();
+      for (int i = 1; i <= n; ++i)
       {
-         bst.contains(rand.nextInt(9999999));
+         bst.contains(rand.nextInt(RANGE));
       }
-      long endBST = System.currentTimeMillis() - startBST;
+      endBST = System.currentTimeMillis() - startBST;
 
       // AVL TEST
-      long startAVL = System.currentTimeMillis();
-      for (int i = 1; i < 1000000; ++i)
+      startAVL = System.currentTimeMillis();
+      for (int i = 1; i < n; ++i)
       {
-         avl.contains(rand.nextInt(9999999));
+         avl.contains(rand.nextInt(RANGE));
       }
-      long endAVL = System.currentTimeMillis() - startAVL;
+      endAVL = System.currentTimeMillis() - startAVL;
 
-      pw.format("%10d    %15d    %15d\n", 1000000, endBST, endAVL);
+      pw.format("%10d    %15d    %15d\n", n, endBST, endAVL);
+   }
+
+   /**
+    50 cycles of running the insert and contains method
+      together using an AVL and BST with randomly generated values of n and k.
+    */
+   public void ratioPerformanceTest()
+   {
+      pw.format("\n\n%43s\n", "*** Ratio Performance Test ***");
+      int n;
+      for (int i = 0; i < 50; ++i)
+      {
+         pw.print("================================================\n");
+         n = rand.nextInt(CYCLES);
+         pw.format("%10s    %15s    %15s\n", "N", "bst.insert()", "avl.insert()");
+         insertionTest(n);
+
+         n = rand.nextInt(CYCLES);
+         pw.format("%29s    %15s\n", "bst.contains()", "avl.contains()");
+         containsTest(n);
+         pw.write("\n");
+      }
    }
 }
