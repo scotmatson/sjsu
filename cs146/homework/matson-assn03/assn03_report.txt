@@ -1,0 +1,114 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Code Review and Performance Report
+
+ Solves CS147 Homework Assignment #03
+
+ @author Scot Matson
+ */
+
+Understanding the TreePrinter class and creating the base classes and methods was
+my first objective when I approached this assignment. The TreePrinter class came
+across to me as fairly complex but this is generally my initial feeling whenever
+I approach a finished program head on. Having a general understanding of how
+to construct a Binary Search Tree gave me a point of entry. I associate this data
+structure as being nothing more than a slightly more complex LinkedList.
+
+I began building out my BinaryNode class within IntelliJ IDEA which helped highlight
+methods that I would implementing with its not so friendly bright red text. As I
+trudged along the errors disappeared and eventually the class was in what I believed
+to be a working state. I prefer to keep my instance variables private as this is
+a common Java practice, so unlike many of the Node classes that I see, I decided to
+use getters and setters for all of my Node interactions. The next step was to build
+out a basic framework for the BinarySearchTree class, and while I have a general
+knowledge of the methods this would entail, I still have yet to really cement the
+exact implementation. I would rely heavily on the book and StackOverflow from this
+point on.
+
+When developing my BST class I first placed in all of the methods that I would need
+and set up comments for myself as a guide of how I think I'd like the order of implementation
+to occur as well as psuedocode here and there. The main initial point of interest though
+was developing the functionality to insert Nodes and interact with the TreePrinter. With
+these two pieces in place I would have a much greater idea of how to proceed as this would
+essentially allow me to visualize all future development.
+
+Given the instructions to the assignment, I felt that a user interface would be
+important since this would allow greater control to formulate test cases more
+quickly and also give precise control to when printing would take place and when
+values were inserted and removed. The menu system came very naturally to me as I had
+previously worked on a Interactive Fiction game. What was beneficial about this method
+of program interaction was not only how quickly I could interact with my trees but also
+how easy it made it to uncover bugs and fix them.
+
+The first complication arose when I attempted to make all of my generics an implementation
+of Integer. The behavior of my Integer variables worked no longer as expected and I could
+not understand why. After spending upwards of two hours on such an early set-back I decided
+that the developer community would be my best course of action and so I turned to Stack Overflow.
+Within minutes of posting a code snippet and clearly outlining my problem I was directed to an old
+thread which explained one of the quirks of using generics - I had in fact overridden the Integer class
+and was no longer afforded the use of its methods, specifically the one I needed, compareTo.
+It seems the simplest complications are the ones that plague me most frequently.
+
+Moving forward with the rest of my BinarySearchTree class I was amazed how quickly pieces were coupled
+together and working as expected. I continued to bounce between multiple resources to gain
+insight of this Data Structures functionality and attempt different implementations, favoring
+code that read easier rather than performed faster. This choice was strictly academic for at
+this stage I would like to be able to return to my code and read through it clearly as an
+English sentence.
+
+Moving onto the AVL Tree I must say was quite intimidating and to date I still have trouble
+understanding the inner workings of balancing and rotating. Since the AVL is very
+similar to the BST I chose to make it a child class which in the long run saved a great
+deal of development time. I greatly enjoyed the elegance of the relationship the two trees
+shared with each other and how easily I was able to expand the AVL methods to incorporate
+all of the balancing.
+
+One decision during this phase of development that I had to backtrack on was my implementation
+of an AVLNode class as the child class of the BinaryNode. The problem I ran into was that
+the TreePrinter specifically calls for the BinaryNode so I was performing a number of
+casts which didn't always work. Ultimately I decided that how I implemented this
+would not matter as long as it continued to run as expected. Since the AVLNode
+simply introduced a height instance variable, I moved the variable into the BinaryNode
+class and stopped using the AVLNode. The BinaryNode would probably be better named simply
+Node or TreeNode but for all intensive purposes the name shall remain the same so it may
+interact properly with the TreePrinter.
+
+As the classes began to take shape and I began to run series of tests I notice an
+interesting Exception being thrown that was not originating from my code, but rather
+the TreePrinter. It turns out that although the TreePrinter will not print out a tree
+with a height greater than 5, it also will throw an Exception if a Tree has a height
+greater than 8. While I attempted to leave the TreePrinter class left to its original
+state, I simply could not have an Exception being thrown every time my random variables
+generated a tree that did not satisfy the given requirements. A simple try/catch clause
+quickly managed this problem and I was able to recover from these Exceptions without
+further complication.
+
+With the development cycles completed and all tests ran I was secure with my belief
+that the application would operate efficiently in the given environment. I lastly
+built out a printer class for performance testing which was able to run 10 million
+iterations in a reasonable amount of time when independently performing insertions
+and searches. When I mixed the two operations though running multiple cycles was
+too time consuming and my laptop would overheat quickly, drastically degrading the
+overall performance. I decided that the mixed results tests would limited to simply
+1 million values.
+
+When running insertions, it appeared that as the number of nodes approached one million
+the AVL Tree greatly began to suffer as it had to re-balance the tree with every iteration.
+As we approached 10 million nodes though this function became moot and we can see that the
+BST begins to slow down, likely from having to drill down deep into unbalanced areas of the
+data structure. I believe that as the number of nodes continues to grow we may see the AVL
+outperform the BST.
+
+With the contains method the performance gains were negligible until well into the millions.
+At 10 million nodes searching for 10 million values we see the AVL has a slight advantage but
+not enough to save a great deal of processor power.
+
+Evaluating the final test, which performs a series of insertions and searches using a random
+number of nodes, it appears that after a million nodes have been inserted the AVL slowly begins
+to gain an advantage over the BST when searching whereas around 8 million insertions is where
+the balancing cost no longer has a negative impact on performance. This leads me to believe that
+in most cases a BST would suffice but in large scale applications an AVL may ultimately
+outperform the BST.
+
+
