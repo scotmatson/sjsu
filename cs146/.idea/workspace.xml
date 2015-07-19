@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ffa729c-e877-4e4e-bf3a-09b601149556" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/homeworkTester/FisherYatesShuffler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/HeapSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/InsertionSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/KnuthsShellSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/assignment04/KnuthsShellSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/NumberGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/homeworkTester/QuickSortTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/ShellSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/SortTester.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/Sortable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/Stats.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/assignment04/assn04_report.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/assn05_report.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/Assignment05/sortingAlgorithms.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/assignment04/sortingAlgorithms.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/homework/matson-assign03.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment04/InsertionSort.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment04/InsertionSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment04/NumberGenerator.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment04/NumberGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment04/ShellSort.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment04/ShellSort.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment04/SortTester.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment04/SortTester.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/assignment04/Stats.class" afterPath="$PROJECT_DIR$/out/production/homework/assignment04/Stats.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/InsertionSort.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/InsertionSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/NumberGenerator.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/NumberGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/ShellSort.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/ShellSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/SortTester.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/SortTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/Sortable.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/Sortable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/assignment04/Stats.java" afterPath="$PROJECT_DIR$/homework/src/assignment04/Stats.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/homeworkTester/GeneralTesting.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework/src/homeworkTester/IteratorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/Assignment05/QuicksortOptimal.class" afterPath="$PROJECT_DIR$/out/production/homework/Assignment05/QuicksortOptimal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/Assignment05/QuicksortSuboptimal.class" afterPath="$PROJECT_DIR$/out/production/homework/Assignment05/QuicksortSuboptimal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/homework/Assignment05/SortTester.class" afterPath="$PROJECT_DIR$/out/production/homework/Assignment05/SortTester.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java" afterPath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java" afterPath="$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java" afterPath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java" afterPath="$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs146.iws" />
@@ -60,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/SortTester.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -68,21 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeSortLinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MergeSortLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8545455">
-              <caret line="92" column="6" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MergeSortArray.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MergeSortArray.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="88" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.4857143">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -104,8 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter01/src/WrapperDemo.java" />
-        <option value="$PROJECT_DIR$/homework/src/assignment01/WarAndPeaceWebScraper.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment01/WebScraper.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment01/NameTester.java" />
         <option value="$PROJECT_DIR$/homework/src/assignment01/NameNode.java" />
@@ -148,13 +126,15 @@
         <option value="$PROJECT_DIR$/homework/src/Assignment05/assn05_report.txt" />
         <option value="$PROJECT_DIR$/homework/src/homeworkTester/FisherYatesShuffler.java" />
         <option value="$PROJECT_DIR$/homework/src/Assignment05/NumberGenerator.java" />
-        <option value="$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java" />
         <option value="$PROJECT_DIR$/homework/src/Assignment05/HeapSort.java" />
         <option value="$PROJECT_DIR$/homework/src/homeworkTester/QuickSortTester.java" />
-        <option value="$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java" />
-        <option value="$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java" />
         <option value="$PROJECT_DIR$/homework/src/Assignment05/SortTester.java" />
+        <option value="$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java" />
+        <option value="$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java" />
+        <option value="$PROJECT_DIR$/homework/src/homeworkTester/GeneralTesting.java" />
+        <option value="$PROJECT_DIR$/homework/src/homeworkTester/IteratorTest.java" />
         <option value="$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java" />
+        <option value="$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java" />
       </list>
     </option>
   </component>
@@ -287,28 +267,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homeworkTester" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs146" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs146" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -371,34 +329,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.SortTester">
-    <configuration default="false" name="IndexedListTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment02.IndexedListTester" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="homework" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TreeTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assignment03.TreeTester" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="homework" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="FisherYatesShuffler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkTester.FisherYatesShuffler" />
       <option name="VM_PARAMETERS" />
@@ -429,6 +359,34 @@
     </configuration>
     <configuration default="false" name="QuickSortTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeworkTester.QuickSortTester" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="homework" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GeneralTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkTester.GeneralTesting" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="homework" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="IteratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeworkTester.IteratorTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -503,18 +461,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.IndexedListTester" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TreeTester" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FisherYatesShuffler" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SortTester" />
-      <item index="4" class="java.lang.String" itemvalue="Application.QuickSortTester" />
+      <item index="0" class="java.lang.String" itemvalue="Application.FisherYatesShuffler" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SortTester" />
+      <item index="2" class="java.lang.String" itemvalue="Application.QuickSortTester" />
+      <item index="3" class="java.lang.String" itemvalue="Application.GeneralTesting" />
+      <item index="4" class="java.lang.String" itemvalue="Application.IteratorTest" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.SortTester" />
-        <item index="1" class="java.lang.String" itemvalue="Application.QuickSortTester" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FisherYatesShuffler" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TreeTester" />
+        <item index="1" class="java.lang.String" itemvalue="Application.IteratorTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.GeneralTesting" />
+        <item index="3" class="java.lang.String" itemvalue="Application.QuickSortTester" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FisherYatesShuffler" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -548,14 +507,14 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20547946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.85235924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6420722" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32496077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51902586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18636364" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41248098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51598173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -566,9 +525,9 @@
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32724506" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -577,16 +536,16 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33181125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20547946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20227273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3098485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3196347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51902586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18636364" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38812786" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41248098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -602,25 +561,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="49" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/homework/src/assignment01/NameFinderDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/assignment01/NameFinderDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -874,6 +819,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19823788">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,37 +906,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13535354">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="65" selection-end-column="4" />
+          <folding>
+            <element signature="e#282#283#0" expanded="false" />
+            <element signature="e#311#312#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/QuicksortOptimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14545454">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/QuicksortSuboptimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4909091">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14545454">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/HeapSort.java">
+    <entry file="file://$PROJECT_DIR$/homework/src/homeworkTester/IteratorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13535354">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="65" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/homeworkTester/GeneralTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37142858">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/SortTester.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="57" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -999,16 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/MergeSortArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="88" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/homework/src/Assignment05/MergeSortLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8545455">
-          <caret line="92" column="6" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.4857143">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>

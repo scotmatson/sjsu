@@ -2,6 +2,7 @@ package Assignment05;
 
 /**
  Created by scot on 7/18/15.
+ http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
  */
 public class QuicksortOptimal implements Sortable
 {

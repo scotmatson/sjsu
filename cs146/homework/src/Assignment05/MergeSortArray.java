@@ -13,7 +13,7 @@ public class MergeSortArray implements Sortable
    public <AnyType extends Comparable<? super AnyType>> void sort(AnyType[] a)
    {
       Stats.startTime();
-      AnyType [] tmpArray = (AnyType []) new Comparable[a.length];
+      AnyType[] tmpArray = (AnyType []) new Comparable[a.length];
       mergeSort(a, tmpArray, 0, a.length - 1);
       Stats.stopTime();
    }

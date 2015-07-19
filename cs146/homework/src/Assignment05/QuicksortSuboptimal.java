@@ -2,11 +2,13 @@ package Assignment05;
 
 /**
  Created by scot on 7/18/15.
+ http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
  */
 public class QuicksortSuboptimal implements Sortable
 {
    public <AnyType extends Comparable<? super AnyType>>
-   void sort(AnyType[] values) {
+   void sort(AnyType[] values)
+   {
       Stats.startTime();
       quicksort(values, 0, values.length - 1);
       Stats.stopTime();
