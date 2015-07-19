@@ -10,7 +10,7 @@
  @version 1.00 2015/07/11
  */
 
-package assignment04;
+package Assignment05;
 
 public class InsertionSort implements Sortable
 {

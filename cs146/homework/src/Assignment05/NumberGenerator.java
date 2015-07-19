@@ -3,13 +3,13 @@
  Generates Integer Arrays of size n and provides a number of methods
  to manipulate them. Used for testing Sorting algorithms.
 
- Solves CS147 Homework Assignment #04
+ Solves CS147 Homework Assignment #05
 
  @author Scot Matson
- @version 1.00 2015/07/11
+ @version 1.00 2015/07/18
  */
 
-package assignment04;
+package Assignment05;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -56,12 +56,13 @@ public class NumberGenerator
    public void shuffleNumbers()
    {
       Random rand = new Random();
+      Integer temp;
       for (int i = numbers.length - 1; i > 0; --i)
       {
          Integer index = rand.nextInt(i + 1);
-         Integer temp = numbers[index];
+         temp = numbers[index];
          numbers[index] = numbers[i];
-         numbers[i] = numbers[temp];
+         numbers[i] = temp;
       }
    }
 

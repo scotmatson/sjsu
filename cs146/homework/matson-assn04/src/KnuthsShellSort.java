@@ -1,21 +1,21 @@
 /**
  COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
- ShellSort Algorithm.
+ Knuth's ShellSort Algorithm.
 
  Solves CS147 Homework Assignment #04
 
- @author Scot Matson
- Adapted from Data Structures and Algoritihms, 3rd Ed.
- by Mark Allen Weiss
+ @author Scot Matson, ykombinator, John Mercier
+   Adapted from http://stackoverflow.com/a/4837697/4280850
  @version 1.00 2015/07/11
  */
 
 package assignment04;
 
-public class ShellSort implements Sortable
+public class KnuthsShellSort implements Sortable
 {
    /**
-    Shellsort, using Shell's (poor) increments.
+    Knuth's ShellSort sorting algorithm. Sorts in ascending order.
+
     @param a
     @param <AnyType>
     */
@@ -23,26 +23,30 @@ public class ShellSort implements Sortable
    void sort(AnyType[] a)
    {
       Stats.startTime();
-      int j;
-
-      for (int gap = a.length / 2; gap > 0; gap /= 2)
+      int gap = 1;
+      while (gap < Math.ceil(a.length / 3) )
       {
-         for (int i = gap; i < a.length; ++i)
-         {
+         gap = (3 * gap + 1);
+      }
+
+      int j;
+      while (gap > 0) {
+         for (int i = gap - 1; i < a.length; i++){
+
             AnyType tmp = a[i];
             Stats.incrementCompares();
-            for (j = i; j >= gap && tmp.compareTo(a[j - gap]) < 0; j -= gap)
+            for(j = i; j >= gap && tmp.compareTo(a[j - gap]) < 0; j -= gap)
             {
                a[j] = a[j - gap];
                Stats.incrementCompares();
                Stats.incrementMoves();
             }
+
             a[j] = tmp;
          }
+
+         gap /= 3;
       }
       Stats.stopTime();
    }
-
-
-
 }

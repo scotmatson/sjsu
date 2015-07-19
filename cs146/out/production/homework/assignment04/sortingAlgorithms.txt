@@ -1,0 +1,103 @@
+                ===== Unsorted Random Unique =====
+N = 100
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort           1898           1997              1
+     ShellSort suboptimal            207            710              0
+          ShellSort Knuth             66            412              0
+
+N = 1000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort         179779         180778             11
+     ShellSort suboptimal           5895          13901              2
+          ShellSort Knuth           3785           9248              2
+
+N = 10000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort       17625509       17635508            230
+     ShellSort suboptimal         138669         258674             14
+          ShellSort Knuth         102860         178112             12
+
+N = 100000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort     1765089149     1765189148          10690
+     ShellSort suboptimal        2567434        4067440             56
+          ShellSort Knuth        2376840        3343997             45
+
+                ===== Sorted Unique =====
+N = 100
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0             99              0
+     ShellSort suboptimal              0            503              0
+          ShellSort Knuth              0            346              0
+
+N = 1000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0            999              0
+     ShellSort suboptimal              0           8006              0
+          ShellSort Knuth              0           5463              1
+
+N = 10000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0           9999              0
+     ShellSort suboptimal              0         120005              1
+          ShellSort Knuth              0          75252              1
+
+N = 100000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0          99999              2
+     ShellSort suboptimal              0        1500006             11
+          ShellSort Knuth              0         967157              7
+
+                ===== Reverse Sorted Unique =====
+N = 100
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort           4950           5049              0
+     ShellSort suboptimal            260            763              0
+          ShellSort Knuth            230            576              0
+
+N = 1000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort         499500         500499              4
+     ShellSort suboptimal           4700          12706              1
+          ShellSort Knuth           3920           9383              0
+
+N = 10000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort       49995000       50004999            296
+     ShellSort suboptimal          62560         182565              1
+          ShellSort Knuth          53704         128956              1
+
+N = 100000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort     4999950000     5000049999          14052
+     ShellSort suboptimal         844560        2344566             15
+          ShellSort Knuth         619654        1586811              9
+
+                ===== All Zeroes =====
+N = 100
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0          99999              1
+     ShellSort suboptimal              0        1500006             11
+          ShellSort Knuth              0         967157              6
+
+N = 1000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0          99999              1
+     ShellSort suboptimal              0        1500006              9
+          ShellSort Knuth              0         967157              6
+
+N = 10000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0          99999              1
+     ShellSort suboptimal              0        1500006              9
+          ShellSort Knuth              0         967157              6
+
+N = 100000
+                ALGORITHM          MOVES       COMPARES   MILLISECONDS
+           Insertion sort              0          99999              1
+     ShellSort suboptimal              0        1500006              9
+          ShellSort Knuth              0         967157              6
+
+Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz
+   CPU(s): 4
+      Mem: 8053008
