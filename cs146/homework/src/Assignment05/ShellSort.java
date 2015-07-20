@@ -2,12 +2,13 @@
  COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
  ShellSort Algorithm.
 
- Solves CS147 Homework Assignment #04
+ Solves CS147 Homework Assignment #05
 
  @author Scot Matson
  Adapted from Data Structures and Algoritihms, 3rd Ed.
  by Mark Allen Weiss
- @version 1.00 2015/07/11
+
+ @version 2015/07/11
  */
 
 package Assignment05;

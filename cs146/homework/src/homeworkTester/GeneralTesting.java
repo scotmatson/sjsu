@@ -7,17 +7,12 @@ public class GeneralTesting
 {
    public static void main(String[] args)
    {
-      int num1;
-      int num2;
-
-      num1 = 0;
-      num2 = 2;
-
-      int sum;
-      sum = num1 + num2;
-
-      int sumByTwo = sum / 2;
-
-      System.out.println("sumByTwo: " + sumByTwo);
+      System.out.println("0 % 2: " + 0 % 2);
+      System.out.println("1 % 2: " + 1 % 2);
+      System.out.println("2 % 2: " + 2 % 2);
+      System.out.println("3 % 2: " + 3 % 2);
+      System.out.println("4 % 2: " + 4 % 2);
+      System.out.println("5 % 2: " + 5 % 2);
+      System.out.println("6 % 2: " + 6 % 2);
    }
 }

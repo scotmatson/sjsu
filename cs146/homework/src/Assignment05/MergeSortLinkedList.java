@@ -7,14 +7,14 @@
  @author Scot Matson, Unknown
    Adapted from:
       http://www.programcreek.com/2012/11/leetcode-solution-merge-sort-linkedlist-in-java/
- @version 1.00 2015/07/19
+
+ @version 2015/07/19
  */
 
 package Assignment05;
 
 public class MergeSortLinkedList implements Sortable
 {
-
    /**
     Stores data and references other Nodes to create a Linked List.
     @param <AnyType>
@@ -63,43 +63,57 @@ public class MergeSortLinkedList implements Sortable
     */
    public Node mergesort(Node head)
    {
-      // The base case.
+      // Base case.
       if (head == null || head.next == null)
       {
          return head;
       }
 
-      // Count total number of elements
-      int count = 0;
-      Node p = head;
-      while (p != null)
+      /**
+       The original source code looped through the list using a counter to find
+       the halfway point and then used that counter to split the list.
+
+       I modified this bit of code to traverse the list one time to
+       generate two separate lists. A modulo counter is used to alternate
+       the distribution.
+       */
+      // For traversing the list
+      Node currentNode = head;
+      // For assigning values
+
+      // Pointer to the head of left and right for recursive calls.
+      Node left, leftIterator;
+      Node right, rightIterator;
+
+      // Initialize the left
+      left = leftIterator = new Node(currentNode.data);
+      currentNode = currentNode.next;
+
+      // Initialize the right
+      right = rightIterator = new Node(currentNode.data);
+
+      // Set counter to distribute future iterations evenly.
+      int nodeCounter = 0;
+
+      // Check if we have more
+      while (currentNode.next != null)
       {
-         count++;
-         p = p.next;
-      }
-
-      // Break up to two list
-      int middle = count / 2;
-
-      Node left = head;
-      Node right = null;
-      Node p2 = head;
-      int countHalf = 0;
-
-      while (p2 != null)
-      {
-         countHalf++;
-         Node next = p2.next;
-
-         if (countHalf == middle)
+         // Advance the pointer
+         currentNode = currentNode.next;
+         if (nodeCounter % 2 == 0)
          {
-            p2.next = null;
-            right = next;
+            leftIterator.next = new Node(currentNode.data);
+            leftIterator = leftIterator.next;
          }
-            p2 = next;
+         else
+         {
+            rightIterator.next = new Node(currentNode.data);
+            rightIterator = rightIterator.next;
+         }
+         ++nodeCounter;
       }
 
-      // Now we have two parts l and r, recursively sort them
+      // Now we have two parts left and right, recursively sort them
       Node h1 = mergesort(left);
       Node h2 = mergesort(right);
 
@@ -123,16 +137,17 @@ public class MergeSortLinkedList implements Sortable
 
       while (p1 != null || p2 != null)
       {
-
          if (p1 == null)
          {
             pNew.next = new Node(p2.data);
+            Stats.incrementMoves();
             p2 = p2.next;
             pNew = pNew.next;
          }
          else if (p2 == null)
          {
             pNew.next = new Node(p1.data);
+            Stats.incrementMoves();
             p1 = p1.next;
             pNew = pNew.next;
          }
@@ -143,6 +158,7 @@ public class MergeSortLinkedList implements Sortable
             {
                // if(fakeHead)
                pNew.next = new Node(p1.data);
+               Stats.incrementMoves();
                p1 = p1.next;
                pNew = pNew.next;
             }
@@ -150,7 +166,9 @@ public class MergeSortLinkedList implements Sortable
             {
                Stats.incrementCompares();
                pNew.next = new Node(p1.data);
+               Stats.incrementMoves();
                pNew.next.next = new Node(p1.data);
+               Stats.incrementMoves();
                pNew = pNew.next.next;
                p1 = p1.next;
                p2 = p2.next;
@@ -159,6 +177,7 @@ public class MergeSortLinkedList implements Sortable
             {
                Stats.incrementCompares();
                pNew.next = new Node(p2.data);
+               Stats.incrementMoves();
                p2 = p2.next;
                pNew = pNew.next;
             }

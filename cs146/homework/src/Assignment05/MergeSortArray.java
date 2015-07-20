@@ -1,8 +1,18 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+
+ Merge Sort using an Array
+
+ Solves CS147 Homework Assignment #05
+
+ @author Scot Matson
+ Adapted from Data Structures and Algoritihms, 3rd Ed.
+ by Mark Allen Weiss
+
+ @version 2015/07/19
+ */
 package Assignment05;
 
-/**
- Created by scot on 7/18/15.
- */
 public class MergeSortArray implements Sortable
 {
    /**

@@ -5,18 +5,26 @@
  Solves CS147 Homework Assignment #05
 
  @author Scot Matson
- @version 1.00 2015/07/18
+
+ @version 2015/07/19
  */
 
 package Assignment05;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class SortTester
 {
    public static void main(String[] args) throws IOException
    {
-      //PrintWriter pw = new PrintWriter("sortingAlgorithms.txt", "UTF-8");
+      final IOFlags outputFlag = IOFlags.TEXTFILE;
+      PrintWriter pw = null;
+      if (outputFlag == IOFlags.TEXTFILE)
+      {
+         pw = new PrintWriter("sortingAlgorithms.txt", "UTF-8");
+         System.out.print("File created... ");
+      }
 
       final String tableHead = "ALGORITHM          MOVES       COMPARES   MILLISECONDS\n";
 
@@ -63,16 +71,29 @@ public class SortTester
       // For each header, run the appropriate test.
       for (int h = 0; h < headers.length; ++h)
       {
-         System.out.printf(headerShift[h], headers[h]);
-         //pw.format(headerShift[h], headers[h]);
+         if (outputFlag == IOFlags.CONSOLE)
+         {
+            System.out.printf(headerShift[h], headers[h]);
+         }
+         else if (outputFlag == IOFlags.TEXTFILE)
+         {
+            pw.format(headerShift[h], headers[h]);
+         }
 
          // The number of times to run the test.
          for (int N = minN; N <= maxN; N *= multiplier)
          {
-            System.out.printf("N = %d\n", N);
-            //pw.format("N = %d\n", N);
-            System.out.printf("%71s", tableHead);
-            //pw.format("%71s", tableHead);
+            if (outputFlag == IOFlags.CONSOLE)
+            {
+               System.out.printf("N = %d\n", N);
+               System.out.printf("%71s", tableHead);
+
+            }
+            else if (outputFlag == IOFlags.TEXTFILE)
+            {
+               pw.format("N = %d\n", N);
+               pw.format("%71s", tableHead);
+            }
 
             NumberGenerator numberGenerator = new NumberGenerator();
             switch (h)
@@ -105,24 +126,47 @@ public class SortTester
                      break;
                }
 
-               //
                sortingAlgorithms[j].sort(numberGenerator.getNumbers());
 
-               System.out.printf("%25s %14d %14d %14d\n", rowHeaders[j],
-                  Stats.getMoves(), Stats.getCompares(), Stats.getTime());
-
-               //pw.format("%25s %14d %14d %14d\n", rowHeaders[j],
-               //   Stats.getMoves(), Stats.getCompares(), Stats.getTime());
+               if (outputFlag == IOFlags.CONSOLE)
+               {
+                  System.out.printf("%25s %14d %14d %14d\n", rowHeaders[j],
+                     Stats.getMoves(), Stats.getCompares(), Stats.getTime());
+               }
+               else if (outputFlag == IOFlags.TEXTFILE)
+               {
+                  pw.format("%25s %14d %14d %14d\n", rowHeaders[j],
+                     Stats.getMoves(), Stats.getCompares(), Stats.getTime());
+               }
             }
-            System.out.println();
-            //pw.format("\n");
+            if (outputFlag == IOFlags.CONSOLE)
+            {
+               System.out.println();
+            }
+            else if (outputFlag == IOFlags.TEXTFILE)
+            {
+               pw.format("\n");
+            }
          }
       }
 
-      //pw.write("Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz\n" +
-      //   "   CPU(s): 4\n" +
-      //   "      Mem: 8053008");
+      if (outputFlag == IOFlags.CONSOLE)
+      {
+         System.out.println("Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz\n" +
+            "   CPU(s): 4\n" +
+            "      Mem: 8053008");
+      }
+      else if (outputFlag == IOFlags.TEXTFILE)
+      {
+         pw.format("Processor: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz\n" +
+            "   CPU(s): 4\n" +
+            "      Mem: 8053008");
+      }
 
-      //pw.close();
+      if (outputFlag == IOFlags.TEXTFILE)
+      {
+         pw.close();
+         System.out.println("File written to successfully.");
+      }
    }
 }

@@ -1,19 +1,37 @@
+/**
+ COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
+ Quicksort algorithm using the first element as a pivot.
+
+ Solves CS147 Homework Assignment #05
+
+ @author Scot Matson, Unknown
+ Adapted from http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
+
+ @version 2015/07/19
+ */
+
 package Assignment05;
 
-/**
- Created by scot on 7/18/15.
- http://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html
- */
 public class QuicksortSuboptimal implements Sortable
 {
+   /**
+    Sort method encapsulates internal method calls.
+    @param a a generic array
+    */
    public <AnyType extends Comparable<? super AnyType>>
-   void sort(AnyType[] values)
+   void sort(AnyType[] a)
    {
       Stats.startTime();
-      quicksort(values, 0, values.length - 1);
+      quicksort(a, 0, a.length - 1);
       Stats.stopTime();
    }
 
+   /**
+    Internal method, recursively performs a Quicksort
+    @param numbers a generic array
+    @param low lowest array index
+    @param high highest array index
+    */
    private <AnyType extends Comparable<? super AnyType>>
    void quicksort(AnyType[] numbers, int low, int high) {
       int i = low, j = high;
@@ -55,6 +73,12 @@ public class QuicksortSuboptimal implements Sortable
          quicksort(numbers, i, high);
    }
 
+   /**
+    Swaps the position of two given indices
+    @param numbers a generic array
+    @param i index to swap
+    @param j index to swap
+    */
    private <AnyType extends Comparable<? super AnyType>>
    void swapReferences(AnyType[] numbers, int i, int j) {
       AnyType temp = numbers[i];
