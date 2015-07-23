@@ -1,4 +1,4 @@
-package Assignment05;
+package assignment05;
 
 /**
  Created by scot on 7/18/15.

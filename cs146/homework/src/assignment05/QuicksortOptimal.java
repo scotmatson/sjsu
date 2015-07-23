@@ -1,6 +1,6 @@
 /**
  COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved
- Quicksort algorithm using the first element as a pivot.
+ Quicksort algorithm using the median of three as a pivot.
 
  Solves CS147 Homework Assignment #05
 
@@ -9,10 +9,9 @@
 
  @version 2015/07/19
  */
+package assignment05;
 
-package Assignment05;
-
-public class QuicksortSuboptimal implements Sortable
+public class QuicksortOptimal implements Sortable
 {
    /**
     Sort method encapsulates internal method calls.
@@ -35,8 +34,8 @@ public class QuicksortSuboptimal implements Sortable
    private <AnyType extends Comparable<? super AnyType>>
    void quicksort(AnyType[] numbers, int low, int high) {
       int i = low, j = high;
-      // Get the pivot element from the start of the list
-      AnyType pivot = numbers[low];
+      // Get the pivot element from the middle of the list
+      AnyType pivot = median3(numbers, low, high);
 
       // Divide into two lists
       while (i <= j) {
@@ -88,5 +87,40 @@ public class QuicksortSuboptimal implements Sortable
 
       numbers[j] = temp;
       Stats.incrementMoves();
+   }
+
+   /**
+    Return median of left, center, and right.
+    Order these and hide the pivot.
+    @param a a generic array
+    @param left lowest index position
+    @param right highest index position
+    @return the pivot
+    */
+   private <AnyType extends Comparable<? super AnyType>>
+   AnyType median3 (AnyType[] a, int left, int right)
+   {
+      // Sort low, middle, high
+      int center = (left + right ) / 2;
+      Stats.incrementCompares();
+      if (a[center].compareTo(a[left]) < 0)
+      {
+         swapReferences(a, left, center);
+      }
+      Stats.incrementCompares();
+      if (a[right].compareTo(a[left]) < 0)
+      {
+         swapReferences(a, left, right);
+      }
+      Stats.incrementCompares();
+      if (a[right].compareTo(a[center]) < 0)
+      {
+         swapReferences(a, center, right);
+      }
+
+      // Place pivot at position right - 1
+      swapReferences(a, center, right - 1);
+
+      return a[right - 1];
    }
 }

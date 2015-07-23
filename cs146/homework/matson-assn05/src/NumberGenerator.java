@@ -14,7 +14,7 @@
     was being assigned.
  */
 
-package Assignment05;
+package assignment05;
 
 import java.util.Arrays;
 import java.util.Random;

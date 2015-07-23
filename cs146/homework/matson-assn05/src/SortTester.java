@@ -9,7 +9,7 @@
  @version 2015/07/19
  */
 
-package Assignment05;
+package assignment05;
 
 import java.io.IOException;
 import java.io.PrintWriter;

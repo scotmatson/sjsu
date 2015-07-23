@@ -9,7 +9,7 @@
  @version 2015/07/11
  */
 
-package Assignment05;
+package assignment05;
 
 public interface Sortable
 {
