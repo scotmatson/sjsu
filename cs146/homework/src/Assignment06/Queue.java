@@ -1,15 +1,15 @@
+/**
+
+ */
 package Assignment06;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/**
- Created by scot on 7/26/15.
- */
-public class Queue<E> implements Iterable<E>
+public class Queue<T> implements Iterable<T>
 {
-   private Node<E> head;
-   private Node<E> tail;
+   private Node<T> head;
+   private Node<T> tail;
    private int length;
 
    public Queue()
@@ -29,9 +29,9 @@ public class Queue<E> implements Iterable<E>
       return length;
    }
 
-   public void enqueue(E newData)
+   public void enqueue(T newData)
    {
-      Node<E> oldTail = tail;
+      Node<T> oldTail = tail;
       tail = new Node<>(newData);
       if (isEmpty())
       {
@@ -44,17 +44,17 @@ public class Queue<E> implements Iterable<E>
       ++length;
    }
 
-   public E dequeue()
+   public T dequeue()
    {
       if (isEmpty()) throw new NoSuchElementException("Queue Underflow.");
-      E data = head.getData();
+      T data = head.getData();
       head = head.getNext();
       --length;
       if (isEmpty()) tail = null;
       return data;
    }
 
-   public Iterator<E> iterator()
+   public Iterator<T> iterator()
    {
       return new ListIterator<>(head);
    }
@@ -87,7 +87,7 @@ public class Queue<E> implements Iterable<E>
       public L next()
       {
          if (!hasNext()) throw new NoSuchElementException();
-         L data = current.data;
+         L data = current.getData();
          current = current.getNext();
          return data;
       }
@@ -103,12 +103,6 @@ public class Queue<E> implements Iterable<E>
    {
       private N data;
       private Node<N> next;
-
-      private Node ()
-      {
-         data = null;
-         next = null;
-      }
 
       private Node(N newData)
       {

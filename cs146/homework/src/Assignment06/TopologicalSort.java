@@ -3,6 +3,8 @@
    Performs a topological sort with a queue and prints
    the output to a table.
 
+ Solution for CS146 Assignment #06
+
  @author Scot Matson
  @version 08/01/2015
  */
@@ -90,6 +92,5 @@ public class TopologicalSort
       System.out.println("\nTopologically Sorted Order");
       for (String s : sortedOrder)
          System.out.printf("%-2s", s);
-
    }
 }

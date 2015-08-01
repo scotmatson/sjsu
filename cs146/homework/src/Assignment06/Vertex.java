@@ -8,15 +8,18 @@ import java.util.List;
  */
 public class Vertex
 {
-   String name;
-   int topNum; // Topological Numbering
-   int indegree; // The number of edges
-   List<Edge> outgoingEdges = new ArrayList<>();
+   private String name;
+   private int topNum; // Topological Numbering
+   private int indegree; // The number of edges
+   private int distance;
+   private List<Edge> outgoingEdges = new ArrayList<>();
+   private String path;
 
    public Vertex(String n, int i)
    {
       this.name = n;
       this.indegree = i;
+      path = "0";
    }
 
    /**
@@ -57,20 +60,38 @@ public class Vertex
       --indegree;
    }
 
+   /**
+    Assigns a name to the Vertex for debugging and printing.
+    @return
+    */
    public String getName()
    {
       return name;
    }
 
-   //
-   //class Edge {
-   //   Vertex v;
-   //   int weight;
-   //
-   //   private Edge (Vertex v, int weight)
-   //   {
-   //      this.v = v;
-   //      this.weight = weight;
-   //   }
-   //}
+   /**
+    Sets the distance of the current Vertex from the
+    point of entry.
+
+    @param d
+    */
+   public void setDistance(int d)
+   {
+      this.distance = d;
+   }
+
+   public int getDistance()
+   {
+      return this.distance;
+   }
+
+   public void setPath(String v)
+   {
+      this.path = v;
+   }
+
+   public String getPath()
+   {
+      return this.path;
+   }
 }
