@@ -9,6 +9,11 @@ public class KruskalsAlgorithm
 {
    public void tree(ArrayList<Vertex> adjacencyList)
    {
+      System.out.printf("%s\n\n", "*** KRUKAL's ALGORITHM - Graph 9.50 ***");
+      System.out.printf("%6s %13s %10s\n", "Edge", "Weight", "Action");
+      System.out.printf("%s\n", "-----------------------------------");
+
+
       HashMap<Vertex, Set<Vertex>> forest = new HashMap<>();
       for (Vertex v : adjacencyList)
       {
@@ -37,11 +42,11 @@ public class KruskalsAlgorithm
 
          if (visited1.equals(visited2))
          {
-            System.out.printf("%s %s %d %s\n", check.v1.getName(), check.v2.getName(), check.getWeight(), "Rejected");
+            System.out.printf("  (%s, %s) %4d %17s\n", check.v1.getName(), check.v2.getName(), check.getWeight(), "Rejected");
             continue;
          }
 
-         System.out.printf("%s %s %d %s\n", check.v1.getName(), check.v2.getName(), check.getWeight(), "Accepted");
+         System.out.printf("  (%s, %s) %4d %17s\n", check.v1.getName(), check.v2.getName(), check.getWeight(), "Accepted");
 
          mst.add(check);
          visited1.addAll(visited2);

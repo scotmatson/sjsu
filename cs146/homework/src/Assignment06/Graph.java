@@ -147,6 +147,88 @@ public class Graph
       return adjacencyList;
    }
 
+   public ArrayList<Vertex> generateGraph95()
+   {
+      // Initializing vertices
+      Vertex v1 = new Vertex("V1", 3);
+      Vertex v2 = new Vertex("V2", 3);
+      Vertex v3 = new Vertex("V3", 3);
+      Vertex v4 = new Vertex("V4", 6);
+      Vertex v5 = new Vertex("V5", 3);
+      Vertex v6 = new Vertex("V6", 3);
+      Vertex v7 = new Vertex("V7", 3);
+
+      // Initializing edges
+      Edge e12 = new Edge("12", v2, 2);
+      Edge e13 = new Edge("13", v3, 4);
+      Edge e14 = new Edge("14", v4, 1);
+      Edge e21 = new Edge("21", v1, 2);
+      Edge e24 = new Edge("24", v4, 3);
+      Edge e25 = new Edge("25", v5, 10);
+      Edge e31 = new Edge("31", v1, 4);
+      Edge e34 = new Edge("34", v4, 2);
+      Edge e36 = new Edge("36", v6, 5);
+      Edge e41 = new Edge("41", v1, 1);
+      Edge e42 = new Edge("42", v2, 3);
+      Edge e43 = new Edge("43", v3, 2);
+      Edge e45 = new Edge("45", v5, 7);
+      Edge e46 = new Edge("46", v6, 8);
+      Edge e47 = new Edge("47", v7, 4);
+      Edge e52 = new Edge("52", v2, 10);
+      Edge e54 = new Edge("54", v4, 7);
+      Edge e57 = new Edge("57", v7, 6);
+      Edge e63 = new Edge("63", v3, 5);
+      Edge e64 = new Edge("64", v4, 8);
+      Edge e67 = new Edge("67", v7, 1);
+      Edge e74 = new Edge("74", v4, 4);
+      Edge e75 = new Edge("75", v5, 6);
+      Edge e76 = new Edge("76", v6, 1);
+
+      // Adding edges to vertices
+      v1.addOutgoingEdge(e12);
+      v1.addOutgoingEdge(e13);
+      v1.addOutgoingEdge(e14);
+
+      v2.addOutgoingEdge(e21);
+      v2.addOutgoingEdge(e24);
+      v2.addOutgoingEdge(e25);
+
+      v3.addOutgoingEdge(e31);
+      v3.addOutgoingEdge(e34);
+      v3.addOutgoingEdge(e36);
+
+      v4.addOutgoingEdge(e41);
+      v4.addOutgoingEdge(e42);
+      v4.addOutgoingEdge(e43);
+      v4.addOutgoingEdge(e45);
+      v4.addOutgoingEdge(e46);
+      v4.addOutgoingEdge(e47);
+
+      v5.addOutgoingEdge(e52);
+      v5.addOutgoingEdge(e54);
+      v5.addOutgoingEdge(e57);
+
+      v6.addOutgoingEdge(e63);
+      v6.addOutgoingEdge(e64);
+      v6.addOutgoingEdge(e67);
+
+      v7.addOutgoingEdge(e74);
+      v7.addOutgoingEdge(e75);
+      v7.addOutgoingEdge(e76);
+
+      // Create adjacency list
+      ArrayList<Vertex> adjacencyList = new ArrayList<>();
+      adjacencyList.add(v1);
+      adjacencyList.add(v2);
+      adjacencyList.add(v3);
+      adjacencyList.add(v4);
+      adjacencyList.add(v5);
+      adjacencyList.add(v6);
+      adjacencyList.add(v7);
+
+      return adjacencyList;
+   }
+
    /**
     Undirected Cyclic Graph
 
