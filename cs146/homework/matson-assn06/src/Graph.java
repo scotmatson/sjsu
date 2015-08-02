@@ -1,7 +1,15 @@
 /**
+ Generates graphs (adjacency lists) for use
+ with graph sorting algorithms. Graphs are
+ based upon diagrams found in Mark Allen Weiss's
+ Data Structures and Algorithms text.
 
+ Solution for CS146 Assignment #06
+
+ @author Scot Matson, attr. Mark Allen Weiss
+ @version 08/01/2015
  */
-package Assignment06;
+package assignment06;
 
 import java.util.ArrayList;
 
@@ -9,10 +17,9 @@ public class Graph
 {
    /**
     Directed Acyclic Graph
-
     @return a DAG graph as a list.
     */
-   public ArrayList generateGraph981()
+   public ArrayList<Vertex> generateGraph981()
    {
       // Initializing vertices
       final Vertex vA = new Vertex("A", 2);
@@ -92,7 +99,6 @@ public class Graph
 
    /**
     Directed Acyclic graph
-
     @return a DAG graph as a list.
     */
    public ArrayList<Vertex> generateGraph982()
@@ -147,7 +153,7 @@ public class Graph
       return adjacencyList;
    }
 
-   public ArrayList<Vertex> generateGraph95()
+   public ArrayList<Vertex> generateGraph950a()
    {
       // Initializing vertices
       Vertex v1 = new Vertex("V1", 3);
@@ -188,30 +194,24 @@ public class Graph
       v1.addOutgoingEdge(e12);
       v1.addOutgoingEdge(e13);
       v1.addOutgoingEdge(e14);
-
       v2.addOutgoingEdge(e21);
       v2.addOutgoingEdge(e24);
       v2.addOutgoingEdge(e25);
-
       v3.addOutgoingEdge(e31);
       v3.addOutgoingEdge(e34);
       v3.addOutgoingEdge(e36);
-
       v4.addOutgoingEdge(e41);
       v4.addOutgoingEdge(e42);
       v4.addOutgoingEdge(e43);
       v4.addOutgoingEdge(e45);
       v4.addOutgoingEdge(e46);
       v4.addOutgoingEdge(e47);
-
       v5.addOutgoingEdge(e52);
       v5.addOutgoingEdge(e54);
       v5.addOutgoingEdge(e57);
-
       v6.addOutgoingEdge(e63);
       v6.addOutgoingEdge(e64);
       v6.addOutgoingEdge(e67);
-
       v7.addOutgoingEdge(e74);
       v7.addOutgoingEdge(e75);
       v7.addOutgoingEdge(e76);
@@ -231,10 +231,9 @@ public class Graph
 
    /**
     Undirected Cyclic Graph
-
     @return a UCG graph as a list.
     */
-   public ArrayList<Vertex> generateGraph950()
+   public ArrayList<Vertex> generateGraph950b()
    {
       // Initializing vertices
       Vertex v1 = new Vertex("V1", 3);
@@ -275,30 +274,24 @@ public class Graph
       v1.addOutgoingEdge(e12);
       v1.addOutgoingEdge(e13);
       v1.addOutgoingEdge(e14);
-
       v2.addOutgoingEdge(e21);
       v2.addOutgoingEdge(e24);
       v2.addOutgoingEdge(e25);
-
       v3.addOutgoingEdge(e31);
       v3.addOutgoingEdge(e34);
       v3.addOutgoingEdge(e36);
-
       v4.addOutgoingEdge(e41);
       v4.addOutgoingEdge(e42);
       v4.addOutgoingEdge(e43);
       v4.addOutgoingEdge(e45);
       v4.addOutgoingEdge(e46);
       v4.addOutgoingEdge(e47);
-
       v5.addOutgoingEdge(e52);
       v5.addOutgoingEdge(e54);
       v5.addOutgoingEdge(e57);
-
       v6.addOutgoingEdge(e63);
       v6.addOutgoingEdge(e64);
       v6.addOutgoingEdge(e67);
-
       v7.addOutgoingEdge(e74);
       v7.addOutgoingEdge(e75);
       v7.addOutgoingEdge(e76);

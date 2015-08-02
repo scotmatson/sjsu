@@ -1,17 +1,30 @@
 /**
+ Weighted shortest path algorithm (Dikstra's Algorithm).
+ For use with a graph structure.
 
+ Solution for CS146 Assignment #06
+
+ @author Scot Matson
+
+ @version 08/01/2015
  */
-package Assignment06;
+package assignment06;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class WeightedShortestPath
 {
-   public void path(ArrayList<Vertex> adjacencyList)
+   /**
+    Dikstra's shorting spanning path algorithm.
+    @param pw a PrintWriter
+    @param adjacencyList a list of Vertices.
+    */
+   public void path(PrintWriter pw, ArrayList<Vertex> adjacencyList)
    {
       // Printer variables
-      System.out.printf("%s\n", "*** WEIGHTED SHORTEST PATH - Graph 9.82 ***");
-      String tableSpacer = "----------------------------------";
+      pw.format("\n%s", "*** WEIGHTED SHORTEST PATH - Graph 9.82 ***");
+      String tableSpacer = "------------------------------";
 
       final int UNVISITED = -1;
       final int WEIGHT_LIMIT = 40; // Total weight of Graph 9.82
@@ -26,56 +39,61 @@ public class WeightedShortestPath
       // Entry point for algorithm
       s.setDistance(0);
       q.enqueue(s);
-      System.out.printf("\n%-15s %s", "Dequeue: ***", "Enqueue: " + s.getName());
+      pw.format("\n%-15s %s", "Dequeue: ***", "Enqueue: " + s.getName());
 
 
       // Only Vertices with unknown distances should be stored in the queue
       while (!q.isEmpty())
       {
          // Printing operations.
-         System.out.printf("\n%s\n", tableSpacer);
-         System.out.printf("%2s", "v");
+         pw.format("\n%s\n", tableSpacer);
+         pw.format("%2s", "v");
          for (Vertex v : adjacencyList)
-            System.out.printf("%4s", v.getName());
-         System.out.println();
-         System.out.printf("%2s", "dV");
+            pw.format("%4s", v.getName());
+         pw.format("\n");
+         pw.format("%2s", "dV");
          for (Vertex v : adjacencyList)
-            System.out.printf("%4s", v.getDistance());
-         System.out.println();
-         System.out.printf("%2s", "pV");
+            pw.format("%4s", v.getDistance());
+         pw.format("\n");
+         pw.format("%2s", "pV");
          for (Vertex v : adjacencyList)
-            System.out.printf("%4s", v.getPath());
-         System.out.println();
+            pw.format("%4s", v.getPath());
+         pw.format("\n");
 
          // Smallest unknown distance vertex
          Vertex v = q.dequeue();
 
-         System.out.printf("\n%-15s %s", "Dequeue: " + v.getName(), "Enqueue: ");
+         pw.format("\n%-15s %s", "Dequeue: " + v.getName(), "Enqueue: ");
 
          // For each outgoing edge
          for (Edge e : v.getOutgoingEdges())
          {
             // In the case that the Vertex has not yet been visited,
-            // set a new weight.
+            // set a new weight based upon the weight of the current edge
+            // and the weight of the preceding vertices.
             if (e.getVertex1().getDistance() == UNVISITED)
             {
                e.getVertex1().setDistance(v.getDistance() + e.getWeight());
                e.getVertex1().setPath(v.getName());
                q.enqueue(e.getVertex1());
-               System.out.printf("%s ", e.getVertex1().getName());
+               pw.format("%s ", e.getVertex1().getName());
             }
             else
             {
                // Check the weight of the current path against the weight
-               // of the incoming Vertex
+               // of the incoming Vertex and update the weight if a lower
+               // value is found.
                if (e.getVertex1().getDistance() > v.getDistance() + e.getWeight())
                {
                   e.getVertex1().setDistance(v.getDistance() + e.getWeight());
                   e.getVertex1().setPath(v.getName());
-                  System.out.printf("%s ", e.getVertex1().getName());
+                  pw.format("%s ", e.getVertex1().getName());
                }
             }
 
+            // If the current weight exceeds the total weight of the
+            // graph we have potentially found a cycle. Throw an Exception
+            // and exit the applicaiton.
             if (e.getVertex1().getDistance() > WEIGHT_LIMIT)
             {
                throw new IllegalStateException("Excessive distance.");
@@ -84,18 +102,19 @@ public class WeightedShortestPath
       }
 
       // Printer operation to generate final list state.
-      System.out.printf("%s", "***");
-      System.out.printf("\n%s\n", tableSpacer);
-      System.out.printf("%2s", "v");
+      pw.format("%s", "***");
+      pw.format("\n%s\n", tableSpacer);
+      pw.format("%2s", "v");
       for (Vertex v : adjacencyList)
-         System.out.printf("%4s", v.getName());
-      System.out.println();
-      System.out.printf("%2s", "dV");
+         pw.format("%4s", v.getName());
+      pw.format("\n");
+      pw.format("%2s", "dV");
       for (Vertex v : adjacencyList)
-         System.out.printf("%4s", v.getDistance());
-      System.out.println();
-      System.out.printf("%2s", "pV");
+         pw.format("%4s", v.getDistance());
+      pw.format("\n");
+      pw.format("%2s", "pV");
       for (Vertex v : adjacencyList)
-         System.out.printf("%4s", v.getPath());
+         pw.format("%4s", v.getPath());
+      pw.format("\n");
    }
 }

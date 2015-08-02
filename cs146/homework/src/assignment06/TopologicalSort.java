@@ -8,15 +8,24 @@
  @author Scot Matson
  @version 08/01/2015
  */
-package Assignment06;
+package assignment06;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class TopologicalSort
 {
-   public void sort(ArrayList<Vertex> adjacencyList) throws CycleFoundException
+   /**
+    Topological sorting algorithm.
+    @param pw a PrintWriter.
+    @param adjacencyList a list of Vertices.
+    @throws CycleFoundException
+    */
+   public void sort(PrintWriter pw, ArrayList<Vertex> adjacencyList)
+      throws CycleFoundException
    {
-      final int NUM_VERTICES = adjacencyList.size(); // The number of Vertices in the list
+      // The number of vertices in the list.
+      final int NUM_VERTICES = adjacencyList.size();
       Queue<Vertex> q = new Queue<>();
       int counter = 0;
 
@@ -26,11 +35,9 @@ public class TopologicalSort
          "E", "F", "G", "H", "I", "S", "T"
       };
 
-      System.out.println("*** TOPOLOGICAL SORT - Graph 9.81 ***");
-      System.out.printf("%s %s %s %2s %2s %2s %2s %2s %2s %2s %2s %2s %2s\n\n", tableHead[0],
-         tableHead[1], tableHead[2], tableHead[3], tableHead[4], tableHead[5],
-         tableHead[6], tableHead[7], tableHead[8], tableHead[9], tableHead[10],
-         tableHead[11], tableHead[12]);
+      pw.format("*** TOPOLOGICAL SORT - Graph 9.81 ***\n");
+      pw.format("%s %s %s %2s %2s %2s %2s %2s %2s %2s %2s %2s %2s\n", tableHead[0], tableHead[1], tableHead[2], tableHead[3], tableHead[4], tableHead[5], tableHead[6], tableHead[7], tableHead[8], tableHead[9], tableHead[10], tableHead[11], tableHead[12]);
+      pw.format("%s\n", "-----------------------------------------------");
 
       ArrayList<String> sortedOrder = new ArrayList<>();
       String pEnq = "";
@@ -60,12 +67,12 @@ public class TopologicalSort
          sortedOrder.add(vPath.getName());
 
          // Print the Enqueues and Dequeues
-         System.out.printf("%-8s", pEnq);
-         System.out.printf("%-6s", pDeq);
+         pw.format("%-8s", pEnq);
+         pw.format("%-6s", pDeq);
          // Print the updated list of Edges
          for (Vertex vCount : adjacencyList)
-            System.out.printf("%3s", vCount.getIndegree());
-         System.out.println();
+            pw.format("%3s", vCount.getIndegree());
+         pw.format("\n");
          pEnq = "";
          pDeq = "";
 
@@ -89,8 +96,9 @@ public class TopologicalSort
          throw new CycleFoundException();
 
       // Print sorted order.
-      System.out.println("\nTopologically Sorted Order");
+      pw.format("\nTopologically Sorted Order\n");
       for (String s : sortedOrder)
-         System.out.printf("%-2s", s);
+         pw.format("%-2s", s);
+      pw.format("\n");
    }
 }

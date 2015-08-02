@@ -7,7 +7,7 @@
  @author Scot Matson
  @version 07/26/2015
  */
-package Assignment06;
+package assignment06;
 
 public class QueueTester
 {
