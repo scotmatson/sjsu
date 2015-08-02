@@ -16,7 +16,12 @@ public class AlgorithmTester
       //usp.path(g.generateGraph982());
 
       //WeightedShortestPath wsp = new WeightedShortestPath();
+      //wsp.path(g.generateGraph982());
+
       //PrimsAlgorithm pa = new PrimsAlgorithm();
-      //KruskalsAlgorithm ka = new KruskalsAlgorithm();
+      //pa.tree(g.generateGraph950());
+
+      KruskalsAlgorithm ka = new KruskalsAlgorithm();
+      ka.tree(g.generateGraph950());
    }
 }

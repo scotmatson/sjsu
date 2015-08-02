@@ -4,6 +4,7 @@
 package Assignment06;
 
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class Queue<T> implements Iterable<T>
@@ -17,6 +18,22 @@ public class Queue<T> implements Iterable<T>
       head = null;
       tail = null;
       length = 0;
+   }
+
+   public Queue(List<T> l)
+   {
+      head = null;
+      tail = null;
+      length = 0;
+      populateQueue(l);
+   }
+
+   private void populateQueue(List<T> l)
+   {
+      for (T t: l)
+      {
+         enqueue(t);
+      }
    }
 
    public boolean isEmpty()

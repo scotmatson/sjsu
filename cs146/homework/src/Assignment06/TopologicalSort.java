@@ -26,7 +26,7 @@ public class TopologicalSort
          "E", "F", "G", "H", "I", "S", "T"
       };
 
-      System.out.println("     *** TOPOLOGICAL SORT - Graph 9.81 ***");
+      System.out.println("*** TOPOLOGICAL SORT - Graph 9.81 ***");
       System.out.printf("%s %s %s %2s %2s %2s %2s %2s %2s %2s %2s %2s %2s\n\n", tableHead[0],
          tableHead[1], tableHead[2], tableHead[3], tableHead[4], tableHead[5],
          tableHead[6], tableHead[7], tableHead[8], tableHead[9], tableHead[10],
@@ -76,11 +76,11 @@ public class TopologicalSort
          // goes to zero.
          for (Edge e : vPath.getOutgoingEdges())
          {
-            e.getVertex().decrementIndegree();
-            if (e.getVertex().getIndegree() == 0)
+            e.getVertex1().decrementIndegree();
+            if (e.getVertex1().getIndegree() == 0)
             {
-               q.enqueue(e.getVertex());
-               pEnq += e.getVertex().getName() + " ";
+               q.enqueue(e.getVertex1());
+               pEnq += e.getVertex1().getName() + " ";
             }
          }
       }

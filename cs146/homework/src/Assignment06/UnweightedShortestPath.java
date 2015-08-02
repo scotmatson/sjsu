@@ -1,16 +1,16 @@
+/**
+
+ */
 package Assignment06;
 
 import java.util.ArrayList;
 
-/**
- Created by scot on 7/26/15.
- */
 public class UnweightedShortestPath
 {
    public void path(ArrayList<Vertex> adjacencyList)
    {
       // Printer variables
-      System.out.printf("%s\n", "*** UNWEIGHTED SHORTEST PATH - Graph 9.82");
+      System.out.printf("%s\n", "*** UNWEIGHTED SHORTEST PATH - Graph 9.82 ***");
       String tableSpacer = "----------------------------------";
 
       final int UNVISITED = -1;
@@ -51,15 +51,15 @@ public class UnweightedShortestPath
 
          for (Edge e : v.getOutgoingEdges())
          {
-            if (e.getVertex().getDistance() == UNVISITED)
+            if (e.getVertex1().getDistance() == UNVISITED)
             {
-               e.getVertex().setDistance(v.getDistance() + 1);
-               e.getVertex().setPath(v.getName());
-               q.enqueue(e.getVertex());
-               System.out.printf("%s ", e.getVertex().getName());
+               e.getVertex1().setDistance(v.getDistance() + 1);
+               e.getVertex1().setPath(v.getName());
+               q.enqueue(e.getVertex1());
+               System.out.printf("%s ", e.getVertex1().getName());
 
             }
-            if (e.getVertex().getDistance() > NUM_VERTICES)
+            if (e.getVertex1().getDistance() > NUM_VERTICES)
             {
                throw new IllegalStateException("Excessive distance.");
             }

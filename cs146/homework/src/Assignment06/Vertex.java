@@ -14,6 +14,7 @@ public class Vertex
    private int distance;
    private List<Edge> outgoingEdges = new ArrayList<>();
    private String path;
+   private boolean known;
 
    public Vertex(String n, int i)
    {
@@ -88,6 +89,16 @@ public class Vertex
    public void setPath(String v)
    {
       this.path = v;
+   }
+
+   public void setKnown(boolean k)
+   {
+      this.known = k;
+   }
+
+   public boolean getKnown()
+   {
+      return this.known;
    }
 
    public String getPath()
