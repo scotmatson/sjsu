@@ -1,0 +1,7 @@
+package com.scotmatson.banking;
+
+public interface Scannable {
+	
+	// Single method interface for scanning information.
+	
+}

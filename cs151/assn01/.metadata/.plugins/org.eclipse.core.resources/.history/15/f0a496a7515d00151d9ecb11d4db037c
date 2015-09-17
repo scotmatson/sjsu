@@ -1,0 +1,9 @@
+package com.scotmatson.banking;
+
+public class BankRouter {
+
+	// Needs to know the banks
+	List bankID = new ArrayList();
+	
+	// Needs to know the ATMs... or do you? Just returning information...
+}

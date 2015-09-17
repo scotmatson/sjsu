@@ -1,0 +1,11 @@
+package com.scotmatson.banking;
+
+public interface Scannable<T> {
+	
+	/**
+	 * Interface for 
+	 * @return
+	 */
+	public int scan(T t);
+	
+}

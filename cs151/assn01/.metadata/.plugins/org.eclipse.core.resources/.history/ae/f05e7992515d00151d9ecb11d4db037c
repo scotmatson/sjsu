@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+import java.util.Scanner;
+
+public class ATM {
+	
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		
+		// Should this application start in a Tester class instead?
+		// Since this simulations an ATM, we assume the information must already exist.
+		// The ATM is enforcing the rules
+		// The bank set the rules for the ATM to follow
+		// The card is the key to use the ATM
+		
+		// Menu
+			// Choose from 2 banks
+			// 4 ATM
+			// Different customers?
+		
+//		CardScanner cardScanner = new CardScanner();
+//		BankRouter br = new BankRouter();
+		
+		
+		// May need Error Codes
+		
+	}
+}

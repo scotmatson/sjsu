@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+import java.util.Date;
+
+public class Card {
+	
+	private final int number;
+	private final Date expiration;
+	private final String customerName;
+	
+	
+	public Card (int number, Date e, Customer customer) 
+	{
+		this.number = number;
+		this.expiration = expiration;
+		this.customerName = customer.getName(); // Need to figure out how I want to format this.
+	}
+	
+	
+}

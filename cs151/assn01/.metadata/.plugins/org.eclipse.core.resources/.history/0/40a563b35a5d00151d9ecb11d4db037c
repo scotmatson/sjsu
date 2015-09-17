@@ -1,0 +1,13 @@
+package com.scotmatson.banking;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BankRouter {
+
+	// Needs to know the banks
+	List routingNumbers = new ArrayList();
+	
+	
+	// Needs to know the ATMs... or do you? Just returning information...
+}

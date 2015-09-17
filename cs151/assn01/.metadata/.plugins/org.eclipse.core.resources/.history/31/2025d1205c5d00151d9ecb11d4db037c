@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class Customer 
+{
+	private final int ID_NUMBER;
+	private String firstName;
+	private String lastName;
+	
+	/**
+	 * 
+	 * @param firstName
+	 * @param middleName
+	 * @param lastName
+	 */
+	public Customer (int customerID, String firstName, String lastName) 
+	{
+		this.ID_NUMBER = customerID;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	public int getID_NUMBER()
+	{
+		return this.ID_NUMBER;
+	}
+	
+	public String getName()
+	{
+		return lastName + " " + firstName;
+	}
+}

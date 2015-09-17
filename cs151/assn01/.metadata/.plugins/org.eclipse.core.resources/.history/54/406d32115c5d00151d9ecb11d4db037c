@@ -1,0 +1,25 @@
+package com.scotmatson.banking;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BankRouter {
+
+	// Needs to know the banks
+	List routingNumbers = new ArrayList();
+	
+	public Bank transactionRequest(int bankIdentifier)
+	{
+	
+		return null;
+	}
+	// Needs to know the ATMs... or do you? Just returning information...
+	
+	/*
+	 *	Steps:
+	 *	Receives user request
+	 *		Request should open a connection with a bank
+	 *		As long as the connection remains opens the ATM should freely be able to interact with the bank.
+	 * 
+	 */
+}

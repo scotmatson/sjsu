@@ -1,0 +1,57 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class Account {
+	
+	private final String TYPE;
+	private final int ID;
+	private int balance;
+	
+	
+	public Account (String type, int number) {
+		this.TYPE = type;
+		this.ID = number;
+		this.balance = 0;
+	}
+	
+	/**
+	 * 
+	 * @param type
+	 * @param number
+	 * @param balance
+	 */
+	public Account (String type, int number, int balance) {
+		this.type = TYPE;
+		
+	}
+	
+	/**
+	 * 
+	 * @return the account type.
+	 */
+	public String getType()
+	{
+		return this.TYPE;
+	}
+	
+	/**
+	 * 
+	 * @return the account number.
+	 */
+	public int getNumber()
+	{
+		return this.ID;
+	}
+	
+	/**
+	 * 
+	 * @return the account balance.
+	 */
+	public int getBalance()
+	{
+		return this.balance;
+	}
+	
+}

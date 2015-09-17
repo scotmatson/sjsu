@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class CardReader implements Scannable<Card> {
+
+	/**
+	 * 
+	 */
+	@Override
+	public int scan(Card o) {
+		// TODO Auto-generated method stub
+		Card debitCard = (Card) o;
+		
+		
+		return 0;
+	}
+}

@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+import java.util.HashMap;
+
+public class Bank 
+{
+	private final String NAME;
+	private final int ID;
+	private HashMap<Integer, Integer> customers; // <cust_id / acc_id >
+	
+	/**
+	 * 
+	 * @param name
+	 * @param id
+	 */
+	public Bank(String name, int id) 
+	{
+		this.NAME = name;
+		this.ID = id;
+		customers = new HashMap<Integer, Integer>();
+	}
+	
+	/**
+	 * 
+	 * @param customerID
+	 * @param accountID
+	 */
+	public void addCustomerAccount(int customerID, int accountID)
+	{
+		customers.put(customerID, accountID);
+	}
+	
+	public void getCustomerAccount(int customerID, int pinNumber)
+	{
+		// Return the account that a PIN unlocks, if any.
+	}
+}
