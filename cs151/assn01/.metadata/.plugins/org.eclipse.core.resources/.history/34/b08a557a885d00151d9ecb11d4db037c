@@ -1,0 +1,18 @@
+/**
+ * Gives card information to ATM.
+ */
+package com.scotmatson.banking;
+
+public class CardScanner implements Scannable<Card> {
+
+	/**
+	 *	Passes the card number to a valid card
+	 *		* Can do first line validation of exp. Date here.
+	 */
+	@Override
+	public int scan(Card c) {
+		// TODO Auto-generated method stub
+		
+		return -1;
+	}
+}

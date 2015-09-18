@@ -1,0 +1,30 @@
+/**
+ * Record of customer information.
+ */
+package com.scotmatson.banking;
+
+public class Customer extends Person
+{
+	private final int ID_NUMBER;
+
+	/**
+	 * 
+	 * @param customerID
+	 * @param firstName
+	 * @param lastName
+	 */
+	public Customer (String fName, String lName, int cid) 
+	{
+		super(fName, lName);
+		this.ID_NUMBER = cid;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public int getID_NUMBER()
+	{
+		return this.ID_NUMBER;
+	}
+}

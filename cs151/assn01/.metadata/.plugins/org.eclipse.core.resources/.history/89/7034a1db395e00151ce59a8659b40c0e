@@ -1,0 +1,6 @@
+package com.scotmatson.banking;
+
+public enum Error {
+	INVALID_INPUT,
+	OUT_OF_RANGE
+}

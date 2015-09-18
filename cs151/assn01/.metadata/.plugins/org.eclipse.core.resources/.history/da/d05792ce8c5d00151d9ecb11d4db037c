@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public interface Scannable<T> {
+	
+	/**
+	 * Used to scan information from scannable objects
+	 *  (i.e., cards & tickets).
+	 * 
+	 * @return information stored on the card.
+	 */
+	public int scan(T t);
+}

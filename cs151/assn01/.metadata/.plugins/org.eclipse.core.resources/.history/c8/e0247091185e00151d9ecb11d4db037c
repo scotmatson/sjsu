@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class ATMSimulator
+{
+
+	String intro = "#############################################\n"
+			     + "#                                           #\n"
+				 + "#          Welcome to Scot Matson's         #\n"			
+	 			 + "#          	    ** SIM ATM **               #\n"
+				 + "#                                           #\n"
+	 			 + "#############################################\n"
+
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+
+	}
+}

@@ -1,0 +1,106 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+import java.util.Scanner;
+
+public class ATMSimulator
+{
+
+	static Scanner in = new Scanner(System.in);
+	static String select;
+	
+	static String title = "#############################################\n"
+			            + "#                                           #\n"
+				        + "#          Welcome to Scot Matson's         #\n"			
+	 			        + "#          	 ** SIM ATM **              #\n"
+				        + "#                                           #\n"
+	 			        + "#############################################\n\n";
+				 
+	static String instructions = "SIM ATM is an interactive program which simulates\n"
+	                           + "the basic functions of an ATM machine.\n\n"
+	                           + "To continue, press the enter key.";
+
+	static String appMenu = "Please select a debit card from the folowing list:\n"
+			              + "1) Bank A\n"
+			              + "2) Bank B\n"
+			              + "3) Expired\n"
+			              + "4) Exit\n";
+	
+	/**
+	 * 
+	 */
+	public static void printApplicationHeader()
+	{
+		System.out.println(title);
+		System.out.println(instructions);
+		pressAnyKeyToContinue();
+	}
+	
+	/**
+	 * 
+	 */
+	public static void printApplicationMenu()
+	{
+		System.out.println(appMenu);
+	}
+	
+	/**
+	 * 
+	 */
+	public static void pressAnyKeyToContinue()
+	{
+		try
+		{
+			System.in.read();
+		}		
+		catch(Exception e){}
+	}
+			
+	/**
+	 * 
+	 */
+	static public void run()
+	{
+		printApplicationHeader();
+
+		do
+		{
+			printApplicationMenu();
+			switch (in.nextInt())
+			{
+				case 1:
+					System.out.printf("%s", "You picked 1.");
+					break;
+				case 2:
+					System.out.printf("%s", "You picked 2.");
+					break;
+				case 3:
+					System.out.printf("%s", "You picked 3.");
+					break;
+				default:
+					System.out.printf("%s", "Unknown input...\n");
+			}
+		} while (in.nextInt() != 4);
+		
+		quitApplication();
+	}
+	
+	/**
+	 * 
+	 */
+	static public void quitApplication()
+	{
+		System.exit(0);
+	}
+	
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		run();
+	}
+}

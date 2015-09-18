@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class ATMSimulator implements Runnable
+{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		(new Thread(new ATMSimulator())).start();
+	}
+
+
+}

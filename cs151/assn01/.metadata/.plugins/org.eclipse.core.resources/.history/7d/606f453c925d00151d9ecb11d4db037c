@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class ATMSimulator 
+{
+
+	/**
+	 * Parse args and perform basic program setup.
+	 * @param args
+	 */
+	private ATMSimulator(String[] args)
+	{
+		ATM atm = new ATM();
+	}
+	
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		new ATMSimulator(args).run();
+	}
+	
+	/**
+	 * 
+	 */
+	private void run()
+	{
+		
+	}
+	
+	
+
+}

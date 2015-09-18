@@ -3,7 +3,9 @@
  */
 package com.scotmatson.banking;
 
-public class Account {
+public class Account implements Comparable<Integer> {
+	
+	
 	
 	private final String TYPE;
 	private final int ID;
@@ -37,7 +39,7 @@ public class Account {
 	 * 
 	 * @return the account number.
 	 */
-	public int getNumber()
+	public int getID()
 	{
 		return this.ID;
 	}
@@ -59,5 +61,13 @@ public class Account {
 	{
 		this.pin = pin;
 	}
-	
+
+	@Override
+	public int compareTo(Integer pin) {
+		if (this.pin == pin.intValue())
+		{
+			return 0;
+		}
+		return -1;
+	}
 }

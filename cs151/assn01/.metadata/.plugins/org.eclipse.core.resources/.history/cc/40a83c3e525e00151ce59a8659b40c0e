@@ -1,0 +1,57 @@
+/**
+ * Key to access an ATM.
+ */
+package com.scotmatson.banking;
+
+import java.util.Date;
+
+public class Card {
+	private final int number; // Composed of a bank id and an account number
+	private final Date expiration;
+	private final String name;
+	
+	public card (Bank bank, Customer customer)
+	{
+		this.number = bank.getID() + customer.getID();
+	}
+	
+	/**
+	 * 
+	 * @param bank
+	 * @param customer
+	 * @param expiration
+	 */
+	public Card (Bank bank, Customer customer, Date expiration) 
+	{
+		this.number = bank.getID() + customer.getID();
+		this.expiration = expiration;
+		this.name = customer.getFirstName() + " " + customer.getLastName();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public int getNumber()
+	{
+		return this.number;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public Date getExpiration()
+	{
+		return this.expiration;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public String getName()
+	{
+		return this.name;
+	}
+}

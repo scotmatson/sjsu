@@ -9,7 +9,8 @@ public interface Scannable<T> {
 	 * Used to scan information from scannable objects
 	 *  (i.e., cards & tickets).
 	 * 
-	 * @return information stored on the card.
+	 * @return an Array of information stored on the object.
 	 */
-	public int scan(T t);
+	public void scan(T t);
+	
 }

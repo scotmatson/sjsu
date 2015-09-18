@@ -3,32 +3,28 @@
  */
 package com.scotmatson.banking;
 
-public class Customer 
+public class Customer extends Person
 {
-	private final int ID_NUMBER;
-	private String firstName;
-	private String lastName;
-	
+	private final int ID;
+
 	/**
 	 * 
+	 * @param customerID
 	 * @param firstName
-	 * @param middleName
 	 * @param lastName
 	 */
-	public Customer (int customerID, String firstName, String lastName) 
+	public Customer (String fName, String lName, int cid) 
 	{
-		this.ID_NUMBER = customerID;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		super(fName, lName);
+		this.ID = cid;
 	}
-	
-	public int getID_NUMBER()
+
+	/**
+	 * 
+	 * @return
+	 */
+	public int getID()
 	{
-		return this.ID_NUMBER;
-	}
-	
-	public String getName()
-	{
-		return lastName + " " + firstName;
+		return this.ID;
 	}
 }

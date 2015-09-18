@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package com.scotmatson.banking;
+
+public class ATMSimulator
+{
+
+	String title = "#############################################\n"
+			     + "#                                           #\n"
+				 + "#          Welcome to Scot Matson's         #\n"			
+	 			 + "#          	    ** SIM ATM **               #\n"
+				 + "#                                           #\n"
+	 			 + "#############################################\n";
+				 
+	String instructions = "ATM SIM is an interactive program which simulates\n"
+	                    + "the functionality of an ATM machine.\n\n"
+	                    + "To continue, press any key.";
+
+	String appMenu = "Menu here";
+	
+	public void printApplicationHeader()
+	{
+		System.out.println(title);
+		System.out.println(instructions);
+		pressAnyKeyToContinue();
+	}
+			
+	public void pressAnyKeyToContinue()
+	{
+		try
+		{
+			System.in.read();
+		}
+		catch(Exception e){}
+	}
+			
+			
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+
+	}
+}
