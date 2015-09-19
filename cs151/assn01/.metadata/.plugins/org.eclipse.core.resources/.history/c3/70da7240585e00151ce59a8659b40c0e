@@ -1,0 +1,25 @@
+package com.scotmatson.testing;
+import com.scotmatson.banking.*;
+
+public class BankTester {
+
+	public static void main(String[] args)
+	{
+		// New Bank
+		Bank bank = new Bank("Bank", 0000);
+		
+		// New Person
+		Person person = new Person("Scot", "Matson");
+		
+		// Making a customer
+		Customer customer = bank.addCustomer(person);
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

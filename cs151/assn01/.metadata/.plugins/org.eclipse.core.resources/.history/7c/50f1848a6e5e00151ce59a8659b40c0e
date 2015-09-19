@@ -1,0 +1,8 @@
+package com.scotmatson.banking;
+
+public enum SystemCodes 
+{
+	EXIT,
+	INVALID,
+	UNSET
+}

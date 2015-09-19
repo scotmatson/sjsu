@@ -18,7 +18,14 @@ public class Card {
 	 */
 	public Card (Bank bank, Customer customer, Account account)
 	{
-		this.number = bank.getID() + customer.getID() + account.getID();
+		// Combining the digits of each ID to build a card number.
+		StringBuilder sb = new StringBuilder();
+		sb.append(bank.getID());
+		sb.append(customer.getID());
+		sb.append(account.getID());
+		String s = sb.toString();
+		this.number = Integer.parseInt(s);
+		
 		this.name = customer.getFirstName() + " " + customer.getLastName();
 		
 		// New card expire 1 year from their issued date.
@@ -33,9 +40,9 @@ public class Card {
 	 * @param customer
 	 * @param expiration
 	 */
-	public Card (Bank bank, Customer customer, Date expiration) 
+	public Card (Bank bank, Customer customer, Account account, Date expiration) 
 	{
-		this.number = bank.getID() + customer.getID();
+		this.number = bank.getID() + customer.getID() + account.getID();
 		this.expiration = expiration;
 		this.name = customer.getFirstName() + " " + customer.getLastName();
 	}

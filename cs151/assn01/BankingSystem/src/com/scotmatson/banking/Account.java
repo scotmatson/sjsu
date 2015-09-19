@@ -70,4 +70,24 @@ public class Account implements Comparable<Integer> {
 		}
 		return -1;
 	}
+	
+	/**
+	 * 
+	 * @param amount
+	 * @return
+	 */
+	public void increaseBalance(int amount)
+	{
+		this.balance += amount;
+	}
+	
+	/**
+	 * 
+	 * @param amount
+	 * @return
+	 */
+	public void decreaseBalance(int amount)
+	{
+		this.balance -= amount;
+	}
 }

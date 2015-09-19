@@ -1,0 +1,21 @@
+package com.scotmatson.testing;
+import com.scotmatson.banking.*;
+
+public class BankTester {
+
+	public static void main(String[] args)
+	{
+		
+		Bank bank = new Bank("Bank", 0000);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

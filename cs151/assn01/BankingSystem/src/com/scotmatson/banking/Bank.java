@@ -36,11 +36,14 @@ public class Bank
 	{
 		String fName = p.getFirstName();
 		String lName = p.getLastName();
-		int cid = random.nextInt(100);
+		int cid = random.nextInt(90) + 10;
 		
+		// Makes a customer out of a Person
 		Customer customer = new Customer(fName, lName, cid);
-		List<Account> customerAccounts = null;
-		customers.put(customer.getID(), customerAccounts);
+		// Create an customer accounts shell.
+		List<Account> accounts = null;
+	
+		customers.put(cid, accounts);
 		
 		return customer;
 	}
@@ -52,7 +55,7 @@ public class Bank
 	 */
 	public void addCustomerAccount(int customerID, int pin)
 	{
-		int accountID = random.nextInt(100);
+		int accountID = random.nextInt(90) + 10;
 		Account account = new Account("CHECKING", accountID, pin, 100);
 		
 		// Obtain customer accounts.
@@ -68,6 +71,7 @@ public class Bank
 		{
 			accounts = new ArrayList<Account>();
 			accounts.add(account);
+			customers.put(customerID, accounts);
 		}
 	}
 	
@@ -79,7 +83,7 @@ public class Bank
 	public Account getCustomerAccount(Integer customerID, int pin)
 	{
 		List<Account> accounts = customers.get(customerID);
-		
+
 		// Return the account that the PIN unlocks, if any.
 		for (Account a : accounts)
 		{
@@ -90,6 +94,28 @@ public class Bank
 		}
 		
 		return null;
+	}
+	
+	/**
+	 * 
+	 * @param customerID
+	 * @param pin
+	 * @return
+	 */
+	public boolean authorizeAccountAcccess(Integer customerID, int pin)
+	{
+		List<Account> accounts = customers.get(customerID);
+
+		// Return the account that the PIN unlocks, if any.
+		for (Account a : accounts)
+		{
+			if (a.compareTo(pin) == 0)
+			{
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	/**
@@ -108,5 +134,43 @@ public class Bank
 	public String getName()
 	{
 		return this.NAME;
+	}
+	
+	/**
+	 * 
+	 * @param uid
+	 * @param pin
+	 * @param amount
+	 */
+	public boolean withdrawalFunds(int uid, int pin, int amount)
+	{
+		boolean isComplete = false;
+		Account account = getCustomerAccount(uid, pin);
+		if (account != null)
+		{
+			account.decreaseBalance(amount);
+			isComplete = true;
+		}
+		return isComplete;
+	}
+	
+	/**
+	 * 
+	 * @param uid
+	 * @param pin
+	 * @param amount
+	 * @return
+	 */
+	public boolean depositFunds(int uid, int pin, int amount)
+	{
+		boolean isComplete = false;
+		Account account = getCustomerAccount(uid, pin);
+		if (account != null)
+		{
+			account.increaseBalance(amount);
+			isComplete = true;
+		}
+		
+		return isComplete;
 	}
 }
