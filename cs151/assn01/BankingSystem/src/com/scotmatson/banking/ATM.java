@@ -1,6 +1,16 @@
 /**
- * 
- */
+
+   COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved.
+
+   Classes used to interact with an ATM machine.
+
+   Solves CS151 homework assignment #1
+
+   @author Scot Matson
+
+   @version 1.01 2015/9/18
+
+*/
 package com.scotmatson.banking;
 
 import java.util.Calendar;
@@ -20,15 +30,15 @@ public class ATM implements Scannable<Card> {
 	// Stored card attributes.
 	private int bankID;
 	private int customerID;
-	private int accountID;
+//	private int accountID;
 	private Date cardExpiration;
 	private int pin;
 	
 	/**
 	 * Constructor method.
 	 * 
-	 * @param bank
-	 * @param maxWithdrawal
+	 * @param bank the bank which owns the ATM.
+	 * @param maxWithdrawal the max amount of money which may be withdrawn.
 	 */
 	public ATM (Bank bank, int maxWithdrawal)
 	{
@@ -39,24 +49,24 @@ public class ATM implements Scannable<Card> {
 	}
 	
 	/**
-	 * Scan and store card information.
+	 * Scans and stores card information.
 	 * 
-	 * @param card
+	 * @param card an ATM debit/cash card.
 	 */
 	@Override
 	public void scan(Card card) {
 		int cardNumber = card.getNumber();
-		this.accountID = cardNumber % 100;
-		cardNumber /= 100;
 		
+		// Parse card data.
+//		this.accountID = cardNumber % 100;
+		cardNumber /= 100;
 		this.customerID = cardNumber % 100;
 		cardNumber /= 100;
-		
 		this.bankID = cardNumber;
-		
 		this.cardExpiration = card.getExpiration();
 		
-		System.out.println("Scanned");
+		System.out.println("*** Card Scanned ***");
+		System.out.println();
 	}	
 	
 	/**
@@ -78,6 +88,7 @@ public class ATM implements Scannable<Card> {
 				// Validate user credentials.
 				this.pin = getCustomerPIN();
 				isValid = bank.authorizeAccountAcccess(customerID, pin);
+				
 			}
 			else
 			{
@@ -98,7 +109,8 @@ public class ATM implements Scannable<Card> {
 	}
 	
 	/**
-	 * Initiates account transaction.
+	 * Initiates account transaction and launches the
+	 * user interface.
 	 */
 	public void beginTransaction() 
 	{
@@ -129,11 +141,11 @@ public class ATM implements Scannable<Card> {
 	 * Interface for entering the
 	 * customer's PIN.
 	 * 
-	 * @return
+	 * @return the numerical PIN.
 	 */
 	public int getCustomerPIN()
 	{
-		System.out.print("Enter your PIN: ");
+		System.out.print("Please enter your PIN: ");
 		int pin = -1;
 		try 
 		{
@@ -151,7 +163,7 @@ public class ATM implements Scannable<Card> {
 	/**
 	 * Displays ATM menu.
 	 * 
-	 * @return
+	 * @return the user selection.
 	 */
 	public int printATMMenu()
 	{
@@ -173,7 +185,7 @@ public class ATM implements Scannable<Card> {
 		userInput 		= -1;
 		bankID 			= -1;
 		customerID 		= -1;
-		accountID 		= -1;
+//		accountID 		= -1;
 		cardExpiration  = null;
 		activeSession = false;
 		
@@ -182,8 +194,9 @@ public class ATM implements Scannable<Card> {
 	} 
 	
 	/**
+	 * Reusable helper function for ATM-User interaction.
 	 * 
-	 * @return
+	 * @return the user's input.
 	 */
 	public int enterValue()
 	{
@@ -202,7 +215,7 @@ public class ATM implements Scannable<Card> {
 	}
 	
 	/**
-	 * 
+	 * Performs a transaction request.
 	 */
 	public void makeDeposit()
 	{
@@ -211,10 +224,13 @@ public class ATM implements Scannable<Card> {
 		System.out.println();
 		
 		bank.depositFunds(this.customerID, this.pin, amount);
+		System.out.println("Transaction completed.");
+		viewBalance();
+		System.out.println();
 	}
 	
 	/**
-	 * 
+	 * Performs a withdrawal request.
 	 */
 	public void makeWithdrawal()
 	{
@@ -229,6 +245,12 @@ public class ATM implements Scannable<Card> {
 			{
 				System.out.println("Insufficient funds available.\n");
 			}
+			else
+			{
+				System.out.println("Transaction completed.");
+				viewBalance();
+				System.out.println();
+			}
 		}
 		else
 		{
@@ -239,11 +261,12 @@ public class ATM implements Scannable<Card> {
 	}
 	
 	/**
-	 * 
+	 * Displays the account balance.
 	 */
 	public void viewBalance()
 	{
 		int balance = bank.displayAccountBalance(customerID, pin);
-		System.out.println("Current account balance: " + balance + "\n");
+		System.out.println("Current account balance: " + balance);
+		System.out.println();
 	}
 }

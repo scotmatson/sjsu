@@ -1,6 +1,16 @@
 /**
- * Manages customer accounts.
- */
+
+   COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved.
+
+   Classes used to create and manage customer accounts.
+
+   Solves CS151 homework assignment #1
+
+   @author Scot Matson
+
+   @version 1.01 2015/9/18
+
+*/
 package com.scotmatson.banking;
 
 import java.util.ArrayList;
@@ -17,9 +27,10 @@ public class Bank
 	Random random = new Random();
 	
 	/**
+	 * Constructor method.
 	 * 
-	 * @param name
-	 * @param id
+	 * @param name the name of the bank.
+	 * @param id the bank identification code.
 	 */
 	public Bank(String name, int id) 
 	{
@@ -28,9 +39,10 @@ public class Bank
 	}
 	
 	/**
+	 * Adds a new customer to the bank and gives them an ID.
 	 * 
-	 * @param p
-	 * @return
+	 * @param p a person.
+	 * @return a customer.
 	 */
 	public Customer addCustomer(Person p)
 	{
@@ -49,9 +61,10 @@ public class Bank
 	}
 	
 	/**
+	 * Establishes a new account for an existing customer.
 	 * 
-	 * @param customerID
-	 * @param account
+	 * @param customerID the customer ID.
+	 * @param pin the account PIN.
 	 */
 	public void addCustomerAccount(int customerID, int pin)
 	{
@@ -76,9 +89,10 @@ public class Bank
 	}
 	
 	/**
+	 * Gets the customer account.
 	 * 
-	 * @param customerID
-	 * @param pinNumber
+	 * @param customerID the customer ID.
+	 * @param pinNumber the account PIN.
 	 */
 	public Account getCustomerAccount(Integer customerID, int pin)
 	{
@@ -97,10 +111,11 @@ public class Bank
 	}
 	
 	/**
+	 * Authorizes access to a customer account.
 	 * 
-	 * @param customerID
-	 * @param pin
-	 * @return
+	 * @param customerID a customer ID.
+	 * @param pin an account PIN.
+	 * @return true if access was successful.
 	 */
 	public boolean authorizeAccountAcccess(Integer customerID, int pin)
 	{
@@ -118,6 +133,14 @@ public class Bank
 		return false;
 	}
 	
+	/**
+	 * Gets the account balance.
+	 * 
+	 * @param customerID the customer ID.
+	 * @param pin the account PIN.
+	 * @return the account balance.
+	 * @return an error code.
+	 */
 	public int displayAccountBalance(Integer customerID, int pin)
 	{
 		List<Account> accounts = customers.get(customerID);
@@ -130,13 +153,13 @@ public class Bank
 				return a.getBalance();
 			}
 		}
-		
 		return -1;
 	}
 	
 	/**
+	 * Returns the bank identification number.
 	 * 
-	 * @return
+	 * @return the bank ID.
 	 */
 	public int getID()
 	{
@@ -144,8 +167,9 @@ public class Bank
 	}
 	
 	/**
+	 * Returns the name of the bank.
 	 * 
-	 * @return
+	 * @return the bank name.
 	 */
 	public String getName()
 	{
@@ -153,10 +177,12 @@ public class Bank
 	}
 	
 	/**
+	 * Withdrawals funds from an existing customer account.
 	 * 
-	 * @param uid
-	 * @param pin
-	 * @param amount
+	 * @param cid the customer identification number.
+	 * @param pin the account PIN.
+	 * @param amount the amount to be withdrawn.
+	 * @return true if the withdrawal was successful.
 	 */
 	public boolean withdrawalFunds(int cid, int pin, int amount)
 	{
@@ -174,16 +200,17 @@ public class Bank
 	}
 	
 	/**
+	 * Deposits funds into an existing customer account.
 	 * 
-	 * @param uid
-	 * @param pin
-	 * @param amount
-	 * @return
+	 * @param cid the customer identification number.
+	 * @param pin the account PIN.
+	 * @param amount the amount to be deposited.
+	 * @return true if the deposit was successful.
 	 */
-	public boolean depositFunds(int uid, int pin, int amount)
+	public boolean depositFunds(int cid, int pin, int amount)
 	{
 		boolean isComplete = false;
-		Account account = getCustomerAccount(uid, pin);
+		Account account = getCustomerAccount(cid, pin);
 		if (account != null)
 		{
 			account.increaseBalance(amount);

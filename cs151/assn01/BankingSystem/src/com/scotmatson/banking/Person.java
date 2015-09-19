@@ -1,3 +1,16 @@
+/**
+
+   COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved.
+
+   Classes to create and store information about people.
+
+   Solves CS151 homework assignment #1
+
+   @author Scot Matson
+
+   @version 1.01 2015/9/18
+
+*/
 package com.scotmatson.banking;
 
 public class Person 
@@ -6,10 +19,10 @@ public class Person
 	private String lastName;
 	
 	/**
+	 * Constructor method.
 	 * 
-	 * @param firstName
-	 * @param middleName
-	 * @param lastName
+	 * @param firstName a first name.
+	 * @param lastName a last name.
 	 */
 	public Person (String firstName, String lastName) 
 	{
@@ -18,8 +31,9 @@ public class Person
 	}
 
 	/**
+	 * Return the first name.
 	 * 
-	 * @return
+	 * @return the first name.
 	 */
 	public String getFirstName()
 	{
@@ -27,8 +41,9 @@ public class Person
 	}
 	
 	/**
+	 * Return the last name.
 	 * 
-	 * @return
+	 * @return the last name.
 	 */
 	public String getLastName()
 	{

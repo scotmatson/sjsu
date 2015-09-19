@@ -1,6 +1,17 @@
 /**
- * 
- */
+
+   COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved.
+
+   Bootstraps together classes in the BankingSystem package
+   to simulate an ATM.
+
+   Solves CS151 homework assignment #1
+
+   @author Scot Matson
+
+   @version 1.01 2015/9/18
+
+*/
 package com.scotmatson.banking;
 
 import java.util.Calendar;
@@ -35,7 +46,7 @@ public class ATMSimulator
 	static ATM atm;
 					 		
 	/**
-	 * 
+	 * Displays the application title and introduction text.
 	 */
 	public static void printApplicationHeader()
 	{
@@ -54,8 +65,7 @@ public class ATMSimulator
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * Generates a person.
 	 */
 	public static void buildPerson()
 	{
@@ -75,23 +85,12 @@ public class ATMSimulator
 	}
 	
 	/**
-	 * 
+	 * Methods for selecting an ATM card to be
+	 * used with an ATM.
 	 */
 	public static void selectCard()
 	{
-		System.out.println("Please select a debit card from the list below.");
-		System.out.println("Upon selecting a card you will be made a customer");
-		System.out.println("of either bank A or bank B depending on your selection.");
-		System.out.println("As a new customer you will be granted access to a checking");
-		System.out.println("account with a balance of $100 which may be accessed");
-		System.out.println("through an ATM using your card and a user-defined PIN\n");
-	    
-		System.out.println("1) Card A (member of Bank A)");
-	    System.out.println("2) Card B (member of Bank B)");
-	    System.out.println("3) Card C (expired member of Bank A");
-	    System.out.println("4) New customer");
-	    System.out.println("5) Exit");
-		int availableOptions = 5;	    	    
+		int availableOptions = selectCardMenu();
 	    
 	    try 
 	    {
@@ -110,6 +109,41 @@ public class ATMSimulator
 	    	in.nextLine();
 	    }
 	    
+	    generateCard(userInput);
+
+	}
+	
+	/**
+	 * Displays the card selection menu.
+	 * 
+	 * @return the number of menu options.
+	 */
+	public static int selectCardMenu()
+	{
+		System.out.println("Please select a debit card from the list below.");
+		System.out.println("Upon selecting a card you will be made a customer");
+		System.out.println("of either bank A or bank B depending on your selection.");
+		System.out.println("As a new customer you will be granted access to a checking");
+		System.out.println("account with a balance of $100 which may be accessed");
+		System.out.println("through an ATM using your card and a user-defined PIN\n");
+	    
+		System.out.println("1) Card A (member of Bank A)");
+	    System.out.println("2) Card B (member of Bank B)");
+	    System.out.println("3) Card C (expired member of Bank A)");
+	    System.out.println("4) New customer");
+	    System.out.println("5) Exit");
+		
+	    int numberOfOptions = 5;
+		return numberOfOptions;
+	}
+	
+	/**
+	 * Creates a new bank customer with an ATM card.
+	 * 
+	 * @param userInput the customer's input.
+	 */
+	public static void generateCard(int userInput)
+	{
 		switch (userInput)
 		{
 		case 1:
@@ -147,17 +181,12 @@ public class ATMSimulator
 		}
 	}
 	
+	/**
+	 * Selects an ATM to be used with an existing ATM card.
+	 */
 	public static void selectATM()
 	{
-		System.out.println("Please select an ATM from the following list:");
-		
-	    System.out.println("1) ATM A0");
-	    System.out.println("2) ATM A1");
-	    System.out.println("3) ATM B0");
-	    System.out.println("4) ATM B1");
-	    System.out.println("5) New card");
-	    System.out.println("6) Exit");
-	    int availableOptions = 6;
+		int availableOptions = selectATMMenu();
 	    
 	    try
 	    {
@@ -176,6 +205,34 @@ public class ATMSimulator
 	    	in.next();
 	    }
 	    
+	    generateATM(userInput);
+	}
+	
+	/**
+	 * Displays the ATM selection menu.
+	 */
+	public static int selectATMMenu()
+	{
+		System.out.println("Please select an ATM from the following list:");
+	    System.out.println("1) ATM A0");
+	    System.out.println("2) ATM A1");
+	    System.out.println("3) ATM B0");
+	    System.out.println("4) ATM B1");
+	    System.out.println("5) New card");
+	    System.out.println("6) Exit");
+	    
+	    int numberOfOptions = 6;
+	    return numberOfOptions;
+	}
+	
+	/**
+	 * Creates an ATM machine and 'swipes' an
+	 * existing ATM card.
+	 * 
+	 * @param userInput the user selection.
+	 */
+	public static void generateATM(int userInput)
+	{
 		boolean cardIsValid = false;
 		switch(userInput)
 		{
@@ -222,7 +279,7 @@ public class ATMSimulator
 	}
 		
 	/**
-	 * 
+	 * Halts an application until input is received.
 	 */
 	public static void pressAnyKeyToContinue()
 	{
@@ -234,7 +291,7 @@ public class ATMSimulator
 	}
 			
 	/**
-	 * 
+	 * Launches the application.
 	 */
 	static public void run()
 	{				
@@ -266,7 +323,7 @@ public class ATMSimulator
 	}
 	
 	/**
-	 * 
+	 * Terminates the application.
 	 */
 	static public void quit()
 	{
@@ -275,8 +332,9 @@ public class ATMSimulator
 	}
 	
 	/**
+	 * Main Method. Entry point for JVM.
 	 * 
-	 * @param args
+	 * @param args user-defined arguments.
 	 */
 	public static void main(String[] args) 
 	{

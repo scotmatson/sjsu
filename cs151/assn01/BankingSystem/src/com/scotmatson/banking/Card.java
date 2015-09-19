@@ -1,6 +1,16 @@
 /**
- * Key to access an ATM.
- */
+
+   COPYRIGHT (C) 2015 Scot Matson. All Rights Reserved.
+
+   Classes to store and access digital information.
+
+   Solves CS151 homework assignment #1
+
+   @author Scot Matson
+
+   @version 1.01 2015/9/18
+
+*/
 package com.scotmatson.banking;
 
 import java.util.Calendar;
@@ -12,9 +22,10 @@ public class Card {
 	private final String name;
 	
 	/**
+	 * Constructor method.
 	 * 
-	 * @param bank
-	 * @param customer
+	 * @param bank the affiliated bank.
+	 * @param customer the card holder.
 	 */
 	public Card (Bank bank, Customer customer, Account account)
 	{
@@ -28,17 +39,18 @@ public class Card {
 		
 		this.name = customer.getFirstName() + " " + customer.getLastName();
 		
-		// New card expire 1 year from their issued date.
+		// New cards expire 2 year from their issued date.
 		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.YEAR, 1);
+		cal.add(Calendar.YEAR, 2);
 		expiration = cal.getTime();
 	}
 	
 	/**
+	 * Constructor method.
 	 * 
-	 * @param bank
-	 * @param customer
-	 * @param expiration
+	 * @param bank the affiliated bank.
+	 * @param customer the card holder.
+	 * @param expiration user-defined card expiration date.
 	 */
 	public Card (Bank bank, Customer customer, Account account, Date expiration) 
 	{
@@ -56,8 +68,9 @@ public class Card {
 	}
 	
 	/**
+	 * Returns the card number.
 	 * 
-	 * @return
+	 * @return the card number.
 	 */
 	public int getNumber()
 	{
@@ -65,8 +78,9 @@ public class Card {
 	}
 	
 	/**
+	 * Returns the card expiration date.
 	 * 
-	 * @return
+	 * @return the card expiration date.
 	 */
 	public Date getExpiration()
 	{
@@ -74,8 +88,9 @@ public class Card {
 	}
 	
 	/**
+	 * Returns the card holder's name.
 	 * 
-	 * @return
+	 * @return the card holder's name.
 	 */
 	public String getName()
 	{
