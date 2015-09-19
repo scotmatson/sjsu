@@ -158,17 +158,14 @@ public class Bank
 	 * @param pin
 	 * @param amount
 	 */
-	public boolean withdrawalFunds(int cid, int pin, int amount)
+	public boolean withdrawalFunds(int uid, int pin, int amount)
 	{
 		boolean isComplete = false;
-		Account account = getCustomerAccount(cid, pin);
+		Account account = getCustomerAccount(uid, pin);
 		if (account != null)
 		{
-			int result = account.decreaseBalance(amount);
-			if (result >= 0)
-			{
-				isComplete = true;
-			}
+			account.decreaseBalance(amount);
+			isComplete = true;
 		}
 		return isComplete;
 	}

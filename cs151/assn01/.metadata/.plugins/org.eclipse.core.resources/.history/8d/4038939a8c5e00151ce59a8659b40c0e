@@ -66,6 +66,8 @@ public class ATM implements Scannable<Card> {
 	public boolean validateCard()
 	{
 		boolean isValid = false;
+		System.out.println(bank.getID());
+		System.out.println(this.bankID);
 		
 		// Validate Bank Affiliation.
 		if (bank.getID() == this.bankID)
@@ -79,20 +81,6 @@ public class ATM implements Scannable<Card> {
 				this.pin = getCustomerPIN();
 				isValid = bank.authorizeAccountAcccess(customerID, pin);
 			}
-			else
-			{
-				System.out.println("Expired card.");
-				System.out.println("Current date: " + now);
-				System.out.println("Card EXP date: " + this.cardExpiration);
-				System.out.println();
-			}
-		}
-		else
-		{
-			System.out.println("Card not recognized.");
-			System.out.println("ATM Bank ID: " + bank.getID());
-			System.out.println("Card Bank ID: " + this.bankID);
-			System.out.println();
 		}
 		return isValid;
 	}
@@ -208,8 +196,6 @@ public class ATM implements Scannable<Card> {
 	{
 		System.out.print("Enter amount to be deposited: ");
 		int amount = enterValue();
-		System.out.println();
-		
 		bank.depositFunds(this.customerID, this.pin, amount);
 	}
 	
@@ -220,21 +206,14 @@ public class ATM implements Scannable<Card> {
 	{
 		System.out.print("Enter amount to be withdrawn: ");
 		int amount = enterValue();
-		System.out.println();
-		
-		if (amount > 0 && amount < maxWithdrawal && amount % 20 == 0)
+		if (amount > 0 && amount < maxWithdrawal)
 		{
-			boolean isComplete = bank.withdrawalFunds(this.customerID, this.pin, amount);
-			if(!isComplete)
-			{
-				System.out.println("Insufficient funds available.\n");
-			}
+			boolean result = bank.withdrawalFunds(this.customerID, this.pin, amount);
+			System.out.println("result: " + result);
 		}
 		else
 		{
-			System.out.println("Unable to complete transaction.");
-			System.out.println("Withdrawals must between $20 - $200");
-			System.out.println("in $20 increments.\n");
+			System.out.println("Out of range.");
 		}
 	}
 	

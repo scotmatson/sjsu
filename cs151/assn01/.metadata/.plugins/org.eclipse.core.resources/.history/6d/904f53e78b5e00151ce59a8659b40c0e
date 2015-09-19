@@ -90,7 +90,7 @@ public class Account implements Comparable<Integer> {
 	{
 		// A negative balance will not be processed.
 		int difference = this.balance - amount;
-		if (difference >= 0)
+		if (difference < 0)
 		{
 			this.balance -= amount;
 		}

@@ -50,9 +50,8 @@ public class Card {
 		String s = sb.toString();
 		this.number = Integer.parseInt(s);
 		
-		this.name = customer.getFirstName() + " " + customer.getLastName();
 		this.expiration = expiration;
-
+		this.name = customer.getFirstName() + " " + customer.getLastName();
 	}
 	
 	/**

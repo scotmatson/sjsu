@@ -20,7 +20,6 @@ public class ATM implements Scannable<Card> {
 	// Stored card attributes.
 	private int bankID;
 	private int customerID;
-	private int accountID;
 	private Date cardExpiration;
 	private int pin;
 	

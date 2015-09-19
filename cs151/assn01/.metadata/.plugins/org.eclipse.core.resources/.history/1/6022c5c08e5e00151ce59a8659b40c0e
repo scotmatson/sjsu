@@ -66,6 +66,8 @@ public class ATM implements Scannable<Card> {
 	public boolean validateCard()
 	{
 		boolean isValid = false;
+		System.out.println(bank.getID());
+		System.out.println(this.bankID);
 		
 		// Validate Bank Affiliation.
 		if (bank.getID() == this.bankID)
@@ -79,20 +81,6 @@ public class ATM implements Scannable<Card> {
 				this.pin = getCustomerPIN();
 				isValid = bank.authorizeAccountAcccess(customerID, pin);
 			}
-			else
-			{
-				System.out.println("Expired card.");
-				System.out.println("Current date: " + now);
-				System.out.println("Card EXP date: " + this.cardExpiration);
-				System.out.println();
-			}
-		}
-		else
-		{
-			System.out.println("Card not recognized.");
-			System.out.println("ATM Bank ID: " + bank.getID());
-			System.out.println("Card Bank ID: " + this.bankID);
-			System.out.println();
 		}
 		return isValid;
 	}

@@ -84,7 +84,6 @@ public class ATM implements Scannable<Card> {
 				System.out.println("Expired card.");
 				System.out.println("Current date: " + now);
 				System.out.println("Card EXP date: " + this.cardExpiration);
-				System.out.println();
 			}
 		}
 		else

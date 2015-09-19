@@ -84,7 +84,6 @@ public class ATM implements Scannable<Card> {
 				System.out.println("Expired card.");
 				System.out.println("Current date: " + now);
 				System.out.println("Card EXP date: " + this.cardExpiration);
-				System.out.println();
 			}
 		}
 		else
@@ -92,7 +91,6 @@ public class ATM implements Scannable<Card> {
 			System.out.println("Card not recognized.");
 			System.out.println("ATM Bank ID: " + bank.getID());
 			System.out.println("Card Bank ID: " + this.bankID);
-			System.out.println();
 		}
 		return isValid;
 	}

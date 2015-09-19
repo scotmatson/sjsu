@@ -164,11 +164,8 @@ public class Bank
 		Account account = getCustomerAccount(cid, pin);
 		if (account != null)
 		{
-			int result = account.decreaseBalance(amount);
-			if (result >= 0)
-			{
-				isComplete = true;
-			}
+			account.decreaseBalance(amount);
+			isComplete = true;
 		}
 		return isComplete;
 	}
