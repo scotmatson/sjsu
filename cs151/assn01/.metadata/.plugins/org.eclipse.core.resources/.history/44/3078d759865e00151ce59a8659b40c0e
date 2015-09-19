@@ -17,7 +17,7 @@ public class ATMSimulator
 	// System state
 	static final int PERSON_BUILDER = 0;
 	static final int CARD_SELECTOR = 1;
-	static final int ATM_SELECTOR = 2;
+	static final int MACHINE_SELECTOR = 2;
 	static final int EXIT = 3;
 	static int currentState;
 	
@@ -48,9 +48,39 @@ public class ATMSimulator
 
 		System.out.println("SIM ATM is an interactive program which simulates");
         System.out.println("the basic functions of an ATM machine.\n");
-        System.out.println("Press the ENTER key to begin.");		
+        System.out.println("To continue, press the ENTER key.");		
 		
 		pressAnyKeyToContinue();
+	}
+	
+	public static int actionMenu()
+	{
+		System.out.println("##################  SIM * ATM  #####################");
+		System.out.println("1) Begin Simulation");
+		if (person != null)
+		{
+			System.out.println("2) Continue as " + 
+					 person.getFirstName() + " " + 
+					 person.getLastName());
+			System.out.println("3) Quit");
+		}
+		else
+		{
+			System.out.println("2) Quit");
+		}
+		
+		try
+		{
+			userInput = in.nextInt();
+		}
+		catch(InputMismatchException e)
+		{
+		    	System.out.println("Invalid user entry.");
+		    	// Flush the Scanner
+		    	in.next();
+		}
+		
+		return userInput;
 	}
 	
 	/**
@@ -113,20 +143,23 @@ public class ATMSimulator
 		switch (userInput)
 		{
 		case 1:
+			System.out.println("ONE");
 			customer = bankA.addCustomer(person);
 			bankA.addCustomerAccount(customer.getID(), 1234);
 			account = bankA.getCustomerAccount(customer.getID(), 1234);
 			card = new Card(bankA, customer, account);
-			currentState = ATM_SELECTOR;
+			currentState = MACHINE_SELECTOR;
 			break;
 		case 2:
+			System.out.println("TWO");
 			customer = bankB.addCustomer(person);
 			bankB.addCustomerAccount(customer.getID(), 1234);
 			account = bankB.getCustomerAccount(customer.getID(), 1234);
 			card = new Card(bankB, customer, account);
-			currentState = ATM_SELECTOR;
+			currentState = MACHINE_SELECTOR;
 			break;
 		case 3:
+			System.out.println("Three");
 			customer = bankA.addCustomer(person);
 			bankA.addCustomerAccount(customer.getID(), 1234);
 			account = bankA.getCustomerAccount(customer.getID(), 1234);
@@ -136,7 +169,7 @@ public class ATMSimulator
 			cal.add(Calendar.YEAR, -1);
 			Date expiration = cal.getTime();
 			card = new Card(bankA, customer, account, expiration);
-			currentState = ATM_SELECTOR;
+			currentState = MACHINE_SELECTOR;
 			break;
 		case 4:
 			currentState = PERSON_BUILDER;
@@ -177,6 +210,9 @@ public class ATMSimulator
 	    }
 	    
 		boolean cardIsValid = false;
+		
+		// 4 different ATM's to choose from,
+		// 2 per bank.
 		switch(userInput)
 		{
 			case 1:
@@ -256,7 +292,7 @@ public class ATMSimulator
 					// Select card
 					selectCard();
 					break;
-				case ATM_SELECTOR:
+				case MACHINE_SELECTOR:
 					selectATM();
 					break;
 			}

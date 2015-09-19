@@ -48,7 +48,7 @@ public class ATMSimulator
 
 		System.out.println("SIM ATM is an interactive program which simulates");
         System.out.println("the basic functions of an ATM machine.\n");
-        System.out.println("Press the ENTER key to begin.");		
+        System.out.println("To continue, press the ENTER key.");		
 		
 		pressAnyKeyToContinue();
 	}
