@@ -118,6 +118,22 @@ public class Bank
 		return false;
 	}
 	
+	public int displayAccountBalance(Integer customerID, int pin)
+	{
+		List<Account> accounts = customers.get(customerID);
+
+		// Return the account that the PIN unlocks, if any.
+		for (Account a : accounts)
+		{
+			if (a.compareTo(pin) == 0)
+			{
+				return a.getBalance();
+			}
+		}
+		
+		return -1;
+	}
+	
 	/**
 	 * 
 	 * @return

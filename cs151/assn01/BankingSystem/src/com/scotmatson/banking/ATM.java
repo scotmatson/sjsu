@@ -10,32 +10,47 @@ import java.util.Scanner;
 
 public class ATM implements Scannable<Card> {
 	
-	Scanner in = new Scanner(System.in);
-	private Bank bank;
-	private int maxWithdrawal; // Although - never runs out of cash.
+	// ATM attributes.
+	Scanner in;
 	private int userInput;
+	private Bank bank;
+	private int maxWithdrawal;
+	private boolean activeSession;
+	
+	// Stored card attributes.
 	private int bankID;
 	private int customerID;
 	private int accountID;
 	private Date cardExpiration;
+	private int pin;
 	
+	/**
+	 * Constructor method.
+	 * 
+	 * @param bank
+	 * @param maxWithdrawal
+	 */
 	public ATM (Bank bank, int maxWithdrawal)
 	{
+		in = new Scanner(System.in);
 		this.bank = bank;
 		this.maxWithdrawal = maxWithdrawal;
+		this.activeSession = false;
 	}
 	
 	/**
+	 * Scan and store card information.
 	 * 
+	 * @param card
 	 */
 	@Override
 	public void scan(Card card) {
 		int cardNumber = card.getNumber();
-		this.accountID = cardNumber / 100;
-		cardNumber %= 100;
+		this.accountID = cardNumber % 100;
+		cardNumber /= 100;
 		
-		this.customerID = cardNumber / 100;
-		cardNumber %= 100;
+		this.customerID = cardNumber % 100;
+		cardNumber /= 100;
 		
 		this.bankID = cardNumber;
 		
@@ -45,12 +60,14 @@ public class ATM implements Scannable<Card> {
 	}	
 	
 	/**
-	 * 
+	 * Validates card and user credentials.
 	 */
 	public boolean validateCard()
 	{
 		boolean isValid = false;
-
+		System.out.println(bank.getID());
+		System.out.println(this.bankID);
+		
 		// Validate Bank Affiliation.
 		if (bank.getID() == this.bankID)
 		{	
@@ -68,15 +85,37 @@ public class ATM implements Scannable<Card> {
 	}
 	
 	/**
-	 * 
+	 * Initiates account transaction.
 	 */
 	public void beginTransaction() 
 	{
+		activeSession = true;
+		Account account = bank.getCustomerAccount(customerID, pin); 
+		while (activeSession)
+		{
+			userInput = printATMMenu();
 
-		userInput = printATMMenu();
+			switch (userInput)
+			{
+				case 1:
+					makeDeposit();
+					break;
+				case 2:
+					makeWithdrawal();
+					break;
+				case 3:
+					viewBalance();
+					break;
+				case 4:
+					endTransaction();
+					break;
+			}
+		}
 	}
 	
 	/**
+	 * Interface for entering the
+	 * customer's PIN.
 	 * 
 	 * @return
 	 */
@@ -97,9 +136,20 @@ public class ATM implements Scannable<Card> {
 		return pin;
 	}
 	
+	/**
+	 * Displays ATM menu.
+	 * 
+	 * @return
+	 */
 	public int printATMMenu()
 	{
-		return -1;
+		System.out.println("What would you like to do?");
+		System.out.println("1) Make a deposit.");
+		System.out.println("2) Make a withdrawal.");
+		System.out.println("3) View account balance.");
+		System.out.println("4) Return card.");
+		
+		return enterValue();
 	}
 	
 	/**
@@ -113,28 +163,64 @@ public class ATM implements Scannable<Card> {
 		customerID 		= -1;
 		accountID 		= -1;
 		cardExpiration  = null;
+		activeSession = false;
 		
 		System.out.println("End Transaction.");
 		System.out.println("Your card has been returned.");
-	}
-	
-	public 
+	} 
 	
 	/**
 	 * 
+	 * @param amount
 	 */
-	public void makeDeposit(int amount)
+	public void makeDeposit()
 	{
-		int cid = card.getNumber();
-		int 
-		bank.depositFunds(cid, pin, amount);
+		System.out.println("Enter amount to be deposted.");
+		int amount = enterValue();
+		bank.depositFunds(this.customerID, this.pin, amount);
 	}
 	
 	/**
 	 * 
+	 * @return
 	 */
-	public void makeWithdrawal(int amount)
+	public int enterValue()
 	{
-		bank.withdrawalFunds(this.customerID, this.pin, amount)
+		try
+		{
+			userInput = in.nextInt();
+		}
+		catch(InputMismatchException e)
+		{
+		    	System.out.println("Invalid user entry.");
+		    	// Flush the Scanner
+		    	in.next();
+		}
+		
+		return userInput;
+	}
+	
+	/**
+	 * 
+	 * @param amount
+	 */
+	public void makeWithdrawal()
+	{
+		System.out.println("How much would you like to withdrawal?");
+		int amount = enterValue();
+		if (amount > 0 && amount < maxWithdrawal)
+		{
+			bank.withdrawalFunds(this.customerID, this.pin, amount);
+		}
+		else
+		{
+			System.out.println("Out of range.");
+		}
+	}
+	
+	public void viewBalance()
+	{
+		int balance = bank.displayAccountBalance(customerID, pin);
+		System.out.println(balance);
 	}
 }

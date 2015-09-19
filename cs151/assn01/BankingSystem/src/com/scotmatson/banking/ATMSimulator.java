@@ -193,6 +193,8 @@ public class ATMSimulator
 		ATM atm;
 		boolean cardIsValid = false;
 		
+		// 4 different ATM's to choose from,
+		// 2 per bank.
 		switch(userInput)
 		{
 			case 1:
@@ -200,11 +202,7 @@ public class ATMSimulator
 				atm.scan(card);
 				cardIsValid = atm.validateCard();
 				if (cardIsValid) {
-					System.out.println("Valid A card.");
-				}
-				else
-				{
-					System.out.println("Not a valid card.");
+					atm.beginTransaction();
 				}
 				break;
 			case 2:
@@ -212,19 +210,16 @@ public class ATMSimulator
 				atm.scan(card);
 				cardIsValid = atm.validateCard();
 				if (cardIsValid) {
-					System.out.println("Valid A card.");
-				}
-				else
-				{
-					System.out.println("Not a valid card.");
+					atm.beginTransaction();
 				}
 				break;
 			case 3:
 				atm = new ATM(bankB, 200);
 				atm.scan(card);
 				cardIsValid = atm.validateCard();
-				if (cardIsValid) {
-
+				if (cardIsValid) 
+				{
+					atm.beginTransaction();
 				}
 				break;
 			case 4:
@@ -232,11 +227,7 @@ public class ATMSimulator
 				atm.scan(card);
 				cardIsValid = atm.validateCard();
 				if (cardIsValid) {
-
-				}
-				else
-				{
-					System.out.println("Not a valid card.");
+					atm.beginTransaction();
 				}
 				break;
 		}

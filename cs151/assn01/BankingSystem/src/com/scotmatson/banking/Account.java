@@ -86,8 +86,15 @@ public class Account implements Comparable<Integer> {
 	 * @param amount
 	 * @return
 	 */
-	public void decreaseBalance(int amount)
+	public int decreaseBalance(int amount)
 	{
-		this.balance -= amount;
+		// A negative balance will not be processed.
+		int difference = this.balance - amount;
+		if (difference < 0)
+		{
+			this.balance -= amount;
+		}
+		
+		return difference;
 	}
 }
