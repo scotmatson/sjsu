@@ -1,0 +1,26 @@
+package com.scotmatson.testing;
+
+import java.util.Scanner;
+
+public class ScannerTester
+{
+   
+   public static void main(String[] args)
+   {
+      Scanner in = new Scanner(System.in);
+      
+      boolean isLooping = true;
+      while (isLooping)
+      {
+         System.out.println("Enter Number(s).");
+         int num = in.nextInt();
+         
+         System.out.println("Your number(s): " + num);
+         
+         System.out.println("Continue? 'T' or 'F'");
+         String cont = in.next();
+         
+         isLooping = (!"f".equals(cont));
+      }
+   }
+}

@@ -1,0 +1,10 @@
+package com.scotmatson.testing;
+
+public class ScannerTester
+{
+   
+   public static void main(String[] args)
+   
+   Scanner in = new Scanner();
+   
+}

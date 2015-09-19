@@ -1,0 +1,416 @@
+###################################################
+#                                                 #
+#            Welcome to Scot Matson's             #
+#          	   ** SIM ATM **                  #
+#                                                 #
+###################################################
+
+SIM ATM is an interactive program which simulates
+the basic functions of an ATM machine.
+
+Press the ENTER key to begin.
+Please enter your first name.
+
+Please enter your last name.
+
+Please select a debit card from the list below.
+Upon selecting a card you will be made a customer
+of either bank A or bank B depending on your selection.
+As a new customer you will be granted access to a checking
+account with a balance of $100 which may be accessed
+through an ATM using your card and a user-defined PIN
+
+1) Card A (member of Bank A)
+2) Card B (member of Bank B)
+3) Card C (expired member of Bank A)
+4) New customer
+5) Exit
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 111111
+Bank ID: 111
+
+*** Card Scanned ***
+
+Expired card.
+Current date: Sat Sep 19 15:42:33 PDT 2015
+Card EXP date: Fri Sep 19 15:42:33 PDT 2014
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 222222
+Bank ID: 111
+
+*** Card Scanned ***
+
+Expired card.
+Current date: Sat Sep 19 15:42:33 PDT 2015
+Card EXP date: Fri Sep 19 15:42:33 PDT 2014
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 333333
+Bank ID: 111
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 222
+Card Bank ID: 111
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 444444
+Bank ID: 111
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 222
+Card Bank ID: 111
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+Please select a debit card from the list below.
+Upon selecting a card you will be made a customer
+of either bank A or bank B depending on your selection.
+As a new customer you will be granted access to a checking
+account with a balance of $100 which may be accessed
+through an ATM using your card and a user-defined PIN
+
+1) Card A (member of Bank A)
+2) Card B (member of Bank B)
+3) Card C (expired member of Bank A)
+4) New customer
+5) Exit
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 333333
+Bank ID: 111
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 222
+Card Bank ID: 111
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 444444
+Bank ID: 111
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 222
+Card Bank ID: 111
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 111111
+Bank ID: 111
+
+*** Card Scanned ***
+
+Please enter your PIN: What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Current account balance: 100
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be deposited: 
+Transaction completed.
+Current account balance: 120
+
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Unable to complete transaction.
+Withdrawals must between $20 - $200
+in $20 increments.
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Transaction completed.
+Current account balance: 0
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Insufficient funds available.
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+End Transaction.
+Your card has been returned.
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 222222
+Bank ID: 111
+
+*** Card Scanned ***
+
+Please enter your PIN: What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Current account balance: 0
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be deposited: 
+Transaction completed.
+Current account balance: 30
+
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+End Transaction.
+Your card has been returned.
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+Please select a debit card from the list below.
+Upon selecting a card you will be made a customer
+of either bank A or bank B depending on your selection.
+As a new customer you will be granted access to a checking
+account with a balance of $100 which may be accessed
+through an ATM using your card and a user-defined PIN
+
+1) Card A (member of Bank A)
+2) Card B (member of Bank B)
+3) Card C (expired member of Bank A)
+4) New customer
+5) Exit
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 111111
+Bank ID: 222
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 111
+Card Bank ID: 222
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 222222
+Bank ID: 222
+
+*** Card Scanned ***
+
+Card not recognized.
+ATM Bank ID: 111
+Card Bank ID: 222
+
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+### ATM ###
+Machine ID: 333333
+Bank ID: 222
+
+*** Card Scanned ***
+
+Please enter your PIN: What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Current account balance: 100
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Unable to complete transaction.
+Withdrawals must between $20 - $200
+in $20 increments.
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Transaction completed.
+Current account balance: 20
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Insufficient funds available.
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be deposited: 
+Transaction completed.
+Current account balance: 40
+
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+Enter amount to be withdrawn: 
+Transaction completed.
+Current account balance: 0
+
+What would you like to do?
+1) Make a deposit.
+2) Make a withdrawal.
+3) View account balance.
+4) Return card.
+
+End Transaction.
+Your card has been returned.
+Please select an ATM from the following list:
+1) ATM A111
+2) ATM A222
+3) ATM B333
+4) ATM B444
+5) New card
+6) Exit
+
+Terminating Simulation.
