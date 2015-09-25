@@ -1,0 +1,33 @@
+
+public class Planner
+{
+   public void loadEvents()
+   {
+      
+   }
+   
+   public void changeView()
+   {
+      
+   }
+   
+   public void createEvent()
+   {
+      
+   }
+   
+   public void goToEvent()
+   {
+      
+   }
+   
+   public void listEvents()
+   {
+      
+   }
+   
+   public void deleteEvent()
+   {
+      
+   }
+}

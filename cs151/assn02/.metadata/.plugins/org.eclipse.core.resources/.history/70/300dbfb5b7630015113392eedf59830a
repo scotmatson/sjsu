@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Events
+{
+   private List<Date> dates; // This will be most important, can use as a reference for other information.
+   private List<String> titles;
+   private List<String> descriptions;
+   // Should store an event
+      // Date
+      // Description
+      // Title
+   
+   // Should data be represented as multiple events in each class,
+   // Indicating one-to-many relationship for a user and events?
+   
+   public Events()
+   {
+      dates = new ArrayList<>();
+      titles = new ArrayList<>();
+      descriptions = new ArrayList<>();
+   }
+}

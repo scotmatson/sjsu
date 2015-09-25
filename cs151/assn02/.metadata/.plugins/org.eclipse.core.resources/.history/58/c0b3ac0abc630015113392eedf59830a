@@ -1,0 +1,57 @@
+import java.util.Date;
+
+public class Planner
+{
+   private final int DAY_VIEW = 0;
+   private final int MONTH_VIEW = 1; // Default
+   private final int view;
+   private List<Event> events;
+   
+   public Planner()
+   {
+      this.view = MONTH_VIEW;
+      this.events = new ArrayList<>();
+   }
+   public void loadEvents()
+   {
+      // Load events from the file
+      // and turn them into objects
+      try {
+         
+      }
+      catch ()
+      {
+         
+      }
+   }
+   
+   public void toggleView()
+   {
+
+   }
+   
+   public void createEvent(Date date, String title, String description)
+   {
+      Event e = new Event(date, title, description);
+   }
+   
+   public void goToEvent()
+   {
+      
+   }
+   
+   public void listEvents()
+   {
+      
+   }
+   
+   public void deleteEvent()
+   {
+      
+   }
+
+   public void saveEvents()
+   {
+      // Write events to events.txt
+   }
+}
