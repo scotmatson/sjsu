@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+import java.util.Scanner;
+
+public class MyCalendar
+{
+   Scanner in = new Scanner(System.in);
+   Menu main = new Menu(in);
+   char selection;
+   
+   public void printHeader()
+   {
+      System.out.printf("%s\n", "###################################");
+      System.out.printf("%s %33s\n", "#", "#");
+      System.out.printf("%s %27s %5s\n", "#", "Scot Matson presents,", "#");
+      System.out.printf("%s %17s %15s\n", "#", "My Calendar", "#");
+      System.out.printf("%s %33s\n", "#", "#");
+      System.out.printf("%s %26s %6s\n", "#", "A Java console based", "#");
+      System.out.printf("%s %23s %9s\n", "#", "digital scheduler","#");
+      System.out.printf("%s %33s\n", "#", "#");
+      System.out.printf("%s\n\n", "###################################");
+   }
+   
+   /**
+    *    
+    */
+   public void run()
+   {
+      main.printMenu();
+      selection = in.findInLine(".").charAt(0);
+      exit();
+   }
+   
+   /*
+    * Exits the application.
+    */
+   public void exit()
+   {
+      System.exit(0);
+   }
+   
+   /**
+    * 
+    * @param args
+    */
+   public static void main(String[] args)
+   {
+      MyCalendar mc = new MyCalendar();
+      mc.printHeader();
+      mc.run();
+   }
+}

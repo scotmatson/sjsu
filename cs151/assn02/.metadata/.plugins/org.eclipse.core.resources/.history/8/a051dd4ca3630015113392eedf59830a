@@ -1,0 +1,15 @@
+
+public class MyCalendar
+{
+
+   
+   public void run()
+   {
+      
+   }
+   
+   public static void main(String[] args)
+   {
+      (new Mycalendar().run());
+   }
+}

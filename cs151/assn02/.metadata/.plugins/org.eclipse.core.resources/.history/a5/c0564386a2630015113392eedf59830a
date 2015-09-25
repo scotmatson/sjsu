@@ -1,0 +1,18 @@
+/**
+ * 
+ * @author scot
+ *
+ */
+public class Menu
+{
+   private enum State
+   {
+         LOAD,
+         VIEW_BY,
+         CREATE,
+         GO_TO,
+         EVENT_LIST,
+         DELETE,
+         QUIT
+   };
+}

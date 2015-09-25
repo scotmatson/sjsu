@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+import java.util.Scanner;
+
+public class MyCalendar
+{
+   // 
+   Scanner in = new Scanner(System.in);
+   Menu main = new Menu(in);
+   
+   /**
+    *    
+    */
+   public void run()
+   {
+      main.printMenu();
+      exit();
+   }
+   
+   /*
+    * Exits the application.
+    */
+   public void exit()
+   {
+      System.exit(0);
+   }
+   
+   public static void main(String[] args)
+   {
+      new MyCalendar().run();
+   }
+}
