@@ -1,0 +1,152 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Locale;
+
+enum MONTHS {
+   Jan, Feb, March, Apr, May, June, July, Aug, Sep, Oct, Nov, Dec;
+}
+
+enum DAYS {
+   Sun, Mon, Tue, Wed, Thur, Fri, Sat;
+}
+
+public class Planner
+{  
+   // Constants
+   private final String EVENTS_FILE;
+   private final char DAY_VIEW = 'd';
+   private final char MONTH_VIEW = 'm'; // Default
+   
+   // Mutable
+   private int view;
+   private List<Event> events;
+ 
+   // Calendar stuff.
+   Calendar calendar;
+   MONTHS[] arrayOfMonths = MONTHS.values();
+   DAYS[] arrayOfDays = DAYS.values();
+   
+   public Planner(Calendar calendar)
+   {
+      this.EVENTS_FILE = "events.txt";
+      this.view = MONTH_VIEW;
+      this.events = new ArrayList<>();
+      
+      // Default calendar set for 'today'.
+      this.calendar = calendar;
+   }
+   
+   /**
+    * Constructor method.
+    */
+   public Planner(Calendar calendar, String filename)
+   {
+      this.EVENTS_FILE = filename;
+      this.view = MONTH_VIEW;
+      this.events = new ArrayList<>();
+      
+      // Default calendar set for 'today'.
+      this.calendar = calendar;
+   }
+   
+   public void loadEvents()
+   {
+      // Load events from the file
+      // and turn them into objects
+      try 
+      {
+         BufferedReader br = new BufferedReader(new FileReader(EVENTS_FILE));
+      }
+      catch (FileNotFoundException fnfe)
+      {
+         System.out.printf("%s", "Unable to locate events.txt.");
+      }
+      
+   }
+   
+   public void toggleView()
+   {
+
+   }
+   
+   public void createEvent(Date date, String title, String description)
+   {
+      Event e = new Event(date, title, description);
+   }
+   
+   public void goToEvent()
+   {
+      
+   }
+   
+   public void listEvents()
+   {
+      
+   }
+   
+   public void deleteEvent()
+   {
+      
+   }
+
+   public void saveEvents()
+   {
+      // Write events to events.txt
+   }
+   
+   
+   public void printCalendar()
+   {
+      calendar.set(Calendar.DATE, calendar.getActualMinimum(Calendar.DATE));
+      
+      // Locale.getDefault() returns the locale for the Java environment,
+      // not the system environment. Ideally we would want the system locale.
+      String month = calendar.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault());
+      int year = calendar.get(Calendar.YEAR);
+      
+      System.out.printf(" %s %s\n", month, year);
+      System.out.printf("%s\n", "Su Mo Tu We Th Fr Sa");
+      
+      
+      
+      int firstDate = calendar.getActualMinimum(Calendar.DATE);
+      System.out.println("First DATE of month: " + firstDate);
+      int lastDate = calendar.getActualMaximum(Calendar.DATE);
+      System.out.println("Last DATE of month: " + lastDate);
+      
+      
+//      int firstDay = calendar.getFirstDayOfWeek();
+//      System.out.println("First DAY of month: " + firstDay);
+//      System.out.println("Day is: " + calendar.getf);
+//      String calendarRows = "";
+      
+//      while (first <= last)
+//      {
+//         if (first == calendar.get)
+//         {
+//            
+//         }
+//         else 
+//         {
+//            
+//         }
+//         ++first;
+//      }
+      
+      calendar.add(Calendar.MONTH, 1);
+      System.out.println();
+      System.out.println();
+      
+      
+      System.out.println("MONTH: " + month);
+      //System.out.println(tmp.get(Calendar.MONTH));
+      System.out.printf("Month is %s %s\n", calendar.get(Calendar.MONTH), calendar.get(Calendar.YEAR));
+      System.out.printf("%s\n\n", calendar.get(Calendar.DATE));
+   }
+}
