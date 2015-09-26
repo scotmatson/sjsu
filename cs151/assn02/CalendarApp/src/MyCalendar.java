@@ -4,6 +4,8 @@
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class MyCalendar
 { 
@@ -111,13 +113,47 @@ public class MyCalendar
    
    public void scheduleEvent(Scanner in, Planner p)
    {
-      Date date;
+      // Event title.
+      System.out.printf("Enter the title for your event.\n");
+      System.out.printf(">> ");
       String title = in.nextLine();
-      String description = in.nextLine();
-      int start = 0;
-      int end = 0;
       
-      p.addEvent(date, start, end, title);
+      // Event Start.
+      System.out.printf("Enter the date of your event as MM/DD/YYYY\n");
+      System.out.printf(">> ");
+      String date = in.nextLine();
+      
+      System.out.printf("Enter the start time of your event using a 24-hour format, HH:MM\n");
+      System.out.printf(">> ");
+      String input = in.nextLine();
+      
+      Date start = null;
+      SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm");     
+      try
+      {
+         start = sdf.parse(date + " " + input);
+      }
+      catch (ParseException pe)
+      {
+         pe.printStackTrace();
+      }
+      
+      // Event End (Date will be the same as start).
+      System.out.printf("Enter the end time of your event using a 24-hour format, HH:MM\n");
+      System.out.printf(">> ");
+      input = in.nextLine();
+
+      Date end = null;
+      try
+      {
+         end = sdf.parse(date + " " + input);
+      }
+      catch (ParseException pe)
+      {
+         pe.printStackTrace();
+      }
+      
+      p.addEvent(start, end, title);
    }
    
    /**
