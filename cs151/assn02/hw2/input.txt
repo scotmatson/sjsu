@@ -1,0 +1,75 @@
+e
+l
+d
+s
+10/02/2015
+c
+[Movie] The Martian
+10/02/2015
+16:00
+18:00
+c
+[Movie] Hotel Transylvania 2
+10/02/2015
+16:50
+18:30
+c
+[Movie] Black Mass
+10/02/2015
+15:45
+17:30
+c
+[Vacation] Disneyland
+12/18/2015
+05:00
+23:59
+c
+[Birthday] Scot
+06/02/1981
+00:00
+23:59
+c
+[Birthday] Diana
+09/10/1985
+00:00
+23:59
+c
+[Wedding] Scot & Diana
+03/28/2015
+16:00
+23:00
+e
+v
+m
+n
+p
+p
+m
+v
+d
+n
+n
+n
+n
+n
+p
+p
+p
+p
+p
+p
+p
+m
+g
+06/02/1981
+e
+d
+s
+10/02/2015
+e
+g
+10/02/2015
+d
+a
+e
+q

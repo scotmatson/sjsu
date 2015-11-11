@@ -1,0 +1,21 @@
+package chapter04;
+
+import javax.swing.JOptionPane;
+
+public class Example002 {
+
+	public static void main(String[] args) {
+		
+		Icon icon = new CarIcon(20);
+		
+		JOptionPane.showMessageDialog(
+				null, //parent window
+				"Hello World!", //message
+				"Message", // window title
+				JOptionPane.INFORMATION_MESSAGE // message type
+				// new ImageIcon("globe.gif"));
+				);
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package chapter04;
+
+public class Example005 {
+
+	public static void main(String[] args)
+	{
+		ActionListener listener = new
+				ActionListener()
+				{
+					public void actionPerformed(ActionEvent event)
+					{
+						Date now = new Date();
+						textField.setText(now.toString);
+					}
+				}
+		
+		Timer t = new Timer(DELAY, listener);
+	}
+}

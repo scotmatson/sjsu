@@ -1,0 +1,31 @@
+package examples;
+
+public class Ex48 implements Filter {
+
+	public static void main(String[] args)
+	{
+		Filter filter = new Ex48();
+		String[] words = new String[10];
+		words[0] = "Burrito";
+		words[1] = "Horse";
+		words[2] = "Sniff";
+		words[3] = "Butt";
+		words[4] = "Sashsa";
+		words[5] = "Noogie";
+		words[6] = "Norse";
+		words[7] = "Chalet";
+		words[8] = "Kirby";
+		words[9] = "Grope";
+		String[] filteredWords = filter(words, filter);
+	}
+	
+	public static String[] filter(String[] a, Filter f)
+	{
+		String[] caught = new String[a.length];
+		for (String f : )
+	}
+
+	public boolean accept(String x) {
+		return true;
+	}
+}

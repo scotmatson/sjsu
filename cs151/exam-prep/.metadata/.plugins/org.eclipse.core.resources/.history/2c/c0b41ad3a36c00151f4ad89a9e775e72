@@ -1,0 +1,16 @@
+package examples;
+
+public class Ex48 {
+
+	public static void main(String[] args)
+	{
+		
+	}
+	
+	public interface Filter
+	{
+		boolean accept(String x);
+		public static String[] filter(String[] a, Filter f);
+
+	}
+}

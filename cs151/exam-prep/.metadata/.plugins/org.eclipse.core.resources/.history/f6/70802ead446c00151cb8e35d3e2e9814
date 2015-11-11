@@ -1,0 +1,8 @@
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+
+public class GraphicsPractice {
+
+	JOptionPane.showMessageDialog(null, "Hello, World!");
+}

@@ -1,0 +1,40 @@
+package examples;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+public class Ex46 {
+
+	public static void main(String[] args)
+	{
+		List<String> strList = new ArrayList<>();
+		strList.add("Avacado");
+		strList.add("Taco");
+		strList.add("Cheese");
+		strList.add("Pizza");
+		strList.add("Orange Chicken");
+		strList.add("Brussle Sprout");
+		
+		System.out.println("Before sort, max element is: " + strList.get(strList.size() - 1));
+		
+		
+	}
+	
+	
+	public static String maximum(ArrayList<String> a, Comparator<String> c)
+	{
+		
+	}
+	
+	public static Comparator<String> stringComparator()
+	{
+		return new Comparator<String>() {
+			public int compare(String a, String b)
+			{
+				return a.compareTo(b);
+			}
+		}
+	}
+}

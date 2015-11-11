@@ -1,0 +1,69 @@
+package test;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.Rectangle2D.Double;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PaintDemo {
+
+	public static void main(String[] args)
+	{
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run()
+			{
+				createAndDrawGUI();
+			}
+		});
+	}
+	
+	public static void createAndDrawGUI()
+	{
+		System.out.println("Created GUI with EDT?: " + SwingUtilities.isEventDispatchThread());
+		JFrame jf = new Jframe("Tester");
+		jf.setSize(300, 300);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jf.add(new MyPanel());
+		jf.pack();
+		jf.setVisible(true);
+	}
+	
+	class MyPanel extends JPanel {
+		
+		public void paintComponent(Graphics g)
+		{
+			Graphics2D g2 = (Graphics2D) g;
+			Door d = new Door(10, 20, 10, 20);
+		}
+		
+	}
+	
+}
+
+class Door {
+	int x;
+	int y;
+	int h;
+	int w;
+	
+	Door (int x, int y, int w, int h) {
+		this.x = x;
+		this.y = y;
+		this.w = w;
+		this.h = h;
+	}
+	
+	public void draw(Graphics2D g2)
+	{
+		Rectangle2D.Double left = new Rectangle2D.Double(x, y, w, h);
+		Rectangle2D.Double right = new Rectangle2D.Double(x+w, y, w, h);
+		g2.draw(left);
+		g2.draw(right);
+	}
+}

@@ -1,0 +1,24 @@
+package chapter04;
+
+/**
+ * A car that can be moved around.
+ * @author scot
+ *
+ */
+public class CarShape implements MoveableShape {
+
+	/**
+	 * Constructs a car item.
+	 * @param x the left of the bounding rectangle
+	 * @param y the top of the bounding rectangle
+	 * @param width the width of the bounding rectangle
+	 */
+	public CarShape(int x, int y, int width)
+	{
+		this.x = x;
+		this.y = y;
+		this.width = width;
+	}
+	
+	
+}

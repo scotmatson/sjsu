@@ -1,0 +1,43 @@
+package chapter04;
+
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+public class Example004 {
+
+	public static void main(String[] args)
+	{
+		JFrame frame = new JFrame();
+		
+		JButton helloButton = new JButton("Say Hello");
+		helloButton.addActionListener(new
+				ActionListener()
+				{
+					public void actionPerformed(ActionEvent event)
+					{
+						// Button action goes here.
+						textField.setText("Hello, World!");
+					}
+				});
+		JButton goodbyeButton = new JButton("Say Goodbye");
+
+		final int FIELD_WIDTH = 20;
+		JTextField textField = new JTextField(FIELD_WIDTH);
+		textField.setText("Click a button!");
+	
+		frame.setLayout(new FlowLayout());
+		
+		frame.add(helloButton);
+		frame.add(goodbyeButton);
+		frame.add(textField);
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.pack(); // Sets the frame to the smallest size needed to display its contents.
+		frame.setVisible(true);
+	}
+}

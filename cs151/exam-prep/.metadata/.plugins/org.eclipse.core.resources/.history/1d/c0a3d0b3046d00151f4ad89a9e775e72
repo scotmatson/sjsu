@@ -1,0 +1,33 @@
+package test;
+
+import javax.swing.SwingUtilities;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.FlowLayout;
+
+public class PaintStuff {
+
+	public static void main(String[] args)
+	{
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run()
+			{
+				createAndPaintGUI();
+			}
+		});
+	}
+	
+	public static void createAndPaintGUI()
+	{
+		JFrame frame = new JFrame("This is my header.");
+		frame.setLayout(new FlowLayout());
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.add(new MyPanel());
+		frame.pack();
+		frame.setVisible(true);
+	}
+
+	private class MyPanel extends JPanel {
+		
+	}
+}

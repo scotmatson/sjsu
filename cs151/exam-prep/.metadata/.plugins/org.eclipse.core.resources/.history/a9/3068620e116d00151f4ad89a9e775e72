@@ -1,0 +1,12 @@
+package test;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class PaintDemo {
+
+	public static void main(String[] args)
+	{
+		JPanel jp = new JPanel();
+	}
+}

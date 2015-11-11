@@ -1,0 +1,68 @@
+* A function is invertible IFF it is 1-to-1 AND onto *
+Given T:R^2->R^2
+
+T ([x1]) = [5x1 + 7x2]
+  ([x2]) = [3x1 + 4x2] 
+
+Steps:
+1) Find the standard matrixfor T:
+   A = [T(e_1) T(e_2)]
+     = [5 7]
+       [3 4] 
+
+2) Show that A is invertible and find its inverse.
+   [A I2] = [5 7 1 0]
+            [3 4 0 1]
+
+          = [2 3 1 -1]
+            [3 4 0  1]
+
+          = [2 3  1 -1]
+            [1 1 -1  2]
+ 
+          = [1 1 -1  2]
+            [2 3  1 -1]
+
+          = [1 1 -1  2]
+            [0 1  3 -5]
+
+          = [1 0 -4  7]
+            [0 1  3 -5]
+
+          = A^-1 = [-4 7]
+                   [3 -5]
+
+3) Fact: The standard Matrix for T^-1 is A^-1
+         T^-1[y1] = [-4 7][y1] = [-4y1 + 7yz]
+             [y2]   [3 -5][y2]   [ 3y1 - 5y2]
+
+Ex 12.
+A small town has three primary industries: a copper mine, a railroad, and an electric utility. To produce $1 of copper, the copper mine uses $0.20 of copper, $0.10 of transportation, and $0.20 of electric power. To provide $1 of transportation, the railroad uses $0.10 of copper, $0.10 of transportation, and $0.40 of electric power. To provide $1 of electric power, the electric utility uses $0.20 of copper, $0.20 of transportation and $0.30 of electric power, Suppose that during the year there is an outside demand of 1.2 million dollars for copper, 0.8 million dollars for transportation, and 1.5million dollars for electric power. How much should each industry produce to satisfy the demands.
+
+External demand vector:
+vect.d = [1.2] <- copper
+         [0.8] <- transportation
+         [1.5] <- electricity
+
+We're looking for a total production vector, vect.x
+  vect.x = (amount needed for production) + vect.d
+  where vect.x = total demand
+        vect.d = final demand
+ amount needed = intermediate demand
+
+Amount needed for production:
+  x1[0.20] + x2[0.10] + x3[0.20]
+    [0.10]     [0.10]     [0.20]
+    [0.20]     [0.10]     [0.30]
+
+  = [0.20 0.10 0.20][x1]
+    [0.10 0.10 0.20][x2] = Cvec.x
+    [0.20 0.40 0.30][x3]
+
+  C = Consumption Matrix
+
+  vect.x = Cvect.x + vect.d
+  Ivect.x = Cvect.x + vect.d
+  Ivect.x - Cvect.x = vect.d
+  Bvect.x = (I-C)vect.x = vect.d
+  Solve for vect.x

@@ -1,0 +1,474 @@
+###################################
+#                                 #
+#       Scot Matson presents,     #
+#       My Calendar               #
+#                                 #
+#       A Java console based      #
+#       digital scheduler         #
+#                                 #
+###################################
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> e
+
+There are currently no events scheduled.
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> l
+
+File does not exist.
+No data found.
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> d
+
+Which event(s) would you like to delete?
+[S]elected or [A]ll ?>> s
+
+Enter the date to delete formatted MM/DD/YYYY.
+>> No events scheduled for that date.
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> c
+
+Enter the title for your event.
+>> Enter the date of your event as MM/DD/YYYY
+>> Enter the start time of your event using a 24-hour format, HH:MM
+>> Enter the end time of your event using a 24-hour format, HH:MM
+>>  October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> e
+
+1981
+  Tuesday Jun 02 00:00 - 23:59 [Birthday] Scot
+1985
+  Tuesday Sep 10 00:00 - 23:59 [Birthday] Diana
+2015
+  Saturday Mar 28 16:00 - 23:00 [Wedding] Scot & Diana
+  Friday Oct 02 15:45 - 17:30 [Movie] Black Mass
+  Friday Oct 02 16:00 - 18:00 [Movie] The Martian
+  Friday Oct 02 16:50 - 18:30 [Movie] Hotel Transylvania 2
+  Friday Dec 18 05:00 - 23:59 [Vacation] Disneyland
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> v
+
+Please select a view format.
+[M]onth or [D]ay?
+>> m
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+ November 2015
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1 [ 2]  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+ September 2015
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30 
+[P]revious, [N]ext, or [M]ain?
+>> m
+
+ September 2015
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> v
+
+Please select a view format.
+[M]onth or [D]ay?
+>> d
+
+Wednesday, September 2, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+Thursday, September 3, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+Friday, September 4, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+Saturday, September 5, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+Sunday, September 6, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> n
+
+Monday, September 7, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Sunday, September 6, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Saturday, September 5, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Friday, September 4, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Thursday, September 3, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Wednesday, September 2, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Tuesday, September 1, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> p
+
+Monday, August 31, 2015
+  No events scheduled for today.
+
+[P]revious, [N]ext, or [M]ain?
+>> m
+
+ August 2015
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> g
+
+Enter a date to view in the format, MM/DD/YYYY
+>> 
+Tuesday, June 2, 1981
+[Birthday] Scot 00:00 - 23:59
+
+ June 1981
+Su Mo Tu We Th Fr Sa
+    1 [ 2]  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> e
+
+1981
+  Tuesday Jun 02 00:00 - 23:59 [Birthday] Scot
+1985
+  Tuesday Sep 10 00:00 - 23:59 [Birthday] Diana
+2015
+  Saturday Mar 28 16:00 - 23:00 [Wedding] Scot & Diana
+  Friday Oct 02 15:45 - 17:30 [Movie] Black Mass
+  Friday Oct 02 16:00 - 18:00 [Movie] The Martian
+  Friday Oct 02 16:50 - 18:30 [Movie] Hotel Transylvania 2
+  Friday Dec 18 05:00 - 23:59 [Vacation] Disneyland
+
+ June 1981
+Su Mo Tu We Th Fr Sa
+    1 [ 2]  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> d
+
+Which event(s) would you like to delete?
+[S]elected or [A]ll ?>> s
+
+Enter the date to delete formatted MM/DD/YYYY.
+>>  June 1981
+Su Mo Tu We Th Fr Sa
+    1 [ 2]  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> e
+
+1981
+  Tuesday Jun 02 00:00 - 23:59 [Birthday] Scot
+1985
+  Tuesday Sep 10 00:00 - 23:59 [Birthday] Diana
+2015
+  Saturday Mar 28 16:00 - 23:00 [Wedding] Scot & Diana
+  Friday Dec 18 05:00 - 23:59 [Vacation] Disneyland
+
+ June 1981
+Su Mo Tu We Th Fr Sa
+    1 [ 2]  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> g
+
+Enter a date to view in the format, MM/DD/YYYY
+>> 
+Friday, October 2, 2015
+  No events scheduled for today.
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> d
+
+Which event(s) would you like to delete?
+[S]elected or [A]ll ?>> a
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> e
+
+There are currently no events scheduled.
+
+ October 2015
+Su Mo Tu We Th Fr Sa
+             1  2  3
+ 4  5  6  7  8  9 10
+11 12 13 14 15 16 17
+18 19 20 21 22 23 24
+25 26 27 28 29 30 31
+
+Please make a selection from the following list of options.
+[L]oad, [V]iew by, [C]reate, [G]o to, [E]vent list, [D]elete, [Q]uit
+>> q
+
+Goodbye.

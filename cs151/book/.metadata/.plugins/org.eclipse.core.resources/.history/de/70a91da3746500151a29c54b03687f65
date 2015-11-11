@@ -1,0 +1,20 @@
+package chapter04;
+
+import java.awt.*;
+import java.awt.geom.*;
+import javax.swing.*;
+
+public class MarsIcon {
+
+	public static void main(String[] args) implements Icon {
+			
+		public MarsIcon(int aSize)
+		{
+			size = aSize;
+		}
+		
+		
+
+	}
+
+}

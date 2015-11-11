@@ -1,0 +1,23 @@
+package test;
+
+import javax.swing.SwingUtilities;
+import javax.swing.JFrame;
+
+public class PaintStuff {
+
+	public static void main(String[] args)
+	{
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run()
+			{
+				createAndPaintGUI();
+			}
+		});
+	}
+	
+	public static void createAndPaintGUI()
+	{
+		
+	}
+	
+}

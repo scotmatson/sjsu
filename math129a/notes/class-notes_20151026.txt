@@ -1,0 +1,26 @@
+Recall:
+We said A is invertible <=> there exists A', a 2-sided inverse.
+i.e., such that...
+AA' = In, A' is a right inverse.
+A'A = In, A' is a left inverse.
+
+# A matrix is called "singular" if it is not invertible. In contrast,
+  an invertible matrix is referred as being "non-singular".
+
+# Matrix partitioning
+  * Row / Column slices through a large matrix to make multiple
+    smaller matrices to create a new matrix build using the smaller
+    variable defined matrix.
+
+  [  1  2 |  0  1  0 |  0 ]  
+  [-----------------------]  = [ A11 A12 A13 ]
+  [  0  6 | -3 -3  1 |  0 ]  = [ A21 A22 A23 ]
+  [  0  6 |  6  3  0 |  1 ]
+
+  This turns the original matrix into a block matrix.
+  
+  * Blocks that are cut similarly can fulfill mathematical operations such
+    as addition. If the slices are not similar then no equivilancy exists
+    and operations are undefined.
+
+

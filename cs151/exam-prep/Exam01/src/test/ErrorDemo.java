@@ -1,0 +1,54 @@
+package test;
+
+import java.util.ArrayList;
+
+public class ErrorDemo 
+{
+//	private static class Element
+//	{
+//		private int value;
+//		private static int serial_element_num;
+//		
+//		public int getValue()
+//		{
+//			// static class cannot access instance of
+//			// outer class.
+//			System.out.println("ID of this bag : " + id);
+//			serial_element_num++;
+//			return value;
+//		}
+//	}
+	
+//	public BagIterator getIterator() {
+//		return new BagIterator();
+//	}
+//	public static BagIterator getAnotherIterator() {
+//		//Non-static inner class must be associated
+//		//with an instance of the outer class.
+//		ErrorDemo ed = new ErrorDemo();
+//		return ed.new BagIterator();
+//	}
+//	
+//	ErrorDemo x = new ErrorDemo();
+//	
+//	class BagIterator
+//	{
+//		private int count;
+//		// cannot have static inside nonstatic
+//		private static int serial_bag_num;
+//		public Element next() {
+//			return data.get(count++);
+//		}
+//	}
+	
+//	private ArrayList<Element> data;
+//	private int id;
+//	private static int serial_id;
+//	
+//	// This example needs a return type
+//	public void bag()
+//	{
+//		data = new ArrayList<Element>();
+//		id++;
+//	}	
+}

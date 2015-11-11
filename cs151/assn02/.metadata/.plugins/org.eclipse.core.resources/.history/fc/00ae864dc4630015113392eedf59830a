@@ -1,6 +1,0 @@
-import java.util.GregorianCalendar;
-
-public class Calendar
-{
-   GregorianCalendar cal = new GregorianCalendar();
-}

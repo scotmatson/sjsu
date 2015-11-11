@@ -1,0 +1,40 @@
+package test;
+
+import java.util.ArrayList;
+
+public class ErrorDemo 
+{
+	public BagIterator getIterator() {
+		return new BagIterator();
+	}
+	public static BagIterator getAnotherIterator() {
+		return new BagIterator();
+	}
+	
+	ErrorDemo x = new ErrorDemo();
+	
+	private class BagIterator
+	{
+		private int count;
+		private int serial_bag_num;
+		public Element next() {
+			return data.get(count++);
+		}
+	}
+	
+	
+	
+//	private ArrayList<Element> data;
+//	private int id;
+//	private static int serial_id;
+//	
+//	// This example needs a return type
+//	public void bag()
+//	{
+//		data = new ArrayList<Element>();
+//		id++;
+//	}
+	
+}
+
+class Element{}

@@ -1,0 +1,17 @@
+package chapter04;
+
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.font.FontRenderContext;
+
+public class Example006 {
+
+	public static void main(String[] args)
+	{
+		Graphics g = new Graphics();
+		Graphics2D g2 = (Graphics2D) g;
+		String text = "Message";
+		Font font = g2.getFont();
+		FontRenderContext context = g2.getFontRenderContext();
+	}
+}

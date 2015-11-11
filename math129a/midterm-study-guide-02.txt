@@ -1,0 +1,11 @@
+On Exam:
+1) Invertible 3x3 matrices.
+2) Matrix Partitioning
+    a) Blockwise operations (addition/multiplication)
+3) Inverse of a Linear Map (Not familiar with this terminology)
+4) Setup application problems and solve by x=(i-c)d 
+   This is from section *** 2.6 ***
+
+
+Additional study:
+1) 14 properties of invertibility (Not on test, good to know).

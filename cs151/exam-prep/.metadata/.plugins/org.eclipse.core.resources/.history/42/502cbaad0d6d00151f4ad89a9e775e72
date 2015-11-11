@@ -1,0 +1,21 @@
+package test;
+
+import java.util.ArrayList;
+
+public class ErrorDemo {
+
+	private ArrayList<Element> data;
+	private int id;
+	private static int serial_id;
+	
+	public void bag()
+	{
+		data = new ArrayList<Element>();
+		id++;
+	}
+	
+}
+
+class Element {
+	
+}

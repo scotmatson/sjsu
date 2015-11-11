@@ -1,0 +1,13 @@
+package test;
+
+improt java.util.ArrayList;
+
+public class ErrorDemo {
+
+	private ArrayList<Element> data;
+	
+}
+
+class Element {
+	
+}

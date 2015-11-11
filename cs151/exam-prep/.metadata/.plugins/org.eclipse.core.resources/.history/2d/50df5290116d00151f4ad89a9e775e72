@@ -1,0 +1,38 @@
+package test;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
+import java.awt.geom.Rectangle2D.Double;
+import java.awt.Graphics;
+
+public class PaintDemo {
+
+	public static void main(String[] args)
+	{
+		
+		
+	}
+}
+
+class Door {
+	int x;
+	int y;
+	int h;
+	int w;
+	
+	Door (int x, int y, int w, int h) {
+		this.x = x;
+		this.y = y;
+		this.w = w;
+		this.h = h;
+	}
+	
+	public void draw(Graphics2D g2)
+	{
+		Rectangle2D.Double left = new Rectangle2D.Double(x, y, w, h);
+		Rectangle2D.Double right = new Rectangle2D.Double(x, y, w*2, h);
+
+	}
+}
