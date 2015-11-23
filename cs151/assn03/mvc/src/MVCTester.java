@@ -25,7 +25,7 @@ public class MVCTester
       DataModel model = new DataModel(introText);
       DataView view = new DataView(model);
       model.register(view);
-      DataController controller = new DataController(view, model);
+      new DataController(view, model);
       view.setVisible(true);
    }
 

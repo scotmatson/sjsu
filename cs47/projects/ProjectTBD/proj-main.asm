@@ -26,7 +26,7 @@ main:
 	print_str(operation)
 	read_char($s2)
 	
-	# Set argument values and call au_normal.
+	# Set argument values and call au_normal procedure.
 	move	$a0, $s0
 	move	$a1, $s1
 	move	$a2, $s2
