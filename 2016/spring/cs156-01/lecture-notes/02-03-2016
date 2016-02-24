@@ -1,0 +1,183 @@
+Intelligent Agent
+
+Agents and Environments
+An agend is an entity that perceives its environments through sensors and acts upon its environment through actuators/effectors.
+The difference between and Agent and the environment...
+  We control the agent,
+  We have no direct control over the environment.
+
+Human Agent
+  sensors - ears eyes nose skin tongue
+  actuators - hands/arms, legs, vocal cords
+
+Robotic Agent
+  sensors - cameras and microphones
+  actuators - motors, wheels
+
+Software Agent
+  sensors - keyboard, files
+  actuators - display, files
+
+A Percept: This is the agent's input at a given time.
+  The percept sequence is the complete history of everything the agent has ever perceived.
+
+The Agent Function
+  Maps percept histories to functions. This is the area we are interested in.
+  f:P*->A
+
+Agent Program
+  The agent program runs on the physical architecture to produce the agent function
+  agent = architecture + program
+
+Example - Consider the vacuum cleaner agent.
+  Only two squares exist in the world of the vacuum [A, B].
+  At any given time dirt may exist in either [A] or [B].
+  The vacuum cleaner recognizes which square it is in and what exists within that square.
+  However, the vacuum cleaner does not know what is in the other square.
+  The vacuum cleaner can move left or right, and is able to vacuum dirt, and naturally it can also do nothing.
+
+Function table.
+Percept Sequences    | Action
+[A, Clean]           | Go right
+[A, Dirty]           | Vacuum dirt
+[B, Clean]           | Go left
+[B, Dirty]           | Vacuum dirt
+[A, Clean][A, Clean] | Go right
+[A, Clean][A, Dirty  | Vacuum dirt
+...
+
+The Agent Program is written to carry out the various possibilities of the diagram.
+In Python...
+def reflex_vacuum_agent(location, status):
+    '''
+    Agent program for our vacuum cleaner
+    '''
+    if status == "Dirty":
+        return "Suck"
+    elif location == "A":
+        return "Right"
+    else:       # Location is B
+        return "Left"
+
+
+Rationality
+-----------
+Is the vacuum cleaner rational?
+    Is it doing the right thing?
+    Is it successful?
+    ... It depends.
+
+We need a fixed performance measure to figure out if and how successful an agent is.
+
+Possible performance measures:
+    - Amount of dirt that has been cleaned.
+        This can potentially lead to a feedback loop in which the vacuum cleans dirt, 
+        dumps the dirt, and continues to clean the dirt again.
+    - Number of clean squares
+        This may lead to unnecessary energy expenditure (movement).
+        Is a movement penalty required to counteract this?
+
+So we see that Rationality has a few dependencies:
+  - The Performance Measure
+  - The agent's knowledge of the environment
+  - The actions that the agent can perform
+  - The agent's percept sequence
+
+A rational agent chooses the action that maximizes the expected value of the performance 
+measure given the percept sequence to date (Not in the future) and its knowledge of the environment.
+
+What are the limitations of rationality?
+  - A rational agent is not omniscient: percepts may not supply all relevant information
+  - A rational agent is not clairvoyant: percepts do not provide information about future events
+  - A rational agent is not necessarily successful
+  - Difficulty: computational limitations may make perfect rationality unachievable
+
+Sometimes we simply must design the best program that we can, given the known limitations
+  Rationality involves exploration.
+
+PEAS
+----
+To design a rational agent, we must specify the task environment:
+  - [P]erformance Measure
+  - [E]nvironment
+  - [A]ctuators
+  - [S]ensors
+
+Uber Example
+P - Profitability, Safety, Time Management
+E - Roadways, pedestrians
+A - Steering, Accelerator, Brake
+S - Video camera, sensors, gauges
+
+ECommerce Example
+P - SEO, Usability, Throughput/Latency, Competitiveness, Profitability
+E - Web Browser, vendors
+A - User display, forms, links
+S - Keyboard, text, graphics, scripts
+
+Robot Example
+P - Minimizing false positives
+E - Factory, conveyer belt, bins
+A - Jointed robotic arm and hands
+S - Camera 
+
+Environment Types
+-----------------
+Environments are characterized by their known properties.
+
+Fully Observable vs. Partially Obsevable: 
+Fully Observable: The agent's sensors give it acess to the complete (relevant) state of the environment at each point in time.
+  The important part is that we are aware of the *relevant* parts, not that we can see all the parts.
+  - Chess (Fully Observable)
+  - Automated Taxi (Partially Observable)
+
+When the environment is partially observable, the agent needs to keep track of what it has seen of the environment so far.
+  Memory allows us to construct a complete picture and make better decisions.
+
+Deterministic vs. Stochastic
+Deterministic Environment: The next state of the environment is completely determined by the current state and the action executed by the agent
+  - Chess (Deterministic)
+  - Automated Taxi (Deterministic)
+  - Parts picking robot (Stochastic)
+  - The real world (Deterministic)
+
+Episodic vs. Sequential
+Episodic : The agent's experience is divided into atomic episodes. 
+           Each episode consists of the agent perceiving and then performing a single action, and the choice
+           of action in each episode depends only on the episode itself.
+  - Chess (sequential)
+  - Automated Taxi (sequential)
+  - Parts picking robot (episodic)
+  - The real world (sequential)
+
+Static vs. Dynamic
+Static: The environment does not change while an agent is deliberating.
+Semidynamic: The environment itself does not change with the passage of time but the agent's performance score does.
+  - Chess (Static)
+  - Automated Taxi (Dynamic)
+  - The real world (Dynamic)
+
+Discrete vs. Continuous
+Discrete: A finite number of distinct clearly defined percepts and actions
+  - Chess (discrete)
+  - Automated Taxi (continuous)
+  - The real world (continuous)
+
+Single Agent vs. Multiagent
+Single agent: An agent operating by itself in an environment
+Multiagent: Environments may be competitive or cooperative
+  - Chess (multiagent)
+  - Automated Taxi (multiagent)
+  - Part picking robot (single)
+  - The real world (multiagnet)
+
+Agent Types
+-----------
+ - Simple Reflex Agent
+   Knows what the world is like now. Carries no memory of the past and has actions based upon reflexive mechanisms.
+ - Reflex Agent with State
+   Remembers what happens and is capable of making better decisions based upon prior experience.
+ - Goal Based Agent
+   Has state and memory, but also considers specific goals in which it is attempting achieve. 
+ - Utility Based Agent
+   Similar to goal-based agents but is considerate of the overall outcome of the goal 

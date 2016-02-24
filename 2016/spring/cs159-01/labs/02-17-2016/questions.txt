@@ -1,0 +1,3 @@
+1) How do I manage the implicit declaration of fork in c99 warning in clang
+2) Why do process numbers of forks continue to increment.
+

@@ -1,0 +1,81 @@
+Scot Matson
+Project 1
+CS 159
+Dr. Chun
+
+PRELIMINARY
+-----------
+
+(1)
+Interactive output:
+Line 1 ..
+Line 2
+
+The output of this program is occurs in the same sequence in
+which the program was entered. Executing the program in the
+terminal gives preference to the user by the system and statements
+are executed in realtime. The terminal operation performs line
+buffering on printf() functions which means that flushing occurs
+when a newline character is read. The write() function is
+unbuffered and is read, executed, and printed immediatley.
+
+(2)
+Piped Output:
+Line 2 Line 1 ..
+
+Redirection in this case creates a file and stores the output
+of the program. This results in statements being executed out of
+sequence from how they were written. Once again the write() function
+will be read, executed, and written as it is an unbuffered function. 
+Printf() however is fully buffered and remains in the buffer until
+manually flushed by the user or automatically flushed by the system.
+This generally occurs when the buffer begins to fill or the application
+has finished being read.
+
+(3)
+[Add Output]
+The tree which represents the parent child relationship of a forked 
+process is generated as a breadth first left-to-right process. 
+Although nodes are generated in this manner, it is clear that
+execution is highly unpredictable and we cannot guarantee an 
+order of precedance.
+
+(4)
+[Add Output]
+The wait(NULL) function produces a predictable order when running
+multiple processes in 'C'. The behavior of wait(NULL) gives process
+priority to the child processes. The child processes will run to
+completion before the parent processes continue executing. This
+turns our toy program into a depth-first right-to-left tree traversal.
+
+(5)
+[Add Output]
+When outputting our program from v4 and v5 we see consistent
+results each time because the terminal uses line buffering which
+flushes the buffer after a newline character is read. This 
+behavior does not occur when the output is redirected into a file
+as we saw earlier as the printf() function is fully buffered.
+
+When creating multiple processes with the fork() function and 
+redirecting our output into a file we end up seeing duplicate
+streams appear in the buffer as a side effect of this fully
+buffered behavior. Using the fflush(stdout) function we are able
+to manually flush the buffer in known locations where this
+undesired behavior is to occur. This results in our output matching
+that of our terminal, line for line.
+
+ASSIGNMENT
+----------
+(6)
+
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13)
+(14)
+(15)
+(16)
+(17)

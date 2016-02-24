@@ -1,0 +1,143 @@
+Parallel Processing 2/2: The software challenge
+
+A change in hardware requires a change in software
+* Software must change in order to obtain the performance gains afforded by new hardware.
+
+The challenge - You cannot extract parallelism without user support (i.e., the developers must adopt parallel processing paradigms)
+  Everything that was once considered simple, is now more difficult.
+
+  * Increased complexity requires more careful analysis
+    - Adds multiple dimensions
+    - Difficult for humans to think in a multi-dimensional space
+    - There is a large permutation of operation interleavings
+
+  * Increased programmer expertise will be needed
+
+Code Parallelization Tools:
+  - Static Analyer: Draws call-graph structure
+  - Dynamic Analyzer: Plots threat activity vs. time
+  - Code parallelizer
+ 
+  The details become increasingy complicated and cannot be easily managed by the user
+  The goal becomes about finding ways to assist the user
+    - Off-lead the user as much as possible
+    - Make parallelization easier and more efficient
+      * maximize gains, minimize analysis
+    - Perform data fusion from the static and dynamic analysis
+      * filtered
+      * correlated
+      * interpreted
+  * Produce correct bug free code and increase the degree of automation *
+
+  * There is a lack of tools available to accomplish these tasks currently.
+    - Existing tools are designed for sequential application development rather than parallel.
+      *Need*
+      - Expressive parallel languages
+      - Reverse engineering tools
+      - Constructs to make architecture more visible
+
+A new class of problems
+-----------------------
+* Race condition - when multiple threads perform concurrent action to the same shared memory location
+  - execution order is assumed but cannot be guaranteed
+  - the winner is by chance
+  - results in nondeterministic behavior
+
+  Race conditions ard hard to detect and debug
+    - Errors are subtle
+    - Errors are hard to reproduce and diagnose
+    - Errors can slip through tesing and analysis
+    - Programs will often continue to run "normally" 
+
+  * Likely to be the most common error in parallel programs
+
+  Solution to race condition - Semaphores
+    --although they themselves can cause problems
+     * Performance decrease
+     * Bottlenecksk (one-at-a-time access) 
+     
+     This in essence breaks the parallelism
+
+* Deadlock Conditions: Two or more threads are blocked because each is waiting for a resource held by the other
+  - Fortunately the errors are more obvious and not as difficult to diagnose as race conditions
+    * the system will usually freeze/crash
+
+    Errors are still intermittent
+      - difficult to detect, reproduce, diagnose, and debug  
+      - Can slip through the software quality assurance
+
+Concurrent vs. Parallel
+-----------------------
+* Time-Sharing = Multi-tasking = Multiplexing = Concurrent (Old way of doing things)
+  - One processor is being shared (switched quickly) between tasks to create the illusion of concurrency
+  - In reality only one task is executing
+
+** Concurrency is not the same as true parallelism **
+ - Concurrent = Two threads are 'in progress' at the same time
+ - Parallelism = Two threads are 'executing' at the same time
+
+The software problem we encounter now is far more difficult now than it was during the time-sharing era
+  - multi-cores and multi-nodes in the hardware enable true parallelism
+  - migrating multi-tasking code becomes a difficult task
+ 
+  * In a multi-tasking in environment a queue based system established the priority of which code should execute
+    - programmer can assume mutual exclusion
+  * In a parallel system priority is moot and all code will execute at the same time 
+
+Debugging
+---------
+Hard because intermittent, non-deterministic bugs
+
+* Time sensitive SW tools are needed
+* New tools for parallelism are required
+  Ideal Debugger would have
+  - Reverse Execution capability - See what happens before a race condition/deadlock occurs
+  - Instant replay capability
+
+* Cannot use ad-hoc debugging via print statements, this can potentially change the timing
+
+Testing
+-------
+Simple code coverage becomes insufficient (e.g., tracking statements or branch executions)
+  - All possible instruction interleavings must be considered
+
+Profiling and Tuning
+--------------------
+Difficult to know which code to profile and optimize
+  - Concentrating on hot spots
+
+Must consider
+  - Threat creation & synchronization overhead
+  - communication to computation ratio
+  - threat balancing
+
+Amdahl's Law - The speed-up potential is going to be limited by the amount of serial code left in the system
+* Implications
+  Diminishing marginal rates of return from parallelism, difficult to get good scaling from the software
+  - Small amounts of serial execution can render a parallel machine ineffective
+
+  If you cannot parallelize at least 50% of your code, regardless of how many cores you have, you'll never
+  achieve more than twice as fast efficiency.
+
+Software - Business
+-------------------
+
+  \                /
+   \              /              
+    \   \        /       /
+     \   \      /       /
+      \________/       /
+           \          /
+            \________/
+
+As each generation of technology arrives, the cost/performance/performance curve is shifted further
+down and to the right for both sequential and parallel software development, but parallel development
+has a greater ROI every time.
+
+The software challenege is:
+  * More complex
+  * Lack of tools
+  * New bugs
+  * Race conditions, deadlocks
+  * Harder to debug, test, profile, tune, and scale
+ 

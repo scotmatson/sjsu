@@ -1,0 +1,85 @@
+Complexity Theory:
+  "What makes some problems computationally hard and other problems easy?"
+  * To answer such a question we must understand what we mean by hard problems vs easy problems.
+    A simple answer to this:
+    - Easy: Efficient
+    - Hard: Not efficient
+
+Defining the problem:
+  * A problem is an abstract of a question
+  * A problem instance is a particular case of a problem
+
+  *A problem instance is reprsented by a "String" formed from an alphabet
+  - The "String" is the question in symbolic form
+  - The "Alphabet" defined the symbols used in the question
+
+Decision Problems
+-----------------
+* A subset of problems where the answer is 'yes' or 'no' (1 or 0, true or false)
+- A formal language does not leave decision problems open for interpretation (room for ambiguity)
+
+Funtions
+--------
+* More complex than Decision Problems
+  - Maps 1 input to 1 output
+
+Complexity Theory - Corollary
+-----------------------------
+* What do we do after defining difficulty?
+  - Make problems easier
+
+What is an algorithm
+--------------------
+* Efficient
+* Finite
+* Well defined
+- Starts at a defined "position"
+- Moves through a finite series of steps
+- Produces an output
+
+Computational Theory
+--------------------
+* Godel, Church, and Turing discovered that not all problems are computable.
+
+* Central question in computability Theory
+  - Classify problems as being solvable or unsolvable
+
+* If an algorithm exists to solve a problem - That problem is computable
+
+Automata Theory
+---------------
+* The Self Acting Machine
+
+* Finite State Machines
+  
+Theorem
+-------
+* A mathematical statement that is true
+  - How do we know it is true?
+    - We prove it (This is different to science where we test hypothesis)
+
+* Proof
+  - Like debugging, it is a bit of an art that takes time to learn
+  - Problems must be studied and understood
+  - Sub-theorems must be studied and understood
+  
+  Tips:
+    - Start by constructing a simple instance of problems and solve them
+    - Write down steps in order to remember what you did and spot errors
+    - Be persistant, be patient
+  
+  Approaches to formulating mathematical proofs:
+  1) Start with  buiding a foundation
+  2) Generalize the problem
+
+  * Direct Proofs
+    - Directly solving the proof
+    
+  * Constructive Proofs
+    - Buidings the object, proves the object exists
+
+
+
+
+
+

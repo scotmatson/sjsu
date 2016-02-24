@@ -1,0 +1,109 @@
+* Tools to help organize thoughts about solving problems
+
+Things to think about when writing a program:
+---------------------------------------------
+* What the problem is
+* The sequence of actions to solve the problem
+* How to break the problem down into easy to solve sub-problems
+* What resources/agents do I need to solve the problem
+* What data do we need?
+
+Paradigms as Virtual Computers
+------------------------------
+* Not every machine is optimal for every problem
+* [Paradigms] tend to derive from how we think about computers
+  - Silicon wafers + transistors
+  - Memory + instructions
+  - Rewriting Engine
+  - Mathematical function evaluation machine
+  - A network
+  - A theorem tester
+  - .... what else?
+
+How Programming Languages Affect Thinking
+-----------------------------------------
+* Each language has a different set up for its tools
+  - Though Turing-Complete languages can solve any computable problem, some are better
+    at certain tasks than others
+  - The API libraries contain different functionalities
+  - They make some implementation methods easier than others
+  - There is generally a 'path of least resistance'
+  - It is easy to write procedural code in C but not functional or object-oriented
+  - Procedural code is harder to write in Java but Java can almost handle functional programming
+
+Important Features of a Programming Language
+--------------------------------------------
+* Some of the important Features are:
+  - Data Structure/Records
+  - Procedure
+  - Recursion
+  - Naming/Abstraction
+  - Memory/State
+  - Process
+  - Communication
+  - Unification
+  - Search
+
+A Reason Paradigms Are Useful
+-----------------------------
+* Have you ever read someone else's code?
+  - Was it a mess?
+  - Did it make sense?
+  - Did it follow predictable methods and ways to use the API?
+  - Was it easy to understand and change?
+
+Patterns
+--------
+* There is a paradigm shift happening now
+  - Patterns
+  - As times goes one you will find that certain ways are more effective to solve the same problem
+  - These get codified (formally and informally) as patterns
+  - You can get a leg up on implementation using patterns
+
+Abstraction and Types
+---------------------
+* Why use types?
+  - It allows us to quickly identify the types of data we are dealing with
+* Typical Types
+  - Integer
+  - Long
+  - Float
+  - Double
+  - Char
+  - String
+  - Boolean
+  - Rational
+
+Naming
+------
+* There are two hard problems in Computer Science
+  - Naming, Cache Validation, and Off By One Errors
+* Naming a value allows for a reduction of copy errors and a simplification of design
+
+Imperative Paradigm
+-------------------
+* The Von Neumann computer (memory + instructions)
+  - Based on the Turing Machine
+* Give commands to the computer
+* The algorithm and the data are separate
+
+*************************
+* Factorial Psuedo-Code *
+*************************
+Factorial n! = The product of n and all positive preceding integers
+
+Given a value of N and the Factorial Sum S
+S is initialized to N
+N is decremented by 1
+Decrement N by a value of 1 until the value of N is equal to 0.
+
+No idea WTF he was talking about...
+Here are some algorithms that will be used:
+- Min/Max
+- Bubble Sort
+- Insert Sort
+- Merge Sort
+- Binary Search
+- Hamming Distance
+- Needleman-Wunch* This is the bullshit bioinformatics crap.
+

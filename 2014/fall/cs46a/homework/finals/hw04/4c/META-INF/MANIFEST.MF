@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_11 (Oracle Corporation)
+
+Name: report.html
+SHA-256-Digest: XjIx5tSzxcTR6K5o6We6KRNJxOs6I4trQ+uWdbdweAo=
+
+Name: Cashier.java
+SHA-256-Digest: fxOU1OF7bKjJ2hH9KSIpINm2dF7wTLKBPjrUz6VYXnw=
+

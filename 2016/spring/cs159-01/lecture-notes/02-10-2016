@@ -1,0 +1,82 @@
+Key Points - Software Challenge
+
+Parallel Programming is Hard!
+  - Complex
+  - Lack of Tools
+  - New types of bugs
+    - Race conditions
+    - Deadlocks
+  - Harder to debug, test, debug, scale
+
+Opportunities
+-------------
+
+* Technical
+Opportunity to create new sw engineering infrastructure
+  - design/redesign
+  - debugging
+  - testing
+  - profiling
+
+opportunity to re-invent entire sw engineering field
+  - a second chance to get it right
+
+The universe is inherently parallel
+  - weather
+  - galaxy formation
+  - epidemics
+  - traffic patterns
+
+we can leverage unique capabilities offered by parallelism
+we can add new features via separate parallel modules
+  - avoid re-engineering old modules (re-engineering would likely introduce new bugs!)
+    - instead introduce a new module on a second threat so we don't risk side-effects
+  - add more functionality
+  - avoid increasing in wall processing time
+
+speculative computation
+  - precompute alternatives to minimize response time
+    - this would lead to responsive user interfaces
+ 
+(yet) undiscovered technical opportunities
+  - new parallel algorithms
+  - super-linear speedups 
+    * parallel computer has n times more memory
+    * larger % of sw can fit in upper levels of memory hierarchy
+    * existing algorithms could run faster
+
+cloud and parallel processing makes high-performance computing (hpc) ubiquitous
+  - new applications become possible
+    * genetic & molecular profiling
+    * real-time analytics
+
+  - smarter applications become possible
+    * virtual assistants
+ 
+  - efficiency becomes possible
+    * high-fidelity simulations
+
+with high performance computer, grand challeneges become possible
+  * A grand challenge:
+    - fundamental problem in science or engineeringi
+    - has potentially broad economic and scientific impact
+    - could be advanced with hpc resources
+
+  * ex
+    - data mining / fusion
+    - hurricane prediction
+    - global warming
+    - world hunger
+    - cure for serious disease 
+
+business opportunities
+----------------------
+assist in the interpretation of massive data sets
+  - ex - a 5-day weather forecast would potentially produce 10 terabytes of data
+  * humans are very good at detecting and interpreting high level visual patterns
+    even better than a computer can today 
+
+
+Skip ch5
+skim ch11
+read beginning of ch8 & 10

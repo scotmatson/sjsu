@@ -1,0 +1,45 @@
+Course Description
+  * Programming language sytax and semantics
+  * Data types and type checking
+  * Scope, bindings, and environments
+  * Functional and logic programming paradigms, and comparison to other paradigms
+  * Extensive coverage of a functional language
+      - For q 1-input => 1-output
+      - Comparison to OOP & Procedural languages.
+  * Clojure (LISP)
+      - Runs on the JVM
+
+Learning Outcomes
+  * Basic knowledge of the history of programming languges
+  * Basic knowledge of OOP, procedural, functional, and logical programming paradigms
+  * Understand the roles of interpreters, compilers, and VM's
+  * Critique the design of a programming language
+  * Read/Produce context-free grammar 
+      - Removing ambiguity from communication
+  * Write recursive-descent parsers for simple languages
+  * Understand variable scoping and lifetime
+  * Write interpreters for simple languages that involve arithmetic expressions, bindings of values to names, and function calls
+  * Understand type systems
+  * Understand the implementation of procedure calls and stack frames
+      - Making computers work together under the construct of limited shared resources
+  * Produce programs in a functional programming language in excess of 200 lines of code 
+
+Topics To Be Covered
+  * Intro to Programming Paradigms
+  * A Brief History of Computers and Programming
+  * Procedural Programming
+  * OOP
+  * Functional Programming
+  * Introduction to Clojure
+  * Logic Programming
+  * Introduction to Prolog
+  * Interpreters, Compilers, and VM's
+  * Context-free Grammar
+  * Data types
+  * Mutability
+  * Static vs. dynamic programming
+  * REPL (Read-Eval-Print Loop)
+  * Interpreting commands
+  * Inter-process communication
+  * Inter-system process communication
+  * Parallel and concurrent programming 

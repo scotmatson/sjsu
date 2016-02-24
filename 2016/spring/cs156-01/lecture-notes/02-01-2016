@@ -1,0 +1,46 @@
+Dates
+  Midterm - 03/23/2016
+
+Defining Artifical Intelligence
+-------------------------------
+* Artificial intelligence is the science of making machines that think like humans.
+
+  Difficulty - Human brains are difficult to reverse engineer, enters the realm of cognitive/neuro science
+               more than it does AI.
+
+* Making machines which 'act' human.
+    The Turing Test
+      - Machine are too optimized and need to be 'humanized' by making them faliable and slowing them down.
+      - Examples (Google Chatbot, Princeton AI)
+
+* Alternative approach
+  Rather than developing machines that think like humans, why not develop machines that think rationally?
+    - Syllogism: A rational/logical approach to understanding human thinking that propose concrete arguments and
+                 a finite rule set.
+
+* Thinking vs. Acting
+  Rational Action is an approach which abandons the approach of human understanding as a process of thoughts and 
+  views it as a series of actions and reflexes. The process of doing.
+
+  The benefit of this approach is it generalizes our understanding of humanity and allows for an imperfect design.
+
+What have we learned from human intelligence?
+  * Learning from the past
+  * Simulating the future (planning)
+      Action - Result - Decision
+  * Machine learning 
+
+Applications
+  - Fun, entertainment
+  
+Historical Aspects
+------------------
+AI Spring
+AI Winter
+
+Intelligent Agent
+-----------------
+* An agent is an entity that perceives its environment through sensors and acts upon its environment through atuators.
+  Human Agent
+  Robotic Agent
+  Software Agent 

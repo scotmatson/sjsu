@@ -1,0 +1,95 @@
+Parallel Processing
+Day 1 of 2 - Introduction
+A technical and business point of view.
+
+* A Hardware Solution - Day 1
+* A Software Challenge - Day 2
+* Opportunities
+
+*****************************
+Hardware Solution - Technical
+*****************************
+Evolution of Computer Architecture
+ - The Computer Hardware "Evolution Highway"
+   - Hardware & Software (Car & Driver)
+
+ * Microscopic POV
+-----------------------
+   -Intel 8086
+    Introduced 1978
+    29,000 Transistors
+    5 MGz Clock Frequency
+
+    -Intel Core2 Duo
+    ...
+
+    We can see within 28 years that the number of transistors have increased by 10,034X
+    Clock Frequency increased by 586X
+ 
+    * The primary driver for this observation.
+      - Moore's Law
+      - According to his observation that computing power doubles q18-q24 months we can plot
+        the historic trends and see that his observations were correct.
+
+    * Historically, performance gains have evolved from clock frequency increases.
+      Unfortunately we have reached the limitations of clock-rates.
+      - The reason for this barrier is due to a heat and power wall. Power and Heat grows as Frequency^3
+        CMOS (Complementary Metal-oxide Semiconductor)
+
+    * To bypass the power/heat wall, the engineering of single-core processing has been abandoned
+      for multi-core processing. Sequential processing must be traded-in for parallel processing.
+
+    * Instruction-Level Parallelism (ILP)
+      - Pipelining (Microscopic)
+      - Multi-Function Units (Macroscopic)
+    
+      ILP parallel processing on the hardware level but unfrotunately has over time also 
+      suffered from diminishing returns. This has led for a greater push for software
+      driven solutions.
+
+    * Moore's Law still continues to persist but rather than increasing clock-frequency,
+      multiple cores are being utilized to achieve performance gains.
+
+  - Macroscopic POV
+-------------------
+    * Node: Single computer.
+    * Cluster Computer: Combines processing power of 100's of nodes. Exists in generally a close proximity.
+    * Grid Computer: 1,000's of nodes, essentially clusters of clusters distributed over a wide area to once again
+                      combine computing power.
+    * Cloud Computer: 10,000's nodes, highly distributed (global scale).
+
+****************************
+Hardware Solution - Business
+****************************
+
+Computer processing power has a highly elastic supply and demand curve.
+  (This is a phenomenom unique to computing)
+
+  * Increased supply generates an increased demand
+
+    ...-->Hardware-->Software-->Software-->...
+
+  * Software will always manage to push the limits of hardware.
+  
+  - From a business POV, we want to operate at an optimal point on the *cost per performance as a function of performance* curve.
+
+                            Cost/Performance
+                                  vs.
+                             Performance
+
+                              \         /
+        Under-utilization -->  \       / <-- Over-utilization
+                                \     /
+                                 -----
+                                   ^
+                                   |
+                            Optimum-utilization
+
+Under:
+Optimum:
+Over: Pushing performance beyond it designed capabilities.
+
+  * Pushing the hardware performance capabilities has a higher cost than simply using
+    software to achieve the same end goal. From a business point of view, parallel 
+    processing is clearly the better option.
+

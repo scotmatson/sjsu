@@ -1,0 +1,143 @@
+Contact
+Email: thaddeus.aid@sjsu.edu (preferred)
+Skype: thaddeus.aid
+Office Hours: Saturday.......
+
+Course Description
+* Finite Automata
+* Context-free languages
+    - Being able to understand what is being said regardless of what is happening.
+* Turing machines
+    - The idea of a machine that can do anything.
+*Computability
+    i.e., The Travelling Salesman Problem.
+
+Learning Outcomes
+* Regular Expressions
+* Context-free grammar & pushdown automata
+* Construct and use simple turing machine
+* Use pumping lemmas to show non-membership.
+* Non-determinate finite machine -> Determinate finite machine
+* Minimize a deterministic finite machine
+* Describe closure properties...
+
+Textbook
+Introduction to Theory of Computation by Anil Maheshawri and Michiel Smid
+http://cglab.ca/~michiel/TheoryOfComputation/TheoryOfComputation.pdf
+
+Grading
+100 Points total
+  10% - homework
+        7 pt content
+        1 pt style
+        1 pt clarity
+        1 pt formatting
+
+  20% - Project
+  
+        Midterm
+        20pt
+        4 Sections of questions, choose 2
+
+        Final
+        30pt
+        4 Seections of questions, choose 2
+
+ No extra credit plans :(
+
+Assignment Submission
+cs154-firstname-lastname-assignmentnumber..
+
+A History of Computation
+------------------------------------------------------------------------------
+"The point is not to understand the world, but to transform it." ~ Karl Marx
+
+* The tally sticks led to numbers, and numbers lead to mathematics.
+  * The formalization of numbers allowed for the discovery of arithmetic.
+  * The Hindu-Arabic numbering system allowed for the further development of math.
+  * There is quite a lot that you can figure out with some numbers, some operators, a piece of paper, and a stick of charcoal.
+
+* "The purpose of computing is insight, not numbers." ~ Richard Hamming
+
+The numbers themselves are not necessarily interesting but rather, what the numbers can tell us about the real world.
+
+* [Computer Science] is not really about computers -- and it's not about computers in teh same sense that physics is not really about
+  particle accelerators, and biology is not about microscopes and Petri dishes... and geometry isn't really about using
+  surveying instruments." ~ Hal Abelson
+
+* So what is Computer Science about?
+  * Understanding problems in order to solve them.
+
+* Is it a Science? A math? An engineering discipline?
+  * It is all of these, every computer built and every program engineered is an empircal experiement into the realm of nature and mathematics.
+    Does this experiment work?
+
+2400 BCE - The Babylonian Abacus
+100  CE  - The Antikythera Mechanism
+1000 CE - The Astrolabe
+
+Islamic Robots?
+* During this time, Islamic scholars also built analogue constructs.... ringing bells at time of mass, etcl...
+1822 CE - Charles Babbage's Difference Engine
+
+Charles Babbage
+  Came up with the idea of a machine that could be used to solve complex equations.
+
+Ada Lovelace
+  Came up with the idea of using repeatable programs to change the functions of the machine. she is the mother of programming.
+
+1837 CE - Babbage's Analytical Engine
+
+1912 - Alan Turing (Mathematician, Logician, Cryptanalyst, Computer Scientist,
+                    Theoretical Biologist, Formatlized the Algorithm, Formalized Computability,
+                    Artificial Intelligence)
+
+       * The Enigma Machine
+
+1947 CE - The Transistor (pre-dated by vacuum tubes)
+1955 CE - The Pilot ACE
+1957 CE - Fortran
+  * Formula Translation
+  * First Compiled Language
+  * Considered one of the fastest languages in the world
+  * Imperetive
+
+1958 CE - The Integrated Circuit
+        - LISP
+          * List Processor
+          * Favored language for AI
+
+1959 CE - COBOL
+          * Targeted business needs
+          * Procedural
+
+1962 CE - Simula
+          * The introductino of OOP
+
+1964 CE - Speakeasy
+          * Object-Oriented Numerical Package
+          * Lead to modern languages like Matlab, R, and Mathmatica
+
+1969 CE - C
+          * Dennis Ritchie and Ken Thompas developed this sytems programming language at Bell Labs
+          * It is hard to overestimate the influence that C has had on the world.
+
+1972 CE - Prolog
+          * Logic Programming
+
+1980 - C++
+1984 - Matlab (Matrix Laboratory), linear algebra, mathematical scientific research
+1986 - Objective C, iOS develoment
+1987 - Perl, early web language
+1990 - Haskell, 
+1991 - Python, modify programs on the fly
+1995 - Java, the JVM - write once, run anywhere
+2007 - Clojure, a functional LISP on the JVM
+
+
+Grace Hopper
+  * Early Programmer
+  * Invented the Compiler
+  * Lead the efforts to build FORTRAN and COBOL
+  * Coined the term "debugging"
+

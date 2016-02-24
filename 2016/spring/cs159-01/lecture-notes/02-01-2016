@@ -1,0 +1,89 @@
+As an introduction, here are some interesting facts:
+
+No matter how much computer power people have, they always want more.
+  Computer capacity exhibits a highly "elastic" demand
+  Self-reinforcing cycle:
+    More powerful computers make new applications possible
+    New applications require even more powerful computers 
+
+The demand for computational power will always exceed the supply
+  More accuracy, data, kinds of data, speed, and interconnectivity
+
+The current best known approach to achieving cost-effective and energy-efficient
+high performance computing is parallel processing
+
+The software field is being reinvented ( or dragged into paralellellism by Hardware)
+  Hardware manufacturers are forced to utilize multi-, many-core designs
+  Unlike ILP and SuperScalar parallelism which was transparent to Software,
+    Multi- and Many-Core Hardware directly exposes parallelism to Software
+
+** To be a good programmer, you will need to know about parallel processing **
+
+------------------------------------------------------------------------------
+
+Parallel Processing; *not* Parallel Programming
+  Parallelism can occur in Hardware and Software
+
+Hardware computations and software computations are interchangeable
+  The two are synergistically interrelated and dependent upon each other
+  Analogy to a high-performance race car drivers
+    Car is hardware; Driver is software
+    The system is car and driver
+
+To write optimal (parallel) software, computer science experts need to understand (parallel) hardware
+  therefore, this class is a combinations of hardware and software
+
+Focus of the class is on parallelism in general
+
+------------ Thanks guy in the front row who likes blocking my view... dick bag.
+
+Term Project Proposal (Title + 1 Paragraph Abstract):
+  Due Wed., Feb. 17, 2017
+
+In-Depth analysis, comparison of languages, sample code
+posix threads - pthreads
+mpi
+openmp
+opencl/cuda
+map-reduce / hadoop
+x10
+erlang
+parallel java
+
+software centric
+parallel programming tools
+--------------------------
+compilers / programming environments
+demonstration / comparison of different tools
+  e.g., intel thread checker
+debuggers
+  especially for race and deadlock detection
+software re-engineering (re-factoring)
+  automatic conversion of sequential code to parallel
+  slicing
+simulation environments
+  e.g., RAMP: Research Accelerator for Multiple Processors
+
+research areas in parallel processing technologies
+--------------------------------------------------
+virtualization
+load balancing / energy efficient computing
+researching in solving race & deadlock problems
+  transactional memory
+  lock-free protocols
+  formal proofs of software correctness
+  languages for correct and efficient synchronization
+
+scan the literature to find something interesting
+  not only technical journal & conference papers
+  but, also general news and business articles
+
+Resources
+---------
+http://parlab.eecs.berkeley.edu/
+http://www.parallel.illinois.edu/
+http://ppl.stanford.edu/
+http://software.intel.com/en-us/parallel/
+SJSU Library / Databases / Electrical Engineering
+  ACM Digital Library
+  IEEE Xplore
