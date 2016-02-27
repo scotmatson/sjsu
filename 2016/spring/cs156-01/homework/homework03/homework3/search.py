@@ -173,11 +173,66 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
+def h(problem, state):
+    """Search the node that has the lowest combined cost and heuristic first."""
+
+    node = util.Node(state)
+    frontier = util.PriorityQueue()
+    frontier.push((node, state), 0)
+
+    explored = {}
+    explored[state] = 0
+    cost_to_goal = 0
+
+    while True:
+        if frontier.isEmpty():
+            return []
+
+        else:
+            parent, position = frontier.pop()
+ 
+            if problem.isGoalState(position):
+                return cost_to_goal 
+
+            for state, action, cost in problem.getSuccessors(position):
+                cost_to_goal += cost
+
+                child = util.Node(state, parent, action, cost)
+                path_cost = cost_so_far + cost  
+
+                if state not in explored or path_cost < explored[state]:
+                    explored[state] = path_cost
+                    frontier.push((child, state), explored[state])
+
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    start = problem.getStartState()
+    node = util.Node(start)
 
+    frontier = util.PriorityQueue()
+    frontier.push((node, start), heuristic(start, problem))
+
+    explored = {}
+    explored[start] = 0
+
+    while True:
+        if frontier.isEmpty():
+            return []
+
+        else:
+            parent, position = frontier.pop()
+ 
+            if problem.isGoalState(position):
+                return parent.solution()
+
+            for state, action, cost in problem.getSuccessors(position):
+
+                child = util.Node(state, parent, action, cost)
+                path_cost = problem.getCostOfActions(child.solution()) + heuristic(state, problem)
+
+                if state not in explored or path_cost < explored[state]:
+                    explored[state] = path_cost
+                    frontier.push((child, state), explored[state])
 
 # Abbreviations
 bfs = breadthFirstSearch
