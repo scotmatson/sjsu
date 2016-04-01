@@ -1,0 +1,12 @@
+Build algorithms in the 4 different paradigms (procedural, object-oriented, functional, logic)
+and comment on the strengths and weaknesses of each paradigm for each type of work.
+
+1) Min/Max
+2) Bubble Sort
+3) Insert Sort
+4) Merge Sort
+5) Binary Search
+6) Hamming Distance
+7) Needleman-Wunch
+
+Due 04/08/2016

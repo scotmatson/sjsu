@@ -88,83 +88,77 @@ def depthFirstSearch(problem):
     """
     start = problem.getStartState() 
     node = util.Node(start)
-    frontier = util.Stack()
-    frontier.push((node, start))
 
-    explored = set() 
+    fringe = util.Stack()
+    fringe.push(node)
+    closed = set() 
 
     while True:
-        if frontier.isEmpty():
+        if fringe.isEmpty():
             return []
         else:
-            parent, position = frontier.pop()
+            parent = fringe.pop()
 
-            if problem.isGoalState(position):
+            if problem.isGoalState(parent.state):
                  return parent.solution() 
 
-            explored.update([position]) 
+            if parent.state not in closed:
+                closed.add(parent.state) 
 
-            for state, action, cost in problem.getSuccessors(position):
-                if state not in explored:
+                for state, action, cost in problem.getSuccessors(parent.state):
                     child = util.Node(state, parent, action, cost)
-                    frontier.push((child, state))
+                    fringe.push(child)
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     start = problem.getStartState()
     node = util.Node(start)
-    frontier = util.Queue()
-    frontier.push((node, start))
 
-    explored = set() 
+    fringe = util.Queue()
+    fringe.push(node)
+    closed = set() 
 
     while True:
-        if frontier.isEmpty():
+        if fringe.isEmpty():
             return []
         else:
-            parent, position = frontier.pop()
+            parent = fringe.pop()
 
-            if problem.isGoalState(position):
+            if problem.isGoalState(parent.state):
                 return parent.solution() 
 
-            elif position not in explored:
-                explored.update([position]) 
+            if parent.state not in closed:
+                closed.add(parent.state) 
 
-                for state, action, cost in problem.getSuccessors(position):
+                for state, action, cost in problem.getSuccessors(parent.state):
                     child = util.Node(state, parent, action, cost)
-                    frontier.push((child, state))
+                    fringe.push(child)
 
 def uniformCostSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     start = problem.getStartState()
     node = util.Node(start)
 
-     
-
-    frontier = util.PriorityQueue()
-    frontier.push((node, start), 0)
-
-    explored = {}
-    explored[start] = 0
+    fringe = util.PriorityQueue()
+    fringe.push(node, 0)
+    closed = set()
 
     while True:
-        if frontier.isEmpty():
+        if fringe.isEmpty():
             return []
-
         else:
-            parent, position = frontier.pop()
+            parent = fringe.pop()
  
-            if problem.isGoalState(position):
+            if problem.isGoalState(parent.state):
                 return parent.solution()
 
-            for state, action, cost in problem.getSuccessors(position):
+            if parent.state not in closed:
+                closed.add(parent.state)
 
-                child = util.Node(state, parent, action, cost)
-                path_cost = problem.getCostOfActions(child.solution()) 
-
-                if state not in explored or path_cost < explored[state]:
-                    explored[state] = path_cost
-                    frontier.push((child, state), explored[state])
+                for state, action, cost in problem.getSuccessors(parent.state):
+                    child = util.Node(state, parent, action, cost)
+                    path_cost = problem.getCostOfActions(child.solution()) 
+                    fringe.push(child, path_cost)
 
 def nullHeuristic(state, problem=None):
     """
@@ -173,66 +167,33 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
-def h(problem, state):
-    """Search the node that has the lowest combined cost and heuristic first."""
-
-    node = util.Node(state)
-    frontier = util.PriorityQueue()
-    frontier.push((node, state), 0)
-
-    explored = {}
-    explored[state] = 0
-    cost_to_goal = 0
-
-    while True:
-        if frontier.isEmpty():
-            return []
-
-        else:
-            parent, position = frontier.pop()
- 
-            if problem.isGoalState(position):
-                return cost_to_goal 
-
-            for state, action, cost in problem.getSuccessors(position):
-                cost_to_goal += cost
-
-                child = util.Node(state, parent, action, cost)
-                path_cost = cost_so_far + cost  
-
-                if state not in explored or path_cost < explored[state]:
-                    explored[state] = path_cost
-                    frontier.push((child, state), explored[state])
-
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     start = problem.getStartState()
     node = util.Node(start)
 
-    frontier = util.PriorityQueue()
-    frontier.push((node, start), heuristic(start, problem))
-
-    explored = {}
-    explored[start] = 0
+    fringe = util.PriorityQueue()
+    fringe.push(node, heuristic(start, problem))
+    closed = set()
 
     while True:
-        if frontier.isEmpty():
+        if fringe.isEmpty():
             return []
-
         else:
-            parent, position = frontier.pop()
+            parent = fringe.pop()
  
-            if problem.isGoalState(position):
+            if problem.isGoalState(parent.state):
                 return parent.solution()
 
-            for state, action, cost in problem.getSuccessors(position):
+            if parent.state not in closed:
+                closed.add(parent.state)
 
-                child = util.Node(state, parent, action, cost)
-                path_cost = problem.getCostOfActions(child.solution()) + heuristic(state, problem)
+                for state, action, cost in problem.getSuccessors(parent.state):
+                    child = util.Node(state, parent, action, cost)
+                    path_cost = problem.getCostOfActions(child.solution()) + heuristic(state, problem)
+                    fringe.push(child, path_cost)
 
-                if state not in explored or path_cost < explored[state]:
-                    explored[state] = path_cost
-                    frontier.push((child, state), explored[state])
+
 
 # Abbreviations
 bfs = breadthFirstSearch

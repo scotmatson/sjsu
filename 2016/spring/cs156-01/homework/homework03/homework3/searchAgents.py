@@ -260,7 +260,7 @@ def euclideanHeuristic(position, problem, info={}):
     "The Euclidean distance heuristic for a PositionSearchProblem"
     xy1 = position
     xy2 = problem.goal
-    return ( (xy1[0] - xy2[0]) ** 2 + (xy1[1] - xy2[1]) ** 2 ) ** 0.5
+    return ((xy1[0] - xy2[0])** 2 + (xy1[1] - xy2[1])**2)**0.5
 
 class CornersProblem(search.SearchProblem):
     """
@@ -299,12 +299,9 @@ class CornersProblem(search.SearchProblem):
         position, foodGrid = state
         return not foodGrid # food location is empty
 
-
-
     def getSuccessors(self, state):
         """
         Returns successor states, the actions they require, and a cost of 1.
-
         """
         successors = []
         position, foodGrid = state
@@ -353,48 +350,18 @@ def cornersHeuristic(state, problem):
     This function should always return a number that is a lower bound on the
     shortest path from the state to a goal of the problem; i.e.  it should be
     admissible (as well as consistent).
-
-    problem:
-        expanded
-        corners
-        getCostOfActions
-        getStartState
-        getSuccessors
-        isGoalState
-        startState
-        startingPosition
-        walls
-
-    Directions.NORTH
-    Directions.EAST
-    Directions.SOUTH
-    Directions.WEST
- 
-    Actions:
-        .directionToVector()
     """
-    from math import sqrt
-    from math import floor
-
-    corners = problem.corners # These are the corner coordinates
-    walls = problem.walls # These are the walls of the maze, as a Grid (game.py)
     position, foodGrid = state
 
-    wall_count = 4
-    directions = [Directions.NORTH, Directions.EAST, Directions.SOUTH, Directions.WEST]
-    for direction in directions:
-        v = Actions.directionToVector(direction)
-        vX, vY = v 
-        if walls[int(position[0]+vX)][int(position[1]+vY)]:
-            wall_count += 1
-
     paths = list() 
-    for xy2 in foodGrid:
-        
-        #paths.append(abs(position[0] - xy2[0]) + abs(position[1] - xy2[1]))
+    for food in foodGrid:
+        # Distance to goal 
+        dx = abs(position[0] - food[0])
+        dy = abs(position[1] - food[1])
+        paths.append(dx + dy)
 
-    h = min(paths or [0])
-    return h
+    return max(paths or [0])
+
 
 class AStarCornersAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"
@@ -407,9 +374,9 @@ class FoodSearchProblem:
     A search problem associated with finding the a path that collects all of the
     food (dots) in a Pacman game.
 
-    A search state in this problem is a tuple ( pacmanPosition, foodGrid ) where
+    A search state in this problem is a tuple (pacmanPosition, foodGrid) where
       pacmanPosition: a tuple (x,y) of integers specifying Pacman's position
-      foodGrid:       a Grid (see game.py) of either True or False, specifying remaining food
+      foodGrid: a Grid (see game.py) of either True or False, specifying remaining food
     """
     def __init__(self, startingGameState):
         self.start = (startingGameState.getPacmanPosition(), startingGameState.getFood())
@@ -471,7 +438,7 @@ def foodHeuristic(state, problem):
     other hand, inadmissible or inconsistent heuristics may find optimal
     solutions, so be careful.
 
-    The state is a tuple ( pacmanPosition, foodGrid ) where foodGrid is a Grid
+    The state is a tuple (pacmanPosition, foodGrid) where foodGrid is a Grid
     (see game.py) of either True or False. You can call foodGrid.asList() to get
     a list of food coordinates instead.
 
@@ -486,9 +453,27 @@ def foodHeuristic(state, problem):
     Subsequent calls to this heuristic can access
     problem.heuristicInfo['wallCount']
     """
+    if problem.isGoalState(state):
+        return 0
+    
     position, foodGrid = state
-    "*** YOUR CODE HERE ***"
-    return 0
+    foodList = foodGrid.asList()
+
+    x = list()
+    y = list()
+    for food1 in foodList:
+        x.append(abs(position[0] - food1[0]))
+        y.append(abs(position[1] - food1[1]))
+        for food2 in foodList:
+            x.append(abs(food1[0] - food2[0]))
+            y.append(abs(food1[1] - food2[1]))
+
+    x = max(x or [0])
+    y = max(y or [0])
+
+
+    return max([x+y] or [0])
+    
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
@@ -513,20 +498,19 @@ class ClosestDotSearchAgent(SearchAgent):
         gameState.
         """
         # Here are some useful elements of the startState
-        startPosition = gameState.getPacmanPosition()
+        startState = gameState.getPacmanPosition()
+        problem = AnyFoodSearchProblem(gameState)
         food = gameState.getFood()
         walls = gameState.getWalls()
-        problem = AnyFoodSearchProblem(gameState)
-
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        actions = search.ucs(problem)
+        return actions 
 
 class AnyFoodSearchProblem(PositionSearchProblem):
     """
     A search problem for finding a path to any food.
 
     This search problem is just like the PositionSearchProblem, but has a
-    different goal test, which you need to fill in below.  The state space and
+    different goal test, which you need to fill in below. The state space and
     successor function do not need to be changed.
 
     The class definition above, AnyFoodSearchProblem(PositionSearchProblem),
@@ -537,7 +521,7 @@ class AnyFoodSearchProblem(PositionSearchProblem):
     """
 
     def __init__(self, gameState):
-        "Stores information from the gameState.  You don't need to change this."
+        "Stores information from the gameState. You don't need to change this."
         # Store the food for later reference
         self.food = gameState.getFood()
 
@@ -552,10 +536,7 @@ class AnyFoodSearchProblem(PositionSearchProblem):
         The state is Pacman's position. Fill this in with a goal test that will
         complete the problem definition.
         """
-        x,y = state
-
-        "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        return state in self.food.asList() 
 
 def mazeDistance(point1, point2, gameState):
     """
