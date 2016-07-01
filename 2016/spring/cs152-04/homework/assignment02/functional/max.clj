@@ -1,3 +1,6 @@
+; Attributes:
+;     https://clojuredocs.org/clojure.core/recur
+
 (defn random-integers[m n]
     (take m (repeatedly #(rand-int n))))
 
@@ -5,9 +8,6 @@
     (if (empty? elements)
         value
         (recur myfunc (rest elements) (myfunc value (first elements)))))
-
-(defn total-of [numbers]
-    (compute-across + numbers 0))
 
 (defn largest-of [x y]
     (if (> x y) x y))

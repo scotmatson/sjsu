@@ -1,23 +1,25 @@
+; Attributes:
+;     http://www.fatvat.co.uk/2008/12/bubbling-clojure.html 
+;     http://clojure.org/reference/lazy
+
 (defn random-integers[m n]
     (take m (repeatedly #(rand-int n))))
 
-(defn compute-across [myfunc elements value]
-    (if (empty? elements)
-        value
-        (recur myfunc (rest elements) (myfunc value (first elements)))))
+(defn bubble [numbers]
+    (if (or (nil? numbers) (nil? (second numbers)))
+        numbers
+        (if (> (first numbers) (second numbers))
+            (cons (second numbers) (cons (first numbers) (nthrest numbers 2)))
+            (lazy-seq
+                (when-let [s (seq numbers)]
+                    (cons (first s) (bubble (rest s))))))))
 
-(defn total-of [numbers]
-    (compute-across + numbers 0))
-
-(defn largest-of [x y]
-    (if (> x y) x y))
-
-(defn greatest-of [numbers]
-    (compute-across largest-of numbers (first numbers)))
+(defn bubble-sort [numbers]
+    (if (= (bubble numbers) numbers)
+        numbers (recur (bubble numbers))))
 
 (def randInts (random-integers 10 101))
-
 (println "Sequence of random integers")
 (println randInts)
-(print "Max value: ")
-(println (greatest-of randInts))
+(println "Sorted sequence")
+(println (bubble-sort randInts))
